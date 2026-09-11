@@ -1,26 +1,29 @@
 name: Robo de Noticias Diario
-
+ 
 on:
   schedule:
     - cron: '0 8 * * *'   # todo dia as 08:00 UTC (~05:00 no horario de Brasilia)
   workflow_dispatch:        # tambem permite rodar manualmente pelo GitHub
-
+ 
+permissions:
+  contents: write   # necessario para o robo poder fazer commit/push do feed novo
+ 
 jobs:
   atualizar-noticias:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
+ 
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
+ 
       - run: pip install -r robo/requirements.txt
-
+ 
       - run: python robo/news_robot.py
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-
+ 
       - name: Publicar o novo feed
         run: |
           git config user.name "robo-politicabr"
