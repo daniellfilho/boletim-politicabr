@@ -11,6 +11,13 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==========================================================================
+   LINK DE CHECKOUT DA ASSINATURA (KIWIFY)
+   Troque pela URL real assim que o produto for criado na Kiwify
+   (Painel Kiwify -> seu produto -> "Link de vendas" ou "Compartilhar").
+   ========================================================================== */
+const KIWIFY_CHECKOUT_URL = 'https://pay.kiwify.com.br/1FQ2xY0';
+
+/* ==========================================================================
    1. DYNAMIC HEADER DATE
    ========================================================================== */
 function initDateHeader() {
@@ -747,7 +754,11 @@ function renderLeadSuccess(captureSection, name, email, profile, emailEnviado) {
         <div style="background: var(--bg-subtle); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px;">
           🔒 Seus dados estão seguros e protegidos pela LGPD. Não enviamos spam nem compartilhamos suas respostas.
         </div>
-        <button class="btn-primary" onclick="window.location.reload();" style="font-size: 0.95rem; padding: 12px 24px;">
+        <a href="${KIWIFY_CHECKOUT_URL}" class="btn-primary" style="display:inline-block;text-decoration:none;font-size: 1rem; padding: 14px 28px; margin-bottom: 12px;">
+          Quero a assinatura completa
+        </a>
+        <br>
+        <button class="btn-primary" onclick="window.location.reload();" style="font-size: 0.85rem; padding: 10px 20px; background: transparent; border: 1px solid var(--border-medium); color: var(--text-muted); box-shadow: none;">
           Fazer o Quiz Novamente
         </button>
       </div>
