@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Área de Membros — Boletim PoliticaBR</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .membros-wrap {
+    max-width: 480px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+  .membros-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 28px 26px;
+    box-shadow: var(--shadow-card);
+  }
+  .membros-card h2 {
+    color: var(--text-pure);
+    margin-bottom: 8px;
+  }
+  .membros-card p {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .membros-input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-medium);
+    background: var(--bg-surface);
+    color: var(--text-pure);
+    font-size: 1rem;
+    margin-bottom: 14px;
+  }
+  .membros-btn {
+    width: 100%;
+    padding: 13px;
+    border-radius: var(--radius-sm);
+    border: none;
+    background: var(--gold-primary);
+    color: var(--text-dark);
+    font-weight: 800;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .membros-btn:disabled { opacity: 0.6; cursor: default; }
+  .membros-msg {
+    margin-top: 16px;
+    font-size: 0.9rem;
+    color: var(--text-main);
+  }
+  .membros-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+  .membros-tab {
+    flex: 1;
+    padding: 8px;
+    text-align: center;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-medium);
+    background: var(--bg-surface);
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .membros-tab.active {
+    background: var(--gold-primary);
+    color: var(--text-dark);
+    border-color: var(--gold-primary);
+  }
+  .membros-headline {
+    color: var(--text-pure);
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  .membros-resumo {
+    color: var(--text-main);
+    line-height: 1.6;
+  }
+  .membros-sair {
+    display: inline-block;
+    margin-top: 22px;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<div class="membros-wrap">
+
+  <!-- Estado: NÃO logado (formulário de e-mail) -->
+  <div class="membros-card" id="login-card">
+    <h2>Área de Membros</h2>
+    <p>Digite o e-mail que você usou na assinatura. Vamos te enviar um link de acesso.</p>
+    <input type="email" id="login-email" class="membros-input" placeholder="seu@email.com" required>
+    <button id="login-btn" class="membros-btn">Enviar link de acesso</button>
+    <p class="membros-msg" id="login-msg"></p>
+  </div>
+
+  <!-- Estado: logado (conteúdo do assinante) -->
+  <div class="membros-card" id="content-card" style="display:none;">
+    <h2>Boletim do dia</h2>
+    <p id="pauta-do-dia" style="color: var(--text-muted); font-size: 0.85rem;"></p>
+
+    <div class="membros-tabs">
+      <div class="membros-tab" data-lado="esquerda">Esquerda</div>
+      <div class="membros-tab active" data-lado="centro">Centro</div>
+      <div class="membros-tab" data-lado="direita">Direita</div>
+    </div>
+
+    <h3 class="membros-headline" id="content-headline">Carregando...</h3>
+    <p class="membros-resumo" id="content-resumo"></p>
+
+    <span class="membros-sair" id="logout-link">sair da conta</span>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  const loginCard = document.getElementById('login-card');
+  const contentCard = document.getElementById('content-card');
+  const loginBtn = document.getElementById('login-btn');
+  const loginEmail = document.getElementById('login-email');
+  const loginMsg = document.getElementById('login-msg');
+
+  loginBtn.addEventListener('click', async () => {
+    const email = loginEmail.value.trim();
+    if (!email) return;
+    loginBtn.disabled = true;
+    loginBtn.textContent = 'Enviando...';
+    try {
+      const res = await fetch('/api/request-access', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+      const data = await res.json();
+      loginMsg.textContent = data.message || 'Se este e-mail tiver assinatura ativa, enviamos um link de acesso.';
+    } catch (err) {
+      loginMsg.textContent = 'Não foi possível enviar agora. Tente novamente em instantes.';
+    } finally {
+      loginBtn.disabled = false;
+      loginBtn.textContent = 'Enviar link de acesso';
+    }
+  });
+
+  let feedDoDia = null;
+
+  function renderLado(lado) {
+    document.querySelectorAll('.membros-tab').forEach((tab) => {
+      tab.classList.toggle('active', tab.dataset.lado === lado);
+    });
+    if (!feedDoDia || !feedDoDia[lado]) return;
+    document.getElementById('content-headline').textContent = feedDoDia[lado].manchete;
+    document.getElementById('content-resumo').textContent = feedDoDia[lado].resumo;
+  }
+
+  async function carregarFeed() {
+    try {
+      const res = await fetch('noticias-diarias.json', { cache: 'no-store' });
+      feedDoDia = await res.json();
+      document.getElementById('pauta-do-dia').textContent = 'Pauta de hoje: ' + (feedDoDia.pauta_do_dia || '');
+      renderLado('centro');
+    } catch (err) {
+      document.getElementById('content-headline').textContent = 'Não foi possível carregar a edição de hoje.';
+    }
+  }
+
+  document.querySelectorAll('.membros-tab').forEach((tab) => {
+    tab.addEventListener('click', () => renderLado(tab.dataset.lado));
+  });
+
+  document.getElementById('logout-link').addEventListener('click', () => {
+    document.cookie = 'boletim_session=; Path=/; Max-Age=0';
+    window.location.reload();
+  });
+
+  // Ao carregar a página, confere se já existe sessão válida
+  fetch('/api/check-session')
+    .then((res) => res.json())
+    .then((data) => {
+      if (data.authenticated) {
+        loginCard.style.display = 'none';
+        contentCard.style.display = 'block';
+        carregarFeed();
+      }
+    })
+    .catch(() => {});
+})();
+</script>
+
+</body>
+</html>
