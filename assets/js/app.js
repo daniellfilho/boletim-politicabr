@@ -695,17 +695,39 @@ function initLeadForm() {
 
     localStorage.setItem('boletim_user_lead', JSON.stringify(leadData));
 
-    /* ======================================================================
-       FUTURE BACKEND INTEGRATION POINT:
-       Quando houver um servidor de backend ou CRM (ex: Supabase, Node, FastAPI):
-       
-       fetch('/api/v1/leads', {
-         method: 'POST',
-         headers: { 'Content-Type': 'application/json' },
-         body: JSON.stringify(leadData)
-       }).then(res => res.json()).catch(console.error);
-       ====================================================================== */
+    // Mostra estado de carregamento no botão enquanto o e-mail é enviado de verdade
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const submitBtnOriginalText = submitBtn ? submitBtn.textContent : '';
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando...';
+    }
 
+    fetch('/api/lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(leadData)
+    })
+      .then((res) => {
+        if (!res.ok) throw new Error('Falha no envio do e-mail');
+        renderLeadSuccess(captureSection, name, email, profile, true);
+      })
+      .catch((err) => {
+        console.error('[lead-form] Não foi possível enviar o e-mail:', err);
+        // Mesmo se o envio falhar, o cadastro já foi salvo localmente;
+        // avisamos o leitor com uma mensagem levemente diferente.
+        renderLeadSuccess(captureSection, name, email, profile, false);
+      })
+      .finally(() => {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = submitBtnOriginalText;
+        }
+      });
+  });
+}
+
+function renderLeadSuccess(captureSection, name, email, profile, emailEnviado) {
     // Render Success Confirmation Screen
     captureSection.innerHTML = `
       <div class="success-card">
@@ -717,7 +739,10 @@ function initLeadForm() {
         <h3 class="success-title">Acesso Pré-Reservado com Sucesso!</h3>
         <p class="success-desc">
           Olá, <strong>${name}</strong>. Seu perfil <strong>${profile}</strong> foi registrado com prioridade.
-          Você receberá em <strong>${email}</strong> o link de acesso exclusivo à edição de lançamento do <strong>Boletim PoliticaBR</strong>.
+          ${emailEnviado
+            ? `Enviamos para <strong>${email}</strong> o link de acesso exclusivo à edição de lançamento do <strong>Boletim PoliticaBR</strong>.`
+            : `Seu cadastro foi salvo com <strong>${email}</strong>, mas tivemos uma instabilidade ao enviar o e-mail agora — nossa equipe vai reenviar em breve.`
+          }
         </p>
         <div style="background: var(--bg-subtle); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px;">
           🔒 Seus dados estão seguros e protegidos pela LGPD. Não enviamos spam nem compartilhamos suas respostas.
@@ -729,7 +754,6 @@ function initLeadForm() {
     `;
 
     captureSection.scrollIntoView({ behavior: 'smooth' });
-  });
 }
 
 /* ==========================================================================
