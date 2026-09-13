@@ -22,7 +22,7 @@
     width: 190px;
     overflow: hidden;
     z-index: 1;
-    display: none;
+    display: none !important;
     background: #061320;
   }
   .side-rail.rail-left { left: 0; }
@@ -61,8 +61,11 @@
     color: #fff;
     z-index: 2;
   }
+  /* Só em telas largas (desktop) o JS pode revelar as faixas, adicionando
+     a classe "rail-ativa" - em telas estreitas elas ficam sempre ocultas
+     (o !important acima garante isso mesmo se algo tentar forçar via JS). */
   @media (min-width: 1180px) {
-    .side-rail { display: block; }
+    .side-rail.rail-ativa { display: block !important; }
   }
 
   /* Menu do usuário no canto direito do header */
@@ -242,6 +245,16 @@
   }
   .tag-perfil-direita { background: rgba(29, 78, 216, 0.85); }
 
+  .jornal-validacao {
+    max-width: 480px;
+    margin: 0 auto 8px;
+    color: var(--text-main);
+    font-size: 0.92rem;
+    font-weight: 600;
+    line-height: 1.4;
+    font-style: italic;
+  }
+
   /* Cards de matéria - versão normal */
   .materia-card {
     background: var(--bg-card);
@@ -352,11 +365,11 @@
 
 <!-- Faixas laterais decorativas - só aparecem em telas largas, com foto
      ligada ao perfil político do assinante logado -->
-<div class="side-rail rail-left" id="side-rail-left" style="display:none;">
+<div class="side-rail rail-left" id="side-rail-left">
   <img id="side-rail-left-img" src="" alt="">
   <span class="side-rail-tag" id="side-rail-left-tag"></span>
 </div>
-<div class="side-rail rail-right" id="side-rail-right" style="display:none;">
+<div class="side-rail rail-right" id="side-rail-right">
   <img id="side-rail-right-img" src="" alt="">
   <span class="side-rail-tag" id="side-rail-right-tag"></span>
 </div>
@@ -425,6 +438,7 @@
     <div>
       <span class="jornal-perfil-tag" id="perfil-tag"></span>
     </div>
+    <p class="jornal-validacao" id="jornal-validacao"></p>
   </div>
 
   <div id="lista-materias"></div>
@@ -487,6 +501,11 @@
 
   const LABELS_PERFIL = { esquerda: 'Esquerda', centro: 'Centro', direita: 'Direita' };
   const ICONES_CATEGORIA = '📰';
+  const VALIDACAO_POR_LADO = {
+    esquerda: 'Você defende um Brasil mais justo — sua visão tem cada vez mais espaço no debate público.',
+    direita: 'Você defende os valores que sustentam o Brasil — sua visão representa uma parte forte e crescente do país.',
+    centro: 'Você enxerga além da bolha — equilíbrio é raro e valioso no debate político de hoje.',
+  };
 
   function renderJornal(lado, feed) {
     const listaEl = document.getElementById('lista-materias');
@@ -496,6 +515,7 @@
     if (!lado || !feed || !Array.isArray(feed.noticias) || feed.noticias.length === 0) {
       listaEl.style.display = 'none';
       perfilTag.style.display = 'none';
+      document.getElementById('jornal-validacao').textContent = '';
       semPerfil.style.display = 'block';
       return;
     }
@@ -503,6 +523,7 @@
     perfilTag.style.display = 'inline-block';
     perfilTag.textContent = 'SEU PERFIL: ' + (LABELS_PERFIL[lado] || lado).toUpperCase();
     perfilTag.className = 'jornal-perfil-tag tag-perfil-' + lado;
+    document.getElementById('jornal-validacao').textContent = VALIDACAO_POR_LADO[lado] || '';
 
     const dataFormatada = feed.gerado_em
       ? new Date(feed.gerado_em).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })
@@ -596,16 +617,19 @@
     const railLeft = document.getElementById('side-rail-left');
     const railRight = document.getElementById('side-rail-right');
     if (!figuras) {
-      railLeft.style.display = 'none';
-      railRight.style.display = 'none';
+      railLeft.classList.remove('rail-ativa');
+      railRight.classList.remove('rail-ativa');
       return;
     }
     document.getElementById('side-rail-left-img').src = figuras[0].src;
     document.getElementById('side-rail-left-tag').textContent = figuras[0].tag;
     document.getElementById('side-rail-right-img').src = figuras[1].src;
     document.getElementById('side-rail-right-tag').textContent = figuras[1].tag;
-    railLeft.style.display = 'block';
-    railRight.style.display = 'block';
+    // A classe "rail-ativa" só produz efeito visual dentro do media query
+    // de telas largas (ver CSS) - em celular, as faixas continuam ocultas
+    // mesmo com essa classe presente.
+    railLeft.classList.add('rail-ativa');
+    railRight.classList.add('rail-ativa');
   }
 
   document.getElementById('menu-sair').addEventListener('click', () => {
