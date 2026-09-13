@@ -1,20 +1,43 @@
 {
-  "pauta_do_dia": "Crise institucional no STF: Moraes acusa Mendonça de 'escolha seletiva' na divulgação de documentos do caso Banco Master e pede fim total do sigilo, em meio a revelações que também o envolvem",
-  "esquerda": {
-    "manchete": "Moraes exige transparência total no caso Master em meio a disputa interna no STF",
-    "resumo": "Ministro pediu à Corte a quebra completa do sigilo na investigação do Banco Master, defendendo que a crise entre magistrados não pode servir para esconder provas nem fragilizar o Judiciário."
-  },
-  "centro": {
-    "manchete": "Moraes e Mendonça travam disputa pública no STF sobre sigilo no caso Banco Master",
-    "resumo": "Moraes acusou Mendonça de manter sigilo seletivo sobre 180 documentos da Operação Compliance Zero e pediu divulgação integral, em meio a uma crise institucional sem precedentes na Corte."
-  },
-  "direita": {
-    "manchete": "Sob suspeita no caso Master, Moraes cobra transparência após vazamento de mensagens com banqueiro",
-    "resumo": "Documentos ligam Moraes a Daniel Vorcaro, incluindo contrato milionário com o escritório da esposa do ministro; seccionais da OAB já pedem investigação contra ele."
-  },
-  "fonte_principal": {
-    "nome": "Agência Brasil",
-    "url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-09/moraes-aponta-escolha-seletiva-e-pede-divulgacao-de-todo-caso-master"
-  },
-  "gerado_em": "2026-09-11T22:59:09.464413+00:00"
+  "noticias": [
+    {
+      "categoria": "STF",
+      "fonte_nome": "Exemplo (substituído pelo robô real)",
+      "fonte_url": "https://exemplo.com/materia-1",
+      "esquerda": {
+        "manchete": "STF derruba sigilo e expõe uso de emendas em propaganda pró-Bolsonaro",
+        "resumo": "Documentos liberados mostram recursos públicos financiando produção de conteúdo político, reforçando pedidos por mais transparência no Judiciário."
+      },
+      "centro": {
+        "manchete": "STF decide quebrar sigilo de investigação e reacende debate sobre transparência",
+        "resumo": "Decisão do ministro Alexandre de Moraes divide opiniões no Congresso e amplia a disputa institucional em torno do caso."
+      },
+      "direita": {
+        "manchete": "Nova decisão do STF é vista como decisão política por aliados da oposição",
+        "resumo": "Parlamentares de oposição questionam critérios usados pela Corte e pedem mais equilíbrio nas investigações em curso."
+      },
+      "id": 1,
+      "imagem_url": null
+    },
+    {
+      "categoria": "Economia",
+      "fonte_nome": "Exemplo (substituído pelo robô real)",
+      "fonte_url": "https://exemplo.com/materia-2",
+      "esquerda": {
+        "manchete": "Proposta de revisão de isenções fiscais pode destravar recursos para saúde e educação",
+        "resumo": "Relatores defendem que o fim de benefícios a grandes grupos econômicos pode reforçar o financiamento de políticas sociais."
+      },
+      "centro": {
+        "manchete": "Congresso debate ajuste fiscal em meio a pressões de governo e mercado",
+        "resumo": "Proposta tenta equilibrar responsabilidade orçamentária com manutenção de investimentos sociais, dividindo opiniões entre parlamentares."
+      },
+      "direita": {
+        "manchete": "Setor produtivo alerta para impacto de nova regra fiscal sobre investimentos",
+        "resumo": "Entidades empresariais defendem cautela e pedem que o ajuste priorize corte de gastos públicos antes de rever incentivos."
+      },
+      "id": 2,
+      "imagem_url": null
+    }
+  ],
+  "gerado_em": "2026-09-12T08:00:00+00:00"
 }
