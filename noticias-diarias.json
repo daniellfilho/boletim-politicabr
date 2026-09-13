@@ -1,119 +1,196 @@
 {
   "noticias": [
     {
-      "categoria": "STF",
-      "fonte_nome": "Portal Claudio Oliveira / Gazeta do Povo",
-      "fonte_url": "https://www.portalclaudiooliveira.com/2026/09/o-tempo-fechou-fachin-vai-levar-para.html",
+      "categoria": "Eleições 2026",
+      "fonte_nome": "CNN Brasil",
+      "fonte_url": "https://www.cnnbrasil.com.br/politica/tse-forma-maioria-para-rejeitar-candidatura-de-pablo-marcal-a-presidencia/",
       "esquerda": {
-        "manchete": "Fachin leva ao plenário caso Moraes e reforça transparência do STF sob pressão golpista",
-        "resumo": "O presidente do STF decidiu levar ao plenário, com todos os ministros, o relatório da PF sobre supostas conversas entre Moraes e Vorcaro. Para defensores da Corte, o gesto mostra institucionalidade diante de ataques."
+        "manchete": "TSE barra Marçal por unanimidade e reforça regras contra candidatos inelegíveis",
+        "resumo": "Tribunal rejeitou a candidatura à Presidência por má-fé e irregularidade partidária, mostrando que a Justiça Eleitoral segue firme contra tentativas de burlar as regras democráticas."
       },
       "centro": {
-        "manchete": "Fachin assume relatoria e convoca sessão plenária sobre suposto envolvimento de Moraes com Vorcaro",
-        "resumo": "Edson Fachin suspendeu decisão de Mendonça, assumiu o inquérito das fake news e marcou sessão com todos os ministros para tratar do relatório da PF que menciona Moraes e o banqueiro investigado."
+        "manchete": "TSE rejeita por unanimidade candidatura de Pablo Marçal à Presidência",
+        "resumo": "Corte concluiu que Marçal não cumpriu o requisito de filiação partidária e está inelegível, retirando seu nome da urna e liberando o PRTB para indicar substituto."
       },
       "direita": {
-        "manchete": "Crise no STF: Fachin intervém após PF apontar suposta ligação de Moraes com banqueiro Vorcaro",
-        "resumo": "Fachin revogou a designação de Moraes para o inquérito das fake news e chamou sessão plenária, num episódio que expõe fissuras internas na cúpula do Judiciário e alimenta críticas sobre concentração de poder na Corte."
+        "direita_nota": "",
+        "manchete": "Justiça Eleitoral tira Marçal da disputa e reacende debate sobre excesso de poder das cortes",
+        "resumo": "TSE decidiu, por unanimidade, indeferir a candidatura de Marçal a poucas semanas da eleição, decisão que reabre discussão sobre os critérios usados pelos tribunais para vetar candidaturas."
       },
       "id": 1,
-      "imagem_url": null
+      "imagem_url": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/10/ATO20240924093-e1729728918162.jpg?w=1200&amp;h=630&amp;crop=1"
     },
     {
-      "categoria": "Congresso",
-      "fonte_nome": "Imirante.com",
-      "fonte_url": "https://m.imirante.com/noticias/brasil/2026/08/26/ipolitica-governo-e-congresso-acertam-pautas-para-esforco-de-votacao",
+      "categoria": "STF",
+      "fonte_nome": "O Imparcial",
+      "fonte_url": "https://oimparcial.com.br/noticias/2026/09/fachin-retira-moraes-da-relatoria-do-inquerito-das-fake-news",
       "esquerda": {
-        "manchete": "Lula articula com Congresso pauta que inclui PEC da Segurança Pública e cria Ministério da área",
-        "resumo": "Governo e Congresso definiram pauta de votações que inclui a PEC da Segurança Pública. Lula prometeu criar o Ministério da Segurança assim que o Senado aprovar o texto, fortalecendo a ação federal contra o crime organizado."
+        "manchete": "Fachin reorganiza inquérito das fake news em meio a disputa interna no STF",
+        "resumo": "Presidente do STF revogou a designação de Moraes ao caso após embates com Mendonça envolvendo o Banco Master, movimento visto por aliados como necessário para preservar a instituição."
       },
       "centro": {
-        "manchete": "Lula, Alcolumbre e Motta fecham pauta de votações com foco em segurança e tributação de datacenters",
-        "resumo": "Presidente e chefes do Legislativo acertaram esforço concentrado que inclui a PEC da Segurança Pública, o fim da escala 6x1 e o regime tributário para datacenters, temas que dividem opiniões no Congresso."
+        "manchete": "Fachin tira Moraes da relatoria do inquérito das fake news",
+        "resumo": "Decisão administrativa revoga a designação dada em 2019 e transfere o caso à presidência da Corte, em meio a atritos entre ministros sobre o caso Banco Master."
       },
       "direita": {
-        "manchete": "Congresso pauta PEC da Segurança e projeto tributário, mas fim da escala 6x1 preocupa setor produtivo",
-        "resumo": "Além da PEC da Segurança Pública, o pacote negociado por Lula com o Congresso inclui a polêmica PEC do fim da escala 6x1, vista por empresários como ameaça à competitividade e à geração de empregos."
+        "manchete": "Crise se aprofunda no STF e Fachin retira poderes de Moraes sobre inquérito polêmico",
+        "resumo": "Racha entre ministros expõe disputas internas na Corte, com Fachin revogando a condução de Moraes sobre o inquérito das fake news após embate com Mendonça."
       },
       "id": 2,
-      "imagem_url": "https://imagens.imirante.com.br/imagens/noticias/2025/12/04/bczOg2OD00FxdpR9NjViQloPFGtLBQItRIGMMZ3v.png?w=896&amp;h=448&amp;crop=582%2C+291%2C+0%2C+38&amp;fit=crop&amp;s=c10f2abdfdb21b75d06434413b9c6972"
+      "imagem_url": "https://oimparcial.com.br/app/uploads/2026/08/1_55368717700-7e925e234d-o-67166436.webp"
     },
     {
-      "categoria": "Economia",
-      "fonte_nome": "BM&C News",
-      "fonte_url": "https://bmcnews.com.br/economia/selic-2026-de-13-75-ao-ano-ate-onde-pode-cair/",
+      "categoria": "STF",
+      "fonte_nome": "Consultor Jurídico (Conjur)",
+      "fonte_url": "https://conjur.com.br/2026-ago-21/stf-retoma-em-setembro-julgamento-sobre-mudancas-na-lei-da-ficha-limpa/",
       "esquerda": {
-        "manchete": "Com inflação em queda, mercado prevê novo corte da Selic e alívio para trabalhadores",
-        "resumo": "A deflação do IPCA em agosto reforça as apostas de um novo corte de juros pelo Banco Central em setembro, o que pode baratear crédito e aquecer consumo das famílias mais pobres."
+        "manchete": "STF pode barrar afrouxamento da Lei Ficha Limpa aprovado pelo Congresso",
+        "resumo": "Com placar de 2 a 0 contra as mudanças, julgamento pode impedir que políticos condenados por improbidade voltem a disputar eleições em 2026."
       },
       "centro": {
-        "manchete": "Copom se reúne em setembro com expectativa de corte da Selic para 13,75% ao ano",
-        "resumo": "Após inflação abaixo do teto da meta, o mercado projeta novo corte de 0,25 ponto na Selic, atualmente em 14% ao ano, na reunião do Banco Central marcada para os dias 15 e 16 de setembro."
+        "manchete": "STF retoma julgamento sobre mudanças na Lei da Ficha Limpa",
+        "resumo": "Corte analisa se alterações que reduziram prazos de inelegibilidade são constitucionais, com decisão que pode afetar candidaturas como a de José Roberto Arruda."
       },
       "direita": {
-        "manchete": "Mesmo com sinal de corte, Selic segue em patamar elevado e cenário externo preocupa mercado",
-        "resumo": "Apesar da expectativa de novo corte de juros, analistas alertam que o cenário fiscal e as incertezas internacionais, como o petróleo e conflitos geopolíticos, podem limitar a queda da Selic nos próximos meses."
+        "manchete": "STF pode anular lei aprovada pelo Congresso e mudar regras da eleição na reta final",
+        "resumo": "Julgamento sobre a Lei da Ficha Limpa, com placar parcial contrário às mudanças legislativas, é criticado por interferir em norma já aprovada democraticamente pelo Parlamento."
       },
       "id": 3,
-      "imagem_url": "https://bmcnews.com.br/wp-content/uploads/2026/09/PORTAL-2026-09-11T154723.762.jpg"
+      "imagem_url": "https://conjur.com.br/wp-content/uploads/2026/05/manifestacao-ficha-limpa1.jpeg"
     },
     {
       "categoria": "Eleições 2026",
-      "fonte_nome": "Gazeta do Povo / G1 - Pesquisa Quaest",
-      "fonte_url": "https://pt.wikipedia.org/wiki/Pesquisas_de_opini%C3%A3o_para_a_elei%C3%A7%C3%A3o_presidencial_no_Brasil_em_2026",
+      "fonte_nome": "Gazeta do Povo",
+      "fonte_url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/datafolha-presidente-setembro-2026-2/",
       "esquerda": {
-        "manchete": "Pesquisa Quaest mostra Lula na liderança da corrida presidencial de 2026",
-        "resumo": "Levantamento Quaest aponta Lula com 37% das intenções de voto no primeiro turno, à frente de Flávio Bolsonaro, com 29%, em cenário de disputa concentrada nos dois principais nomes."
+        "manchete": "Lula mantém vantagem numérica sobre Flávio Bolsonaro em nova pesquisa Datafolha",
+        "resumo": "Levantamento mostra Lula à frente no segundo turno simulado, 46% a 44%, sinal de resistência do projeto popular mesmo sob forte polarização."
       },
       "centro": {
-        "manchete": "Quaest aponta Lula com 37% e Flávio Bolsonaro com 29% na disputa pela Presidência em 2026",
-        "resumo": "Nova pesquisa Quaest para o primeiro turno de 2026 mostra Lula à frente com 37%, seguido por Flávio Bolsonaro com 29%, Augusto Cury com 10% e demais candidatos com percentuais menores."
+        "manchete": "Datafolha mostra empate técnico entre Lula e Flávio Bolsonaro na corrida presidencial",
+        "resumo": "Pesquisa aponta 39% a 35% no primeiro turno estimulado e 46% a 44% no segundo turno, ambos dentro da margem de erro de dois pontos."
       },
       "direita": {
-        "manchete": "Flávio Bolsonaro consolida segundo lugar e reduz distância para Lula em nova pesquisa Quaest",
-        "resumo": "Levantamento Quaest mostra Flávio Bolsonaro como principal alternativa a Lula, com 29% das intenções de voto, representando a força do campo conservador mesmo com a inelegibilidade de Jair Bolsonaro."
+        "manchete": "Flávio Bolsonaro cola em Lula e pesquisa Datafolha mostra corrida acirrada",
+        "resumo": "Levantamento revela empate técnico entre governo e oposição, com Flávio Bolsonaro reduzindo distância tanto no primeiro quanto no segundo turno."
       },
       "id": 4,
-      "imagem_url": null
+      "imagem_url": "https://media.gazetadopovo.com.br/2026/09/10222655/pesquisa-presidente-2.png"
+    },
+    {
+      "categoria": "Economia",
+      "fonte_nome": "Gazeta Mercantil",
+      "fonte_url": "https://gazetamercantil.com/selic-setembro-2026-copom-corte-juros-1375",
+      "esquerda": {
+        "manchete": "Copom pode dar novo alívio aos juros e ajudar recuperação do poder de compra",
+        "resumo": "Comitê se reúne em setembro para decidir se reduz a Selic dos atuais 14% para 13,75%, movimento que tende a facilitar crédito para famílias e pequenos negócios."
+      },
+      "centro": {
+        "manchete": "Copom decide nesta semana se reduz Selic para 13,75% ao ano",
+        "resumo": "Mercado prevê corte de 0,25 ponto percentual, mas expectativa é de que os juros seguirão elevados até o fim de 2026, segundo o boletim Focus."
+      },
+      "direita": {
+        "manchete": "Mesmo com corte esperado, Selic seguirá alta e trava crescimento, avaliam analistas",
+        "resumo": "Copom pode reduzir juros para 13,75% nesta semana, mas projeções indicam que a taxa continuará em patamar elevado por tempo prolongado, pressionando investimentos."
+      },
+      "id": 5,
+      "imagem_url": "https://gazetamercantil.com/wp-content/uploads/2026/07/1783120817_Queda-da-Selic-ainda-nao-barateia-credito-especialista-explica-cenario.png"
     },
     {
       "categoria": "Segurança Pública",
-      "fonte_nome": "Agência Brasil",
-      "fonte_url": "https://agenciabrasil.ebc.com.br/radioagencia-nacional/geral/audio/2026-09/operacao-mira-nucleo-do-pcc-acusado-de-lavar-r-1-bilhao-em-sao-paulo",
+      "fonte_nome": "Baixada na Web",
+      "fonte_url": "https://baixadanaweb.wordpress.com/2026/09/11/caso-banco-master-vorcaro-deve-depor-a-pf-no-dia-15/",
       "esquerda": {
-        "manchete": "Polícia Civil de SP desmonta esquema do PCC que lavava R$ 1 bilhão em prefeituras e imóveis",
-        "resumo": "Operação Helmintos cumpriu mandados contra núcleo financeiro do PCC, com bloqueio de contas e sequestro de 29 imóveis, expondo a infiltração do crime organizado em setores públicos e privados."
+        "manchete": "Vorcaro deve depor à PF sobre rede de influência montada com autoridades",
+        "resumo": "Depoimento marcado para 15 de setembro busca esclarecer conexões do ex-banqueiro com o poder público no escândalo do Banco Master, incluindo ministros do STF."
       },
       "centro": {
-        "manchete": "Operação policial em SP mira núcleo do PCC suspeito de lavar R$ 1 bilhão do tráfico",
-        "resumo": "A Polícia Civil de São Paulo cumpriu mandados de prisão e busca contra operadores financeiros ligados ao PCC em quatro cidades, com bloqueio de bens e sequestro de dezenas de imóveis."
+        "manchete": "PF marca depoimento de Vorcaro para 15 de setembro no caso Banco Master",
+        "resumo": "Defesa do ex-banqueiro pode pedir novo adiamento; investigação apura fraudes financeiras e proximidade de Vorcaro com autoridades, incluindo ministros do STF."
       },
       "direita": {
-        "manchete": "Ação contra o PCC expõe avanço do crime organizado sobre economia e poder público em SP",
-        "resumo": "Operação Helmintos revelou rede do PCC lavando cerca de R$ 1 bilhão por meio de imóveis e testas de ferro, reforçando alertas sobre a necessidade de mais rigor no combate às facções."
+        "manchete": "Escândalo do Banco Master expõe proximidade de ministros do STF com banqueiro investigado",
+        "resumo": "Vorcaro, preso desde o fim de 2025, deve depor à PF em meio a revelações sobre contatos com Alexandre de Moraes e outras autoridades, alimentando crise institucional."
       },
-      "id": 5,
-      "imagem_url": "https://imagens.ebc.com.br/WGlbOAu02YwEdgPo_CQTAKSl6vI=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/09/03/operacao-civil-3-_copy.jpg?itok=mRCvvSM4"
+      "id": 6,
+      "imagem_url": "https://baixadanaweb.wordpress.com/wp-content/uploads/2026/09/sem-titulo-11-10.jpg"
+    },
+    {
+      "categoria": "Segurança Pública",
+      "fonte_nome": "Congresso em Foco",
+      "fonte_url": "https://www.congressoemfoco.com.br/noticia/113515/2026-deve-marcar-nova-onda-de-grandes-operacoes-policiais",
+      "esquerda": {
+        "manchete": "Megaoperações policiais no Rio elevam letalidade e reacendem debate sobre direitos humanos",
+        "resumo": "Ações de grande impacto contra facções criminosas ganham força eleitoral, mas organizações de direitos humanos alertam para o alto número de mortes nas comunidades."
+      },
+      "centro": {
+        "manchete": "Segurança pública vira tema central da disputa eleitoral no Rio de Janeiro",
+        "resumo": "Operações policiais de grande escala contra o Comando Vermelho dividem opiniões entre eficácia no combate ao crime e questionamentos sobre letalidade e direitos humanos."
+      },
+      "direita": {
+        "manchete": "Operações contra o Comando Vermelho têm ampla aprovação popular no Rio de Janeiro",
+        "resumo": "Pesquisa Atlas Intel mostra 62,2% de aprovação à ação policial contra o crime organizado, reforçando apoio da população a políticas de segurança mais duras."
+      },
+      "id": 7,
+      "imagem_url": "https://static.congressoemfoco.com.br/CONG_REDES_RETANGULAR/2025/11/03/81ee3f_CONG_REDES_RETANGULAR_MANUAL_CAPASSITE15.jpg"
     },
     {
       "categoria": "Política Externa",
-      "fonte_nome": "Poder360 / Correio Braziliense",
-      "fonte_url": "https://www.poder360.com.br/poder-governo/lula-liga-para-trump-e-diz-que-tarifas-contra-brasil-sao-infundadas/",
+      "fonte_nome": "Metrópoles",
+      "fonte_url": "https://www.metropoles.com/mundo/lula-desfalca-cupula-dos-brics-com-putin-e-xi-jinping-na-india",
       "esquerda": {
-        "manchete": "Lula pressiona Trump e classifica tarifas dos EUA contra o Brasil como infundadas",
-        "resumo": "Em ligação de mais de uma hora, Lula rebateu as sobretaxas americanas e defendeu a retomada das negociações, num esforço para proteger a soberania comercial brasileira frente ao protecionismo de Trump."
+        "manchete": "Lula prioriza discurso na ONU para defender soberania brasileira diante de interferência dos EUA",
+        "resumo": "Presidente vai a Nova York abrir a Assembleia-Geral da ONU e pode encontrar Trump, reafirmando defesa da democracia brasileira diante de pressões externas."
       },
       "centro": {
-        "manchete": "Lula e Trump conversam por telefone e concordam em retomar negociações sobre tarifas",
-        "resumo": "Em ligação de 1h20, Lula chamou de infundadas as tarifas dos EUA sobre produtos brasileiros; Trump concordou em preservar as relações comerciais e as equipes devem voltar a se reunir em breve."
+        "manchete": "Lula vai à ONU em setembro, mas abre mão da cúpula dos Brics por causa da campanha",
+        "resumo": "Presidente concentra agenda internacional em viagem única a Nova York; Brasil será representado no Brics pelo chanceler Mauro Vieira."
       },
       "direita": {
-        "manchete": "Após desgaste diplomático, Brasil busca reabrir negociação comercial com os EUA de Trump",
-        "resumo": "Lula telefonou a Trump para tentar reverter tarifas de até 50% sobre produtos brasileiros, em meio a uma crise bilateral que já afeta exportadores e a competitividade do país no comércio internacional."
+        "manchete": "Lula reduz agenda externa e falta a cúpula dos Brics para focar em campanha eleitoral",
+        "resumo": "Presidente evita compromissos internacionais importantes, como o encontro com líderes do Brics na Índia, priorizando a disputa pela reeleição."
       },
-      "id": 6,
-      "imagem_url": "https://static.poder360.com.br/uploads/2025/09/lula-trump-discursos-onu-ny.jpg"
+      "id": 8,
+      "imagem_url": null
+    },
+    {
+      "categoria": "Economia",
+      "fonte_nome": "Ministério da Fazenda / Agência Gov",
+      "fonte_url": "https://agenciagov.ebc.com.br/noticias/202609/governo-federal-apresenta-projeto-de-orcamento-de-2027-com-previsao-de-superavit-primario-de-r-18-6-bilhoes",
+      "esquerda": {
+        "manchete": "Governo prevê superávit em 2027 mesmo mantendo investimento em saúde e educação",
+        "resumo": "Projeto de orçamento aponta resultado positivo de R$ 18,6 bilhões, com recursos para saúde e educação acima do piso constitucional, segundo o Ministério da Fazenda."
+      },
+      "centro": {
+        "manchete": "Governo envia ao Congresso orçamento de 2027 com previsão de superávit primário",
+        "resumo": "Proposta prevê saldo positivo de R$ 18,6 bilhões após déficit estimado em 2026, apostando em crescimento do PIB acima da projeção de mercado."
+      },
+      "direita": {
+        "manchete": "Governo aposta em crescimento otimista do PIB para fechar contas de 2027 no azul",
+        "resumo": "Previsão de superávit depende de expansão de 2,46% da economia, acima da estimativa de mercado, o que gera dúvidas sobre a real sustentabilidade fiscal do plano."
+      },
+      "id": 9,
+      "imagem_url": "https://agenciagov.ebc.com.br/noticias/202609/governo-federal-apresenta-projeto-de-orcamento-de-2027-com-previsao-de-superavit-primario-de-r-18-6-bilhoes/@@download/image/_raf1006_1.webp"
+    },
+    {
+      "categoria": "Congresso",
+      "fonte_nome": "Jornal Grande Bahia",
+      "fonte_url": "https://jornalgrandebahia.com.br/2026/09/camara-dos-deputados-aprova-excecoes-as-regras-fiscais-para-beneficios-e-despesas-de-2026-texto-segue-para-sancao-presidencial/",
+      "esquerda": {
+        "manchete": "Câmara aprova incentivos a data centers condicionados a metas fiscais e sociais",
+        "resumo": "Projeto libera benefícios tributários para o setor de tecnologia, saúde e municípios pequenos, mas exige compatibilidade com a meta de resultado primário do governo."
+      },
+      "centro": {
+        "manchete": "Câmara aprova exceções a regras fiscais para beneficiar data centers e outros setores",
+        "resumo": "Texto aprovado por 346 votos cria brechas para incentivos tributários em 2026, condicionadas à previsão orçamentária e ao cumprimento da meta fiscal."
+      },
+      "direita": {
+        "manchete": "Congresso amplia renúncia fiscal para data centers em meio a alerta sobre gastos públicos",
+        "resumo": "Projeto aprovado pela Câmara abre exceções às regras fiscais de 2026, com estimativa de renúncia tributária bilionária que preocupa quem defende maior disciplina de gastos."
+      },
+      "id": 10,
+      "imagem_url": "https://i0.wp.com/jornalgrandebahia.com.br/wp-content/uploads/2026/09/excecoes-as-regras-fiscais-de-2026-20260904.jpg?fit=1200%2C800&quality=30&ssl=1"
     }
   ],
-  "gerado_em": "2026-09-13T08:11:53.015202+00:00"
+  "gerado_em": "2026-09-13T14:43:19.906255+00:00"
 }
