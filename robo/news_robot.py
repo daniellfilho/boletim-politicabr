@@ -118,14 +118,20 @@ def extrair_imagem_da_pagina(url: str) -> str | None:
 def gerar_feed_do_dia() -> dict:
     client = anthropic.Anthropic()  # usa ANTHROPIC_API_KEY do ambiente
 
-    response = client.messages.create(
+    # Modo streaming: obrigatorio quando a resposta pode demorar mais de
+    # 10 minutos (nosso caso, com 10 noticias + varias buscas na web).
+    with client.messages.stream(
         model=MODEL,
         max_tokens=24000,
         thinking={"type": "disabled"},
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": USER_PROMPT}],
         tools=[{"type": "web_search_20250305", "name": "web_search"}],
-    )
+    ) as stream:
+        for evento in stream:
+            if evento.type == "content_block_start":
+                print(f"[DEBUG] Bloco iniciado: {evento.content_block.type}", file=sys.stderr)
+        response = stream.get_final_message()
 
     print(f"[DEBUG] stop_reason: {response.stop_reason}", file=sys.stderr)
 
