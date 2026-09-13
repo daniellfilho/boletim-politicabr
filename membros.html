@@ -14,6 +14,57 @@
     gap: 12px;
   }
 
+  /* ===================== Faixas laterais decorativas (só em telas largas) ===================== */
+  .side-rail {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 190px;
+    overflow: hidden;
+    z-index: 1;
+    display: none;
+    background: #061320;
+  }
+  .side-rail.rail-left { left: 0; }
+  .side-rail.rail-right { right: 0; }
+  .side-rail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    filter: grayscale(8%);
+  }
+  .side-rail.rail-left::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(6, 19, 32, 0) 45%, rgba(6, 19, 32, 0.55) 80%, rgba(6, 19, 32, 0.95) 100%);
+  }
+  .side-rail.rail-right::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(270deg, rgba(6, 19, 32, 0) 45%, rgba(6, 19, 32, 0.55) 80%, rgba(6, 19, 32, 0.95) 100%);
+  }
+  .side-rail-tag {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 2;
+  }
+  @media (min-width: 1180px) {
+    .side-rail { display: block; }
+  }
+
   /* Menu do usuário no canto direito do header */
   .user-menu-wrap {
     position: relative;
@@ -299,6 +350,17 @@
 </head>
 <body>
 
+<!-- Faixas laterais decorativas - só aparecem em telas largas, com foto
+     ligada ao perfil político do assinante logado -->
+<div class="side-rail rail-left" id="side-rail-left" style="display:none;">
+  <img id="side-rail-left-img" src="" alt="">
+  <span class="side-rail-tag" id="side-rail-left-tag"></span>
+</div>
+<div class="side-rail rail-right" id="side-rail-right" style="display:none;">
+  <img id="side-rail-right-img" src="" alt="">
+  <span class="side-rail-tag" id="side-rail-right-tag"></span>
+</div>
+
 <!-- ========================= CABEÇALHO DA MARCA ========================= -->
 <header class="site-header">
   <div class="header-inner membros-header-inner">
@@ -513,6 +575,39 @@
     btnEntrarHeader.style.display = 'inline-block';
   }
 
+  // Fotos de figuras políticas associadas a cada perfil, para as faixas laterais
+  const FIGURAS_POR_LADO = {
+    esquerda: [
+      { src: 'assets/images/candidatos/lula.png', tag: 'ESQUERDA' },
+      { src: 'assets/images/candidatos/lula-perfil.png', tag: 'ESQUERDA' },
+    ],
+    direita: [
+      { src: 'assets/images/candidatos/flavio-bolsonaro-perfil.png', tag: 'DIREITA' },
+      { src: 'https://commons.wikimedia.org/wiki/Special:FilePath/Nikolas%20Ferreira%20in%202023%20(cropped).jpg?width=400', tag: 'DIREITA' },
+    ],
+    centro: [
+      { src: 'assets/images/candidatos/lula-perfil.png', tag: 'ESQUERDA' },
+      { src: 'assets/images/candidatos/flavio-bolsonaro-perfil.png', tag: 'DIREITA' },
+    ],
+  };
+
+  function ativarFaixasLaterais(lado) {
+    const figuras = FIGURAS_POR_LADO[lado];
+    const railLeft = document.getElementById('side-rail-left');
+    const railRight = document.getElementById('side-rail-right');
+    if (!figuras) {
+      railLeft.style.display = 'none';
+      railRight.style.display = 'none';
+      return;
+    }
+    document.getElementById('side-rail-left-img').src = figuras[0].src;
+    document.getElementById('side-rail-left-tag').textContent = figuras[0].tag;
+    document.getElementById('side-rail-right-img').src = figuras[1].src;
+    document.getElementById('side-rail-right-tag').textContent = figuras[1].tag;
+    railLeft.style.display = 'block';
+    railRight.style.display = 'block';
+  }
+
   document.getElementById('menu-sair').addEventListener('click', () => {
     document.cookie = 'boletim_session=; Path=/; Max-Age=0';
     window.location.reload();
@@ -531,6 +626,7 @@
         loginWrap.style.display = 'none';
         jornalWrap.style.display = 'block';
         ativarMenuLogado(data.email);
+        ativarFaixasLaterais(data.perfil);
         carregarFeed(data.perfil);
       } else {
         ativarMenuDeslogado();
