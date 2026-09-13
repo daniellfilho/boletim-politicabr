@@ -3,11 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Área de Membros — Boletim PoliticaBR</title>
+<title>Seu Boletim — Boletim PoliticaBR</title>
 <link rel="stylesheet" href="assets/css/style.css">
 <style>
   .membros-wrap {
-    max-width: 480px;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+  .membros-login-wrap {
+    max-width: 440px;
     margin: 60px auto;
     padding: 0 20px;
   }
@@ -36,6 +41,7 @@
     color: var(--text-pure);
     font-size: 1rem;
     margin-bottom: 14px;
+    box-sizing: border-box;
   }
   .membros-btn {
     width: 100%;
@@ -54,40 +60,116 @@
     font-size: 0.9rem;
     color: var(--text-main);
   }
-  .membros-tabs {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 18px;
-  }
-  .membros-tab {
-    flex: 1;
-    padding: 8px;
+
+  /* Cabeçalho do jornal */
+  .jornal-header {
     text-align: center;
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--border-medium);
-    background: var(--bg-surface);
-    color: var(--text-muted);
-    font-size: 0.8rem;
-    font-weight: 700;
-    cursor: pointer;
+    margin-bottom: 8px;
   }
-  .membros-tab.active {
-    background: var(--gold-primary);
+  .jornal-data {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .jornal-perfil-tag {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: var(--radius-full);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 12px 0 28px;
+    color: #fff;
+  }
+  .tag-perfil-esquerda { background: rgba(220, 38, 38, 0.85); }
+  .tag-perfil-centro {
+    background: linear-gradient(90deg, rgba(220, 38, 38, 0.85) 0%, var(--gold-primary) 50%, rgba(29, 78, 216, 0.85) 100%);
     color: var(--text-dark);
-    border-color: var(--gold-primary);
   }
-  .membros-headline {
-    color: var(--text-pure);
-    font-size: 1.25rem;
+  .tag-perfil-direita { background: rgba(29, 78, 216, 0.85); }
+
+  /* Cards de matéria */
+  .materia-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    margin-bottom: 22px;
+    box-shadow: var(--shadow-card);
+  }
+  .materia-imagem {
+    width: 100%;
+    height: 190px;
+    background: var(--bg-surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .materia-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .materia-imagem .placeholder-icon {
+    font-size: 2.4rem;
+    opacity: 0.35;
+  }
+  .materia-corpo {
+    padding: 18px 20px 20px;
+  }
+  .materia-categoria {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    background: var(--gold-soft);
+    border: 1px solid var(--border-gold);
+    padding: 3px 10px;
+    border-radius: var(--radius-full);
     margin-bottom: 10px;
   }
-  .membros-resumo {
+  .materia-titulo {
+    color: var(--text-pure);
+    font-size: 1.1rem;
+    line-height: 1.35;
+    margin-bottom: 8px;
+  }
+  .materia-resumo {
     color: var(--text-main);
+    font-size: 0.92rem;
+    line-height: 1.55;
+    margin-bottom: 12px;
+  }
+  .materia-fonte {
+    font-size: 0.76rem;
+    color: var(--text-dim);
+    text-decoration: none;
+  }
+  .materia-fonte:hover { text-decoration: underline; }
+
+  .membros-sem-perfil {
+    color: var(--text-muted);
     line-height: 1.6;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .membros-sem-perfil a {
+    color: var(--gold-primary);
+    font-weight: 700;
   }
   .membros-sair {
-    display: inline-block;
-    margin-top: 22px;
+    display: block;
+    text-align: center;
+    margin-top: 12px;
     color: var(--text-dim);
     font-size: 0.8rem;
     cursor: pointer;
@@ -97,40 +179,41 @@
 </head>
 <body>
 
-<div class="membros-wrap">
-
-  <!-- Estado: NÃO logado (formulário de e-mail) -->
-  <div class="membros-card" id="login-card">
+<!-- Estado: NÃO logado (formulário de e-mail) -->
+<div class="membros-login-wrap" id="login-wrap">
+  <div class="membros-card">
     <h2>Área de Membros</h2>
     <p>Digite o e-mail que você usou na assinatura. Vamos te enviar um link de acesso.</p>
     <input type="email" id="login-email" class="membros-input" placeholder="seu@email.com" required>
     <button id="login-btn" class="membros-btn">Enviar link de acesso</button>
     <p class="membros-msg" id="login-msg"></p>
   </div>
+</div>
 
-  <!-- Estado: logado (conteúdo do assinante) -->
-  <div class="membros-card" id="content-card" style="display:none;">
-    <h2>Boletim do dia</h2>
-    <p id="pauta-do-dia" style="color: var(--text-muted); font-size: 0.85rem;"></p>
-
-    <div class="membros-tabs">
-      <div class="membros-tab" data-lado="esquerda">Esquerda</div>
-      <div class="membros-tab active" data-lado="centro">Centro</div>
-      <div class="membros-tab" data-lado="direita">Direita</div>
+<!-- Estado: logado (o jornal de verdade) -->
+<div class="membros-wrap" id="jornal-wrap" style="display:none;">
+  <div class="jornal-header">
+    <div class="jornal-data" id="jornal-data"></div>
+    <div>
+      <span class="jornal-perfil-tag" id="perfil-tag"></span>
     </div>
-
-    <h3 class="membros-headline" id="content-headline">Carregando...</h3>
-    <p class="membros-resumo" id="content-resumo"></p>
-
-    <span class="membros-sair" id="logout-link">sair da conta</span>
   </div>
 
+  <div id="lista-materias"></div>
+
+  <div id="sem-perfil" class="membros-sem-perfil" style="display:none;">
+    <p>Ainda não identificamos seu perfil político. Faça o diagnóstico rápido
+    para liberar sua edição personalizada:</p>
+    <p><a href="/index.html">Fazer o diagnóstico agora →</a></p>
+  </div>
+
+  <span class="membros-sair" id="logout-link">sair da conta</span>
 </div>
 
 <script>
 (function () {
-  const loginCard = document.getElementById('login-card');
-  const contentCard = document.getElementById('content-card');
+  const loginWrap = document.getElementById('login-wrap');
+  const jornalWrap = document.getElementById('jornal-wrap');
   const loginBtn = document.getElementById('login-btn');
   const loginEmail = document.getElementById('login-email');
   const loginMsg = document.getElementById('login-msg');
@@ -156,45 +239,86 @@
     }
   });
 
-  let feedDoDia = null;
+  const LABELS_PERFIL = { esquerda: 'Esquerda', centro: 'Centro', direita: 'Direita' };
+  const ICONES_CATEGORIA = '📰';
 
-  function renderLado(lado) {
-    document.querySelectorAll('.membros-tab').forEach((tab) => {
-      tab.classList.toggle('active', tab.dataset.lado === lado);
+  function renderJornal(lado, feed) {
+    const listaEl = document.getElementById('lista-materias');
+    const semPerfil = document.getElementById('sem-perfil');
+    const perfilTag = document.getElementById('perfil-tag');
+
+    if (!lado || !feed || !Array.isArray(feed.noticias) || feed.noticias.length === 0) {
+      listaEl.style.display = 'none';
+      perfilTag.style.display = 'none';
+      semPerfil.style.display = 'block';
+      return;
+    }
+
+    perfilTag.style.display = 'inline-block';
+    perfilTag.textContent = 'SEU PERFIL: ' + (LABELS_PERFIL[lado] || lado).toUpperCase();
+    perfilTag.className = 'jornal-perfil-tag tag-perfil-' + lado;
+
+    const dataFormatada = feed.gerado_em
+      ? new Date(feed.gerado_em).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })
+      : '';
+    document.getElementById('jornal-data').textContent = dataFormatada ? 'Edição de ' + dataFormatada : '';
+
+    listaEl.innerHTML = '';
+    feed.noticias.forEach((noticia) => {
+      const versao = noticia[lado];
+      if (!versao) return;
+
+      const card = document.createElement('article');
+      card.className = 'materia-card';
+
+      const imagemHtml = noticia.imagem_url
+        ? `<img src="${noticia.imagem_url}" alt="${versao.manchete}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'placeholder-icon',textContent:'${ICONES_CATEGORIA}'}))">`
+        : `<span class="placeholder-icon">${ICONES_CATEGORIA}</span>`;
+
+      const fonteHtml = noticia.fonte_url
+        ? `<a class="materia-fonte" href="${noticia.fonte_url}" target="_blank" rel="noopener noreferrer">Fonte: ${noticia.fonte_nome || 'ver matéria original'} →</a>`
+        : '';
+
+      card.innerHTML = `
+        <div class="materia-imagem">${imagemHtml}</div>
+        <div class="materia-corpo">
+          <span class="materia-categoria">${noticia.categoria || 'Política'}</span>
+          <h3 class="materia-titulo">${versao.manchete}</h3>
+          <p class="materia-resumo">${versao.resumo}</p>
+          ${fonteHtml}
+        </div>
+      `;
+      listaEl.appendChild(card);
     });
-    if (!feedDoDia || !feedDoDia[lado]) return;
-    document.getElementById('content-headline').textContent = feedDoDia[lado].manchete;
-    document.getElementById('content-resumo').textContent = feedDoDia[lado].resumo;
+
+    listaEl.style.display = 'block';
+    semPerfil.style.display = 'none';
   }
 
-  async function carregarFeed() {
+  async function carregarFeed(lado) {
     try {
       const res = await fetch('noticias-diarias.json', { cache: 'no-store' });
-      feedDoDia = await res.json();
-      document.getElementById('pauta-do-dia').textContent = 'Pauta de hoje: ' + (feedDoDia.pauta_do_dia || '');
-      renderLado('centro');
+      const feed = await res.json();
+      renderJornal(lado, feed);
     } catch (err) {
-      document.getElementById('content-headline').textContent = 'Não foi possível carregar a edição de hoje.';
+      document.getElementById('lista-materias').innerHTML =
+        '<p style="color:var(--text-muted);text-align:center;">Não foi possível carregar a edição de hoje.</p>';
     }
   }
-
-  document.querySelectorAll('.membros-tab').forEach((tab) => {
-    tab.addEventListener('click', () => renderLado(tab.dataset.lado));
-  });
 
   document.getElementById('logout-link').addEventListener('click', () => {
     document.cookie = 'boletim_session=; Path=/; Max-Age=0';
     window.location.reload();
   });
 
-  // Ao carregar a página, confere se já existe sessão válida
+  // Ao carregar a página, confere se já existe sessão válida e ativa
   fetch('/api/check-session')
     .then((res) => res.json())
     .then((data) => {
       if (data.authenticated) {
-        loginCard.style.display = 'none';
-        contentCard.style.display = 'block';
-        carregarFeed();
+        loginWrap.style.display = 'none';
+        jornalWrap.style.display = 'block';
+        carregarFeed(data.perfil);
       }
     })
     .catch(() => {});
