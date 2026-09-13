@@ -2,118 +2,118 @@
   "noticias": [
     {
       "categoria": "STF",
-      "fonte_nome": "CNN Portugal / Gazeta do Povo",
-      "fonte_url": "https://cnnportugal.iol.pt/brasil/supremo-tribunal-federal/supremo-tribunal-brasileiro-ja-tem-data-para-julgar-abertura-de-investigacao-contra-alexandre-de-moraes/20260910/6aa1ddbcd34e511da0b37ce4",
+      "fonte_nome": "Portal Claudio Oliveira / Gazeta do Povo",
+      "fonte_url": "https://www.portalclaudiooliveira.com/2026/09/o-tempo-fechou-fachin-vai-levar-para.html",
       "esquerda": {
-        "manchete": "STF marca sessão sobre investigação a Moraes em meio a ataques da direita à Corte",
-        "resumo": "Fachin convocou sessão extraordinária para terça-feira sobre apuração envolvendo Moraes e o banqueiro Daniel Vorcaro, alvo de artigos golpistas que tentam desmoralizar o Supremo."
+        "manchete": "Fachin leva ao plenário caso Moraes e reforça transparência do STF sob pressão golpista",
+        "resumo": "O presidente do STF decidiu levar ao plenário, com todos os ministros, o relatório da PF sobre supostas conversas entre Moraes e Vorcaro. Para defensores da Corte, o gesto mostra institucionalidade diante de ataques."
       },
       "centro": {
-        "manchete": "STF vai decidir na terça-feira se investiga ou arquiva caso Moraes-Vorcaro",
-        "resumo": "Sessão extraordinária marcada por Fachin analisará relatório da PF sobre contatos entre Moraes e o banqueiro Daniel Vorcaro; caso envolvendo Mendonça foi separado para 23 de setembro."
+        "manchete": "Fachin assume relatoria e convoca sessão plenária sobre suposto envolvimento de Moraes com Vorcaro",
+        "resumo": "Edson Fachin suspendeu decisão de Mendonça, assumiu o inquérito das fake news e marcou sessão com todos os ministros para tratar do relatório da PF que menciona Moraes e o banqueiro investigado."
       },
       "direita": {
-        "manchete": "Sob pressão, STF finalmente terá que julgar se investiga Alexandre de Moraes",
-        "resumo": "Após revelações da PF sobre encontros e mensagens entre Moraes e o banqueiro Vorcaro, Corte marcou sessão para decidir se abre investigação contra o ministro."
+        "manchete": "Crise no STF: Fachin intervém após PF apontar suposta ligação de Moraes com banqueiro Vorcaro",
+        "resumo": "Fachin revogou a designação de Moraes para o inquérito das fake news e chamou sessão plenária, num episódio que expõe fissuras internas na cúpula do Judiciário e alimenta críticas sobre concentração de poder na Corte."
       },
       "id": 1,
-      "imagem_url": "https://img.iol.pt/preset/68b6eeb1d34ef72ee44a11a5/og/cnn"
+      "imagem_url": null
     },
     {
-      "categoria": "Eleições 2026",
-      "fonte_nome": "Gazeta do Povo",
-      "fonte_url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/datafolha-presidente-setembro-2026-2/",
+      "categoria": "Congresso",
+      "fonte_nome": "Imirante.com",
+      "fonte_url": "https://m.imirante.com/noticias/brasil/2026/08/26/ipolitica-governo-e-congresso-acertam-pautas-para-esforco-de-votacao",
       "esquerda": {
-        "manchete": "Lula mantém vantagem sobre Flávio Bolsonaro em novo Datafolha",
-        "resumo": "Pesquisa mostra Lula à frente no primeiro turno e no segundo turno contra Flávio Bolsonaro, sinal de que o projeto popular resiste apesar do cenário adverso."
+        "manchete": "Lula articula com Congresso pauta que inclui PEC da Segurança Pública e cria Ministério da área",
+        "resumo": "Governo e Congresso definiram pauta de votações que inclui a PEC da Segurança Pública. Lula prometeu criar o Ministério da Segurança assim que o Senado aprovar o texto, fortalecendo a ação federal contra o crime organizado."
       },
       "centro": {
-        "manchete": "Datafolha mostra Lula e Flávio Bolsonaro em empate técnico na disputa presidencial",
-        "resumo": "Pesquisa aponta 39% a 35% no primeiro turno e 46% a 44% no segundo turno, ambos dentro da margem de erro de dois pontos percentuais."
+        "manchete": "Lula, Alcolumbre e Motta fecham pauta de votações com foco em segurança e tributação de datacenters",
+        "resumo": "Presidente e chefes do Legislativo acertaram esforço concentrado que inclui a PEC da Segurança Pública, o fim da escala 6x1 e o regime tributário para datacenters, temas que dividem opiniões no Congresso."
       },
       "direita": {
-        "manchete": "Flávio Bolsonaro reduz distância e empata tecnicamente com Lula, aponta Datafolha",
-        "resumo": "Nova pesquisa mostra oposição avançando e diminuindo a vantagem do governo, com resultado dentro da margem de erro tanto no primeiro quanto no segundo turno."
+        "manchete": "Congresso pauta PEC da Segurança e projeto tributário, mas fim da escala 6x1 preocupa setor produtivo",
+        "resumo": "Além da PEC da Segurança Pública, o pacote negociado por Lula com o Congresso inclui a polêmica PEC do fim da escala 6x1, vista por empresários como ameaça à competitividade e à geração de empregos."
       },
       "id": 2,
-      "imagem_url": "https://media.gazetadopovo.com.br/2026/09/10222655/pesquisa-presidente-2.png"
+      "imagem_url": "https://imagens.imirante.com.br/imagens/noticias/2025/12/04/bczOg2OD00FxdpR9NjViQloPFGtLBQItRIGMMZ3v.png?w=896&amp;h=448&amp;crop=582%2C+291%2C+0%2C+38&amp;fit=crop&amp;s=c10f2abdfdb21b75d06434413b9c6972"
     },
     {
       "categoria": "Economia",
       "fonte_nome": "BM&C News",
       "fonte_url": "https://bmcnews.com.br/economia/selic-2026-de-13-75-ao-ano-ate-onde-pode-cair/",
       "esquerda": {
-        "manchete": "Com deflação e queda da inflação, Copom deve cortar juros e aliviar o bolso do trabalhador",
-        "resumo": "IPCA de agosto teve deflação e inflação anual recuou para 4,22%, abrindo espaço para novo corte da Selic que pode baratear crédito para famílias e pequenos negócios."
+        "manchete": "Com inflação em queda, mercado prevê novo corte da Selic e alívio para trabalhadores",
+        "resumo": "A deflação do IPCA em agosto reforça as apostas de um novo corte de juros pelo Banco Central em setembro, o que pode baratear crédito e aquecer consumo das famílias mais pobres."
       },
       "centro": {
-        "manchete": "Copom decide nesta semana se reduz Selic de 14% para 13,75% ao ano",
-        "resumo": "Deflação de agosto reforça expectativa de corte de 0,25 ponto, mas Banco Central mantém cautela diante de juros altos nos EUA e pressão sobre moedas emergentes."
+        "manchete": "Copom se reúne em setembro com expectativa de corte da Selic para 13,75% ao ano",
+        "resumo": "Após inflação abaixo do teto da meta, o mercado projeta novo corte de 0,25 ponto na Selic, atualmente em 14% ao ano, na reunião do Banco Central marcada para os dias 15 e 16 de setembro."
       },
       "direita": {
-        "manchete": "Mesmo com possível corte, Selic deve seguir em patamar elevado até o fim de 2026",
-        "resumo": "Apesar da queda da inflação, mercado projeta Selic ainda em 13,75% ao ano em dezembro, refletindo cautela fiscal necessária diante do endividamento público."
+        "manchete": "Mesmo com sinal de corte, Selic segue em patamar elevado e cenário externo preocupa mercado",
+        "resumo": "Apesar da expectativa de novo corte de juros, analistas alertam que o cenário fiscal e as incertezas internacionais, como o petróleo e conflitos geopolíticos, podem limitar a queda da Selic nos próximos meses."
       },
       "id": 3,
       "imagem_url": "https://bmcnews.com.br/wp-content/uploads/2026/09/PORTAL-2026-09-11T154723.762.jpg"
     },
     {
-      "categoria": "Congresso",
-      "fonte_nome": "Blog Marcos Almeida",
-      "fonte_url": "https://marcosalmeidalocutor.wordpress.com/2026/09/02/camara-aprova-projeto-que-reduz-tempo-de-trabalho-militar-de-pms-e-bombeiros-para-aposentadoria/",
+      "categoria": "Eleições 2026",
+      "fonte_nome": "Gazeta do Povo / G1 - Pesquisa Quaest",
+      "fonte_url": "https://pt.wikipedia.org/wiki/Pesquisas_de_opini%C3%A3o_para_a_elei%C3%A7%C3%A3o_presidencial_no_Brasil_em_2026",
       "esquerda": {
-        "manchete": "Câmara aprova reparação a PMs e bombeiros prejudicados pela reforma da Previdência de Bolsonaro",
-        "resumo": "Projeto reduz tempo mínimo de trabalho militar para aposentadoria de policiais e bombeiros, medida vista por parlamentares como resgate de direitos perdidos em 2019."
+        "manchete": "Pesquisa Quaest mostra Lula na liderança da corrida presidencial de 2026",
+        "resumo": "Levantamento Quaest aponta Lula com 37% das intenções de voto no primeiro turno, à frente de Flávio Bolsonaro, com 29%, em cenário de disputa concentrada nos dois principais nomes."
       },
       "centro": {
-        "manchete": "Câmara aprova redução do tempo de serviço militar para aposentadoria de PMs e bombeiros",
-        "resumo": "Texto aprovado em votação simbólica reduz de 30 para 25 anos o tempo mínimo de atividade militar exigido e segue agora para análise do Senado."
+        "manchete": "Quaest aponta Lula com 37% e Flávio Bolsonaro com 29% na disputa pela Presidência em 2026",
+        "resumo": "Nova pesquisa Quaest para o primeiro turno de 2026 mostra Lula à frente com 37%, seguido por Flávio Bolsonaro com 29%, Augusto Cury com 10% e demais candidatos com percentuais menores."
       },
       "direita": {
-        "manchete": "Câmara aprova nova regra de aposentadoria para PMs e bombeiros sem aumento de despesa",
-        "resumo": "Proposta aprovada com apoio da base governista e da oposição reduz exigência de tempo militar efetivo, mantendo 35 anos totais de serviço e sem impacto fiscal, segundo o texto."
+        "manchete": "Flávio Bolsonaro consolida segundo lugar e reduz distância para Lula em nova pesquisa Quaest",
+        "resumo": "Levantamento Quaest mostra Flávio Bolsonaro como principal alternativa a Lula, com 29% das intenções de voto, representando a força do campo conservador mesmo com a inelegibilidade de Jair Bolsonaro."
       },
       "id": 4,
-      "imagem_url": "https://marcosalmeidalocutor.wordpress.com/wp-content/uploads/2026/09/image-19.png"
+      "imagem_url": null
     },
     {
       "categoria": "Segurança Pública",
       "fonte_nome": "Agência Brasil",
       "fonte_url": "https://agenciabrasil.ebc.com.br/radioagencia-nacional/geral/audio/2026-09/operacao-mira-nucleo-do-pcc-acusado-de-lavar-r-1-bilhao-em-sao-paulo",
       "esquerda": {
-        "manchete": "Operação em SP mira núcleo do PCC acusado de infiltrar poder público e lavar R$ 1 bilhão",
-        "resumo": "Ação da Polícia Civil bloqueia contas e sequestra 29 imóveis, expondo como o crime organizado tenta capturar Executivo e Legislativo municipais para se fortalecer."
+        "manchete": "Polícia Civil de SP desmonta esquema do PCC que lavava R$ 1 bilhão em prefeituras e imóveis",
+        "resumo": "Operação Helmintos cumpriu mandados contra núcleo financeiro do PCC, com bloqueio de contas e sequestro de 29 imóveis, expondo a infiltração do crime organizado em setores públicos e privados."
       },
       "centro": {
-        "manchete": "Polícia Civil de SP faz operação contra núcleo do PCC suspeito de lavar R$ 1 bilhão",
-        "resumo": "Ação cumpre mandados, bloqueia contas e sequestra 29 imóveis; investigação aponta tentativa da facção de ampliar influência sobre Executivo e Legislativo municipais."
+        "manchete": "Operação policial em SP mira núcleo do PCC suspeito de lavar R$ 1 bilhão do tráfico",
+        "resumo": "A Polícia Civil de São Paulo cumpriu mandados de prisão e busca contra operadores financeiros ligados ao PCC em quatro cidades, com bloqueio de bens e sequestro de dezenas de imóveis."
       },
       "direita": {
-        "manchete": "Operação expõe avanço do PCC sobre política municipal e lavagem de R$ 1 bilhão em SP",
-        "resumo": "Polícia Civil bloqueia contas e sequestra 29 imóveis ao investigar núcleo financeiro da facção, que teria buscado influenciar prefeituras e câmaras municipais."
+        "manchete": "Ação contra o PCC expõe avanço do crime organizado sobre economia e poder público em SP",
+        "resumo": "Operação Helmintos revelou rede do PCC lavando cerca de R$ 1 bilhão por meio de imóveis e testas de ferro, reforçando alertas sobre a necessidade de mais rigor no combate às facções."
       },
       "id": 5,
       "imagem_url": "https://imagens.ebc.com.br/WGlbOAu02YwEdgPo_CQTAKSl6vI=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/09/03/operacao-civil-3-_copy.jpg?itok=mRCvvSM4"
     },
     {
       "categoria": "Política Externa",
-      "fonte_nome": "Diário do Grande ABC",
-      "fonte_url": "https://www.dgabc.com.br/Noticia/4346347/eduardo-bolsonaro-diz-que-ira-a-washington-discutir-lei-magnitsky-contra-alexandre-de-moraes",
+      "fonte_nome": "Poder360 / Correio Braziliense",
+      "fonte_url": "https://www.poder360.com.br/poder-governo/lula-liga-para-trump-e-diz-que-tarifas-contra-brasil-sao-infundadas/",
       "esquerda": {
-        "manchete": "Eduardo Bolsonaro vai aos EUA articular sanções contra ministro do STF brasileiro",
-        "resumo": "Filho do ex-presidente, foragido em Washington, planeja pedir a retomada da Lei Magnitsky contra Moraes, numa tentativa de usar pressão estrangeira contra a soberania judicial brasileira."
+        "manchete": "Lula pressiona Trump e classifica tarifas dos EUA contra o Brasil como infundadas",
+        "resumo": "Em ligação de mais de uma hora, Lula rebateu as sobretaxas americanas e defendeu a retomada das negociações, num esforço para proteger a soberania comercial brasileira frente ao protecionismo de Trump."
       },
       "centro": {
-        "manchete": "Eduardo Bolsonaro anuncia viagem aos EUA para tratar de sanções contra Moraes",
-        "resumo": "O ex-deputado disse que discutirá a retomada da Lei Magnitsky contra o ministro do STF, ligando o tema à disputa presidencial de 2026 e à crise em torno do caso Vorcaro."
+        "manchete": "Lula e Trump conversam por telefone e concordam em retomar negociações sobre tarifas",
+        "resumo": "Em ligação de 1h20, Lula chamou de infundadas as tarifas dos EUA sobre produtos brasileiros; Trump concordou em preservar as relações comerciais e as equipes devem voltar a se reunir em breve."
       },
       "direita": {
-        "manchete": "Eduardo Bolsonaro busca em Washington nova sanção contra Moraes após crise no STF",
-        "resumo": "Ex-deputado afirma que irá aos EUA discutir a retomada da Lei Magnitsky contra o ministro, citando abusos que teriam ficado evidentes com o caso Vorcaro."
+        "manchete": "Após desgaste diplomático, Brasil busca reabrir negociação comercial com os EUA de Trump",
+        "resumo": "Lula telefonou a Trump para tentar reverter tarifas de até 50% sobre produtos brasileiros, em meio a uma crise bilateral que já afeta exportadores e a competitividade do país no comércio internacional."
       },
       "id": 6,
-      "imagem_url": "https://www.dgabc.com.br/content/themes/dgabc2017/imagens/logo_dgabc_facebook.jpg"
+      "imagem_url": "https://static.poder360.com.br/uploads/2025/09/lula-trump-discursos-onu-ny.jpg"
     }
   ],
-  "gerado_em": "2026-09-13T01:50:34.057329+00:00"
+  "gerado_em": "2026-09-13T08:11:53.015202+00:00"
 }
