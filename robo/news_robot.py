@@ -120,7 +120,8 @@ def gerar_feed_do_dia() -> dict:
 
     response = client.messages.create(
         model=MODEL,
-        max_tokens=8192,
+        max_tokens=16000,
+        thinking={"type": "disabled"},
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": USER_PROMPT}],
         tools=[{"type": "web_search_20250305", "name": "web_search"}],
