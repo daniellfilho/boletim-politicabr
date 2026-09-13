@@ -32,7 +32,7 @@ from datetime import datetime, timezone
 import anthropic
 
 MODEL = "claude-sonnet-5"
-QUANTIDADE_NOTICIAS = 6
+QUANTIDADE_NOTICIAS = 10
 
 SYSTEM_PROMPT = f"""Você é o editor-chefe de IA do Boletim PoliticaBR, um jornal digital
 brasileiro. Sua tarefa diária é pesquisar {QUANTIDADE_NOTICIAS} notícias
@@ -120,7 +120,7 @@ def gerar_feed_do_dia() -> dict:
 
     response = client.messages.create(
         model=MODEL,
-        max_tokens=16000,
+        max_tokens=24000,
         thinking={"type": "disabled"},
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": USER_PROMPT}],
