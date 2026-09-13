@@ -136,6 +136,14 @@ def gerar_feed_do_dia() -> dict:
     texto_limpo = texto_completo.strip().removeprefix("```json").removeprefix("```").removesuffix("```").strip()
     texto_limpo = re.sub(r"</?[a-zA-Z][^<>]*>", "", texto_limpo)
 
+    # Protecao extra: pega so o trecho entre a primeira "{" e a ultima "}",
+    # descartando qualquer caractere invisivel, BOM ou texto solto que o
+    # modelo eventualmente coloque antes/depois do JSON.
+    inicio = texto_limpo.find("{")
+    fim = texto_limpo.rfind("}")
+    if inicio != -1 and fim != -1 and fim > inicio:
+        texto_limpo = texto_limpo[inicio:fim + 1]
+
     if not texto_limpo:
         print(f"[DEBUG] Resposta completa (sem texto final): {response.content}", file=sys.stderr)
         raise ValueError("O modelo nao retornou nenhum texto final (resposta vazia).")
@@ -143,7 +151,7 @@ def gerar_feed_do_dia() -> dict:
     try:
         dados = json.loads(texto_limpo)
     except json.JSONDecodeError:
-        print(f"[DEBUG] Texto recebido que falhou ao virar JSON:\n{texto_limpo}", file=sys.stderr)
+        print(f"[DEBUG] Texto recebido que falhou ao virar JSON (repr):\n{texto_limpo!r}", file=sys.stderr)
         raise
 
     noticias = dados.get("noticias", [])
