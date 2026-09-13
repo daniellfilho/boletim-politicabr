@@ -6,10 +6,109 @@
 <title>Seu Boletim — Boletim PoliticaBR</title>
 <link rel="stylesheet" href="assets/css/style.css">
 <style>
+  /* ===================== Cabeçalho / marca (reaproveita o header do site) ===================== */
+  .membros-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  /* Menu do usuário no canto direito do header */
+  .user-menu-wrap {
+    position: relative;
+  }
+  .user-avatar-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-medium);
+    border-radius: var(--radius-full);
+    padding: 6px 14px 6px 6px;
+    cursor: pointer;
+    color: var(--text-main);
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
+  .user-avatar-circle {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--gold-primary);
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+  }
+  .user-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    min-width: 200px;
+    overflow: hidden;
+    z-index: 20;
+    display: none;
+  }
+  .user-dropdown.open { display: block; }
+  .user-dropdown-item {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 12px 16px;
+    background: none;
+    border: none;
+    color: var(--text-main);
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-bottom: 1px solid var(--border-subtle);
+    text-decoration: none;
+  }
+  .user-dropdown-item:last-child { border-bottom: none; color: var(--text-dim); }
+  .user-dropdown-item:hover { background: var(--bg-card-hover); color: var(--text-pure); }
+  .user-dropdown-email {
+    padding: 12px 16px;
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    border-bottom: 1px solid var(--border-subtle);
+    word-break: break-all;
+  }
+  .btn-entrar-header {
+    background: var(--gold-primary);
+    color: var(--text-dark);
+    border: none;
+    border-radius: var(--radius-full);
+    padding: 8px 20px;
+    font-weight: 800;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+
+  /* Tagline da marca, logo abaixo do cabeçalho */
+  .marca-tagline-banner {
+    text-align: center;
+    padding: 14px 20px;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.5px;
+    color: var(--gold-primary);
+    background: var(--gold-soft);
+    border-bottom: 1px solid var(--border-gold);
+  }
+  .marca-tagline-banner strong { color: var(--text-pure); }
+
+  /* ===================== Layout geral ===================== */
   .membros-wrap {
     max-width: 640px;
     margin: 0 auto;
-    padding: 40px 20px 80px;
+    padding: 30px 20px 80px;
   }
   .membros-login-wrap {
     max-width: 440px;
@@ -92,7 +191,7 @@
   }
   .tag-perfil-direita { background: rgba(29, 78, 216, 0.85); }
 
-  /* Cards de matéria */
+  /* Cards de matéria - versão normal */
   .materia-card {
     background: var(--bg-card);
     border: 1px solid var(--border-subtle);
@@ -156,6 +255,27 @@
   }
   .materia-fonte:hover { text-decoration: underline; }
 
+  /* Card "destaque para você" - versão personalizada, intercalada entre as normais */
+  .materia-card.destaque {
+    border: 1.5px solid var(--border-gold);
+    box-shadow: 0 0 0 1px rgba(255, 191, 0, 0.08), var(--shadow-card);
+  }
+  .destaque-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.66rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-dark);
+    background: var(--gold-primary);
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    margin-bottom: 10px;
+  }
+
   .membros-sem-perfil {
     color: var(--text-muted);
     line-height: 1.6;
@@ -178,6 +298,52 @@
 </style>
 </head>
 <body>
+
+<!-- ========================= CABEÇALHO DA MARCA ========================= -->
+<header class="site-header">
+  <div class="header-inner membros-header-inner">
+
+    <div class="brand-wrapper">
+      <div class="brand-emblem" title="Boletim PoliticaBR - Eleições 2026">
+        <div class="emblem-ring"></div>
+        <svg class="emblem-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="32,6 58,32 32,58 6,32" fill="#ffbf00" stroke="#ffd000" stroke-width="1.5"/>
+          <circle cx="32" cy="32" r="16" fill="#1d4ed8" stroke="#38bdf8" stroke-width="1.5"/>
+          <rect x="22" y="24" width="20" height="18" rx="2" fill="#061320" stroke="#ffbf00" stroke-width="1.2"/>
+          <rect x="26" y="27" width="12" height="2" fill="#38bdf8"/>
+          <polygon points="32,20 28,26 36,26" fill="#ffffff"/>
+        </svg>
+      </div>
+      <div class="brand-titles">
+        <span class="brand-handle">@POLITICAEMFOCOBR</span>
+        <a href="index.html" class="brand-name">
+          BOLETIM <span class="highlight-gold">POLITICABR</span>
+        </a>
+        <span class="brand-tagline">Sua área de assinante</span>
+      </div>
+    </div>
+
+    <!-- Menu do usuário (logado) / botão Entrar (não logado) -->
+    <div class="user-menu-wrap">
+      <button class="user-avatar-btn" id="user-avatar-btn" style="display:none;">
+        <span class="user-avatar-circle" id="user-avatar-inicial">?</span>
+        <span id="user-avatar-label">Conta</span>
+      </button>
+      <div class="user-dropdown" id="user-dropdown">
+        <div class="user-dropdown-email" id="dropdown-email"></div>
+        <button class="user-dropdown-item" id="menu-meu-perfil">Meu perfil</button>
+        <a class="user-dropdown-item" href="index.html">Meu resultado do quiz</a>
+        <button class="user-dropdown-item" id="menu-sair">Sair</button>
+      </div>
+      <button class="btn-entrar-header" id="btn-entrar-header" style="display:none;">Entrar</button>
+    </div>
+
+  </div>
+</header>
+
+<div class="marca-tagline-banner">
+  <strong>BOLETIM POLITICABR</strong> — notícias sob medida para você
+</div>
 
 <!-- Estado: NÃO logado (formulário de e-mail) -->
 <div class="membros-login-wrap" id="login-wrap">
@@ -206,8 +372,6 @@
     para liberar sua edição personalizada:</p>
     <p><a href="/index.html">Fazer o diagnóstico agora →</a></p>
   </div>
-
-  <span class="membros-sair" id="logout-link">sair da conta</span>
 </div>
 
 <script>
@@ -217,6 +381,10 @@
   const loginBtn = document.getElementById('login-btn');
   const loginEmail = document.getElementById('login-email');
   const loginMsg = document.getElementById('login-msg');
+
+  const userAvatarBtn = document.getElementById('user-avatar-btn');
+  const userDropdown = document.getElementById('user-dropdown');
+  const btnEntrarHeader = document.getElementById('btn-entrar-header');
 
   loginBtn.addEventListener('click', async () => {
     const email = loginEmail.value.trim();
@@ -236,6 +404,22 @@
     } finally {
       loginBtn.disabled = false;
       loginBtn.textContent = 'Enviar link de acesso';
+    }
+  });
+
+  // Botão "Entrar" do header, quando não logado, rola até o formulário
+  btnEntrarHeader.addEventListener('click', () => {
+    loginWrap.scrollIntoView({ behavior: 'smooth' });
+    loginEmail.focus();
+  });
+
+  // Menu suspenso do usuário
+  userAvatarBtn.addEventListener('click', () => {
+    userDropdown.classList.toggle('open');
+  });
+  document.addEventListener('click', (e) => {
+    if (!userAvatarBtn.contains(e.target) && !userDropdown.contains(e.target)) {
+      userDropdown.classList.remove('open');
     }
   });
 
@@ -264,12 +448,17 @@
     document.getElementById('jornal-data').textContent = dataFormatada ? 'Edição de ' + dataFormatada : '';
 
     listaEl.innerHTML = '';
-    feed.noticias.forEach((noticia) => {
+    feed.noticias.forEach((noticia, index) => {
       const versao = noticia[lado];
       if (!versao) return;
 
+      // Intercala cards "Destaque para você" (personalizados) entre os
+      // demais - o 1º e depois a cada 3 matérias, para dar a sensação de
+      // "destaques espalhados" ao longo do jornal, e não um bloco único.
+      const ehDestaque = index === 0 || index % 3 === 0;
+
       const card = document.createElement('article');
-      card.className = 'materia-card';
+      card.className = 'materia-card' + (ehDestaque ? ' destaque' : '');
 
       const imagemHtml = noticia.imagem_url
         ? `<img src="${noticia.imagem_url}" alt="${versao.manchete}" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{className:'placeholder-icon',textContent:'${ICONES_CATEGORIA}'}))">`
@@ -279,9 +468,14 @@
         ? `<a class="materia-fonte" href="${noticia.fonte_url}" target="_blank" rel="noopener noreferrer">Fonte: ${noticia.fonte_nome || 'ver matéria original'} →</a>`
         : '';
 
+      const destaqueTagHtml = ehDestaque
+        ? `<span class="destaque-tag">⭐ Destaque para você</span><br>`
+        : '';
+
       card.innerHTML = `
         <div class="materia-imagem">${imagemHtml}</div>
         <div class="materia-corpo">
+          ${destaqueTagHtml}
           <span class="materia-categoria">${noticia.categoria || 'Política'}</span>
           <h3 class="materia-titulo">${versao.manchete}</h3>
           <p class="materia-resumo">${versao.resumo}</p>
@@ -306,9 +500,27 @@
     }
   }
 
-  document.getElementById('logout-link').addEventListener('click', () => {
+  function ativarMenuLogado(email) {
+    userAvatarBtn.style.display = 'flex';
+    btnEntrarHeader.style.display = 'none';
+    document.getElementById('user-avatar-inicial').textContent = (email || '?').charAt(0).toUpperCase();
+    document.getElementById('user-avatar-label').textContent = (email || '').split('@')[0];
+    document.getElementById('dropdown-email').textContent = email || '';
+  }
+
+  function ativarMenuDeslogado() {
+    userAvatarBtn.style.display = 'none';
+    btnEntrarHeader.style.display = 'inline-block';
+  }
+
+  document.getElementById('menu-sair').addEventListener('click', () => {
     document.cookie = 'boletim_session=; Path=/; Max-Age=0';
     window.location.reload();
+  });
+
+  document.getElementById('menu-meu-perfil').addEventListener('click', () => {
+    jornalWrap.scrollIntoView({ behavior: 'smooth' });
+    userDropdown.classList.remove('open');
   });
 
   // Ao carregar a página, confere se já existe sessão válida e ativa
@@ -318,10 +530,15 @@
       if (data.authenticated) {
         loginWrap.style.display = 'none';
         jornalWrap.style.display = 'block';
+        ativarMenuLogado(data.email);
         carregarFeed(data.perfil);
+      } else {
+        ativarMenuDeslogado();
       }
     })
-    .catch(() => {});
+    .catch(() => {
+      ativarMenuDeslogado();
+    });
 })();
 </script>
 
