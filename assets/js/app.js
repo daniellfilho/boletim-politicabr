@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
    Troque pela URL real assim que o produto for criado na Kiwify
    (Painel Kiwify -> seu produto -> "Link de vendas" ou "Compartilhar").
    ========================================================================== */
-const KIWIFY_CHECKOUT_URL = 'https://pay.kiwify.com.br/1FQ2xY0';
+const KIWIFY_CHECKOUT_URL = 'https://pay.kiwify.com.br/SEU-LINK-AQUI';
 
 /* ==========================================================================
    1. DYNAMIC HEADER DATE
@@ -546,7 +546,8 @@ function customizePhoneMockup(profileTitle, score) {
   }
 
   const lado = score >= 15 ? 'direita' : (score <= -15 ? 'esquerda' : 'centro');
-  const noticiaDoDia = DAILY_NEWS_FEED && DAILY_NEWS_FEED[lado];
+  const primeiraNoticia = DAILY_NEWS_FEED?.noticias?.[0];
+  const noticiaDoDia = primeiraNoticia && primeiraNoticia[lado];
 
   if (noticiaDoDia) {
     // Notícia real do dia, gerada pelo robô e calibrada para este perfil
