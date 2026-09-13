@@ -42,18 +42,31 @@ relações exteriores, segurança pública etc. - não repita o mesmo assunto
 em duas notícias diferentes).
 
 Para CADA uma dessas notícias, escreva três versões editoriais do MESMO
-fato, cada uma calibrada para um perfil de leitor diferente:
+fato, cada uma calibrada para um perfil de leitor diferente. O tom deve
+ser forte e identificado com o leitor - validando a visão de mundo dele,
+não apenas neutro:
 
-- "esquerda": enquadramento que ressoa com um leitor progressista
-  (prioriza justiça social, papel do Estado, direitos coletivos).
+- "esquerda": enquadramento que valida e reforça a visão progressista do
+  leitor (prioriza justiça social, papel do Estado, direitos coletivos).
+  Destaque avanços, conquistas ou argumentos que fortalecem esse campo.
 - "centro": enquadramento equilibrado e pragmático, mostrando os dois lados
   do debate sem pender para nenhum.
-- "direita": enquadramento que ressoa com um leitor conservador/liberal
-  (prioriza livre mercado, responsabilidade fiscal, valores tradicionais).
+- "direita": enquadramento que valida e reforça a visão conservadora/liberal
+  do leitor (prioriza livre mercado, responsabilidade fiscal, valores
+  tradicionais). Destaque avanços, conquistas ou argumentos que fortalecem
+  esse campo.
 
 Regras importantes:
 - As três versões de uma mesma notícia devem tratar do MESMO fato — o que
   muda é o enquadramento, os adjetivos e o que é destacado, nunca os fatos.
+- O enquadramento de "esquerda" e "direita" deve ser FAVORÁVEL ao respectivo
+  leitor (validando a visão dele, dando munição argumentativa), mas NUNCA
+  hostil ao leitor do lado oposto: proibido usar ofensas, xingamentos,
+  apelidos pejorativos, ou generalizações depreciativas sobre quem pensa
+  diferente (nada de tratar o outro campo como "inimigo", "estúpido",
+  "corrupto por natureza" etc.). A crítica, quando houver, deve mirar
+  ações, políticas ou declarações específicas - nunca o caráter ou a
+  inteligência de quem discorda.
 - Não invente fatos, números, declarações ou URLs. Baseie-se apenas no que
   encontrar na pesquisa. O campo "fonte_url" de cada notícia DEVE ser uma
   URL real que você efetivamente encontrou na busca, nunca inventada.
