@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resultado da Urna — Boletim PoliticaBR</title>
+<meta name="description" content="Resultado em tempo real da urna interativa do Boletim PoliticaBR, com os votos de todos os visitantes.">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .pagina-simples-wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+  }
+  .pagina-simples-wrap h1 {
+    color: var(--text-pure);
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+  }
+  .pagina-simples-wrap .subtitulo {
+    color: var(--text-muted);
+    margin-bottom: 28px;
+    line-height: 1.5;
+    font-size: 0.92rem;
+  }
+  .voltar-link {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+    text-decoration: none;
+  }
+  .voltar-link:hover { text-decoration: underline; }
+  .resultado-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 24px 22px;
+    box-shadow: var(--shadow-card);
+  }
+  .resultado-total {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .resultado-aviso {
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--text-dim);
+    margin-top: 24px;
+    line-height: 1.5;
+  }
+  .cta-fazer-quiz {
+    display: block;
+    text-align: center;
+    margin-top: 24px;
+    background: var(--gold-primary);
+    color: var(--text-dark);
+    font-weight: 800;
+    padding: 13px;
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    font-size: 0.92rem;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand-wrapper">
+      <div class="brand-emblem" title="Boletim PoliticaBR - Eleições 2026">
+        <div class="emblem-ring"></div>
+        <svg class="emblem-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="32,6 58,32 32,58 6,32" fill="#ffbf00" stroke="#ffd000" stroke-width="1.5"/>
+          <circle cx="32" cy="32" r="16" fill="#1d4ed8" stroke="#38bdf8" stroke-width="1.5"/>
+          <rect x="22" y="24" width="20" height="18" rx="2" fill="#061320" stroke="#ffbf00" stroke-width="1.2"/>
+          <rect x="26" y="27" width="12" height="2" fill="#38bdf8"/>
+          <polygon points="32,20 28,26 36,26" fill="#ffffff"/>
+        </svg>
+      </div>
+      <div class="brand-titles">
+        <span class="brand-handle">@POLITICAEMFOCOBR</span>
+        <a href="index.html" class="brand-name">
+          BOLETIM <span class="highlight-gold">POLITICABR</span>
+        </a>
+        <span class="brand-tagline">Resultado da urna, ao vivo</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="pagina-simples-wrap">
+  <a href="index.html" class="voltar-link">← Voltar para o início</a>
+
+  <h1>🗳️ Resultado da Urna, em tempo real</h1>
+  <p class="subtitulo">Esta é a contagem real dos votos de todos os leitores que já passaram pela nossa urna interativa. Atualizado a cada vez que você abre esta página.</p>
+
+  <div class="resultado-card">
+    <div class="resultado-total" id="resultado-total">Carregando...</div>
+    <div id="resultado-bars"></div>
+  </div>
+
+  <p class="resultado-aviso">
+    Esta é uma enquete espontânea entre os leitores do Boletim PoliticaBR,
+    sem valor estatístico ou eleitoral oficial — não substitui pesquisas
+    eleitorais registradas.
+  </p>
+
+  <a href="index.html#view-urna" class="cta-fazer-quiz">Ainda não votou? Faça o diagnóstico e vote</a>
+</div>
+
+<script>
+async function carregarResultado() {
+  const totalEl = document.getElementById('resultado-total');
+  const barsEl = document.getElementById('resultado-bars');
+  try {
+    const resp = await fetch('/api/resultado-urna', { cache: 'no-store' });
+    const data = await resp.json();
+    const tally = data.tally || {};
+    const total = Object.values(tally).reduce((a, b) => a + b, 0);
+
+    if (total === 0) {
+      totalEl.textContent = 'Nenhum voto registrado ainda';
+      barsEl.innerHTML = '<p style="color:var(--text-muted);font-size:0.85rem;text-align:center;">Seja o primeiro a votar!</p>';
+      return;
+    }
+
+    totalEl.textContent = total.toLocaleString('pt-BR') + ' votos computados';
+
+    const NOMES = {
+      '13': { nome: 'Lula', partido: 'PT', cor: '#ef4444' },
+      '22': { nome: 'Flávio Bolsonaro', partido: 'PL', cor: '#1d4ed8' },
+      '55': { nome: 'Ronaldo Caiado', partido: 'União Brasil', cor: '#2563eb' },
+      '30': { nome: 'Romeu Zema', partido: 'Novo', cor: '#f97316' },
+      '70': { nome: 'Augusto Cury', partido: 'Avante', cor: '#dc2626' },
+      '14': { nome: 'Renan Santos', partido: 'Missão', cor: '#0d9488' },
+      '00': { nome: 'Voto Nulo', partido: '', cor: '#64748b' },
+      'branco': { nome: 'Voto em Branco', partido: '', cor: '#94a3b8' },
+    };
+
+    const chaves = Object.keys(tally).sort((a, b) => tally[b] - tally[a]);
+    barsEl.innerHTML = '';
+    chaves.forEach((k) => {
+      const count = tally[k];
+      const pct = ((count / total) * 100).toFixed(1);
+      const info = NOMES[k] || { nome: 'Número ' + k, partido: '', cor: '#94a3b8' };
+
+      const row = document.createElement('div');
+      row.className = 'result-bar-row';
+      row.innerHTML = `
+        <div class="result-bar-labels">
+          <span><strong>${info.nome}</strong> ${info.partido ? '(' + info.partido + ')' : ''}</span>
+          <span>${pct}% (${count.toLocaleString('pt-BR')})</span>
+        </div>
+        <div class="result-bar-track">
+          <div class="result-bar-fill" style="width: 0%; background: ${info.cor};"></div>
+        </div>
+      `;
+      barsEl.appendChild(row);
+      setTimeout(() => {
+        const fill = row.querySelector('.result-bar-fill');
+        if (fill) fill.style.width = pct + '%';
+      }, 50);
+    });
+  } catch (err) {
+    totalEl.textContent = '';
+    barsEl.innerHTML = '<p style="color:var(--text-muted);font-size:0.85rem;text-align:center;">Não foi possível carregar o resultado agora.</p>';
+  }
+}
+carregarResultado();
+</script>
+
+</body>
+</html>
