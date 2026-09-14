@@ -963,34 +963,44 @@ function initUrnaSimulator() {
     }
   }
 
-  // Record vote in localStorage
-  function recordVote(key) {
-    let tally = JSON.parse(localStorage.getItem('boletim_urna_poll_tally')) || {
-      '13': 1420,
-      '22': 1380,
-      '10': 640,
-      '55': 280,
-      '30': 210,
-      '44': 190,
-      '15': 175,
-      '12': 160,
-      'branco': 110,
-      '00': 95
-    };
-
-    tally[key] = (tally[key] || 0) + 1;
-    localStorage.setItem('boletim_urna_poll_tally', JSON.stringify(tally));
+  // Record vote - envia para o backend (contagem real, de todos os visitantes)
+  // e usa uma marca local só para impedir múltiplos votos do MESMO navegador.
+  async function recordVote(key) {
+    const jaVotou = localStorage.getItem('boletim_ja_votou_urna');
+    if (jaVotou) return; // já contabilizado antes neste navegador
+    try {
+      await fetch('/api/registrar-voto', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ numero: key }),
+      });
+      localStorage.setItem('boletim_ja_votou_urna', key);
+    } catch (err) {
+      console.error('[urna] Não foi possível registrar o voto:', err);
+    }
   }
 
-  // Render Reader Poll Results
-  function renderLiveResults() {
-    const tally = JSON.parse(localStorage.getItem('boletim_urna_poll_tally')) || {};
-    const total = Object.values(tally).reduce((acc, curr) => acc + curr, 0) || 1;
+  // Render Reader Poll Results - busca a contagem real (de todos os
+  // visitantes) no backend. Se não conseguir buscar, mostra aviso simples.
+  async function renderLiveResults() {
+    let tally = {};
+    try {
+      const resp = await fetch('/api/resultado-urna', { cache: 'no-store' });
+      const data = await resp.json();
+      tally = data.tally || {};
+    } catch (err) {
+      console.error('[urna] Não foi possível carregar o resultado:', err);
+    }
 
-    // Sort by most voted
+    const total = Object.values(tally).reduce((acc, curr) => acc + curr, 0) || 1;
     const sortedKeys = Object.keys(tally).sort((a, b) => tally[b] - tally[a]);
 
     resultsBars.innerHTML = '';
+
+    if (sortedKeys.length === 0) {
+      resultsBars.innerHTML = '<p style="color:var(--text-muted);font-size:0.85rem;">Ainda não há votos suficientes para exibir o resultado.</p>';
+      return;
+    }
 
     sortedKeys.forEach(k => {
       const count = tally[k];
