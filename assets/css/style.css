@@ -319,6 +319,29 @@ button {
   margin-bottom: 20px;
 }
 
+.credibilidade-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 22px;
+  margin-bottom: 22px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.credibilidade-item {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 560px) {
+  .credibilidade-banner { flex-direction: column; gap: 8px; }
+}
+
 .intro-title {
   font-size: 2.5rem;
   font-weight: 900;
@@ -2149,4 +2172,3 @@ button {
 .btn-vote-again:hover {
   background: var(--gold-soft);
 }
-
