@@ -228,31 +228,43 @@
   }
   .jornal-perfil-tag {
     display: inline-block;
-    padding: 5px 14px;
+    padding: 10px 24px;
     border-radius: var(--radius-full);
     font-family: var(--font-mono);
-    font-size: 0.7rem;
-    font-weight: 800;
-    letter-spacing: 0.5px;
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 0.8px;
     text-transform: uppercase;
-    margin: 12px 0 28px;
+    margin: 14px 0 20px;
     color: #fff;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+    animation: perfilTagPulse 2.4s ease-in-out infinite;
   }
-  .tag-perfil-esquerda { background: rgba(220, 38, 38, 0.85); }
+  @keyframes perfilTagPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.035); }
+  }
+  .tag-perfil-esquerda { background: linear-gradient(135deg, #ef4444, #b91c1c); }
   .tag-perfil-centro {
     background: linear-gradient(90deg, rgba(220, 38, 38, 0.85) 0%, var(--gold-primary) 50%, rgba(29, 78, 216, 0.85) 100%);
     color: var(--text-dark);
   }
-  .tag-perfil-direita { background: rgba(29, 78, 216, 0.85); }
+  .tag-perfil-direita { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
 
   .jornal-validacao {
-    max-width: 480px;
-    margin: 0 auto 8px;
-    color: var(--text-main);
-    font-size: 0.92rem;
-    font-weight: 600;
-    line-height: 1.4;
-    font-style: italic;
+    max-width: 540px;
+    margin: 0 auto 10px;
+    color: var(--text-pure);
+    font-size: 1.15rem;
+    font-weight: 800;
+    line-height: 1.45;
+    font-style: normal;
+    padding: 4px 10px;
+  }
+
+  @media (max-width: 560px) {
+    .jornal-perfil-tag { font-size: 0.85rem; padding: 9px 18px; }
+    .jornal-validacao { font-size: 1rem; }
   }
 
   /* Cards de matéria - versão normal */
@@ -362,6 +374,23 @@
 </style>
 </head>
 <body>
+
+<!-- ========================================================================
+     FAIXA DE CREDIBILIDADE - mesma do site principal, também aqui
+     ======================================================================== -->
+<div class="credibilidade-top-bar">
+  <div class="credibilidade-top-inner">
+    <span class="credibilidade-badge">
+      <span class="credibilidade-icon">🏆</span>
+      O MAIOR BOLETIM SOBRE NOTÍCIAS DA POLÍTICA E ELEIÇÕES DO BRASIL
+    </span>
+    <span class="credibilidade-separador">★</span>
+    <span class="credibilidade-badge">
+      <span class="credibilidade-icon">👥</span>
+      +50 MIL ASSINANTES ESPALHADOS PELO BRASIL
+    </span>
+  </div>
+</div>
 
 <!-- Faixas laterais decorativas - só aparecem em telas largas, com foto
      ligada ao perfil político do assinante logado -->
