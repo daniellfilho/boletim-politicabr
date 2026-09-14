@@ -1,196 +1,195 @@
 {
   "noticias": [
     {
+      "categoria": "Pesquisas Eleitorais",
+      "fonte_nome": "G1 / Poder360",
+      "fonte_url": "https://www.poder360.com.br/poder-eleicoes-2026/tse-rejeita-registro-de-candidatura-de-marcal-a-presidencia/",
+      "esquerda": {
+        "manchete": "Lula amplia vantagem sobre Flávio Bolsonaro em nova pesquisa Quaest",
+        "resumo": "Levantamento Quaest mostra Lula com 36% no primeiro turno contra 31% de Flávio Bolsonaro, e BTG/Nexus confirma vitória no segundo turno por 47% a 46%."
+      },
+      "centro": {
+        "manchete": "Nova pesquisa Quaest mostra Lula à frente, mas corrida segue apertada",
+        "resumo": "Pesquisa Quaest aponta Lula com 36% e Flávio Bolsonaro com 31% no primeiro turno; cenário de segundo turno permanece dentro da margem de erro em diferentes institutos."
+      },
+      "direita": {
+        "manchete": "Pesquisas mostram corrida acirrada entre Lula e Flávio Bolsonaro rumo ao 2º turno",
+        "resumo": "Enquanto a Quaest aponta vantagem de Lula, levantamento BTG/Nexus mostra Flávio Bolsonaro a apenas 1 ponto no segundo turno, sinal de disputa real."
+      },
+      "id": 1,
+      "imagem_url": "https://static.poder360.com.br/uploads/2026/08/marcal-1-1200x675.jpg"
+    },
+    {
+      "categoria": "STF",
+      "fonte_nome": "Agência Brasil / Gazeta do Povo",
+      "fonte_url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-09/fachin-aguarda-explicacoes-de-ministros-para-decidir-sobre-crise",
+      "esquerda": {
+        "manchete": "Fachin cobra transparência e Supremo enfrenta crise interna com rigor institucional",
+        "resumo": "Presidente do STF, Edson Fachin, exige explicações de ministros envolvidos em disputa interna, mostrando que a Corte busca se autorregular diante de acusações graves."
+      },
+      "centro": {
+        "manchete": "Crise entre ministros do STF expõe disputa interna sem precedentes na Corte",
+        "resumo": "Fachin aguarda explicações de Moraes e Mendonça após troca de relatórios e pedidos de investigação mútuos envolverem o caso do Banco Master."
+      },
+      "direita": {
+        "manchete": "Crise no STF expõe contrato milionário da esposa de Moraes com Banco Master",
+        "resumo": "Documento tornado público mostra contrato de R$ 131 milhões entre o escritório da mulher de Alexandre de Moraes e o banco investigado por fraude, alimentando questionamentos sobre a Corte."
+      },
+      "id": 2,
+      "imagem_url": "https://imagens.ebc.com.br/AlX9vWil1_65mCLPkDUsuDKBRVs=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/08/03/55157256334_6416585a1d_o.jpg?itok=cE5uduWx"
+    },
+    {
       "categoria": "Eleições 2026",
       "fonte_nome": "CNN Brasil",
       "fonte_url": "https://www.cnnbrasil.com.br/politica/tse-forma-maioria-para-rejeitar-candidatura-de-pablo-marcal-a-presidencia/",
       "esquerda": {
-        "manchete": "TSE barra Marçal por unanimidade e reforça regras contra candidatos inelegíveis",
-        "resumo": "Tribunal rejeitou a candidatura à Presidência por má-fé e irregularidade partidária, mostrando que a Justiça Eleitoral segue firme contra tentativas de burlar as regras democráticas."
+        "manchete": "TSE barra Marçal por unanimidade e reforça regras contra abuso eleitoral",
+        "resumo": "Os sete ministros do TSE rejeitaram o registro de candidatura de Pablo Marçal à Presidência, reafirmando limites legais contra condutas irregulares em campanhas."
       },
       "centro": {
         "manchete": "TSE rejeita por unanimidade candidatura de Pablo Marçal à Presidência",
-        "resumo": "Corte concluiu que Marçal não cumpriu o requisito de filiação partidária e está inelegível, retirando seu nome da urna e liberando o PRTB para indicar substituto."
+        "resumo": "Tribunal decidiu que Marçal está inelegível até 2032 e não cumpriu a exigência de filiação partidária, retirando seu nome da disputa presidencial."
       },
       "direita": {
-        "direita_nota": "",
-        "manchete": "Justiça Eleitoral tira Marçal da disputa e reacende debate sobre excesso de poder das cortes",
-        "resumo": "TSE decidiu, por unanimidade, indeferir a candidatura de Marçal a poucas semanas da eleição, decisão que reabre discussão sobre os critérios usados pelos tribunais para vetar candidaturas."
+        "manchete": "TSE tira Marçal da disputa presidencial por questões de filiação e inelegibilidade",
+        "resumo": "Decisão unânime do TSE barra a candidatura de Pablo Marçal, que alegava filiação retroativa ao PRTB, e autoriza o partido a indicar substituto."
       },
-      "id": 1,
+      "id": 3,
       "imagem_url": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/10/ATO20240924093-e1729728918162.jpg?w=1200&amp;h=630&amp;crop=1"
     },
     {
-      "categoria": "STF",
-      "fonte_nome": "O Imparcial",
-      "fonte_url": "https://oimparcial.com.br/noticias/2026/09/fachin-retira-moraes-da-relatoria-do-inquerito-das-fake-news",
+      "categoria": "Congresso",
+      "fonte_nome": "Direto do Planalto",
+      "fonte_url": "https://www.diretodoplanalto.com.br/2026/09/congresso-vai-retomar-votacoes-somente.html",
       "esquerda": {
-        "manchete": "Fachin reorganiza inquérito das fake news em meio a disputa interna no STF",
-        "resumo": "Presidente do STF revogou a designação de Moraes ao caso após embates com Mendonça envolvendo o Banco Master, movimento visto por aliados como necessário para preservar a instituição."
+        "manchete": "Congresso trava PEC do fim da escala 6x1 e da Segurança antes da eleição",
+        "resumo": "Davi Alcolumbre adiou a votação de pautas trabalhistas e de segurança defendidas pelo governo, frustrando expectativa de avanço social antes do primeiro turno."
       },
       "centro": {
-        "manchete": "Fachin tira Moraes da relatoria do inquérito das fake news",
-        "resumo": "Decisão administrativa revoga a designação dada em 2019 e transfere o caso à presidência da Corte, em meio a atritos entre ministros sobre o caso Banco Master."
+        "manchete": "Congresso adia votação de PECs da Segurança e do fim da escala 6x1 para outubro",
+        "resumo": "Presidente do Senado, Davi Alcolumbre, definiu que a semana de esforço concentrado só ocorrerá após o primeiro turno, driblando pressão do Planalto."
       },
       "direita": {
-        "manchete": "Crise se aprofunda no STF e Fachin retira poderes de Moraes sobre inquérito polêmico",
-        "resumo": "Racha entre ministros expõe disputas internas na Corte, com Fachin revogando a condução de Moraes sobre o inquérito das fake news após embate com Mendonça."
-      },
-      "id": 2,
-      "imagem_url": "https://oimparcial.com.br/app/uploads/2026/08/1_55368717700-7e925e234d-o-67166436.webp"
-    },
-    {
-      "categoria": "STF",
-      "fonte_nome": "Consultor Jurídico (Conjur)",
-      "fonte_url": "https://conjur.com.br/2026-ago-21/stf-retoma-em-setembro-julgamento-sobre-mudancas-na-lei-da-ficha-limpa/",
-      "esquerda": {
-        "manchete": "STF pode barrar afrouxamento da Lei Ficha Limpa aprovado pelo Congresso",
-        "resumo": "Com placar de 2 a 0 contra as mudanças, julgamento pode impedir que políticos condenados por improbidade voltem a disputar eleições em 2026."
-      },
-      "centro": {
-        "manchete": "STF retoma julgamento sobre mudanças na Lei da Ficha Limpa",
-        "resumo": "Corte analisa se alterações que reduziram prazos de inelegibilidade são constitucionais, com decisão que pode afetar candidaturas como a de José Roberto Arruda."
-      },
-      "direita": {
-        "manchete": "STF pode anular lei aprovada pelo Congresso e mudar regras da eleição na reta final",
-        "resumo": "Julgamento sobre a Lei da Ficha Limpa, com placar parcial contrário às mudanças legislativas, é criticado por interferir em norma já aprovada democraticamente pelo Parlamento."
-      },
-      "id": 3,
-      "imagem_url": "https://conjur.com.br/wp-content/uploads/2026/05/manifestacao-ficha-limpa1.jpeg"
-    },
-    {
-      "categoria": "Eleições 2026",
-      "fonte_nome": "Gazeta do Povo",
-      "fonte_url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/datafolha-presidente-setembro-2026-2/",
-      "esquerda": {
-        "manchete": "Lula mantém vantagem numérica sobre Flávio Bolsonaro em nova pesquisa Datafolha",
-        "resumo": "Levantamento mostra Lula à frente no segundo turno simulado, 46% a 44%, sinal de resistência do projeto popular mesmo sob forte polarização."
-      },
-      "centro": {
-        "manchete": "Datafolha mostra empate técnico entre Lula e Flávio Bolsonaro na corrida presidencial",
-        "resumo": "Pesquisa aponta 39% a 35% no primeiro turno estimulado e 46% a 44% no segundo turno, ambos dentro da margem de erro de dois pontos."
-      },
-      "direita": {
-        "manchete": "Flávio Bolsonaro cola em Lula e pesquisa Datafolha mostra corrida acirrada",
-        "resumo": "Levantamento revela empate técnico entre governo e oposição, com Flávio Bolsonaro reduzindo distância tanto no primeiro quanto no segundo turno."
+        "manchete": "Alcolumbre evita votação apressada e 'eleitoreira' de pautas do governo no Senado",
+        "resumo": "Presidente do Senado classificou como eleitoreira a tentativa de acelerar a PEC da Segurança e disse que o texto ainda tem emendas pendentes de análise."
       },
       "id": 4,
-      "imagem_url": "https://media.gazetadopovo.com.br/2026/09/10222655/pesquisa-presidente-2.png"
+      "imagem_url": null
     },
     {
       "categoria": "Economia",
-      "fonte_nome": "Gazeta Mercantil",
-      "fonte_url": "https://gazetamercantil.com/selic-setembro-2026-copom-corte-juros-1375",
+      "fonte_nome": "InfoMoney",
+      "fonte_url": "https://www.infomoney.com.br/economia/copom-taxa-selic-corte-juros-xp-2026/",
       "esquerda": {
-        "manchete": "Copom pode dar novo alívio aos juros e ajudar recuperação do poder de compra",
-        "resumo": "Comitê se reúne em setembro para decidir se reduz a Selic dos atuais 14% para 13,75%, movimento que tende a facilitar crédito para famílias e pequenos negócios."
+        "manchete": "Copom deve cortar juros nesta semana, aliviando pressão sobre famílias",
+        "resumo": "Reunião do Copom em setembro deve reduzir a Selic para 13,75%, resultado da desaceleração da inflação e da atividade econômica no país."
       },
       "centro": {
-        "manchete": "Copom decide nesta semana se reduz Selic para 13,75% ao ano",
-        "resumo": "Mercado prevê corte de 0,25 ponto percentual, mas expectativa é de que os juros seguirão elevados até o fim de 2026, segundo o boletim Focus."
+        "manchete": "Copom se reúne nesta semana e mercado prevê corte de 0,25 ponto na Selic",
+        "resumo": "Comitê deve levar a taxa básica de juros a 13,75%, mas o comunicado deve manter tom cauteloso diante de incertezas fiscais e do cenário eleitoral."
       },
       "direita": {
-        "manchete": "Mesmo com corte esperado, Selic seguirá alta e trava crescimento, avaliam analistas",
-        "resumo": "Copom pode reduzir juros para 13,75% nesta semana, mas projeções indicam que a taxa continuará em patamar elevado por tempo prolongado, pressionando investimentos."
+        "manchete": "Mesmo com corte esperado, juros reais do Brasil seguem entre os mais altos do mundo",
+        "resumo": "Analistas apontam que o risco fiscal e o descontrole de gastos públicos limitam cortes mais agressivos na Selic, mantendo o crédito caro para empresas e famílias."
       },
       "id": 5,
-      "imagem_url": "https://gazetamercantil.com/wp-content/uploads/2026/07/1783120817_Queda-da-Selic-ainda-nao-barateia-credito-especialista-explica-cenario.png"
-    },
-    {
-      "categoria": "Segurança Pública",
-      "fonte_nome": "Baixada na Web",
-      "fonte_url": "https://baixadanaweb.wordpress.com/2026/09/11/caso-banco-master-vorcaro-deve-depor-a-pf-no-dia-15/",
-      "esquerda": {
-        "manchete": "Vorcaro deve depor à PF sobre rede de influência montada com autoridades",
-        "resumo": "Depoimento marcado para 15 de setembro busca esclarecer conexões do ex-banqueiro com o poder público no escândalo do Banco Master, incluindo ministros do STF."
-      },
-      "centro": {
-        "manchete": "PF marca depoimento de Vorcaro para 15 de setembro no caso Banco Master",
-        "resumo": "Defesa do ex-banqueiro pode pedir novo adiamento; investigação apura fraudes financeiras e proximidade de Vorcaro com autoridades, incluindo ministros do STF."
-      },
-      "direita": {
-        "manchete": "Escândalo do Banco Master expõe proximidade de ministros do STF com banqueiro investigado",
-        "resumo": "Vorcaro, preso desde o fim de 2025, deve depor à PF em meio a revelações sobre contatos com Alexandre de Moraes e outras autoridades, alimentando crise institucional."
-      },
-      "id": 6,
-      "imagem_url": "https://baixadanaweb.wordpress.com/wp-content/uploads/2026/09/sem-titulo-11-10.jpg"
-    },
-    {
-      "categoria": "Segurança Pública",
-      "fonte_nome": "Congresso em Foco",
-      "fonte_url": "https://www.congressoemfoco.com.br/noticia/113515/2026-deve-marcar-nova-onda-de-grandes-operacoes-policiais",
-      "esquerda": {
-        "manchete": "Megaoperações policiais no Rio elevam letalidade e reacendem debate sobre direitos humanos",
-        "resumo": "Ações de grande impacto contra facções criminosas ganham força eleitoral, mas organizações de direitos humanos alertam para o alto número de mortes nas comunidades."
-      },
-      "centro": {
-        "manchete": "Segurança pública vira tema central da disputa eleitoral no Rio de Janeiro",
-        "resumo": "Operações policiais de grande escala contra o Comando Vermelho dividem opiniões entre eficácia no combate ao crime e questionamentos sobre letalidade e direitos humanos."
-      },
-      "direita": {
-        "manchete": "Operações contra o Comando Vermelho têm ampla aprovação popular no Rio de Janeiro",
-        "resumo": "Pesquisa Atlas Intel mostra 62,2% de aprovação à ação policial contra o crime organizado, reforçando apoio da população a políticas de segurança mais duras."
-      },
-      "id": 7,
-      "imagem_url": "https://static.congressoemfoco.com.br/CONG_REDES_RETANGULAR/2025/11/03/81ee3f_CONG_REDES_RETANGULAR_MANUAL_CAPASSITE15.jpg"
+      "imagem_url": "https://www.infomoney.com.br/wp-content/uploads/2019/09/moeda-queda-juros.jpg?fit=900%2C600&quality=70&strip=all"
     },
     {
       "categoria": "Política Externa",
-      "fonte_nome": "Metrópoles",
-      "fonte_url": "https://www.metropoles.com/mundo/lula-desfalca-cupula-dos-brics-com-putin-e-xi-jinping-na-india",
+      "fonte_nome": "Tribuna do Sertão",
+      "fonte_url": "https://www.tribunadosertao.com.br/financas/2026/09/04/973469-com-novo-tarifaco-de-trump-exportacoes-para-os-eua-caem-quase-10-no-ano-ate-agosto",
       "esquerda": {
-        "manchete": "Lula prioriza discurso na ONU para defender soberania brasileira diante de interferência dos EUA",
-        "resumo": "Presidente vai a Nova York abrir a Assembleia-Geral da ONU e pode encontrar Trump, reafirmando defesa da democracia brasileira diante de pressões externas."
+        "manchete": "Apesar do tarifaço de Trump, Brasil diversifica mercados e mantém superávit recorde",
+        "resumo": "Exportações aos EUA caem quase 10% no ano, mas superávit comercial brasileiro cresce 23,8% em agosto, mostrando resiliência diante da pressão americana."
       },
       "centro": {
-        "manchete": "Lula vai à ONU em setembro, mas abre mão da cúpula dos Brics por causa da campanha",
-        "resumo": "Presidente concentra agenda internacional em viagem única a Nova York; Brasil será representado no Brics pelo chanceler Mauro Vieira."
+        "manchete": "Exportações brasileiras aos EUA caem quase 10% em meio a tarifaço de Trump",
+        "resumo": "Dados do governo mostram queda nas vendas aos Estados Unidos após novas sobretaxas, ainda que o saldo comercial geral do país tenha subido no período."
       },
       "direita": {
-        "manchete": "Lula reduz agenda externa e falta a cúpula dos Brics para focar em campanha eleitoral",
-        "resumo": "Presidente evita compromissos internacionais importantes, como o encontro com líderes do Brics na Índia, priorizando a disputa pela reeleição."
+        "manchete": "Tarifaço de Trump reduz exportações aos EUA e acende alerta para o agro e a indústria",
+        "resumo": "Setores exportadores sofrem com sobretaxas de até 25% aplicadas pelos Estados Unidos, reforçando críticas à condução da política externa do governo brasileiro."
+      },
+      "id": 6,
+      "imagem_url": "https://img.dhost.cloud/oWISx0NmMcy6Q7usxRolHLQFqWY=/1280x720/smart/https://tdan.nyc3.digitaloceanspaces.com/images/e45a8/236d51bc4e915f5a189eac3240328f326bd.jpg"
+    },
+    {
+      "categoria": "Emprego",
+      "fonte_nome": "Agência Gov",
+      "fonte_url": "https://agenciagov.ebc.com.br/noticias/202509/desemprego-brasil-menor-13-anos-ocupacao-renda-trabalho-novo-recorde-agosto",
+      "esquerda": {
+        "manchete": "Desemprego cai ao menor nível em 13 anos e emprego formal bate recorde",
+        "resumo": "Taxa de desocupação chega a 5,6% no trimestre até agosto, com 605 mil pessoas a menos buscando trabalho, resultado de políticas de geração de emprego do governo."
+      },
+      "centro": {
+        "manchete": "Taxa de desemprego atinge menor patamar em 13 anos, aponta IBGE",
+        "resumo": "Pnad Contínua mostra desocupação de 5,6% no trimestre até agosto, com destaque para os setores de saúde, educação e construção civil."
+      },
+      "direita": {
+        "manchete": "Setor privado puxa recorde de emprego, mas informalidade ainda é alta no país",
+        "resumo": "Apesar do desemprego no menor nível da série histórica, taxa de informalidade segue em 38%, reflexo de entraves estruturais que pesam sobre a livre iniciativa."
+      },
+      "id": 7,
+      "imagem_url": null
+    },
+    {
+      "categoria": "Relações Exteriores",
+      "fonte_nome": "Metrópoles",
+      "fonte_url": "https://www.metropoles.com/colunas/igor-gadelha/lula-planeja-ir-a-onu-durante-a-campanha-mas-deve-faltar-ao-brics",
+      "esquerda": {
+        "manchete": "Lula vai à ONU discursar em defesa da soberania brasileira em meio à campanha",
+        "resumo": "Presidente prioriza agenda na Assembleia-Geral da ONU em Nova York e pode se reunir com Trump, mesmo concentrado nos compromissos da campanha eleitoral."
+      },
+      "centro": {
+        "manchete": "Lula reduz agenda internacional na campanha e prioriza discurso na ONU",
+        "resumo": "Presidente deve fazer apenas uma viagem ao exterior em setembro, à Assembleia-Geral da ONU, e ficará ausente da cúpula dos Brics na Índia."
+      },
+      "direita": {
+        "manchete": "Lula abandona cúpula dos Brics para focar na campanha e evitar desgaste",
+        "resumo": "Governo confirma que o presidente não irá à cúpula dos Brics na Índia, enviando o chanceler Mauro Vieira, enquanto prioriza agenda eleitoral em setembro."
       },
       "id": 8,
       "imagem_url": null
     },
     {
-      "categoria": "Economia",
-      "fonte_nome": "Ministério da Fazenda / Agência Gov",
-      "fonte_url": "https://agenciagov.ebc.com.br/noticias/202609/governo-federal-apresenta-projeto-de-orcamento-de-2027-com-previsao-de-superavit-primario-de-r-18-6-bilhoes",
+      "categoria": "Eleições 2026",
+      "fonte_nome": "Gazeta do Povo",
+      "fonte_url": "https://www.gazetadopovo.com.br/eleicoes/2026/mesmo-ausente-jair-bolsonaro-principal-personagem-lancamento-campanha-flavio/",
       "esquerda": {
-        "manchete": "Governo prevê superávit em 2027 mesmo mantendo investimento em saúde e educação",
-        "resumo": "Projeto de orçamento aponta resultado positivo de R$ 18,6 bilhões, com recursos para saúde e educação acima do piso constitucional, segundo o Ministério da Fazenda."
+        "manchete": "Campanha de Flávio Bolsonaro aposta na figura do pai preso por trama golpista",
+        "resumo": "Lançamento da candidatura em Copacabana exaltou Jair Bolsonaro, que cumpre prisão domiciliar após condenação por tentativa de golpe de Estado."
       },
       "centro": {
-        "manchete": "Governo envia ao Congresso orçamento de 2027 com previsão de superávit primário",
-        "resumo": "Proposta prevê saldo positivo de R$ 18,6 bilhões após déficit estimado em 2026, apostando em crescimento do PIB acima da projeção de mercado."
+        "manchete": "Flávio Bolsonaro lança campanha à Presidência com forte apelo à imagem do pai",
+        "resumo": "Ato em Copacabana reuniu apoiadores e marcou a largada oficial da candidatura do senador pelo PL, mesmo com a ausência de Jair Bolsonaro, em prisão domiciliar."
       },
       "direita": {
-        "manchete": "Governo aposta em crescimento otimista do PIB para fechar contas de 2027 no azul",
-        "resumo": "Previsão de superávit depende de expansão de 2,46% da economia, acima da estimativa de mercado, o que gera dúvidas sobre a real sustentabilidade fiscal do plano."
+        "manchete": "Flávio Bolsonaro inicia campanha em Copacabana com forte apoio popular",
+        "resumo": "Milhares de apoiadores lotaram a orla carioca no lançamento da candidatura de Flávio Bolsonaro, que promete retomar o legado político do pai."
       },
       "id": 9,
-      "imagem_url": "https://agenciagov.ebc.com.br/noticias/202609/governo-federal-apresenta-projeto-de-orcamento-de-2027-com-previsao-de-superavit-primario-de-r-18-6-bilhoes/@@download/image/_raf1006_1.webp"
+      "imagem_url": "https://media.gazetadopovo.com.br/2026/08/16173006/WhatsApp-Image-2026-08-16-at-15.47.14.jpeg"
     },
     {
-      "categoria": "Congresso",
-      "fonte_nome": "Jornal Grande Bahia",
-      "fonte_url": "https://jornalgrandebahia.com.br/2026/09/camara-dos-deputados-aprova-excecoes-as-regras-fiscais-para-beneficios-e-despesas-de-2026-texto-segue-para-sancao-presidencial/",
+      "categoria": "Economia",
+      "fonte_nome": "OAM Advogados / Senado Notícias",
+      "fonte_url": "https://www.oam.adv.br/2026/09/congresso-aprova-excecoes-a-regras-fiscais-para-2026/",
       "esquerda": {
-        "manchete": "Câmara aprova incentivos a data centers condicionados a metas fiscais e sociais",
-        "resumo": "Projeto libera benefícios tributários para o setor de tecnologia, saúde e municípios pequenos, mas exige compatibilidade com a meta de resultado primário do governo."
+        "manchete": "Congresso aprova exceções fiscais para sustentar políticas públicas em municípios",
+        "resumo": "PLP aprovado pelo Senado evita que inadimplência técnica trave repasses a municípios, garantindo continuidade de investimentos sociais em 2026."
       },
       "centro": {
-        "manchete": "Câmara aprova exceções a regras fiscais para beneficiar data centers e outros setores",
-        "resumo": "Texto aprovado por 346 votos cria brechas para incentivos tributários em 2026, condicionadas à previsão orçamentária e ao cumprimento da meta fiscal."
+        "manchete": "Congresso aprova PLP com exceções a regras fiscais para benefícios tributários em 2026",
+        "resumo": "Texto seguiu para sanção presidencial e cria exceções em regimes especiais de tributação, como o de datacenters, dentro da transição da reforma tributária."
       },
       "direita": {
-        "manchete": "Congresso amplia renúncia fiscal para data centers em meio a alerta sobre gastos públicos",
-        "resumo": "Projeto aprovado pela Câmara abre exceções às regras fiscais de 2026, com estimativa de renúncia tributária bilionária que preocupa quem defende maior disciplina de gastos."
+        "manchete": "Novas exceções fiscais aprovadas no Congresso acendem alerta sobre disciplina orçamentária",
+        "resumo": "Especialistas cobram atenção ao PLP que abre brechas em regras fiscais e na Lei de Responsabilidade Fiscal para ampliar benefícios tributários em ano eleitoral."
       },
       "id": 10,
-      "imagem_url": "https://i0.wp.com/jornalgrandebahia.com.br/wp-content/uploads/2026/09/excecoes-as-regras-fiscais-de-2026-20260904.jpg?fit=1200%2C800&quality=30&ssl=1"
+      "imagem_url": null
     }
   ],
-  "gerado_em": "2026-09-13T14:43:19.906255+00:00"
+  "gerado_em": "2026-09-14T21:58:43.503959+00:00"
 }
