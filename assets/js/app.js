@@ -1012,7 +1012,7 @@ function initUrnaSimulator() {
       row.innerHTML = `
         <div class="result-bar-labels">
           <span>${cand.avatar || '🗳️'} <strong>${cand.name}</strong> (${cand.party || ''})</span>
-          <span>${pct}% (${count.toLocaleString('pt-BR')} votos)</span>
+          <span>${pct}%</span>
         </div>
         <div class="result-bar-track">
           <div class="result-bar-fill" style="width: 0%; background: ${cand.color || '#ffbf00'};"></div>
