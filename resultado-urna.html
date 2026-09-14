@@ -155,7 +155,7 @@ async function carregarResultado() {
       row.innerHTML = `
         <div class="result-bar-labels">
           <span><strong>${info.nome}</strong> ${info.partido ? '(' + info.partido + ')' : ''}</span>
-          <span>${pct}% (${count.toLocaleString('pt-BR')})</span>
+          <span>${pct}%</span>
         </div>
         <div class="result-bar-track">
           <div class="result-bar-fill" style="width: 0%; background: ${info.cor};"></div>
