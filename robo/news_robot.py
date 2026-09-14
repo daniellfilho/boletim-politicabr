@@ -41,6 +41,14 @@ uma boa variedade de temas (economia, STF/Judiciário, Congresso, eleições,
 relações exteriores, segurança pública etc. - não repita o mesmo assunto
 em duas notícias diferentes).
 
+OBRIGATÓRIO: pelo menos UMA das {QUANTIDADE_NOTICIAS} notícias deve ser
+especificamente sobre uma PESQUISA ELEITORAL recente (ex: Datafolha, Quaest,
+Genial/Quaest, PoderData, Paraná Pesquisas, AtlasIntel), com os números e
+percentuais mais atuais que você encontrar. Essa notícia deve usar a
+categoria "Pesquisas Eleitorais". Se não encontrar nenhuma pesquisa divulgada
+nas últimas 72h, use a pesquisa eleitoral mais recente disponível, mesmo que
+tenha alguns dias a mais.
+
 Para CADA uma dessas notícias, escreva três versões editoriais do MESMO
 fato, cada uma calibrada para um perfil de leitor diferente. O tom deve
 ser forte e identificado com o leitor - validando a visão de mundo dele,
@@ -195,9 +203,36 @@ def main():
         print(f"[ERRO] Nao foi possivel gerar o feed do dia: {exc}", file=sys.stderr)
         sys.exit(1)
 
-    caminho_saida = os.path.join(os.path.dirname(__file__), "..", "noticias-diarias.json")
+    raiz_projeto = os.path.join(os.path.dirname(__file__), "..")
+    pasta_arquivo = os.path.join(raiz_projeto, "arquivo")
+    os.makedirs(pasta_arquivo, exist_ok=True)
+
+    # 1) Sobrescreve o feed "de hoje", que o site sempre le por padrao.
+    caminho_saida = os.path.join(raiz_projeto, "noticias-diarias.json")
     with open(caminho_saida, "w", encoding="utf-8") as f:
         json.dump(feed, f, ensure_ascii=False, indent=2)
+
+    # 2) Salva uma copia arquivada, com a data no nome do arquivo, para a
+    # secao "Edicoes anteriores" do site poder consultar depois.
+    data_hoje = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    caminho_arquivo_dia = os.path.join(pasta_arquivo, f"{data_hoje}.json")
+    with open(caminho_arquivo_dia, "w", encoding="utf-8") as f:
+        json.dump(feed, f, ensure_ascii=False, indent=2)
+
+    # 3) Atualiza o indice com a lista de datas disponiveis (mais recente primeiro).
+    caminho_indice = os.path.join(pasta_arquivo, "index.json")
+    datas = []
+    if os.path.exists(caminho_indice):
+        with open(caminho_indice, encoding="utf-8") as f:
+            try:
+                datas = json.load(f)
+            except json.JSONDecodeError:
+                datas = []
+    if data_hoje not in datas:
+        datas.append(data_hoje)
+    datas = sorted(set(datas), reverse=True)
+    with open(caminho_indice, "w", encoding="utf-8") as f:
+        json.dump(datas, f, ensure_ascii=False, indent=2)
 
     print(f"[OK] Feed do dia salvo em: {caminho_saida}")
     print(json.dumps(feed, ensure_ascii=False, indent=2))
