@@ -1,195 +1,195 @@
 {
   "noticias": [
     {
-      "categoria": "STF",
-      "fonte_nome": "Gazeta Brasil",
-      "fonte_url": "https://gazetabrasil.com.br/brasil/2026/09/15/stf-decide-hoje-investigacao-contra-moraes/",
+      "categoria": "Pesquisas Eleitorais",
+      "fonte_nome": "CNN Brasil",
+      "fonte_url": "https://www.cnnbrasil.com.br/eleicoes/quaest-flavio-aparece-numericamente-a-frente-de-lula-pela-1a-vez/",
       "esquerda": {
-        "manchete": "STF analisa investigação contra Moraes em meio a ataques da extrema-direita ao ministro",
-        "resumo": "O plenário do STF se reúne para avaliar relatório da PF sobre mensagens de Vorcaro a Moraes, enquanto panelaços tentam pressionar o ministro que enfrentou trama golpista."
+        "manchete": "Empate técnico: Quaest mostra Lula e Flávio praticamente colados, dentro da margem de erro",
+        "resumo": "Pesquisa Quaest aponta Flávio com 42% e Lula com 40% no 2º turno, diferença dentro da margem de erro de 2 pontos, configurando empate técnico entre os dois."
       },
       "centro": {
-        "manchete": "STF decide hoje se abre investigação contra Alexandre de Moraes",
-        "resumo": "Sessão plenária extraordinária analisa relatório da PF sobre mensagens trocadas entre o banqueiro Vorcaro e o ministro; placar está dividido e pedido de vista pode adiar decisão."
+        "manchete": "Quaest: Flávio Bolsonaro aparece numericamente à frente de Lula pela 1ª vez no 2º turno",
+        "resumo": "Levantamento mostra Flávio com 42% e Lula com 40% em simulação de segundo turno, resultado dentro da margem de erro de 2 pontos percentuais."
       },
       "direita": {
-        "manchete": "Sob forte tensão, STF julga se há motivo para investigar o próprio ministro Moraes",
-        "resumo": "Com protestos proibidos em Brasília e esquema de segurança reforçado, corte decide se as mensagens reveladas pela PF justificam abertura de inquérito contra Moraes."
+        "manchete": "Virada histórica: Flávio Bolsonaro ultrapassa Lula pela primeira vez na campanha, mostra Quaest",
+        "resumo": "Pela primeira vez no ciclo eleitoral, Flávio Bolsonaro aparece à frente de Lula no 2º turno, com 42% a 40%, sinalizando fôlego crescente da candidatura."
       },
       "id": 1,
-      "imagem_url": "https://gazetabrasil.com.br/wp-content/uploads/2026/09/moraes-3.jpg"
+      "imagem_url": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/09/Marcelo-Crivella-e-Benedita-da-Silva-7.jpg?w=1200&amp;h=630&amp;crop=1"
     },
     {
-      "categoria": "Pesquisas Eleitorais",
-      "fonte_nome": "G1 / Quaest",
-      "fonte_url": "https://pt.wikipedia.org/wiki/Pesquisas_de_opini%C3%A3o_para_a_elei%C3%A7%C3%A3o_presidencial_no_Brasil_em_2026",
+      "categoria": "STF",
+      "fonte_nome": "O Tempo",
+      "fonte_url": "https://www.otempo.com.br/canal-o-tempo/programas/o-tempo-news/2026/9/14/stf-em-crise-sessao-sobre-moraes-acontece-nesta-terca-feira-o-tempo-news",
       "esquerda": {
-        "manchete": "Nova Quaest confirma Lula na liderança da corrida presidencial com folga de 5 pontos",
-        "resumo": "Pesquisa divulgada mostra Lula com 36% no primeiro turno contra 31% de Flávio Bolsonaro, mantendo vantagem mesmo em cenário de dispersão de votos à direita."
+        "manchete": "STF discute caso Master em sessão marcada por disputa política e pressão externa sobre a Corte",
+        "resumo": "Ministros analisam relatório da PF sobre mensagens entre Vorcaro e Moraes, em meio a uma ofensiva que críticos apontam como tentativa de desgastar o Judiciário às vésperas da eleição."
       },
       "centro": {
-        "manchete": "Quaest mostra Lula com 36% e Flávio Bolsonaro com 31% no primeiro turno",
-        "resumo": "Levantamento divulgado nesta semana aponta Cury em terceiro com 7%, seguido por Renan e Caiado empatados com 4%, e Zema com 1%."
+        "manchete": "STF realiza sessão extraordinária para discutir relatório da PF sobre Moraes e caso Banco Master",
+        "resumo": "Corte avalia dados do celular de Daniel Vorcaro, que mostram 52 mensagens trocadas com Moraes, e decide se abre investigação contra o ministro."
       },
       "direita": {
-        "manchete": "Pesquisa Quaest mostra Flávio Bolsonaro consolidado como principal alternativa a Lula",
-        "resumo": "Levantamento aponta Flávio Bolsonaro com 31% no primeiro turno, distante apenas 5 pontos de Lula, enquanto opositores minoritários somam apenas 16% dos votos."
+        "manchete": "Crise se aprofunda no STF: relatório da PF revela contrato de R$ 130 milhões ligado à esposa de Moraes",
+        "resumo": "Documento da Polícia Federal aponta oito encontros entre Vorcaro e Moraes e contrato milionário com escritório da esposa do ministro, ampliando pressão por explicações."
       },
       "id": 2,
-      "imagem_url": null
-    },
-    {
-      "categoria": "Economia",
-      "fonte_nome": "Agência Brasil",
-      "fonte_url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-09/mercado-projeta-corte-da-selic-para-1375-nesta-semana",
-      "esquerda": {
-        "manchete": "Mercado prevê novo corte da Selic nesta semana, aliviando custo do crédito para trabalhadores",
-        "resumo": "Boletim Focus do Banco Central projeta redução da taxa básica de juros para 13,75% e queda na inflação esperada para 4,90% em 2026."
-      },
-      "centro": {
-        "manchete": "Copom decide nesta semana e mercado aposta em corte da Selic para 13,75%",
-        "resumo": "Boletim Focus divulgado pelo Banco Central prevê queda de 0,25 ponto na taxa básica de juros, inflação em 4,90% e PIB de 1,89% para 2026."
-      },
-      "direita": {
-        "manchete": "Boletim Focus aponta corte de juros, mas mercado ainda vê inflação acima da meta em 2027",
-        "resumo": "Analistas preveem Selic a 13,75% no fim do ano, mas a projeção de inflação para 2027 segue em 4,29%, acima do centro da meta de 3% perseguida pelo Banco Central."
-      },
-      "id": 3,
-      "imagem_url": "https://imagens.ebc.com.br/GR_BQXMGrlqUBGSYyD95JP0nocg=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/banco_central_mcajr_abr_0104222274_0.jpg?itok=M_-AE-Ek"
-    },
-    {
-      "categoria": "Congresso",
-      "fonte_nome": "Agência Câmara",
-      "fonte_url": "https://www.camara.leg.br/noticias/1302664-camara-aprova-mp-que-acaba-com-a-%22taxa-das-blusinhas-texto-vai-ao-senado",
-      "esquerda": {
-        "manchete": "Congresso aprova fim da taxa das blusinhas e amplia acesso a compras internacionais",
-        "resumo": "Medida provisória zera imposto sobre remessas de até 50 dólares, medida que deputado governista chama de fundamental para quem não pode viajar ao exterior."
-      },
-      "centro": {
-        "manchete": "Câmara e Senado aprovam fim da taxa sobre compras internacionais de até US$ 50",
-        "resumo": "MP zera imposto de importação para pequenas remessas e reduz de 60% para até 30% a alíquota sobre compras entre US$ 50 e US$ 3 mil; texto segue para sanção."
-      },
-      "direita": {
-        "manchete": "Congresso aprova fim da taxa das blusinhas, mas indústria nacional cobra reciprocidade",
-        "resumo": "Deputado da oposição criticou concorrência desigual, citando que produtos chineses entram sem imposto e sem as mesmas exigências trabalhistas da indústria brasileira."
-      },
-      "id": 4,
-      "imagem_url": "https://www.camara.leg.br/tema/assets/images/imagens-compartilhamento/imagem-padrao.jpg"
+      "imagem_url": "https://www.otempo.com.br/content/dam/otempo/editorias/o tempo news/2026/9/14/o tempo news-stf-moraes-andre_mendonca-1789429931.jpeg"
     },
     {
       "categoria": "Eleições 2026",
-      "fonte_nome": "CNN Brasil",
-      "fonte_url": "https://www.cnnbrasil.com.br/politica/tse-forma-maioria-para-rejeitar-candidatura-de-pablo-marcal-a-presidencia/",
+      "fonte_nome": "O Tempo",
+      "fonte_url": "https://www.otempo.com.br/eleicoes/2026/presidentes/2026/9/12/tse-nega-por-unanimidade-registro-de-candidatura-de-pablo-marcal-a-presidencia",
       "esquerda": {
-        "manchete": "TSE rejeita por unanimidade candidatura de Marçal e reforça regras eleitorais",
-        "resumo": "Tribunal decidiu que liminar obtida às pressas não bastava para legitimar registro de quem está inelegível até 2032 por comprar apoio de vereadores e prefeitos."
+        "manchete": "TSE barra Marçal por unanimidade e reforça regras contra fraude eleitoral em redes sociais",
+        "resumo": "Tribunal negou candidatura de Pablo Marçal por condenação de uso indevido de redes em 2024, mantendo padrão de responsabilização de quem burla a lei eleitoral."
       },
       "centro": {
-        "manchete": "TSE nega, por unanimidade, registro de candidatura de Pablo Marçal à Presidência",
-        "resumo": "Corte entendeu que Marçal não comprovou filiação partidária dentro do prazo legal; ele estava inelegível até 2032 por condenação nas eleições municipais de 2024."
+        "manchete": "TSE rejeita, por unanimidade, registro de candidatura de Pablo Marçal à Presidência",
+        "resumo": "Corte considerou Marçal inelegível até 2032 após condenação nas eleições municipais de 2024; defesa classificou a decisão como injusta."
       },
       "direita": {
-        "manchete": "TSE barra candidatura de Marçal, movimento que redesenha o tabuleiro da oposição",
-        "resumo": "Decisão unânime do tribunal retira Marçal da disputa presidencial e reforça o espaço de outros nomes de oposição na corrida contra Lula em 2026."
+        "manchete": "TSE barra Marçal e defesa denuncia obstáculos a quem 'decide enfrentar o sistema'",
+        "resumo": "Decisão unânime tira Marçal da disputa presidencial; advogados do candidato criticaram o rigor da Justiça Eleitoral contra outsiders políticos."
       },
-      "id": 5,
-      "imagem_url": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/10/ATO20240924093-e1729728918162.jpg?w=1200&amp;h=630&amp;crop=1"
-    },
-    {
-      "categoria": "Judiciário",
-      "fonte_nome": "Gazeta do Paraná",
-      "fonte_url": "https://gazetadoparana.com.br/artigo/bolsonaro-passa-7-de-setembro-em-prisao-domiciliar-em-brasilia",
-      "esquerda": {
-        "manchete": "Bolsonaro cumpre pena por trama golpista longe das ruas neste 7 de Setembro",
-        "resumo": "Condenado a 27 anos e 3 meses de prisão pelo STF, ex-presidente segue em prisão domiciliar com restrições, enquanto filho lidera ato político em seu nome."
-      },
-      "centro": {
-        "manchete": "Bolsonaro passa o 7 de Setembro em prisão domiciliar em Brasília, sob restrições do STF",
-        "resumo": "Ex-presidente cumpre pena de 27 anos e 3 meses por tentativa de golpe e não participa de ato liderado pelo filho Flávio Bolsonaro em São Paulo."
-      },
-      "direita": {
-        "manchete": "Sob prisão domiciliar, Bolsonaro é lembrado em ato na Paulista liderado por Flávio",
-        "resumo": "Impedido de participar por decisão do STF, ex-presidente acompanha de casa a manifestação organizada por apoiadores e liderada pelo filho, candidato à Presidência."
-      },
-      "id": 6,
-      "imagem_url": "https://gazetadoparana.com.br/images/20250924115143_ogImage_47.jpg"
+      "id": 3,
+      "imagem_url": "https://www.otempo.com.br/content/dam/otempo/editorias/política judiciário/2026/8/20/política judiciário-tse-pablo_marcal-propaganda_eleitoral-1787240453.jpg"
     },
     {
       "categoria": "Política Externa",
       "fonte_nome": "Tribuna do Sertão",
       "fonte_url": "https://www.tribunadosertao.com.br/financas/2026/09/14/978846-governos-lula-e-trump-negociam-tarifaco-ate-o-fim-de-setembro",
       "esquerda": {
-        "manchete": "Governo Lula avança em negociação para reverter tarifaço de Trump contra o Brasil",
-        "resumo": "Ministros da Indústria e Relações Exteriores se reunirão com representante comercial dos EUA no G20 para tentar reduzir impacto das sobretaxas sobre exportadores brasileiros."
+        "manchete": "Governo Lula intensifica diálogo para reverter tarifaço injusto imposto por Trump",
+        "resumo": "Ministros brasileiros vão se reunir com representante comercial dos EUA no G20 em Milwaukee para negociar o fim das tarifas que penalizam a indústria nacional."
       },
       "centro": {
-        "manchete": "Brasil e EUA marcam nova rodada de negociação sobre tarifas para fim de setembro",
-        "resumo": "Ministros Márcio Elias Rosa e Mauro Vieira devem se reunir com o representante comercial americano Jamieson Greer em Milwaukee, ainda sem esboço de acordo."
+        "manchete": "Brasil e EUA agendam nova rodada de negociação sobre tarifas para fim de setembro",
+        "resumo": "Ministros Márcio Elias Rosa e Mauro Vieira devem se reunir com o USTR Jamieson Greer durante encontro do G20 em Milwaukee para discutir o tarifaço."
       },
       "direita": {
-        "manchete": "Governo tenta amenizar tarifaço de Trump, mas negociação segue sem acordo fechado",
-        "resumo": "Apesar da reunião marcada para o G20, equipes técnicas ainda não chegaram a um esboço de acordo sobre as tarifas que afetam exportadores brasileiros."
+        "manchete": "Governo corre contra o tempo para resolver tarifaço que penaliza exportadores brasileiros",
+        "resumo": "Diplomacia brasileira busca acordo com os EUA até fim de setembro, mas mercado cobra resultados concretos após meses de tensão comercial e perdas ao agronegócio."
       },
-      "id": 7,
+      "id": 4,
       "imagem_url": "https://img.dhost.cloud/qCFAnbiEKls6CL86Cty785trDJ4=/1280x720/smart/https://tdan.nyc3.digitaloceanspaces.com/images/8d23e/35e5f4dfe34ce059ffe0d5e08a7cffc06e6.jpg"
     },
     {
-      "categoria": "Congresso",
-      "fonte_nome": "Agência Senado",
-      "fonte_url": "https://www12.senado.leg.br/noticias/materias/2026/09/02/pec-da-seguranca-ccj-aprova-texto-base-com-retirada-de-regra-sobre-bets",
+      "categoria": "Economia",
+      "fonte_nome": "Gazeta Mercantil",
+      "fonte_url": "https://gazetamercantil.com/selic-setembro-2026-copom-corte-juros-1375",
       "esquerda": {
-        "manchete": "PEC da Segurança avança no Senado com foco em integração e combate ao crime organizado",
-        "resumo": "CCJ aprovou texto que cria o Sistema Único de Segurança Pública e amplia recursos para o setor, buscando resposta estruturada e não apenas repressiva ao crime."
+        "manchete": "Copom pode reduzir juros para 13,75%, aliviando crédito para famílias e pequenos negócios",
+        "resumo": "Comitê do Banco Central decide nesta semana se dá continuidade ao corte da Selic, atualmente em 14%, o que pode facilitar o acesso a crédito popular."
       },
       "centro": {
-        "manchete": "CCJ do Senado aprova texto-base da PEC da Segurança Pública",
-        "resumo": "Proposta cria o Sistema Único de Segurança Pública, torna regime penal mais rigoroso para líderes de facções e ainda depende de votação em plenário."
+        "manchete": "Copom decide nesta semana se reduz Selic para 13,75% em meio a cenário de juros ainda altos",
+        "resumo": "Mercado prevê corte de 0,25 ponto na taxa básica, mas Focus indica que juros devem seguir elevados por período prolongado, com Selic em 13,75% no fim do ano."
       },
       "direita": {
-        "manchete": "Senado avança com PEC que endurece penas para líderes de facções e milícias",
-        "resumo": "Texto aprovado na CCJ torna o regime penal mais rigoroso e proporcional à posição hierárquica de integrantes de organizações criminosas, mas retirou trecho sobre uso de recursos das bets."
+        "manchete": "Mesmo com possível corte, Selic segue elevada e trava crescimento da economia, aponta mercado",
+        "resumo": "Analistas preveem redução modesta dos juros nesta semana, mas alertam que o ritmo lento de cortes reflete cautela fiscal diante dos riscos da política econômica."
       },
-      "id": 8,
-      "imagem_url": "https://www12.senado.leg.br/noticias/materias/2026/09/02/pec-da-seguranca-ccj-aprova-texto-base-com-retirada-de-regra-sobre-bets/20260902_01418g.jpg"
+      "id": 5,
+      "imagem_url": "https://gazetamercantil.com/wp-content/uploads/2026/07/1783120817_Queda-da-Selic-ainda-nao-barateia-credito-especialista-explica-cenario.png"
+    },
+    {
+      "categoria": "Congresso",
+      "fonte_nome": "Agência Brasil",
+      "fonte_url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-09/senado-aprova-projeto-que-cria-incentivos-para-data-centers-no-brasil",
+      "esquerda": {
+        "manchete": "Congresso aprova incentivo a data centers, mas entidades cobram foco em soberania digital",
+        "resumo": "Projeto do Redata cria isenções fiscais bilionárias para atrair investimentos, enquanto sociedade civil pede mais debate sobre autonomia tecnológica nacional."
+      },
+      "centro": {
+        "manchete": "Senado aprova regime de incentivos fiscais para instalação de data centers no Brasil",
+        "resumo": "O Redata isenta impostos federais para equipamentos de data centers, com renúncia estimada em R$ 5,2 bilhões neste ano; texto segue para sanção."
+      },
+      "direita": {
+        "manchete": "Congresso aprova pacote de desoneração para atrair bilhões em investimentos de data centers",
+        "resumo": "Redata zera tributos federais sobre importação de tecnologia para data centers, medida vista como decisiva para o Brasil competir por investimentos globais."
+      },
+      "id": 6,
+      "imagem_url": "https://imagens.ebc.com.br/g9EL2CEID30ld7xm-cJi6YNX86I=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/07/27/image-1200-7b1750e9ddf236b8ed5b32b5197a5316.jpeg?itok=ogpjHs-q"
     },
     {
       "categoria": "Segurança Pública",
-      "fonte_nome": "Secom - Governo Federal",
+      "fonte_nome": "Governo Federal (Secom)",
       "fonte_url": "https://www.gov.br/secom/pt-br/assuntos/noticias/2026/01/brasil-intensifica-cerco-ao-crime-organizado-com-foco-na-descapitalizacao-de-faccoes-e-repressao-em-fronteiras",
       "esquerda": {
-        "manchete": "Operações contra facções bloqueiam R$ 3,2 bilhões e mostram eficácia da ação sem letalidade",
-        "resumo": "Governo federal destaca operação no Rio Grande do Norte com 150 prisões sem um único disparo, resultado de inteligência policial e dados, não apenas repressão."
+        "manchete": "Governo aposta em inteligência e bloqueio de bens para enfraquecer facções sem letalidade",
+        "resumo": "Operações resultaram em mais de 400 mandados e bloqueio de R$ 3,2 bilhões; secretário destaca modelo de ação policial sem mortes no Rio Grande do Norte."
       },
       "centro": {
-        "manchete": "Operações federais contra o crime organizado resultam em mais de 400 mandados cumpridos",
-        "resumo": "Ação conjunta entre Polícia Federal, Receita Federal e Ministério da Justiça bloqueou R$ 3,2 bilhões em bens ligados a esquema que teria movimentado R$ 140 bilhões."
+        "manchete": "Operações contra crime organizado bloqueiam R$ 3,2 bilhões e cumprem 400 mandados judiciais",
+        "resumo": "Ação conjunta de Polícia Federal e Receita Federal mirou o setor de combustíveis, apontando movimentação ilícita de R$ 140 bilhões pelas facções."
       },
       "direita": {
-        "manchete": "Governo aponta avanço contra o crime organizado, mas PEC da Segurança segue travada no Congresso",
-        "resumo": "Apesar de operações que bloquearam bilhões em ativos de facções, projetos como a PEC da Segurança Pública tiveram votação adiada, atrasando resposta mais dura ao crime."
+        "manchete": "Forças de segurança miram bilhões desviados por facções em ofensiva contra crime organizado",
+        "resumo": "Operação nacional resultou em bloqueio de R$ 3,2 bilhões em bens e 400 mandados judiciais cumpridos, reforçando o combate ao avanço do crime organizado."
       },
-      "id": 9,
+      "id": 7,
       "imagem_url": null
     },
     {
-      "categoria": "Meio Ambiente",
-      "fonte_nome": "Rádio Gov / EBC",
-      "fonte_url": "https://radiogov.ebc.com.br/programas/boletim-cop30-amazonia/brasil-mobiliza-esforcos-globais-para-frear-desmatamento-ate-2030",
+      "categoria": "Segurança Pública",
+      "fonte_nome": "OVALE",
+      "fonte_url": "https://sampi.net.br/ovale/noticias/3003896/vale-do-paraiba/2026/09/pm-reforca-seguranca-na-divisa-com-o-rio-durante-operacao-no-vale",
       "esquerda": {
-        "manchete": "Brasil lidera esforço global para zerar desmatamento até 2030 após legado da COP30",
-        "resumo": "Diplomacia brasileira destaca compromisso com conservação da Amazônia e articula estudo internacional para reverter degradação florestal, com foco em povos indígenas."
+        "manchete": "PMs de SP e RJ unem forças para conter avanço de facções em região de fronteira",
+        "resumo": "Operação integrada entre os estados busca impedir a circulação de criminosos entre territórios que concentram mais da metade dos homicídios da região."
       },
       "centro": {
-        "manchete": "Governo brasileiro articula plano internacional contra o desmatamento até 2030",
-        "resumo": "Após sediar a COP30 em Belém, diplomacia brasileira propõe estudo global para unir governos, empresas e sociedade civil na meta de frear a degradação florestal."
+        "manchete": "SP e RJ realizam operação conjunta na divisa para conter disputa entre facções criminosas",
+        "resumo": "Policiais militares dos dois estados reforçam pontos estratégicos no Vale do Paraíba, área de disputa entre PCC e Comando Vermelho."
       },
       "direita": {
-        "manchete": "Mesmo com discurso ambiental na COP30, país ainda busca definir metas concretas de desmatamento",
-        "resumo": "Pesquisadores apontam que apenas quatro estados têm metas de desmatamento definidas e cobram mais clareza sobre como o Brasil pretende cumprir compromisso até 2030."
+        "manchete": "Tarcísio reforça policiamento na fronteira com o Rio contra avanço do crime organizado",
+        "resumo": "Operação integrada entre polícias de SP e RJ mira o avanço de facções cariocas sobre território paulista, com reforço de tropas especializadas."
+      },
+      "id": 8,
+      "imagem_url": "https://sampi.net.br/dir-arquivo-imagem/2026/09/0e314f92afeb091839d44f7d5d1c46aa.png"
+    },
+    {
+      "categoria": "Avaliação de Governo",
+      "fonte_nome": "O Tempo",
+      "fonte_url": "https://www.otempo.com.br/eleicoes/2026/pesquisas/2026/9/14/governo-lula-tem-50-de-desaprovacao-e-43-de-aprovacao-aponta-nova-pesquisa",
+      "esquerda": {
+        "manchete": "Aprovação de Lula se mantém estável em 43% mesmo sob forte pressão política, aponta Quaest",
+        "resumo": "Pesquisa mostra números praticamente inalterados em relação à semana anterior, sinalizando resiliência da base de apoio ao governo em meio à disputa eleitoral."
+      },
+      "centro": {
+        "manchete": "Quaest: desaprovação do governo Lula segue em 50% e aprovação em 43%",
+        "resumo": "Números permanecem estáveis em relação ao levantamento anterior, divulgado em 7 de setembro, mostrando desaprovação maior que aprovação."
+      },
+      "direita": {
+        "manchete": "Desaprovação do governo Lula segue à frente da aprovação, mostra nova pesquisa Quaest",
+        "resumo": "Levantamento aponta 50% de desaprovação contra 43% de aprovação ao governo, reforçando o desgaste da gestão petista às vésperas da eleição."
+      },
+      "id": 9,
+      "imagem_url": "https://www.otempo.com.br/content/dam/otempo/editorias/eleições 2026 - presidentes/2026/9/eleições 2026 - presidentes-lula-mant-m-os-mesmos--ndices-de-aprova--o-e-desaprova--o-em-pesquisa-1789399413.jpg"
+    },
+    {
+      "categoria": "Meio Ambiente",
+      "fonte_nome": "Agência Gov",
+      "fonte_url": "https://agenciagov.ebc.com.br/noticias/202511/marina-silva-detalha-conquistas-e-desdobramentos-da-cop30-no-bom-dia-ministra-desta-sexta-28",
+      "esquerda": {
+        "manchete": "Fundo Amazônia soma R$ 1,6 bilhão e amplia proteção da floresta, celebra Marina Silva",
+        "resumo": "Ministra destaca resultados do fundo, que já beneficiou 260 mil pessoas por meio de 140 projetos comunitários, além de nova doação de 20 milhões de euros da UE."
+      },
+      "centro": {
+        "manchete": "Marina Silva detalha resultados do Fundo Amazônia e desdobramentos da COP30",
+        "resumo": "Ministra apresentou balanço do fundo, criado em 2008, que retomou doações em 2023 e já ultrapassa R$ 1,6 bilhão contratados em projetos ambientais."
+      },
+      "direita": {
+        "manchete": "Governo destaca resultados do Fundo Amazônia, mas críticos questionam custo da agenda verde",
+        "resumo": "Enquanto Marina Silva celebra doações internacionais ao Fundo Amazônia, setores produtivos cobram equilíbrio entre proteção ambiental e desenvolvimento econômico."
       },
       "id": 10,
       "imagem_url": null
     }
   ],
-  "gerado_em": "2026-09-15T08:13:48.996836+00:00"
+  "gerado_em": "2026-09-16T08:12:41.855500+00:00"
 }
