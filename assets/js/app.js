@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
    Troque pela URL real assim que o produto for criado na Kiwify
    (Painel Kiwify -> seu produto -> "Link de vendas" ou "Compartilhar").
    ========================================================================== */
-const KIWIFY_CHECKOUT_URL = 'https://pay.kiwify.com.br/CQm6rHH';
+const KIWIFY_CHECKOUT_URL = 'https://pay.kiwify.com.br/1FQ2xY0';
 
 /* ==========================================================================
    1. DYNAMIC HEADER DATE
@@ -703,6 +703,11 @@ function initLeadForm() {
 
     localStorage.setItem('boletim_user_lead', JSON.stringify(leadData));
 
+    // Meta Pixel: evento de Lead, disparado ao completar o cadastro do quiz
+    if (typeof fbq === 'function') {
+      fbq('track', 'Lead');
+    }
+
     // Mostra estado de carregamento no botão enquanto o e-mail é enviado de verdade
     const submitBtn = form.querySelector('button[type="submit"]');
     const submitBtnOriginalText = submitBtn ? submitBtn.textContent : '';
@@ -755,7 +760,7 @@ function renderLeadSuccess(captureSection, name, email, profile, emailEnviado) {
         <div style="background: var(--bg-subtle); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px;">
           🔒 Seus dados estão seguros e protegidos pela LGPD. Não enviamos spam nem compartilhamos suas respostas.
         </div>
-        <a href="${KIWIFY_CHECKOUT_URL}" class="btn-primary" style="display:inline-block;text-decoration:none;font-size: 1rem; padding: 14px 28px; margin-bottom: 12px;">
+        <a href="${KIWIFY_CHECKOUT_URL}" class="btn-primary" onclick="if (typeof fbq === 'function') { fbq('track', 'InitiateCheckout'); }" style="display:inline-block;text-decoration:none;font-size: 1rem; padding: 14px 28px; margin-bottom: 12px;">
           Quero a assinatura completa
         </a>
         <br>
