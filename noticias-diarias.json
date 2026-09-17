@@ -2,194 +2,194 @@
   "noticias": [
     {
       "categoria": "Pesquisas Eleitorais",
-      "fonte_nome": "CNN Brasil",
-      "fonte_url": "https://www.cnnbrasil.com.br/eleicoes/quaest-flavio-aparece-numericamente-a-frente-de-lula-pela-1a-vez/",
+      "fonte_nome": "Gazeta do Povo / G1",
+      "fonte_url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-presidente-setembro-2026/",
       "esquerda": {
-        "manchete": "Empate técnico: Quaest mostra Lula e Flávio praticamente colados, dentro da margem de erro",
-        "resumo": "Pesquisa Quaest aponta Flávio com 42% e Lula com 40% no 2º turno, diferença dentro da margem de erro de 2 pontos, configurando empate técnico entre os dois."
+        "manchete": "Quaest confirma Lula na liderança com 37% e queda de indecisos na campanha",
+        "resumo": "Nova pesquisa Quaest mostra Lula à frente com 37% contra 30% de Flávio Bolsonaro, sinal de que o discurso de reeleição convence o eleitorado."
       },
       "centro": {
-        "manchete": "Quaest: Flávio Bolsonaro aparece numericamente à frente de Lula pela 1ª vez no 2º turno",
-        "resumo": "Levantamento mostra Flávio com 42% e Lula com 40% em simulação de segundo turno, resultado dentro da margem de erro de 2 pontos percentuais."
+        "manchete": "Quaest: Lula tem 37% e Flávio Bolsonaro 30% em primeiro levantamento oficial da campanha",
+        "resumo": "Pesquisa Quaest de 1º de setembro aponta Lula na frente com 37%, Flávio Bolsonaro com 30% e Cury em terceiro com 10%, num cenário ainda com margem de disputa."
       },
       "direita": {
-        "manchete": "Virada histórica: Flávio Bolsonaro ultrapassa Lula pela primeira vez na campanha, mostra Quaest",
-        "resumo": "Pela primeira vez no ciclo eleitoral, Flávio Bolsonaro aparece à frente de Lula no 2º turno, com 42% a 40%, sinalizando fôlego crescente da candidatura."
+        "manchete": "Flávio Bolsonaro consolida 30% e reduz espaço para indecisos, mostra Quaest",
+        "resumo": "Levantamento indica Flávio Bolsonaro estável em segundo lugar com 30%, enquanto Cury cresce e disputa o posto de alternativa de oposição a Lula."
       },
       "id": 1,
-      "imagem_url": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/09/Marcelo-Crivella-e-Benedita-da-Silva-7.jpg?w=1200&amp;h=630&amp;crop=1"
+      "imagem_url": "https://media.gazetadopovo.com.br/2026/09/01084314/pesquisa-eleitoral-presidente.png"
     },
     {
-      "categoria": "STF",
-      "fonte_nome": "O Tempo",
-      "fonte_url": "https://www.otempo.com.br/canal-o-tempo/programas/o-tempo-news/2026/9/14/stf-em-crise-sessao-sobre-moraes-acontece-nesta-terca-feira-o-tempo-news",
+      "categoria": "Justiça/Bolsonaro",
+      "fonte_nome": "Agência Brasil",
+      "fonte_url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-03/por-unanimidade-stf-nega-prisao-domiciliar-bolsonaro",
       "esquerda": {
-        "manchete": "STF discute caso Master em sessão marcada por disputa política e pressão externa sobre a Corte",
-        "resumo": "Ministros analisam relatório da PF sobre mensagens entre Vorcaro e Moraes, em meio a uma ofensiva que críticos apontam como tentativa de desgastar o Judiciário às vésperas da eleição."
+        "manchete": "STF mantém rigor e reafirma condenação de Bolsonaro pela trama golpista",
+        "resumo": "Primeira Turma do STF negou por unanimidade novo pedido de prisão domiciliar a Bolsonaro, reforçando a firmeza da Justiça diante da tentativa de golpe de Estado."
       },
       "centro": {
-        "manchete": "STF realiza sessão extraordinária para discutir relatório da PF sobre Moraes e caso Banco Master",
-        "resumo": "Corte avalia dados do celular de Daniel Vorcaro, que mostram 52 mensagens trocadas com Moraes, e decide se abre investigação contra o ministro."
+        "manchete": "STF nega novamente prisão domiciliar a Bolsonaro; ex-presidente segue detido em Brasília",
+        "resumo": "Por unanimidade, a Primeira Turma do STF manteve a decisão de Alexandre de Moraes que nega prisão domiciliar humanitária ao ex-presidente, condenado a 27 anos e três meses."
       },
       "direita": {
-        "manchete": "Crise se aprofunda no STF: relatório da PF revela contrato de R$ 130 milhões ligado à esposa de Moraes",
-        "resumo": "Documento da Polícia Federal aponta oito encontros entre Vorcaro e Moraes e contrato milionário com escritório da esposa do ministro, ampliando pressão por explicações."
+        "manchete": "Mesmo com problemas de saúde, STF nega novo pedido de prisão domiciliar a Bolsonaro",
+        "resumo": "Defesa alegou risco à saúde do ex-presidente após cirurgia e comorbidades da facada de 2018, mas STF negou por unanimidade o pedido de prisão domiciliar."
       },
       "id": 2,
-      "imagem_url": "https://www.otempo.com.br/content/dam/otempo/editorias/o tempo news/2026/9/14/o tempo news-stf-moraes-andre_mendonca-1789429931.jpeg"
+      "imagem_url": "https://imagens.ebc.com.br/iYwEbQKD35MrETTEApBUDjjwJHw=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2025/09/14/14092025-pzzb3322.jpg?itok=-VCYWelj"
     },
     {
-      "categoria": "Eleições 2026",
-      "fonte_nome": "O Tempo",
-      "fonte_url": "https://www.otempo.com.br/eleicoes/2026/presidentes/2026/9/12/tse-nega-por-unanimidade-registro-de-candidatura-de-pablo-marcal-a-presidencia",
+      "categoria": "Segurança Pública",
+      "fonte_nome": "ABCD News / Agência Brasil",
+      "fonte_url": "https://www.abcdnews.com.br/noticia/megaoperacao-contra-crime-organizado-bloqueia-mais-de-r-508-milhoes",
       "esquerda": {
-        "manchete": "TSE barra Marçal por unanimidade e reforça regras contra fraude eleitoral em redes sociais",
-        "resumo": "Tribunal negou candidatura de Pablo Marçal por condenação de uso indevido de redes em 2024, mantendo padrão de responsabilização de quem burla a lei eleitoral."
+        "manchete": "Governo federal amplia ação integrada e bloqueia R$ 508 milhões de facções criminosas",
+        "resumo": "Megaoperação da Ficco em 19 estados prendeu suspeitos e bloqueou mais de R$ 508 milhões, mostrando força do investimento público em segurança coordenada."
       },
       "centro": {
-        "manchete": "TSE rejeita, por unanimidade, registro de candidatura de Pablo Marçal à Presidência",
-        "resumo": "Corte considerou Marçal inelegível até 2032 após condenação nas eleições municipais de 2024; defesa classificou a decisão como injusta."
+        "manchete": "Operação nacional contra facções cumpre mais de 100 prisões e bloqueia R$ 508 milhões",
+        "resumo": "A Força Integrada de Combate ao Crime Organizado prendeu suspeitos em 19 estados e sequestrou bens milionários ligados a tráfico e lavagem de dinheiro."
       },
       "direita": {
-        "manchete": "TSE barra Marçal e defesa denuncia obstáculos a quem 'decide enfrentar o sistema'",
-        "resumo": "Decisão unânime tira Marçal da disputa presidencial; advogados do candidato criticaram o rigor da Justiça Eleitoral contra outsiders políticos."
+        "manchete": "Megaoperação mostra avanço no combate ao crime organizado, mas reforça urgência de mais rigor",
+        "resumo": "Ação simultânea em 19 estados prendeu mais de cem suspeitos de facções, reforçando o argumento de que segurança pública exige resposta ainda mais dura do Estado."
       },
       "id": 3,
-      "imagem_url": "https://www.otempo.com.br/content/dam/otempo/editorias/política judiciário/2026/8/20/política judiciário-tse-pablo_marcal-propaganda_eleitoral-1787240453.jpg"
+      "imagem_url": null
     },
     {
       "categoria": "Política Externa",
-      "fonte_nome": "Tribuna do Sertão",
-      "fonte_url": "https://www.tribunadosertao.com.br/financas/2026/09/14/978846-governos-lula-e-trump-negociam-tarifaco-ate-o-fim-de-setembro",
+      "fonte_nome": "InfoMoney / Agência O Globo",
+      "fonte_url": "https://www.infomoney.com.br/politica/governos-lula-e-trump-preparam-nova-rodada-de-negociacao-sobre-tarifaco/",
       "esquerda": {
-        "manchete": "Governo Lula intensifica diálogo para reverter tarifaço injusto imposto por Trump",
-        "resumo": "Ministros brasileiros vão se reunir com representante comercial dos EUA no G20 em Milwaukee para negociar o fim das tarifas que penalizam a indústria nacional."
+        "manchete": "Governo Lula avança em negociação para reverter tarifaço injusto imposto por Trump",
+        "resumo": "Ministros brasileiros vão se reunir com representante comercial dos EUA no G20, buscando reverter tarifas consideradas discriminatórias contra produtos nacionais."
       },
       "centro": {
-        "manchete": "Brasil e EUA agendam nova rodada de negociação sobre tarifas para fim de setembro",
-        "resumo": "Ministros Márcio Elias Rosa e Mauro Vieira devem se reunir com o USTR Jamieson Greer durante encontro do G20 em Milwaukee para discutir o tarifaço."
+        "manchete": "Brasil e EUA marcam nova rodada de negociação sobre tarifas para fim de setembro",
+        "resumo": "Ministros do Brasil vão se encontrar com representante comercial dos EUA em Milwaukee, nos dias 30 de setembro e 1º de outubro, para tratar do tarifaço."
       },
       "direita": {
-        "manchete": "Governo corre contra o tempo para resolver tarifaço que penaliza exportadores brasileiros",
-        "resumo": "Diplomacia brasileira busca acordo com os EUA até fim de setembro, mas mercado cobra resultados concretos após meses de tensão comercial e perdas ao agronegócio."
+        "manchete": "Diplomacia busca destravar tarifaço dos EUA em encontro decisivo no G20",
+        "resumo": "Chanceler Mauro Vieira e ministro Márcio Elias Rosa vão negociar pessoalmente com os EUA a redução das tarifas que penalizam exportadores brasileiros."
       },
       "id": 4,
-      "imagem_url": "https://img.dhost.cloud/qCFAnbiEKls6CL86Cty785trDJ4=/1280x720/smart/https://tdan.nyc3.digitaloceanspaces.com/images/8d23e/35e5f4dfe34ce059ffe0d5e08a7cffc06e6.jpg"
+      "imagem_url": "https://www.infomoney.com.br/wp-content/uploads/2025/10/2025-10-26T095120Z_1_LYNXMPEL9P06N_RTROPTP_4_POLITICA-LULA-TRUMP-VIEIRA.jpeg"
     },
     {
       "categoria": "Economia",
-      "fonte_nome": "Gazeta Mercantil",
-      "fonte_url": "https://gazetamercantil.com/selic-setembro-2026-copom-corte-juros-1375",
+      "fonte_nome": "Agência Brasil",
+      "fonte_url": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-09/ibc-br-recua-02-em-julho-resultado-representa-alta-de-1-em-um-ano",
       "esquerda": {
-        "manchete": "Copom pode reduzir juros para 13,75%, aliviando crédito para famílias e pequenos negócios",
-        "resumo": "Comitê do Banco Central decide nesta semana se dá continuidade ao corte da Selic, atualmente em 14%, o que pode facilitar o acesso a crédito popular."
+        "manchete": "Economia brasileira mantém crescimento anual de 1,5% mesmo em cenário global adverso",
+        "resumo": "Apesar do recuo mensal, o IBC-Br acumula alta de 1,5% em 12 meses, revelando resiliência da atividade econômica sob o governo Lula."
       },
       "centro": {
-        "manchete": "Copom decide nesta semana se reduz Selic para 13,75% em meio a cenário de juros ainda altos",
-        "resumo": "Mercado prevê corte de 0,25 ponto na taxa básica, mas Focus indica que juros devem seguir elevados por período prolongado, com Selic em 13,75% no fim do ano."
+        "manchete": "IBC-Br recua 0,2% em julho e acende sinal de desaceleração da economia",
+        "resumo": "Indicador do Banco Central caiu pelo segundo mês seguido, puxado pela agropecuária, mas ainda acumula alta de 1,5% em 12 meses."
       },
       "direita": {
-        "manchete": "Mesmo com possível corte, Selic segue elevada e trava crescimento da economia, aponta mercado",
-        "resumo": "Analistas preveem redução modesta dos juros nesta semana, mas alertam que o ritmo lento de cortes reflete cautela fiscal diante dos riscos da política econômica."
+        "manchete": "Segunda queda seguida do IBC-Br acende alerta sobre desaceleração da atividade",
+        "resumo": "Indicador recuou 0,2% em julho, repetindo tendência de baixa do mês anterior, reforçando críticas à condução da política econômica e fiscal do governo."
       },
       "id": 5,
-      "imagem_url": "https://gazetamercantil.com/wp-content/uploads/2026/07/1783120817_Queda-da-Selic-ainda-nao-barateia-credito-especialista-explica-cenario.png"
+      "imagem_url": "https://imagens.ebc.com.br/9UQKWhfOvfjleRp0i0WQOf2iK_Q=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/economia_1609210409_0.jpg?itok=PV1W5XZA"
+    },
+    {
+      "categoria": "Eleições 2026",
+      "fonte_nome": "TSE / Gazeta da Amazônia",
+      "fonte_url": "https://gazetadaamazonia.com.br/04/09/2026/pablo-marcal-homologado-tse/",
+      "esquerda": {
+        "manchete": "TSE homologa candidaturas e mantém Marçal sob condição sub judice apesar de inelegibilidade",
+        "resumo": "Corte eleitoral confirmou 13 candidaturas à Presidência, incluindo Lula, e deixou pendente decisão final sobre Marçal, condenado e inelegível até 2032."
+      },
+      "centro": {
+        "manchete": "TSE homologa 13 candidaturas à Presidência; caso Marçal segue sub judice",
+        "resumo": "Tribunal Superior Eleitoral confirmou os registros de Lula, Flávio Bolsonaro e outros dez postulantes, enquanto a situação de Pablo Marçal ainda depende de julgamento final."
+      },
+      "direita": {
+        "manchete": "TSE libera candidatura de Marçal na condição sub judice enquanto julgamento final não sai",
+        "resumo": "Mesmo inelegível, Marçal poderá fazer campanha e aparecer na urna enquanto a Justiça Eleitoral não decide definitivamente seu caso, ao lado de Flávio Bolsonaro e outros dez nomes homologados."
+      },
+      "id": 6,
+      "imagem_url": "https://gazetadaamazonia.com.br/wp-content/uploads/2026/09/pablo-marcal.webp"
     },
     {
       "categoria": "Congresso",
       "fonte_nome": "Agência Brasil",
-      "fonte_url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-09/senado-aprova-projeto-que-cria-incentivos-para-data-centers-no-brasil",
+      "fonte_url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-05/camara-aprova-em-dois-turnos-pec-pelo-fim-da-escala-6x1",
       "esquerda": {
-        "manchete": "Congresso aprova incentivo a data centers, mas entidades cobram foco em soberania digital",
-        "resumo": "Projeto do Redata cria isenções fiscais bilionárias para atrair investimentos, enquanto sociedade civil pede mais debate sobre autonomia tecnológica nacional."
+        "manchete": "Câmara aprova fim da escala 6x1 e garante conquista histórica para trabalhadores",
+        "resumo": "Com 461 votos a favor, deputados aprovaram a PEC que reduz a jornada semanal de 44 para 40 horas sem perda salarial, vitória do movimento sindical."
       },
       "centro": {
-        "manchete": "Senado aprova regime de incentivos fiscais para instalação de data centers no Brasil",
-        "resumo": "O Redata isenta impostos federais para equipamentos de data centers, com renúncia estimada em R$ 5,2 bilhões neste ano; texto segue para sanção."
+        "manchete": "Câmara aprova PEC do fim da escala 6x1 com regras de transição; texto vai ao Senado",
+        "resumo": "Proposta aprovada por 461 votos a 19 reduz gradualmente a jornada de 44 para 40 horas semanais, com adaptação negociada entre empresas e trabalhadores."
       },
       "direita": {
-        "manchete": "Congresso aprova pacote de desoneração para atrair bilhões em investimentos de data centers",
-        "resumo": "Redata zera tributos federais sobre importação de tecnologia para data centers, medida vista como decisiva para o Brasil competir por investimentos globais."
-      },
-      "id": 6,
-      "imagem_url": "https://imagens.ebc.com.br/g9EL2CEID30ld7xm-cJi6YNX86I=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/07/27/image-1200-7b1750e9ddf236b8ed5b32b5197a5316.jpeg?itok=ogpjHs-q"
-    },
-    {
-      "categoria": "Segurança Pública",
-      "fonte_nome": "Governo Federal (Secom)",
-      "fonte_url": "https://www.gov.br/secom/pt-br/assuntos/noticias/2026/01/brasil-intensifica-cerco-ao-crime-organizado-com-foco-na-descapitalizacao-de-faccoes-e-repressao-em-fronteiras",
-      "esquerda": {
-        "manchete": "Governo aposta em inteligência e bloqueio de bens para enfraquecer facções sem letalidade",
-        "resumo": "Operações resultaram em mais de 400 mandados e bloqueio de R$ 3,2 bilhões; secretário destaca modelo de ação policial sem mortes no Rio Grande do Norte."
-      },
-      "centro": {
-        "manchete": "Operações contra crime organizado bloqueiam R$ 3,2 bilhões e cumprem 400 mandados judiciais",
-        "resumo": "Ação conjunta de Polícia Federal e Receita Federal mirou o setor de combustíveis, apontando movimentação ilícita de R$ 140 bilhões pelas facções."
-      },
-      "direita": {
-        "manchete": "Forças de segurança miram bilhões desviados por facções em ofensiva contra crime organizado",
-        "resumo": "Operação nacional resultou em bloqueio de R$ 3,2 bilhões em bens e 400 mandados judiciais cumpridos, reforçando o combate ao avanço do crime organizado."
+        "manchete": "PEC que reduz jornada é aprovada na Câmara com transição negociada para preservar empresas",
+        "resumo": "Texto aprovado prevê prazo de 14 meses para adaptação e permite ampliação da jornada diária via acordo coletivo, resguardando espaço de negociação entre patrões e empregados."
       },
       "id": 7,
-      "imagem_url": null
+      "imagem_url": "https://imagens.ebc.com.br/E9D9lo5NfSjagcdZjvYZocCjPJM=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/05/28/aprovacao_da_pec_6x1_na_camara.jpg?itok=9Y9g4Sqo"
     },
     {
-      "categoria": "Segurança Pública",
-      "fonte_nome": "OVALE",
-      "fonte_url": "https://sampi.net.br/ovale/noticias/3003896/vale-do-paraiba/2026/09/pm-reforca-seguranca-na-divisa-com-o-rio-durante-operacao-no-vale",
+      "categoria": "STF/Judiciário",
+      "fonte_nome": "Wikipédia / STF",
+      "fonte_url": "https://pt.wikipedia.org/wiki/Esc%C3%A2ndalo_do_Banco_Master",
       "esquerda": {
-        "manchete": "PMs de SP e RJ unem forças para conter avanço de facções em região de fronteira",
-        "resumo": "Operação integrada entre os estados busca impedir a circulação de criminosos entre territórios que concentram mais da metade dos homicídios da região."
+        "manchete": "PF levanta sigilo e expõe rede de contatos de Vorcaro com autoridades no caso Banco Master",
+        "resumo": "Relatório da Polícia Federal detalha encontros do banqueiro Daniel Vorcaro com autoridades, reforçando a necessidade de transparência total nas investigações do escândalo financeiro."
       },
       "centro": {
-        "manchete": "SP e RJ realizam operação conjunta na divisa para conter disputa entre facções criminosas",
-        "resumo": "Policiais militares dos dois estados reforçam pontos estratégicos no Vale do Paraíba, área de disputa entre PCC e Comando Vermelho."
+        "manchete": "STF libera sigilo de relatório da PF sobre encontros de Vorcaro com autoridades públicas",
+        "resumo": "Ministro André Mendonça determinou a divulgação de dados que mostram ao menos seis encontros entre o banqueiro Daniel Vorcaro e autoridades entre 2024 e 2025."
       },
       "direita": {
-        "manchete": "Tarcísio reforça policiamento na fronteira com o Rio contra avanço do crime organizado",
-        "resumo": "Operação integrada entre polícias de SP e RJ mira o avanço de facções cariocas sobre território paulista, com reforço de tropas especializadas."
+        "manchete": "Caso Banco Master expõe proximidade entre banqueiro investigado e autoridades do Judiciário",
+        "resumo": "Levantamento de sigilo pela PF revela encontros entre Daniel Vorcaro e ministros, alimentando cobranças por mais fiscalização e freios institucionais no Judiciário."
       },
       "id": 8,
-      "imagem_url": "https://sampi.net.br/dir-arquivo-imagem/2026/09/0e314f92afeb091839d44f7d5d1c46aa.png"
+      "imagem_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Banco_Master_e_Envolvidos.png?utm_source=pt.wikipedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail_unscaled"
     },
     {
-      "categoria": "Avaliação de Governo",
-      "fonte_nome": "O Tempo",
-      "fonte_url": "https://www.otempo.com.br/eleicoes/2026/pesquisas/2026/9/14/governo-lula-tem-50-de-desaprovacao-e-43-de-aprovacao-aponta-nova-pesquisa",
+      "categoria": "Governo/Reforma Ministerial",
+      "fonte_nome": "Poder360",
+      "fonte_url": "https://www.poder360.com.br/poder-governo/saiba-quem-sao-os-novos-ministros-do-governo-lula/",
       "esquerda": {
-        "manchete": "Aprovação de Lula se mantém estável em 43% mesmo sob forte pressão política, aponta Quaest",
-        "resumo": "Pesquisa mostra números praticamente inalterados em relação à semana anterior, sinalizando resiliência da base de apoio ao governo em meio à disputa eleitoral."
+        "manchete": "Lula promove maior reforma ministerial da história para fortalecer projeto de reeleição",
+        "resumo": "Ao todo 21 ministros deixaram o governo para disputar eleições em 2026, movimento que amplia a capilaridade de lideranças progressistas pelo país."
       },
       "centro": {
-        "manchete": "Quaest: desaprovação do governo Lula segue em 50% e aprovação em 43%",
-        "resumo": "Números permanecem estáveis em relação ao levantamento anterior, divulgado em 7 de setembro, mostrando desaprovação maior que aprovação."
+        "manchete": "Governo Lula troca 21 ministros em reforma recorde antes da desincompatibilização eleitoral",
+        "resumo": "Number recorde de ministros deixou o primeiro escalão para concorrer a cargos eletivos em 2026, superando trocas de mandatos anteriores de Lula e Bolsonaro."
       },
       "direita": {
-        "manchete": "Desaprovação do governo Lula segue à frente da aprovação, mostra nova pesquisa Quaest",
-        "resumo": "Levantamento aponta 50% de desaprovação contra 43% de aprovação ao governo, reforçando o desgaste da gestão petista às vésperas da eleição."
+        "manchete": "Debandada recorde de 21 ministros expõe fragilidade política do governo antes da eleição",
+        "resumo": "A saída recorde de ministros para disputar eleições revela pressa do Planalto em recompor apoio parlamentar e reforça críticas sobre gestão do primeiro escalão."
       },
       "id": 9,
-      "imagem_url": "https://www.otempo.com.br/content/dam/otempo/editorias/eleições 2026 - presidentes/2026/9/eleições 2026 - presidentes-lula-mant-m-os-mesmos--ndices-de-aprova--o-e-desaprova--o-em-pesquisa-1789399413.jpg"
+      "imagem_url": "https://static.poder360.com.br/uploads/2026/04/esplanada-lula-ministros-sair-disputar-eleicao-30-mar-2026-01-scaled-1-scaled.png"
     },
     {
-      "categoria": "Meio Ambiente",
-      "fonte_nome": "Agência Gov",
-      "fonte_url": "https://agenciagov.ebc.com.br/noticias/202511/marina-silva-detalha-conquistas-e-desdobramentos-da-cop30-no-bom-dia-ministra-desta-sexta-28",
+      "categoria": "Relações Institucionais/STF",
+      "fonte_nome": "Agência Brasil",
+      "fonte_url": "https://agenciabrasil.ebc.com.br/internacional/noticia/2026-08/brasil-aponta-tratamento-discriminatorio-em-tarifas-dos-estados-unidos",
       "esquerda": {
-        "manchete": "Fundo Amazônia soma R$ 1,6 bilhão e amplia proteção da floresta, celebra Marina Silva",
-        "resumo": "Ministra destaca resultados do fundo, que já beneficiou 260 mil pessoas por meio de 140 projetos comunitários, além de nova doação de 20 milhões de euros da UE."
+        "manchete": "Presidente do STF defende fim do inquérito das fake news e reforça institucionalidade",
+        "resumo": "Declaração do presidente da Corte reacende debate sobre o encerramento de investigações que miraram desinformação, num momento de tensão entre poderes."
       },
       "centro": {
-        "manchete": "Marina Silva detalha resultados do Fundo Amazônia e desdobramentos da COP30",
-        "resumo": "Ministra apresentou balanço do fundo, criado em 2008, que retomou doações em 2023 e já ultrapassa R$ 1,6 bilhão contratados em projetos ambientais."
+        "manchete": "Presidente do STF sinaliza disposição de encerrar inquérito das fake news",
+        "resumo": "Fala do chefe do Supremo sobre o fim do inquérito reabre discussão sobre os limites e a duração de investigações no âmbito da Corte."
       },
       "direita": {
-        "manchete": "Governo destaca resultados do Fundo Amazônia, mas críticos questionam custo da agenda verde",
-        "resumo": "Enquanto Marina Silva celebra doações internacionais ao Fundo Amazônia, setores produtivos cobram equilíbrio entre proteção ambiental e desenvolvimento econômico."
+        "manchete": "Sinalização de fim do inquérito das fake news reacende debate sobre limites de poder do STF",
+        "resumo": "Declaração do presidente da Corte sobre encerrar a investigação alimenta críticas de setores que veem o inquérito como excesso de atuação do Judiciário."
       },
       "id": 10,
-      "imagem_url": null
+      "imagem_url": "https://imagens.ebc.com.br/xR5UWciF0tYp1Qe7YqubHVet24c=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/07/06/adobestock_386665695_0.jpeg?itok=dZ_kH5KC"
     }
   ],
-  "gerado_em": "2026-09-16T08:12:41.855500+00:00"
+  "gerado_em": "2026-09-17T08:12:57.995185+00:00"
 }
