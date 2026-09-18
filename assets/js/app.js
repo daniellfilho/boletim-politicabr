@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
    Troque pela URL real assim que o produto for criado na Kiwify
    (Painel Kiwify -> seu produto -> "Link de vendas" ou "Compartilhar").
    ========================================================================== */
-const KIWIFY_CHECKOUT_URL = 'https://pay.kiwify.com.br/CQm6rHH';
+const KIWIFY_CHECKOUT_URL = 'https://pay.kiwify.com.br/1FQ2xY0';
 
 /* ==========================================================================
    1. DYNAMIC HEADER DATE
@@ -50,28 +50,20 @@ function initDateHeader() {
    ========================================================================== */
 const QUESTION_ICONS = {
   1: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 40h36"/><rect x="11" y="24" width="6" height="12"/><rect x="21" y="16" width="6" height="20"/><rect x="31" y="9" width="6" height="27"/></svg>`,
-  2: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 6h22v36l-4-3-4 3-4-3-4 3-4-3-2 3z"/><path d="M18 17h12M18 24h12M18 31h6"/></svg>`,
-  3: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 40s-14-8.5-14-18.5C10 16 13.5 12 18 12c3 0 5 1.5 6 3.5C25 13.5 27 12 30 12c4.5 0 8 4 8 9.5C38 31.5 24 40 24 40z"/><path d="M18 22l3.5 3.5L27 20"/></svg>`,
-  4: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 5v10c0 12-8 19-15 23-7-4-15-11-15-23V10z"/><path d="M18 24l4.5 4.5L31 19"/></svg>`,
-  5: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 42V22"/><path d="M24 22c0-9 7-16 16-16 0 9-7 16-16 16z"/><path d="M24 28c0-7-5.5-13-13-13 0 7 5.5 13 13 13z"/></svg>`,
-  6: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v6M24 12l-10 8M24 12l10 8M6 20h16M26 20h16"/><path d="M6 20c0 4 3.5 7 7 7s7-3 7-7M26 20c0 4 3.5 7 7 7s7-3 7-7"/><path d="M24 36h-1M24 36V20M17 42h14"/></svg>`,
+  2: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 5v10c0 12-8 19-15 23-7-4-15-11-15-23V10z"/><path d="M18 24l4.5 4.5L31 19"/></svg>`,
+  3: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="9"/><circle cx="24" cy="24" r="2"/><path d="M24 2v6M24 40v6M2 24h6M40 24h6"/></svg>`,
+  4: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 40s-14-8.5-14-18.5C10 16 13.5 12 18 12c3 0 5 1.5 6 3.5C25 13.5 27 12 30 12c4.5 0 8 4 8 9.5C38 31.5 24 40 24 40z"/><path d="M18 22l3.5 3.5L27 20"/></svg>`,
+  5: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v6M24 12l-10 8M24 12l10 8M6 20h16M26 20h16"/><path d="M6 20c0 4 3.5 7 7 7s7-3 7-7M26 20c0 4 3.5 7 7 7s7-3 7-7"/><path d="M24 36h-1M24 36V20M17 42h14"/></svg>`,
+  6: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18h32M24 6L8 18h32z"/><path d="M12 18v16M20 18v16M28 18v16M36 18v16"/><path d="M8 40h32"/></svg>`,
   7: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20l24-12v32L6 28z"/><path d="M6 20v8h5l3 10h4l-2-10"/><path d="M35 16c2.5 2 4 5 4 8s-1.5 6-4 8"/></svg>`,
-  8: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="17"/><path d="M7 24h34M24 7c4.5 4.7 7 11 7 17s-2.5 12.3-7 17c-4.5-4.7-7-11-7-17s2.5-12.3 7-17z"/></svg>`,
-  9: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v4M24 38v4M12 12l16 6 16-6M12 12l-4 12 4 4 4-4-4-12M44 12l-4 12 4 4 4-4-4-12M24 10v28M14 40h20"/></svg>`,
-  10: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 42V18l10-6v30M16 42V24l10-6v24M26 42V14l16-6v34"/><path d="M6 42h36"/></svg>`,
-  11: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 12c-4-3-11-4-16-2v26c5-2 12-1 16 2 4-3 11-4 16-2V10c-5-2-12-1-16 2z"/><path d="M24 12v28"/></svg>`,
-  12: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 5v10c0 12-8 19-15 23-7-4-15-11-15-23V10z"/><path d="M17 24h5l2.5-6 3 12 2.5-6h6"/></svg>`,
-  13: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="9"/><circle cx="24" cy="24" r="2"/><path d="M24 2v6M24 40v6M2 24h6M40 24h6"/></svg>`,
-  14: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="18" cy="34" rx="12" ry="5"/><ellipse cx="18" cy="27" rx="12" ry="5"/><ellipse cx="18" cy="20" rx="12" ry="5"/><path d="M30 20v14M6 20v14"/><path d="M34 14l4-4 4 4M38 10v16"/></svg>`,
-  15: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18h32M24 6L8 18h32z"/><path d="M12 18v16M20 18v16M28 18v16M36 18v16"/><path d="M8 40h32"/></svg>`,
-  16: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 16h30l-3 22H12z"/><path d="M9 16l3-8h24l3 8"/><circle cx="24" cy="27" r="4.5"/></svg>`
+  8: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 16h30l-3 22H12z"/><path d="M9 16l3-8h24l3 8"/><circle cx="24" cy="27" r="4.5"/></svg>`
 };
 
 const QUIZ_QUESTIONS = [
   {
     id: 1,
     category: "Economia e Estado",
-    question: "Qual deve ser o papel principal do Estado no desenvolvimento da economia nacional?",
+    question: "Estado gigante cuidando de tudo, ou Estado fora do seu bolso: qual Brasil você quer viver?",
     options: [
       { text: "O Estado deve planejar, investir estrategicamente em setores-chave e controlar empresas estatais essenciais.", score: -2.0 },
       { text: "O Estado deve regular ativamente os mercados e intervir para corrigir desigualdades sociais e regionais.", score: -0.7 },
@@ -81,132 +73,8 @@ const QUIZ_QUESTIONS = [
   },
   {
     id: 2,
-    category: "Carga Tributária",
-    question: "Em relação ao sistema de impostos do Brasil, qual diretriz você considera mais adequada?",
-    options: [
-      { text: "Impostos fortemente progressivos, tributando mais quem ganha mais para financiar serviços públicos universais.", score: -2.0 },
-      { text: "Simplificação tributária combinada com alíquotas moderadas que preservem a rede de seguridade social.", score: -0.7 },
-      { text: "Redução do peso dos impostos sobre empresas e produção para incentivar a geração de empregos.", score: 0.7 },
-      { text: "Corte drástico e imediato de tributos em todos os níveis, acompanhado de rígido corte de despesas estatais.", score: 2.0 }
-    ]
-  },
-  {
-    id: 3,
-    category: "Programas Sociais",
-    question: "Como você avalia os programas federais de transferência de renda (como o Bolsa Família)?",
-    options: [
-      { text: "São direitos fundamentais e indispensáveis que devem ser permanentemente expandidos como renda básica da cidadania.", score: -2.0 },
-      { text: "São medidas essenciais de combate à miséria, mas precisam ser aprimoradas com qualificação e foco em crianças.", score: -0.7 },
-      { text: "São necessários como alívio temporário, mas devem ter exigências rígidas de contrapartida e portas de saída rápidas.", score: 0.7 },
-      { text: "Criam dependência crônica do Estado e devem ser gradualmente substituídos por incentivos diretos ao trabalho privado.", score: 2.0 }
-    ]
-  },
-  {
-    id: 4,
-    category: "Segurança Pública",
-    question: "Qual deve ser a principal prioridade do país para a redução dos índices de criminalidade?",
-    options: [
-      { text: "Enfrentar as raízes sociais da violência: desemprego, evasão escolar e promover a desmilitarização policial.", score: -2.0 },
-      { text: "Modernizar a inteligência policial, combater o crime organizado e aprimorar o sistema de ressocialização prisional.", score: -0.7 },
-      { text: "Endurecer a legislação penal, reduzir a maioridade para crimes graves e apoiar o trabalho das forças de segurança.", score: 0.7 },
-      { text: "Tolerância zero irrestrita, cumprimento rigoroso de penas sem benefícios e garantia do direito civil à legítima defesa.", score: 2.0 }
-    ]
-  },
-  // TRANSITION 1 OCCURS HERE (AFTER Q4)
-  {
-    id: 5,
-    category: "Meio Ambiente & Agro",
-    question: "Como equilibrar a preservação ambiental com o crescimento do agronegócio e obras de infraestrutura?",
-    options: [
-      { text: "A preservação de biomas e demarcação de terras indígenas devem prevalecer sobre qualquer expansão da fronteira agrícola.", score: -2.0 },
-      { text: "Promover incentivos econômicos a produtores sustentáveis, aliando rigor na fiscalização a transição ecológica.", score: -0.7 },
-      { text: "Desburocratizar o licenciamento ambiental e valorizar o agronegócio moderno, que já é o motor de exportação do país.", score: 0.7 },
-      { text: "Eliminar entraves de órgãos ambientais que travam o desenvolvimento produtivo, mineração e geração de energia.", score: 2.0 }
-    ]
-  },
-  {
-    id: 6,
-    category: "Valores e Legislação",
-    question: "Em debates legislativos sobre costumes e valores morais, qual deve ser a postura das leis?",
-    options: [
-      { text: "As leis devem garantir a plena autonomia individual, diversidade e descriminalização de pautas comportamentais.", score: -2.0 },
-      { text: "O Estado deve ser estritamente laico, protegendo minorias sem desconsiderar consensos democráticos vigentes.", score: -0.7 },
-      { text: "A legislação deve preservar a instituição familiar tradicional e os valores culturais majoritários da sociedade.", score: 0.7 },
-      { text: "Defesa intransigente dos valores cristãos e morais tradicionais como pilares invioláveis da ordem jurídica.", score: 2.0 }
-    ]
-  },
-  {
-    id: 7,
-    category: "Liberdade de Expressão",
-    question: "Qual o limite adequado para a regulação de conteúdo e combate à desinformação nas redes sociais?",
-    options: [
-      { text: "Regulação rigorosa com responsabilização civil e criminal imediata de plataformas sobre desinformação e discursos de ódio.", score: -2.0 },
-      { text: "Criação de diretrizes transparentes com participação da sociedade civil, garantindo o direito à ampla defesa.", score: -0.7 },
-      { text: "A moderação deve ser feita pelas próprias plataformas sem controle estatal prévio, coibindo apenas crimes tipificados em lei.", score: 0.7 },
-      { text: "Liberdade de expressão total e irrestrita; qualquer intervenção estatal ou judicial prévia configura censura inaceitável.", score: 2.0 }
-    ]
-  },
-  {
-    id: 8,
-    category: "Política Externa",
-    question: "Qual deve ser a diretriz central da diplomacia brasileira no cenário internacional?",
-    options: [
-      { text: "Priorizar a cooperação Sul-Sul, fortalecimento dos BRICS e contraponto à hegemonia das potências ocidentais.", score: -2.0 },
-      { text: "Diplomacia multilateral pragmática, liderando pautas globais como combate à fome e transição climática.", score: -0.7 },
-      { text: "Alinhamento prioritário a grandes democracias de mercado ocidentais (como EUA e Europa) e acordos de livre-comércio.", score: 0.7 },
-      { text: "Defesa firme da soberania nacional, com pragmatismo comercial estrito e repúdio a interferências de fóruns globalistas.", score: 2.0 }
-    ]
-  },
-  // TRANSITION 2 OCCURS HERE (AFTER Q8)
-  {
-    id: 9,
-    category: "Responsabilidade Fiscal",
-    question: "Em momentos de déficit nas contas públicas, qual medida deve ser priorizada pelo governo?",
-    options: [
-      { text: "Aumentar receitas taxando o capital improdutivo e os lucros bancários, mantendo os investimentos sociais e públicos.", score: -2.0 },
-      { text: "Adotar metas fiscais equilibradas que preservem investimentos cruciais, combinando contenção e estímulo moderado.", score: -0.7 },
-      { text: "Cumprir rigorosamente o teto de gastos e reformar a máquina pública para reduzir despesas correntes do Executivo.", score: 0.7 },
-      { text: "Congelar gastos imediatamente, extinguir ministérios e cortar subsídios para reequilibrar as contas sem novos impostos.", score: 2.0 }
-    ]
-  },
-  {
-    id: 10,
-    category: "Privatizações e Estatais",
-    question: "O que o Brasil deve fazer com suas empresas estatais (Petrobras, bancos públicos, Correios)?",
-    options: [
-      { text: "Manter sob controle estatal pleno para garantir preços acessíveis à população e soberania energética/financeira.", score: -2.0 },
-      { text: "Manter o controle público das estratégicas com governança profissionalizada e transparência contra indicações políticas.", score: -0.7 },
-      { text: "Privatizar a maioria das empresas e abrir os setores regulados à competição para atrair investimentos privados.", score: 0.7 },
-      { text: "Privatizar todas as estatais sem exceção, encerrando privilégios e o uso do patrimônio público por grupos de interesse.", score: 2.0 }
-    ]
-  },
-  {
-    id: 11,
-    category: "Educação Pública",
-    question: "Qual modelo pedagógico e de gestão deve ser priorizado nas escolas públicas de educação básica?",
-    options: [
-      { text: "Educação plural, inclusiva e crítica, com ênfase em direitos humanos, combate a preconceitos e valorização docente.", score: -2.0 },
-      { text: "Foco na alfabetização na idade certa e ensino em tempo integral, com infraestrutura moderna e avaliação contínua.", score: -0.7 },
-      { text: "Ensino focado em competências práticas de mercado, matemática e ciências, com estímulo a modelos cívico-militares.", score: 0.7 },
-      { text: "Ênfase em disciplina rigorosa, currículo neutro sem interferência ideológica e liberdade para ensino domiciliar (homeschooling).", score: 2.0 }
-    ]
-  },
-  {
-    id: 12,
-    category: "Liberdade Individual em Crises",
-    question: "Durante emergências públicas ou sanitárias, como balancear imposições do Estado e escolhas individuais?",
-    options: [
-      { text: "O bem coletivo e as determinações científicas oficiais devem prevalecer de forma obrigatória sobre liberdades individuais.", score: -2.0 },
-      { text: "O Estado deve liderar com campanhas educativas transparentes e medidas protetivas sem cercear direitos fundamentais.", score: -0.7 },
-      { text: "As decisões devem priorizar o funcionamento da economia e a manutenção do sustento das famílias e trabalhadores.", score: 0.7 },
-      { text: "A liberdade individual e a autonomia sobre o próprio corpo são invioláveis; o Estado nunca pode impor restrições ou vacinas.", score: 2.0 }
-    ]
-  },
-  // TRANSITION 3 OCCURS HERE (AFTER Q12)
-  {
-    id: 13,
     category: "Armas de Fogo",
-    question: "Qual deve ser a política brasileira em relação à posse e porte de armas de fogo para cidadãos comuns?",
+    question: "Diante da violência, o que te deixa mais seguro: se defender por conta própria ou confiar 100% no Estado?",
     options: [
       { text: "Desarmamento rigoroso; a circulação de armas aumenta a violência urbana e deve ser fortemente restringida.", score: -2.0 },
       { text: "Controle estatal rígido com exigência de critérios psicológicos e técnicos sérios para casos excepcionais justificados.", score: -0.7 },
@@ -215,58 +83,20 @@ const QUIZ_QUESTIONS = [
     ]
   },
   {
-    id: 14,
-    category: "Tributação sobre Renda e Riqueza",
-    question: "O que pensa sobre a criação de impostos sobre grandes fortunas e taxação de dividendos empresariais?",
+    id: 3,
+    category: "Valores e Legislação",
+    question: "Suas escolhas pessoais são só sua conta, ou a sociedade tem o direito de dizer o que é certo?",
     options: [
-      { text: "Medida urgente de justiça distributiva para combater a histórica concentração de renda no país.", score: -2.0 },
-      { text: "Válida se acompanhada da redução da tributação sobre o consumo de alimentos e medicamentos para a classe média.", score: -0.7 },
-      { text: "Arriscada, pois pode provocar fuga de capitais, desinvestimento e desestímulo à criação de novas empresas.", score: 0.7 },
-      { text: "Inadmissível; penaliza quem produziu e gera riqueza, além de ser confiscatória e ineficiente na arrecadação real.", score: 2.0 }
-    ]
-  },
-  {
-    id: 15,
-    category: "Prerrogativas Políticas",
-    question: "Qual deve ser o futuro do foro especial por prerrogativa de função (foro privilegiado) para políticos?",
-    options: [
-      { text: "Manter nos termos estritos da Constituição para evitar perseguições políticas locais contra mandatos legítimos.", score: -2.0 },
-      { text: "Restringir o foro exclusivamente a atos cometidos no exercício do mandato e relacionados com a função pública.", score: -0.7 },
-      { text: "Extinguir o foro privilegiado para a esmagadora maioria dos cargos, submetendo todos à primeira instância judicial.", score: 0.7 },
-      { text: "Fim absoluto e imediato de qualquer foro especial ou imunidade; perante a lei todos os cidadãos devem ser idênticos.", score: 2.0 }
-    ]
-  },
-  {
-    id: 16,
-    category: "Financiamento de Campanhas",
-    question: "Como as campanhas eleitorais e os partidos políticos devem ser financiados no Brasil?",
-    options: [
-      { text: "Financiamento 100% público com distribuição equitativa para evitar a influência do poder econômico privado nas urnas.", score: -2.0 },
-      { text: "Financiamento público com teto rigoroso de despesas e critérios severos de transparência e auditoria das contas.", score: -0.7 },
-      { text: "Modelo misto com redução expressiva do Fundo Eleitoral público e permissão para doações de pessoas físicas e jurídicas.", score: 0.7 },
-      { text: "Fim total do Fundo Eleitoral público (Fundão); os partidos devem ser mantidos exclusivamente por seus próprios filiados.", score: 2.0 }
+      { text: "As leis devem garantir a plena autonomia individual, diversidade e descriminalização de pautas comportamentais.", score: -2.0 },
+      { text: "O Estado deve ser estritamente laico, protegendo minorias sem desconsiderar consensos democráticos vigentes.", score: -0.7 },
+      { text: "A legislação deve preservar a instituição familiar tradicional e os valores culturais majoritários da sociedade.", score: 0.7 },
+      { text: "Defesa intransigente dos valores cristãos e morais tradicionais como pilares invioláveis da ordem jurídica.", score: 2.0 }
     ]
   }
 ];
 
-/* 3 Transition Curiosities (Inserted after Q4, Q8, Q12) */
-const TRANSITIONS = {
-  4: {
-    tag: "DADO NEUTRO SOBRE O BRASIL",
-    title: "156 Milhões de Eleitores em Ação",
-    body: "O Brasil possui o quarto maior colégio eleitoral do planeta e é um dos raros países a realizar apurações 100% informatizadas em menos de 3 horas após o encerramento das seções. Seu voto é um dos mais céleres do mundo contemporâneo."
-  },
-  8: {
-    tag: "FATOS DA DEMOCRACIA",
-    title: "A Constituição Cidadã de 1988",
-    body: "Promulgada após o período militar, a Constituição Brasileira de 1988 já recebeu mais de 130 emendas constitucionais. Trata-se de uma das Cartas mais detalhadas do mundo, equilibrando garantias sociais e limites ao poder do Estado."
-  },
-  12: {
-    tag: "BASTIDORES DO CONGRESSO",
-    title: "A Complexidade das PECs",
-    body: "Para que uma Proposta de Emenda à Constituição seja aprovada, são necessários 3/5 dos votos tanto na Câmara dos Deputados (308 de 513) quanto no Senado (49 de 81), em dois turnos de votação em cada casa. Nenhum governo governa sozinho."
-  }
-};
+/* Sem telas de transição no meio - quiz curto de propósito (3 perguntas) */
+const TRANSITIONS = {};
 
 /* ==========================================================================
    3. QUIZ ENGINE CONTROLLER
@@ -396,10 +226,55 @@ function handleNextStep() {
 
   // Check if finished
   if (currentQuestionIndex >= QUIZ_QUESTIONS.length) {
-    showResults();
+    showPreResultado();
   } else {
     renderQuestion();
   }
+}
+
+/* ==========================================================================
+   2.7 PRÉ-RESULTADO — frase provocativa antes da Urna
+   ========================================================================== */
+function calcularScoreAtual() {
+  const totalWeight = userAnswers.reduce((acc, curr) => acc + curr, 0);
+  const maxPossible = QUIZ_QUESTIONS.length * 2.0;
+  return Math.round((totalWeight / maxPossible) * 100);
+}
+
+function showPreResultado() {
+  const quizView = document.getElementById('view-quiz');
+  const preView = document.getElementById('view-preresultado');
+  const progressContainer = document.getElementById('quiz-progress-container');
+
+  quizView.classList.remove('active');
+  progressContainer.classList.remove('active');
+  preView.classList.add('active');
+
+  const score = calcularScoreAtual();
+  const fraseEl = document.getElementById('preresultado-frase');
+
+  if (score >= 15) {
+    fraseEl.textContent = 'Então você é um patriota!?';
+  } else if (score <= -15) {
+    fraseEl.textContent = 'Então você é companheiro(a)!?';
+  } else {
+    fraseEl.textContent = 'Então você é do time do bom senso!?';
+  }
+
+  const btnContinuar = document.getElementById('btn-continuar-preresultado');
+  // Evita empilhar listeners se a pessoa passar por essa tela mais de uma vez
+  btnContinuar.onclick = () => {
+    showResults();
+    setTimeout(() => {
+      const urna = document.getElementById('urna-showcase');
+      if (urna) {
+        const headerEl = document.querySelector('.site-header');
+        const headerHeight = headerEl ? headerEl.offsetHeight : 0;
+        const y = urna.getBoundingClientRect().top + window.pageYOffset - headerHeight - 16;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }, 150);
+  };
 }
 
 function showTransitionScreen(transitionData) {
@@ -1063,5 +938,3 @@ function initUrnaSimulator() {
   // Initial screen setup
   updateUrnaScreen();
 }
-
-
