@@ -53,18 +53,6 @@ const QUESTION_ICONS = {
   2: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 6h22v36l-4-3-4 3-4-3-4 3-4-3-2 3z"/><path d="M18 17h12M18 24h12M18 31h6"/></svg>`,
   3: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 40s-14-8.5-14-18.5C10 16 13.5 12 18 12c3 0 5 1.5 6 3.5C25 13.5 27 12 30 12c4.5 0 8 4 8 9.5C38 31.5 24 40 24 40z"/><path d="M18 22l3.5 3.5L27 20"/></svg>`,
   4: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 5v10c0 12-8 19-15 23-7-4-15-11-15-23V10z"/><path d="M18 24l4.5 4.5L31 19"/></svg>`,
-  5: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 42V22"/><path d="M24 22c0-9 7-16 16-16 0 9-7 16-16 16z"/><path d="M24 28c0-7-5.5-13-13-13 0 7 5.5 13 13 13z"/></svg>`,
-  6: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v6M24 12l-10 8M24 12l10 8M6 20h16M26 20h16"/><path d="M6 20c0 4 3.5 7 7 7s7-3 7-7M26 20c0 4 3.5 7 7 7s7-3 7-7"/><path d="M24 36h-1M24 36V20M17 42h14"/></svg>`,
-  7: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20l24-12v32L6 28z"/><path d="M6 20v8h5l3 10h4l-2-10"/><path d="M35 16c2.5 2 4 5 4 8s-1.5 6-4 8"/></svg>`,
-  8: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="17"/><path d="M7 24h34M24 7c4.5 4.7 7 11 7 17s-2.5 12.3-7 17c-4.5-4.7-7-11-7-17s2.5-12.3 7-17z"/></svg>`,
-  9: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v4M24 38v4M12 12l16 6 16-6M12 12l-4 12 4 4 4-4-4-12M44 12l-4 12 4 4 4-4-4-12M24 10v28M14 40h20"/></svg>`,
-  10: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 42V18l10-6v30M16 42V24l10-6v24M26 42V14l16-6v34"/><path d="M6 42h36"/></svg>`,
-  11: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 12c-4-3-11-4-16-2v26c5-2 12-1 16 2 4-3 11-4 16-2V10c-5-2-12-1-16 2z"/><path d="M24 12v28"/></svg>`,
-  12: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 5v10c0 12-8 19-15 23-7-4-15-11-15-23V10z"/><path d="M17 24h5l2.5-6 3 12 2.5-6h6"/></svg>`,
-  13: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="9"/><circle cx="24" cy="24" r="2"/><path d="M24 2v6M24 40v6M2 24h6M40 24h6"/></svg>`,
-  14: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="18" cy="34" rx="12" ry="5"/><ellipse cx="18" cy="27" rx="12" ry="5"/><ellipse cx="18" cy="20" rx="12" ry="5"/><path d="M30 20v14M6 20v14"/><path d="M34 14l4-4 4 4M38 10v16"/></svg>`,
-  15: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18h32M24 6L8 18h32z"/><path d="M12 18v16M20 18v16M28 18v16M36 18v16"/><path d="M8 40h32"/></svg>`,
-  16: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 16h30l-3 22H12z"/><path d="M9 16l3-8h24l3 8"/><circle cx="24" cy="27" r="4.5"/></svg>`
 };
 
 const QUIZ_QUESTIONS = [
@@ -114,24 +102,6 @@ const QUIZ_QUESTIONS = [
   },
 ];
 
-/* 3 Transition Curiosities (Inserted after Q4, Q8, Q12) */
-const TRANSITIONS = {
-  4: {
-    tag: "DADO NEUTRO SOBRE O BRASIL",
-    title: "156 Milhões de Eleitores em Ação",
-    body: "O Brasil possui o quarto maior colégio eleitoral do planeta e é um dos raros países a realizar apurações 100% informatizadas em menos de 3 horas após o encerramento das seções. Seu voto é um dos mais céleres do mundo contemporâneo."
-  },
-  8: {
-    tag: "FATOS DA DEMOCRACIA",
-    title: "A Constituição Cidadã de 1988",
-    body: "Promulgada após o período militar, a Constituição Brasileira de 1988 já recebeu mais de 130 emendas constitucionais. Trata-se de uma das Cartas mais detalhadas do mundo, equilibrando garantias sociais e limites ao poder do Estado."
-  },
-  12: {
-    tag: "BASTIDORES DO CONGRESSO",
-    title: "A Complexidade das PECs",
-    body: "Para que uma Proposta de Emenda à Constituição seja aprovada, são necessários 3/5 dos votos tanto na Câmara dos Deputados (308 de 513) quanto no Senado (49 de 81), em dois turnos de votação em cada casa. Nenhum governo governa sozinho."
-  }
-};
 
 /* ==========================================================================
    3. QUIZ ENGINE CONTROLLER
