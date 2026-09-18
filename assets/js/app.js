@@ -55,16 +55,7 @@ const QUESTION_ICONS = {
   4: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 5v10c0 12-8 19-15 23-7-4-15-11-15-23V10z"/><path d="M18 24l4.5 4.5L31 19"/></svg>`,
   5: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 42V22"/><path d="M24 22c0-9 7-16 16-16 0 9-7 16-16 16z"/><path d="M24 28c0-7-5.5-13-13-13 0 7 5.5 13 13 13z"/></svg>`,
   6: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v6M24 12l-10 8M24 12l10 8M6 20h16M26 20h16"/><path d="M6 20c0 4 3.5 7 7 7s7-3 7-7M26 20c0 4 3.5 7 7 7s7-3 7-7"/><path d="M24 36h-1M24 36V20M17 42h14"/></svg>`,
-  7: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20l24-12v32L6 28z"/><path d="M6 20v8h5l3 10h4l-2-10"/><path d="M35 16c2.5 2 4 5 4 8s-1.5 6-4 8"/></svg>`,
-  8: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="17"/><path d="M7 24h34M24 7c4.5 4.7 7 11 7 17s-2.5 12.3-7 17c-4.5-4.7-7-11-7-17s2.5-12.3 7-17z"/></svg>`,
-  9: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v4M24 38v4M12 12l16 6 16-6M12 12l-4 12 4 4 4-4-4-12M44 12l-4 12 4 4 4-4-4-12M24 10v28M14 40h20"/></svg>`,
-  10: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 42V18l10-6v30M16 42V24l10-6v24M26 42V14l16-6v34"/><path d="M6 42h36"/></svg>`,
-  11: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 12c-4-3-11-4-16-2v26c5-2 12-1 16 2 4-3 11-4 16-2V10c-5-2-12-1-16 2z"/><path d="M24 12v28"/></svg>`,
-  12: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 5v10c0 12-8 19-15 23-7-4-15-11-15-23V10z"/><path d="M17 24h5l2.5-6 3 12 2.5-6h6"/></svg>`,
-  13: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="9"/><circle cx="24" cy="24" r="2"/><path d="M24 2v6M24 40v6M2 24h6M40 24h6"/></svg>`,
-  14: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="18" cy="34" rx="12" ry="5"/><ellipse cx="18" cy="27" rx="12" ry="5"/><ellipse cx="18" cy="20" rx="12" ry="5"/><path d="M30 20v14M6 20v14"/><path d="M34 14l4-4 4 4M38 10v16"/></svg>`,
-  15: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18h32M24 6L8 18h32z"/><path d="M12 18v16M20 18v16M28 18v16M36 18v16"/><path d="M8 40h32"/></svg>`,
-  16: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 16h30l-3 22H12z"/><path d="M9 16l3-8h24l3 8"/><circle cx="24" cy="27" r="4.5"/></svg>`
+ 
 };
 
 const QUIZ_QUESTIONS = [
@@ -135,118 +126,6 @@ const QUIZ_QUESTIONS = [
       { text: "Defesa intransigente dos valores cristãos e morais tradicionais como pilares invioláveis da ordem jurídica.", score: 2.0 }
     ]
   },
-  {
-    id: 7,
-    category: "Liberdade de Expressão",
-    question: "Qual o limite adequado para a regulação de conteúdo e combate à desinformação nas redes sociais?",
-    options: [
-      { text: "Regulação rigorosa com responsabilização civil e criminal imediata de plataformas sobre desinformação e discursos de ódio.", score: -2.0 },
-      { text: "Criação de diretrizes transparentes com participação da sociedade civil, garantindo o direito à ampla defesa.", score: -0.7 },
-      { text: "A moderação deve ser feita pelas próprias plataformas sem controle estatal prévio, coibindo apenas crimes tipificados em lei.", score: 0.7 },
-      { text: "Liberdade de expressão total e irrestrita; qualquer intervenção estatal ou judicial prévia configura censura inaceitável.", score: 2.0 }
-    ]
-  },
-  {
-    id: 8,
-    category: "Política Externa",
-    question: "Qual deve ser a diretriz central da diplomacia brasileira no cenário internacional?",
-    options: [
-      { text: "Priorizar a cooperação Sul-Sul, fortalecimento dos BRICS e contraponto à hegemonia das potências ocidentais.", score: -2.0 },
-      { text: "Diplomacia multilateral pragmática, liderando pautas globais como combate à fome e transição climática.", score: -0.7 },
-      { text: "Alinhamento prioritário a grandes democracias de mercado ocidentais (como EUA e Europa) e acordos de livre-comércio.", score: 0.7 },
-      { text: "Defesa firme da soberania nacional, com pragmatismo comercial estrito e repúdio a interferências de fóruns globalistas.", score: 2.0 }
-    ]
-  },
-  // TRANSITION 2 OCCURS HERE (AFTER Q8)
-  {
-    id: 9,
-    category: "Responsabilidade Fiscal",
-    question: "Em momentos de déficit nas contas públicas, qual medida deve ser priorizada pelo governo?",
-    options: [
-      { text: "Aumentar receitas taxando o capital improdutivo e os lucros bancários, mantendo os investimentos sociais e públicos.", score: -2.0 },
-      { text: "Adotar metas fiscais equilibradas que preservem investimentos cruciais, combinando contenção e estímulo moderado.", score: -0.7 },
-      { text: "Cumprir rigorosamente o teto de gastos e reformar a máquina pública para reduzir despesas correntes do Executivo.", score: 0.7 },
-      { text: "Congelar gastos imediatamente, extinguir ministérios e cortar subsídios para reequilibrar as contas sem novos impostos.", score: 2.0 }
-    ]
-  },
-  {
-    id: 10,
-    category: "Privatizações e Estatais",
-    question: "O que o Brasil deve fazer com suas empresas estatais (Petrobras, bancos públicos, Correios)?",
-    options: [
-      { text: "Manter sob controle estatal pleno para garantir preços acessíveis à população e soberania energética/financeira.", score: -2.0 },
-      { text: "Manter o controle público das estratégicas com governança profissionalizada e transparência contra indicações políticas.", score: -0.7 },
-      { text: "Privatizar a maioria das empresas e abrir os setores regulados à competição para atrair investimentos privados.", score: 0.7 },
-      { text: "Privatizar todas as estatais sem exceção, encerrando privilégios e o uso do patrimônio público por grupos de interesse.", score: 2.0 }
-    ]
-  },
-  {
-    id: 11,
-    category: "Educação Pública",
-    question: "Qual modelo pedagógico e de gestão deve ser priorizado nas escolas públicas de educação básica?",
-    options: [
-      { text: "Educação plural, inclusiva e crítica, com ênfase em direitos humanos, combate a preconceitos e valorização docente.", score: -2.0 },
-      { text: "Foco na alfabetização na idade certa e ensino em tempo integral, com infraestrutura moderna e avaliação contínua.", score: -0.7 },
-      { text: "Ensino focado em competências práticas de mercado, matemática e ciências, com estímulo a modelos cívico-militares.", score: 0.7 },
-      { text: "Ênfase em disciplina rigorosa, currículo neutro sem interferência ideológica e liberdade para ensino domiciliar (homeschooling).", score: 2.0 }
-    ]
-  },
-  {
-    id: 12,
-    category: "Liberdade Individual em Crises",
-    question: "Durante emergências públicas ou sanitárias, como balancear imposições do Estado e escolhas individuais?",
-    options: [
-      { text: "O bem coletivo e as determinações científicas oficiais devem prevalecer de forma obrigatória sobre liberdades individuais.", score: -2.0 },
-      { text: "O Estado deve liderar com campanhas educativas transparentes e medidas protetivas sem cercear direitos fundamentais.", score: -0.7 },
-      { text: "As decisões devem priorizar o funcionamento da economia e a manutenção do sustento das famílias e trabalhadores.", score: 0.7 },
-      { text: "A liberdade individual e a autonomia sobre o próprio corpo são invioláveis; o Estado nunca pode impor restrições ou vacinas.", score: 2.0 }
-    ]
-  },
-  // TRANSITION 3 OCCURS HERE (AFTER Q12)
-  {
-    id: 13,
-    category: "Armas de Fogo",
-    question: "Qual deve ser a política brasileira em relação à posse e porte de armas de fogo para cidadãos comuns?",
-    options: [
-      { text: "Desarmamento rigoroso; a circulação de armas aumenta a violência urbana e deve ser fortemente restringida.", score: -2.0 },
-      { text: "Controle estatal rígido com exigência de critérios psicológicos e técnicos sérios para casos excepcionais justificados.", score: -0.7 },
-      { text: "Facilitação da posse responsável em residências e propriedades rurais para proteção da família e do patrimônio.", score: 0.7 },
-      { text: "O porte de armas é um direito natural de autodefesa que deve ser garantido a qualquer cidadão idôneo sem burocracia.", score: 2.0 }
-    ]
-  },
-  {
-    id: 14,
-    category: "Tributação sobre Renda e Riqueza",
-    question: "O que pensa sobre a criação de impostos sobre grandes fortunas e taxação de dividendos empresariais?",
-    options: [
-      { text: "Medida urgente de justiça distributiva para combater a histórica concentração de renda no país.", score: -2.0 },
-      { text: "Válida se acompanhada da redução da tributação sobre o consumo de alimentos e medicamentos para a classe média.", score: -0.7 },
-      { text: "Arriscada, pois pode provocar fuga de capitais, desinvestimento e desestímulo à criação de novas empresas.", score: 0.7 },
-      { text: "Inadmissível; penaliza quem produziu e gera riqueza, além de ser confiscatória e ineficiente na arrecadação real.", score: 2.0 }
-    ]
-  },
-  {
-    id: 15,
-    category: "Prerrogativas Políticas",
-    question: "Qual deve ser o futuro do foro especial por prerrogativa de função (foro privilegiado) para políticos?",
-    options: [
-      { text: "Manter nos termos estritos da Constituição para evitar perseguições políticas locais contra mandatos legítimos.", score: -2.0 },
-      { text: "Restringir o foro exclusivamente a atos cometidos no exercício do mandato e relacionados com a função pública.", score: -0.7 },
-      { text: "Extinguir o foro privilegiado para a esmagadora maioria dos cargos, submetendo todos à primeira instância judicial.", score: 0.7 },
-      { text: "Fim absoluto e imediato de qualquer foro especial ou imunidade; perante a lei todos os cidadãos devem ser idênticos.", score: 2.0 }
-    ]
-  },
-  {
-    id: 16,
-    category: "Financiamento de Campanhas",
-    question: "Como as campanhas eleitorais e os partidos políticos devem ser financiados no Brasil?",
-    options: [
-      { text: "Financiamento 100% público com distribuição equitativa para evitar a influência do poder econômico privado nas urnas.", score: -2.0 },
-      { text: "Financiamento público com teto rigoroso de despesas e critérios severos de transparência e auditoria das contas.", score: -0.7 },
-      { text: "Modelo misto com redução expressiva do Fundo Eleitoral público e permissão para doações de pessoas físicas e jurídicas.", score: 0.7 },
-      { text: "Fim total do Fundo Eleitoral público (Fundão); os partidos devem ser mantidos exclusivamente por seus próprios filiados.", score: 2.0 }
-    ]
-  }
 ];
 
 /* 3 Transition Curiosities (Inserted after Q4, Q8, Q12) */
