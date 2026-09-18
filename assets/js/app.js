@@ -74,7 +74,9 @@ const QUIZ_QUESTIONS = [
     question: "Qual deve ser o papel principal do Estado no desenvolvimento da economia nacional?",
     options: [
       { text: "O Estado deve planejar, investir estrategicamente em setores-chave e controlar empresas estatais essenciais.", score: -2.0 },
-  
+      { text: "O Estado deve regular ativamente os mercados e intervir para corrigir desigualdades sociais e regionais.", score: -0.7 },
+      { text: "O Estado deve focar em desburocratização, segurança jurídica e atração de investimentos privados.", score: 0.7 },
+      { text: "O Estado deve ter presença mínima na economia, priorizando privatizações amplas e livre mercado irrestrito.", score: 2.0 }
     ]
   },
   {
@@ -83,7 +85,9 @@ const QUIZ_QUESTIONS = [
     question: "Em relação ao sistema de impostos do Brasil, qual diretriz você considera mais adequada?",
     options: [
       { text: "Impostos fortemente progressivos, tributando mais quem ganha mais para financiar serviços públicos universais.", score: -2.0 },
-    
+      { text: "Simplificação tributária combinada com alíquotas moderadas que preservem a rede de seguridade social.", score: -0.7 },
+      { text: "Redução do peso dos impostos sobre empresas e produção para incentivar a geração de empregos.", score: 0.7 },
+      { text: "Corte drástico e imediato de tributos em todos os níveis, acompanhado de rígido corte de despesas estatais.", score: 2.0 }
     ]
   },
   {
@@ -92,7 +96,9 @@ const QUIZ_QUESTIONS = [
     question: "Como você avalia os programas federais de transferência de renda (como o Bolsa Família)?",
     options: [
       { text: "São direitos fundamentais e indispensáveis que devem ser permanentemente expandidos como renda básica da cidadania.", score: -2.0 },
-     
+      { text: "São medidas essenciais de combate à miséria, mas precisam ser aprimoradas com qualificação e foco em crianças.", score: -0.7 },
+      { text: "São necessários como alívio temporário, mas devem ter exigências rígidas de contrapartida e portas de saída rápidas.", score: 0.7 },
+      { text: "Criam dependência crônica do Estado e devem ser gradualmente substituídos por incentivos diretos ao trabalho privado.", score: 2.0 }
     ]
   },
   {
@@ -101,7 +107,9 @@ const QUIZ_QUESTIONS = [
     question: "Qual deve ser a principal prioridade do país para a redução dos índices de criminalidade?",
     options: [
       { text: "Enfrentar as raízes sociais da violência: desemprego, evasão escolar e promover a desmilitarização policial.", score: -2.0 },
-     
+      { text: "Modernizar a inteligência policial, combater o crime organizado e aprimorar o sistema de ressocialização prisional.", score: -0.7 },
+      { text: "Endurecer a legislação penal, reduzir a maioridade para crimes graves e apoiar o trabalho das forças de segurança.", score: 0.7 },
+      { text: "Tolerância zero irrestrita, cumprimento rigoroso de penas sem benefícios e garantia do direito civil à legítima defesa.", score: 2.0 }
     ]
   },
   // TRANSITION 1 OCCURS HERE (AFTER Q4)
@@ -111,7 +119,9 @@ const QUIZ_QUESTIONS = [
     question: "Como equilibrar a preservação ambiental com o crescimento do agronegócio e obras de infraestrutura?",
     options: [
       { text: "A preservação de biomas e demarcação de terras indígenas devem prevalecer sobre qualquer expansão da fronteira agrícola.", score: -2.0 },
-     
+      { text: "Promover incentivos econômicos a produtores sustentáveis, aliando rigor na fiscalização a transição ecológica.", score: -0.7 },
+      { text: "Desburocratizar o licenciamento ambiental e valorizar o agronegócio moderno, que já é o motor de exportação do país.", score: 0.7 },
+      { text: "Eliminar entraves de órgãos ambientais que travam o desenvolvimento produtivo, mineração e geração de energia.", score: 2.0 }
     ]
   },
   {
@@ -120,7 +130,9 @@ const QUIZ_QUESTIONS = [
     question: "Em debates legislativos sobre costumes e valores morais, qual deve ser a postura das leis?",
     options: [
       { text: "As leis devem garantir a plena autonomia individual, diversidade e descriminalização de pautas comportamentais.", score: -2.0 },
-     
+      { text: "O Estado deve ser estritamente laico, protegendo minorias sem desconsiderar consensos democráticos vigentes.", score: -0.7 },
+      { text: "A legislação deve preservar a instituição familiar tradicional e os valores culturais majoritários da sociedade.", score: 0.7 },
+      { text: "Defesa intransigente dos valores cristãos e morais tradicionais como pilares invioláveis da ordem jurídica.", score: 2.0 }
     ]
   },
   {
@@ -129,7 +141,9 @@ const QUIZ_QUESTIONS = [
     question: "Qual o limite adequado para a regulação de conteúdo e combate à desinformação nas redes sociais?",
     options: [
       { text: "Regulação rigorosa com responsabilização civil e criminal imediata de plataformas sobre desinformação e discursos de ódio.", score: -2.0 },
-    
+      { text: "Criação de diretrizes transparentes com participação da sociedade civil, garantindo o direito à ampla defesa.", score: -0.7 },
+      { text: "A moderação deve ser feita pelas próprias plataformas sem controle estatal prévio, coibindo apenas crimes tipificados em lei.", score: 0.7 },
+      { text: "Liberdade de expressão total e irrestrita; qualquer intervenção estatal ou judicial prévia configura censura inaceitável.", score: 2.0 }
     ]
   },
   {
@@ -138,7 +152,9 @@ const QUIZ_QUESTIONS = [
     question: "Qual deve ser a diretriz central da diplomacia brasileira no cenário internacional?",
     options: [
       { text: "Priorizar a cooperação Sul-Sul, fortalecimento dos BRICS e contraponto à hegemonia das potências ocidentais.", score: -2.0 },
-    
+      { text: "Diplomacia multilateral pragmática, liderando pautas globais como combate à fome e transição climática.", score: -0.7 },
+      { text: "Alinhamento prioritário a grandes democracias de mercado ocidentais (como EUA e Europa) e acordos de livre-comércio.", score: 0.7 },
+      { text: "Defesa firme da soberania nacional, com pragmatismo comercial estrito e repúdio a interferências de fóruns globalistas.", score: 2.0 }
     ]
   },
   // TRANSITION 2 OCCURS HERE (AFTER Q8)
@@ -148,7 +164,9 @@ const QUIZ_QUESTIONS = [
     question: "Em momentos de déficit nas contas públicas, qual medida deve ser priorizada pelo governo?",
     options: [
       { text: "Aumentar receitas taxando o capital improdutivo e os lucros bancários, mantendo os investimentos sociais e públicos.", score: -2.0 },
-     
+      { text: "Adotar metas fiscais equilibradas que preservem investimentos cruciais, combinando contenção e estímulo moderado.", score: -0.7 },
+      { text: "Cumprir rigorosamente o teto de gastos e reformar a máquina pública para reduzir despesas correntes do Executivo.", score: 0.7 },
+      { text: "Congelar gastos imediatamente, extinguir ministérios e cortar subsídios para reequilibrar as contas sem novos impostos.", score: 2.0 }
     ]
   },
   {
@@ -157,7 +175,9 @@ const QUIZ_QUESTIONS = [
     question: "O que o Brasil deve fazer com suas empresas estatais (Petrobras, bancos públicos, Correios)?",
     options: [
       { text: "Manter sob controle estatal pleno para garantir preços acessíveis à população e soberania energética/financeira.", score: -2.0 },
-     
+      { text: "Manter o controle público das estratégicas com governança profissionalizada e transparência contra indicações políticas.", score: -0.7 },
+      { text: "Privatizar a maioria das empresas e abrir os setores regulados à competição para atrair investimentos privados.", score: 0.7 },
+      { text: "Privatizar todas as estatais sem exceção, encerrando privilégios e o uso do patrimônio público por grupos de interesse.", score: 2.0 }
     ]
   },
   {
@@ -166,7 +186,9 @@ const QUIZ_QUESTIONS = [
     question: "Qual modelo pedagógico e de gestão deve ser priorizado nas escolas públicas de educação básica?",
     options: [
       { text: "Educação plural, inclusiva e crítica, com ênfase em direitos humanos, combate a preconceitos e valorização docente.", score: -2.0 },
-     
+      { text: "Foco na alfabetização na idade certa e ensino em tempo integral, com infraestrutura moderna e avaliação contínua.", score: -0.7 },
+      { text: "Ensino focado em competências práticas de mercado, matemática e ciências, com estímulo a modelos cívico-militares.", score: 0.7 },
+      { text: "Ênfase em disciplina rigorosa, currículo neutro sem interferência ideológica e liberdade para ensino domiciliar (homeschooling).", score: 2.0 }
     ]
   },
   {
@@ -175,7 +197,9 @@ const QUIZ_QUESTIONS = [
     question: "Durante emergências públicas ou sanitárias, como balancear imposições do Estado e escolhas individuais?",
     options: [
       { text: "O bem coletivo e as determinações científicas oficiais devem prevalecer de forma obrigatória sobre liberdades individuais.", score: -2.0 },
-    
+      { text: "O Estado deve liderar com campanhas educativas transparentes e medidas protetivas sem cercear direitos fundamentais.", score: -0.7 },
+      { text: "As decisões devem priorizar o funcionamento da economia e a manutenção do sustento das famílias e trabalhadores.", score: 0.7 },
+      { text: "A liberdade individual e a autonomia sobre o próprio corpo são invioláveis; o Estado nunca pode impor restrições ou vacinas.", score: 2.0 }
     ]
   },
   // TRANSITION 3 OCCURS HERE (AFTER Q12)
@@ -185,7 +209,9 @@ const QUIZ_QUESTIONS = [
     question: "Qual deve ser a política brasileira em relação à posse e porte de armas de fogo para cidadãos comuns?",
     options: [
       { text: "Desarmamento rigoroso; a circulação de armas aumenta a violência urbana e deve ser fortemente restringida.", score: -2.0 },
-    
+      { text: "Controle estatal rígido com exigência de critérios psicológicos e técnicos sérios para casos excepcionais justificados.", score: -0.7 },
+      { text: "Facilitação da posse responsável em residências e propriedades rurais para proteção da família e do patrimônio.", score: 0.7 },
+      { text: "O porte de armas é um direito natural de autodefesa que deve ser garantido a qualquer cidadão idôneo sem burocracia.", score: 2.0 }
     ]
   },
   {
@@ -194,7 +220,9 @@ const QUIZ_QUESTIONS = [
     question: "O que pensa sobre a criação de impostos sobre grandes fortunas e taxação de dividendos empresariais?",
     options: [
       { text: "Medida urgente de justiça distributiva para combater a histórica concentração de renda no país.", score: -2.0 },
-     
+      { text: "Válida se acompanhada da redução da tributação sobre o consumo de alimentos e medicamentos para a classe média.", score: -0.7 },
+      { text: "Arriscada, pois pode provocar fuga de capitais, desinvestimento e desestímulo à criação de novas empresas.", score: 0.7 },
+      { text: "Inadmissível; penaliza quem produziu e gera riqueza, além de ser confiscatória e ineficiente na arrecadação real.", score: 2.0 }
     ]
   },
   {
@@ -203,7 +231,9 @@ const QUIZ_QUESTIONS = [
     question: "Qual deve ser o futuro do foro especial por prerrogativa de função (foro privilegiado) para políticos?",
     options: [
       { text: "Manter nos termos estritos da Constituição para evitar perseguições políticas locais contra mandatos legítimos.", score: -2.0 },
-     
+      { text: "Restringir o foro exclusivamente a atos cometidos no exercício do mandato e relacionados com a função pública.", score: -0.7 },
+      { text: "Extinguir o foro privilegiado para a esmagadora maioria dos cargos, submetendo todos à primeira instância judicial.", score: 0.7 },
+      { text: "Fim absoluto e imediato de qualquer foro especial ou imunidade; perante a lei todos os cidadãos devem ser idênticos.", score: 2.0 }
     ]
   },
   {
@@ -212,7 +242,9 @@ const QUIZ_QUESTIONS = [
     question: "Como as campanhas eleitorais e os partidos políticos devem ser financiados no Brasil?",
     options: [
       { text: "Financiamento 100% público com distribuição equitativa para evitar a influência do poder econômico privado nas urnas.", score: -2.0 },
-     
+      { text: "Financiamento público com teto rigoroso de despesas e critérios severos de transparência e auditoria das contas.", score: -0.7 },
+      { text: "Modelo misto com redução expressiva do Fundo Eleitoral público e permissão para doações de pessoas físicas e jurídicas.", score: 0.7 },
+      { text: "Fim total do Fundo Eleitoral público (Fundão); os partidos devem ser mantidos exclusivamente por seus próprios filiados.", score: 2.0 }
     ]
   }
 ];
@@ -1031,3 +1063,5 @@ function initUrnaSimulator() {
   // Initial screen setup
   updateUrnaScreen();
 }
+
+
