@@ -103,7 +103,6 @@ const QUIZ_QUESTIONS = [
       { text: "Tolerância zero irrestrita, cumprimento rigoroso de penas sem benefícios e garantia do direito civil à legítima defesa.", score: 2.0 }
     ]
   };
-];
 
 /* ==========================================================================
    3. QUIZ ENGINE CONTROLLER
