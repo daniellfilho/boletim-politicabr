@@ -102,50 +102,8 @@ const QUIZ_QUESTIONS = [
       { text: "Endurecer a legislação penal, reduzir a maioridade para crimes graves e apoiar o trabalho das forças de segurança.", score: 0.7 },
       { text: "Tolerância zero irrestrita, cumprimento rigoroso de penas sem benefícios e garantia do direito civil à legítima defesa.", score: 2.0 }
     ]
-  },
-  // TRANSITION 1 OCCURS HERE (AFTER Q4)
-  {
-    id: 5,
-    category: "Meio Ambiente & Agro",
-    question: "Como equilibrar a preservação ambiental com o crescimento do agronegócio e obras de infraestrutura?",
-    options: [
-      { text: "A preservação de biomas e demarcação de terras indígenas devem prevalecer sobre qualquer expansão da fronteira agrícola.", score: -2.0 },
-      { text: "Promover incentivos econômicos a produtores sustentáveis, aliando rigor na fiscalização a transição ecológica.", score: -0.7 },
-      { text: "Desburocratizar o licenciamento ambiental e valorizar o agronegócio moderno, que já é o motor de exportação do país.", score: 0.7 },
-      { text: "Eliminar entraves de órgãos ambientais que travam o desenvolvimento produtivo, mineração e geração de energia.", score: 2.0 }
-    ]
-  },
-  {
-    id: 6,
-    category: "Valores e Legislação",
-    question: "Em debates legislativos sobre costumes e valores morais, qual deve ser a postura das leis?",
-    options: [
-      { text: "As leis devem garantir a plena autonomia individual, diversidade e descriminalização de pautas comportamentais.", score: -2.0 },
-      { text: "O Estado deve ser estritamente laico, protegendo minorias sem desconsiderar consensos democráticos vigentes.", score: -0.7 },
-      { text: "A legislação deve preservar a instituição familiar tradicional e os valores culturais majoritários da sociedade.", score: 0.7 },
-      { text: "Defesa intransigente dos valores cristãos e morais tradicionais como pilares invioláveis da ordem jurídica.", score: 2.0 }
-    ]
-  },
+  };
 ];
-
-/* 3 Transition Curiosities (Inserted after Q4, Q8, Q12) */
-const TRANSITIONS = {
-  4: {
-    tag: "DADO NEUTRO SOBRE O BRASIL",
-    title: "156 Milhões de Eleitores em Ação",
-    body: "O Brasil possui o quarto maior colégio eleitoral do planeta e é um dos raros países a realizar apurações 100% informatizadas em menos de 3 horas após o encerramento das seções. Seu voto é um dos mais céleres do mundo contemporâneo."
-  },
-  8: {
-    tag: "FATOS DA DEMOCRACIA",
-    title: "A Constituição Cidadã de 1988",
-    body: "Promulgada após o período militar, a Constituição Brasileira de 1988 já recebeu mais de 130 emendas constitucionais. Trata-se de uma das Cartas mais detalhadas do mundo, equilibrando garantias sociais e limites ao poder do Estado."
-  },
-  12: {
-    tag: "BASTIDORES DO CONGRESSO",
-    title: "A Complexidade das PECs",
-    body: "Para que uma Proposta de Emenda à Constituição seja aprovada, são necessários 3/5 dos votos tanto na Câmara dos Deputados (308 de 513) quanto no Senado (49 de 81), em dois turnos de votação em cada casa. Nenhum governo governa sozinho."
-  }
-};
 
 /* ==========================================================================
    3. QUIZ ENGINE CONTROLLER
