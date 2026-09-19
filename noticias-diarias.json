@@ -3,193 +3,193 @@
     {
       "categoria": "Pesquisas Eleitorais",
       "fonte_nome": "Gazeta do Povo",
-      "fonte_url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-presidente-setembro-2026-2/",
+      "fonte_url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-presidente-setembro-2026/",
       "esquerda": {
-        "manchete": "Quaest confirma: Lula lidera corrida presidencial com folga sobre Flávio Bolsonaro",
-        "resumo": "Nova pesquisa Quaest mostra Lula na frente na disputa por um novo mandato, com queda expressiva dos indecisos após início oficial da campanha."
+        "manchete": "Lula amplia vantagem e chega a 37% na Quaest, contra 30% de Flávio Bolsonaro",
+        "resumo": "Pesquisa Quaest mostra Lula na liderança da corrida presidencial, com queda dos indecisos conforme a campanha avança e o governo reforça sua base popular."
       },
       "centro": {
-        "manchete": "Quaest: Lula tem 37% e Flávio Bolsonaro 30% na corrida ao Planalto",
-        "resumo": "Pesquisa divulgada no início do período oficial de campanha simula cinco cenários de segundo turno, todos com vitória de Lula."
+        "manchete": "Quaest: Lula tem 37% e Flávio Bolsonaro 30% na primeira pesquisa presidencial da campanha oficial",
+        "resumo": "Levantamento indica Lula na frente, mas com Flávio Bolsonaro em ascensão e Cury crescendo para 10%, enquanto os indecisos caem de 51% para 42%."
       },
       "direita": {
-        "manchete": "Cury salta para 10% e cresce entre indecisos, aponta Quaest antes do 1º turno",
-        "resumo": "Levantamento mostra queda de indecisos e crescimento de nomes fora do 'segundo pelotão', enquanto Flávio Bolsonaro segue como principal alternativa a Lula."
+        "manchete": "Flávio Bolsonaro sobe a 30% na Quaest e reduz distância para Lula na disputa presidencial",
+        "resumo": "Pesquisa mostra oposição consolidada no segundo lugar, com Flávio Bolsonaro avançando e Cury em franco crescimento no chamado segundo pelotão."
       },
       "id": 1,
-      "imagem_url": "https://media.gazetadopovo.com.br/2026/09/04144655/pesquisa-presidente-1.png"
+      "imagem_url": "https://media.gazetadopovo.com.br/2026/09/01084314/pesquisa-eleitoral-presidente.png"
     },
     {
       "categoria": "STF",
-      "fonte_nome": "Agência Pública",
-      "fonte_url": "https://apublica.org/2026/09/analise-as-revelacoes-sobre-master-vorcaro-moraes-e-mendonca/",
+      "fonte_nome": "Exame",
+      "fonte_url": "https://exame.com/brasil/caso-master-no-stf-veja-a-linha-do-tempo-da-crise-e-da-queda-dos-sigilos/",
       "esquerda": {
-        "manchete": "STF nega irregularidades e rebate 'ilação mentirosa' sobre Moraes no caso Master",
-        "resumo": "Assessoria do ministro nega recebimento de mensagens citadas em reportagens e classifica acusações como ataque ao Supremo Tribunal Federal."
+        "manchete": "STF amplia transparência no caso Master e libera documentos de investigação sobre o BRB",
+        "resumo": "Fachin determinou o levantamento de sigilo em processos ligados ao Banco Master, fortalecendo a fiscalização sobre fraudes financeiras que ameaçam a economia popular."
       },
       "centro": {
-        "manchete": "Caso Master mobiliza STF: sessão sobre investigação de Moraes termina com pedido de vista",
-        "resumo": "Revelações envolvendo o banqueiro Vorcaro, Moraes e o procurador-geral Gonet geraram embate no plenário e ainda não têm desfecho definido."
+        "manchete": "Fachin libera sigilo de documentos do caso Master, mas mantém restrição a diligências em curso",
+        "resumo": "Decisão do presidente do STF tornou públicos documentos ligados ao Banco Master e ao BRB, em meio a disputa entre ministros sobre o alcance das investigações."
       },
       "direita": {
-        "manchete": "Oposição cobra explicações após revelações do caso Master envolverem Moraes",
-        "resumo": "Documentos citam contato registrado como 'Alexandre de Moraes Brasília' na agenda do banqueiro investigado, alimentando pedidos por apuração independente."
+        "manchete": "Crise no STF expõe disputa interna da Corte sobre condução do caso Master",
+        "resumo": "Embate entre ministros Mendonça e Moraes veio à tona após mensagens do banqueiro Vorcaro, levantando questionamentos sobre transparência e limites de poder no Judiciário."
       },
       "id": 2,
-      "imagem_url": "https://apublica.org/wp-content/uploads/2026/09/THUMB_REPORTAGEM-14.jpg"
-    },
-    {
-      "categoria": "Congresso",
-      "fonte_nome": "CNN Brasil",
-      "fonte_url": "https://www.cnnbrasil.com.br/politica/esforco-concentrado-termina-sem-governo-aprovar-6x1-e-pec-da-seguranca/",
-      "esquerda": {
-        "manchete": "Congresso trava PEC do fim da escala 6x1 e frustra pauta trabalhista do governo",
-        "resumo": "Proposta que reduziria jornada de 44 para 40 horas sem corte de salário avançou na CCJ, mas ficou para depois da eleição por falta de votos no plenário."
-      },
-      "centro": {
-        "manchete": "Sem quórum garantido, Senado adia PEC da 6x1 e da Segurança para depois do 1º turno",
-        "resumo": "Governo avaliou risco de derrota e decidiu não levar as propostas ao plenário; Alcolumbre confirmou nova tentativa apenas após 4 de outubro."
-      },
-      "direita": {
-        "manchete": "Governo não consegue votos e vê pauta eleitoreira da 6x1 travar no Senado",
-        "resumo": "Líder do governo admitiu não ter os 49 votos necessários, e presidente do Senado evitou 'carimbar' texto às vésperas da eleição, segundo aliados."
-      },
-      "id": 3,
-      "imagem_url": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/04/CONGRESSO-PLENARIO-30-04-26.jpg?w=1200&amp;h=630&amp;crop=1"
-    },
-    {
-      "categoria": "Política Externa",
-      "fonte_nome": "Tribuna do Sertão / Agência O Globo",
-      "fonte_url": "https://www.tribunadosertao.com.br/financas/2026/09/15/979131-governos-lula-e-trump-preparam-nova-rodada-de-negociacao-sobre-tarifas",
-      "esquerda": {
-        "manchete": "Governo Lula mantém firmeza e negocia fim do tarifaço de Trump em reunião do G20",
-        "resumo": "Ministros brasileiros vão se reunir com representante comercial dos EUA em Milwaukee para tentar reverter tarifas consideradas unilaterais e infundadas."
-      },
-      "centro": {
-        "manchete": "Brasil e EUA marcam nova rodada de negociação sobre tarifas para fim de setembro",
-        "resumo": "Ministros da Indústria e Relações Exteriores devem se encontrar com o USTR Jamieson Greer durante reunião do G20, em mais uma tentativa de acordo."
-      },
-      "direita": {
-        "manchete": "Impasse com Trump se arrasta e tarifaço segue pesando sobre exportadores brasileiros",
-        "resumo": "Após meses de desgaste diplomático, nova reunião só ocorre no fim de setembro, mantendo insegurança para setores afetados pelas sobretaxas americanas."
-      },
-      "id": 4,
-      "imagem_url": "https://img.dhost.cloud/0_4g60ETdHt1oU-h7vs1zxYfxDk=/1280x720/smart/https://tdan.nyc3.digitaloceanspaces.com/images/1d9b3/ac42832cf18243f563ee3552f68befd0278.webp?name=lula.webp"
-    },
-    {
-      "categoria": "Segurança Pública",
-      "fonte_nome": "Agência Brasil",
-      "fonte_url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-09/megaoperacao-contra-o-crime-organizado-bloqueia-mais-de-r-508-milhoes",
-      "esquerda": {
-        "manchete": "Megaoperação federal bloqueia mais de R$ 508 milhões de organizações criminosas",
-        "resumo": "Ação integrada com 20 bases da Ficco em 19 estados mirou tráfico de drogas, armas e lavagem de dinheiro, mostrando força da cooperação entre União e estados."
-      },
-      "centro": {
-        "manchete": "Operação nacional contra crime organizado bloqueia R$ 508 milhões em 19 estados",
-        "resumo": "Ministério da Justiça e polícias estaduais miraram esquemas de tráfico de drogas e armas e lavagem de dinheiro na quarta fase da Operação Força Integrada."
-      },
-      "direita": {
-        "manchete": "Forças de segurança golpeiam finanças do crime organizado em ação de amplitude nacional",
-        "resumo": "Operação bloqueou centenas de milhões de reais ligados a organizações criminosas, incluindo R$ 412,5 milhões represados só no Tocantins."
-      },
-      "id": 5,
-      "imagem_url": "https://imagens.ebc.com.br/3_sp2pF1SQvHwvjJoWcb_NCsqdA=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/09/16/forcas_integradas_de_combate_ao_crime_organizado_ficcos.jpg?itok=89onB6yZ"
-    },
-    {
-      "categoria": "Economia",
-      "fonte_nome": "Investidor10 / Banco Central",
-      "fonte_url": "https://investidor10.com.br/indices/selic/",
-      "esquerda": {
-        "manchete": "Copom corta Selic pela quinta vez seguida e alivia juros para trabalhadores e pequenos negócios",
-        "resumo": "Taxa básica caiu para 13,75% ao ano, dando sinal de que o ciclo de redução de juros iniciado em março continua beneficiando a economia real."
-      },
-      "centro": {
-        "manchete": "Copom reduz Selic para 13,75% ao ano no quinto corte consecutivo",
-        "resumo": "Decisão unânime acompanha projeções do mercado, mas Banco Central evita antecipar novos cortes diante da inflação ainda pressionada."
-      },
-      "direita": {
-        "manchete": "Mesmo com corte, Selic segue em patamar elevado e trajetória fiscal preocupa mercado",
-        "resumo": "Juros caem para 13,75%, mas inflação projetada em 4,90% para 2026 mostra que o ajuste ainda é insuficiente diante do quadro fiscal do país."
-      },
-      "id": 6,
-      "imagem_url": "https://investidor10.com.br/images/logo_share.jpg"
-    },
-    {
-      "categoria": "Economia",
-      "fonte_nome": "Contabeis.com.br / Senado Notícias",
-      "fonte_url": "https://www.contabeis.com.br/artigos/78874/simples-nacional-e-reforma-setembro-2026-define-impostos-2027/",
-      "esquerda": {
-        "manchete": "Reforma tributária avança e amplia justiça fiscal para pequenas empresas em 2027",
-        "resumo": "Setembro marca prazo para micro e pequenas empresas optarem pelo novo sistema, parte da transição que promete simplificar e tornar mais justa a cobrança de impostos."
-      },
-      "centro": {
-        "manchete": "Empresas do Simples Nacional têm até fim de setembro para decidir sobre nova tributação",
-        "resumo": "Prazo é etapa central da implementação do IBS e da CBS, que substituirão tributos como ICMS, ISS, PIS e Cofins até 2033."
-      },
-      "direita": {
-        "manchete": "Pequenos empresários correm contra o tempo para se adaptar à nova burocracia tributária",
-        "resumo": "Especialistas alertam que decisão mal planejada no prazo de setembro pode gerar recolhimento duplicado e mais complexidade para o pequeno negócio."
-      },
-      "id": 7,
-      "imagem_url": "https://www.contabeis.com.br/assets/img/news/reforma-tributaria-e-simples-nacional.png"
-    },
-    {
-      "categoria": "Eleições 2026",
-      "fonte_nome": "Gazeta do Povo",
-      "fonte_url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/qual-a-chance-de-flavio-bolsonaro-vencer-no-primeiro-turno/",
-      "esquerda": {
-        "manchete": "Pesquisas mostram que vitória de Lula no primeiro turno é cenário mais provável",
-        "resumo": "Datafolha, Nexus/BTG e Quaest apontam vantagem do presidente sobre Flávio Bolsonaro, distante da meta de 50% dos votos válidos necessária para decidir já em outubro."
-      },
-      "centro": {
-        "manchete": "Levantamentos indicam baixa chance de decisão no 1º turno, apesar da aposta de Flávio Bolsonaro",
-        "resumo": "Datafolha, Nexus/BTG Pactual e Quaest mostram Lula à frente, com vantagem de 4 a 6 pontos, mas distante dos votos necessários para vencer em outubro."
-      },
-      "direita": {
-        "manchete": "Flávio Bolsonaro mantém discurso de vitória no primeiro turno apesar de pesquisas adversas",
-        "resumo": "Candidato do PL segue confiante publicamente em decidir a eleição já em 4 de outubro, mobilizando apoiadores mesmo com institutos mostrando Lula à frente."
-      },
-      "id": 8,
-      "imagem_url": "https://media.gazetadopovo.com.br/2026/09/14115757/flavio-bolsonaro-primeiro-turno-pesquisas.jpg"
+      "imagem_url": null
     },
     {
       "categoria": "Eleições 2026",
       "fonte_nome": "O Tempo",
-      "fonte_url": "https://www.otempo.com.br/eleicoes/2026/presidentes/2026/9/4/flavio-bolsonaro-diz-que-sem-duvidas-apoiaria-eventual-candidatura-de-tarcisio-ao-planalto-em-2030",
+      "fonte_url": "https://www.otempo.com.br/eleicoes/2026/presidentes/2026/9/12/tse-nega-por-unanimidade-registro-de-candidatura-de-pablo-marcal-a-presidencia",
       "esquerda": {
-        "manchete": "Flávio Bolsonaro já articula sucessão e aposta em Tarcísio para 2030",
-        "resumo": "Candidato do PL declarou apoio a uma futura candidatura presidencial do governador de São Paulo, reforçando a aliança da direita em campanha conjunta."
+        "manchete": "TSE nega por unanimidade candidatura de Marçal, reafirmando regras eleitorais contra desinformação",
+        "resumo": "Tribunal rejeitou o registro do empresário, condenado por uso indevido de redes sociais em 2024, reforçando o combate à manipulação eleitoral digital."
       },
       "centro": {
-        "manchete": "Flávio Bolsonaro declara apoio a Tarcísio de Freitas para disputa presidencial de 2030",
-        "resumo": "Os dois têm feito agendas conjuntas de campanha, e o candidato do PL elogiou a atuação do governador paulista à frente do Estado."
+        "manchete": "TSE rejeita, por unanimidade, registro de candidatura de Pablo Marçal à Presidência",
+        "resumo": "Corte decidiu que Marçal está inelegível até 2032 por condenação de 2024; defesa classificou a decisão como injusta e avalia novos recursos."
       },
       "direita": {
-        "manchete": "União entre Flávio Bolsonaro e Tarcísio fortalece projeto de continuidade da centro-direita",
-        "resumo": "Aliança em campanha sinaliza consolidação de um projeto de poder de longo prazo para o campo conservador, com Tarcísio como um dos principais quadros."
+        "manchete": "TSE barra candidatura de Marçal e defesa questiona rigor da Justiça Eleitoral",
+        "resumo": "Decisão unânime do TSE impediu registro do empresário, cuja defesa alega tratamento desproporcional em comparação a outros casos de candidatos com pendências judiciais."
       },
-      "id": 9,
-      "imagem_url": "https://www.otempo.com.br/content/dam/otempo/editorias/eleições 2026 - presidentes/2026/8/eleições 2026 - presidentes-tarc-sio-de-freitas-e-fl-vio-bolsonaro-1785606498.jpeg"
+      "id": 3,
+      "imagem_url": "https://www.otempo.com.br/content/dam/otempo/editorias/política judiciário/2026/8/20/política judiciário-tse-pablo_marcal-propaganda_eleitoral-1787240453.jpg"
+    },
+    {
+      "categoria": "Economia",
+      "fonte_nome": "O Tempo",
+      "fonte_url": "https://www.otempo.com.br/economia/2026/9/16/copom-corta-taxa-de-juros-em-0-25-p-p-pela-quinta-vez-consecutiva",
+      "esquerda": {
+        "manchete": "Copom corta juros pela quinta vez seguida e Selic vai a 13,75%, aliviando custo do crédito popular",
+        "resumo": "Redução consecutiva da taxa básica deve facilitar acesso a crédito para famílias e pequenos negócios, segundo especialistas ouvidos pela imprensa."
+      },
+      "centro": {
+        "manchete": "Selic cai para 13,75% após quinto corte seguido do Copom, mas juros seguem elevados",
+        "resumo": "Comitê decidiu reduzir a taxa em 0,25 ponto percentual de forma unânime, mas indústria avalia que o nível ainda restringe investimentos no país."
+      },
+      "direita": {
+        "manchete": "Mesmo com corte da Selic, Fiemg alerta que juros altos continuam travando a indústria",
+        "resumo": "Apesar da queda para 13,75%, entidade classifica a redução como insuficiente frente ao custo do capital que ainda pesa sobre competitividade e investimentos."
+      },
+      "id": 4,
+      "imagem_url": "https://www.otempo.com.br/content/dam/otempo/editorias/economia/2026/1/2/economia-mei-contribuição mensal-salario_minimo-1767386953.jpg"
+    },
+    {
+      "categoria": "Política Externa",
+      "fonte_nome": "O Tempo",
+      "fonte_url": "https://www.otempo.com.br/politica/governo/2026/9/14/brasil-e-eua-se-reunem-presencialmente-no-proximo-dia-31-para-discutir-tarifaco",
+      "esquerda": {
+        "manchete": "Brasil mantém firmeza e vai aos EUA negociar fim do tarifaço que penaliza exportadores nacionais",
+        "resumo": "Governo confirma reunião presencial com representantes de Trump, reafirmando soberania e rejeitando medidas unilaterais consideradas incompatíveis com o comércio justo."
+      },
+      "centro": {
+        "manchete": "Brasil e EUA marcam reunião presencial em 30/9 para discutir tarifas sobre produtos brasileiros",
+        "resumo": "Ministros Mauro Vieira e Márcio Elias Rosa vão aos Estados Unidos negociar redução das tarifas, que chegam a 37,5% sobre exportações brasileiras."
+      },
+      "direita": {
+        "manchete": "Governo busca negociação com EUA após meses de impasse tarifário que afeta exportadores",
+        "resumo": "Encontro em Milwaukee tenta reverter tarifas de até 37,5% impostas por Washington, num momento em que o setor produtivo pressiona por uma solução rápida."
+      },
+      "id": 5,
+      "imagem_url": "https://www.otempo.com.br/content/dam/otempo/editorias/política governo/2026/9/14/política governo-brasília-df-estados-unidos-donald_trump-1789424043.jpeg"
+    },
+    {
+      "categoria": "Congresso",
+      "fonte_nome": "Jornal Grande Bahia",
+      "fonte_url": "https://jornalgrandebahia.com.br/2026/09/camara-dos-deputados-aprova-excecoes-as-regras-fiscais-para-beneficios-e-despesas-de-2026-texto-segue-para-sancao-presidencial/",
+      "esquerda": {
+        "manchete": "Câmara aprova exceções fiscais que garantem recursos para saúde e municípios pequenos",
+        "resumo": "Texto aprovado por ampla maioria assegura verbas para áreas sociais e municípios de até 65 mil habitantes, driblando entraves das regras fiscais de 2026."
+      },
+      "centro": {
+        "manchete": "Câmara aprova exceções às regras fiscais de 2026 para data centers, saúde e resseguradoras",
+        "resumo": "Projeto relatado por Isnaldo Bulhões Jr. foi aprovado por 346 votos e agora segue para sanção presidencial, condicionando benefícios a compensações orçamentárias."
+      },
+      "direita": {
+        "manchete": "Câmara amplia exceções fiscais e inclui incentivo a data centers para atrair investimentos",
+        "resumo": "Projeto aprovado por ampla maioria cria regime especial de tributação para data centers, buscando competitividade internacional na atração de novos negócios."
+      },
+      "id": 6,
+      "imagem_url": "https://i0.wp.com/jornalgrandebahia.com.br/wp-content/uploads/2026/09/excecoes-as-regras-fiscais-de-2026-20260904.jpg?fit=1200%2C800&quality=30&ssl=1"
+    },
+    {
+      "categoria": "Segurança Pública",
+      "fonte_nome": "Página de Polícia / Fórum Brasileiro de Segurança Pública",
+      "fonte_url": "https://www.paginadepolicia.com.br/noticia/118877/anuario-brasileiro-de-seguranca-publica-2026",
+      "esquerda": {
+        "manchete": "Anuário aponta alta na letalidade policial e reforça urgência de reforma nas polícias",
+        "resumo": "Dados mostram crescimento de 5,4% nas mortes causadas por agentes de segurança em 2025, reforçando pedidos por controle e políticas de direitos humanos."
+      },
+      "centro": {
+        "manchete": "Anuário de Segurança Pública mostra migração da criminalidade para golpes digitais",
+        "resumo": "Levantamento indica que 85% da população teme mais perder dinheiro em golpes do que crimes de rua, enquanto a letalidade policial voltou a crescer em 2025."
+      },
+      "direita": {
+        "manchete": "Criminalidade migra para golpes digitais enquanto crimes de rua perdem espaço, aponta anuário",
+        "resumo": "Relatório mostra que criminosos priorizam fraudes online por serem mais rentáveis, reforçando a necessidade de leis mais duras contra crimes cibernéticos."
+      },
+      "id": 7,
+      "imagem_url": "https://www.paginadepolicia.com.br/images/noticias/118877/b92c9347dfed86b3d142e2abbcb7b0ea.webp"
+    },
+    {
+      "categoria": "Eleições 2026",
+      "fonte_nome": "GP1",
+      "fonte_url": "https://www.gp1.com.br/politica/noticia/2026/9/18/flavio-bolsonaro-chama-reajuste-do-bolsa-familia-de-merreca-governo-lula-diz-que-aumento-repoe-inflacao-631728.html",
+      "esquerda": {
+        "manchete": "Governo reajusta Bolsa Família em 15% para repor inflação e fortalecer renda das famílias",
+        "resumo": "Piso do benefício sobe de R$ 600 para R$ 691 a partir de outubro, medida que o governo defende como recomposição de perdas inflacionárias desde 2023."
+      },
+      "centro": {
+        "manchete": "Reajuste de 15% no Bolsa Família gera debate entre governo e oposição a 17 dias da eleição",
+        "resumo": "Enquanto o governo defende a correção pela inflação, Flávio Bolsonaro criticou o valor e adversários acionaram a Justiça contra a medida assinada por decreto."
+      },
+      "direita": {
+        "manchete": "Flávio Bolsonaro critica reajuste do Bolsa Família e adversários questionam medida na Justiça",
+        "resumo": "Candidato da oposição chamou o aumento de insuficiente, enquanto o Ministério Público no TCU pede anulação por falta de dotação orçamentária prévia."
+      },
+      "id": 8,
+      "imagem_url": "https://www.gp1.com.br/media/watermarks/631728_592660.jpg?1789805536.903843"
     },
     {
       "categoria": "Judiciário",
-      "fonte_nome": "Poder360",
-      "fonte_url": "https://www.poder360.com.br/poder-eleicoes-2026/zema-diz-que-tribunais-fazem-mais-politica-do-que-justica/",
+      "fonte_nome": "JOTA",
+      "fonte_url": "https://www.jota.info",
       "esquerda": {
-        "manchete": "Zema defende anistia a condenados do 8 de janeiro e ataca decisões do STF",
-        "resumo": "Candidato à Presidência propõe perdão a réus de tentativa de golpe já condenados pela Corte, num momento em que 1.399 pessoas foram responsabilizadas pelos atos golpistas."
+        "manchete": "Mendonça assume caso Master com nova postura e amplia controle da PF sobre investigação",
+        "resumo": "Novo relator no STF ajustou regras da Operação Compliance Zero, corrigindo decisões anteriores de Toffoli e buscando dar mais transparência ao processo."
       },
       "centro": {
-        "manchete": "Zema chama STF de 'tribunal político' e reacende debate sobre anistia ao 8 de janeiro",
-        "resumo": "Candidato do Novo defende diferenciar participantes dos atos e questiona penas aplicadas pela Corte, que já responsabilizou 1.399 pessoas no caso."
+        "manchete": "Mendonça redefine condução do caso Master no STF e amplia atuação da Polícia Federal",
+        "resumo": "Novo relator alterou decisões consideradas heterodoxas de Toffoli, autorizando novas diligências e diminuindo restrições sobre a atuação da PF na investigação do Banco Master."
       },
       "direita": {
-        "manchete": "Zema cobra fim da 'perseguição' e defende novo julgamento isento para casos do 8 de janeiro",
-        "resumo": "Presidenciável critica penas consideradas desproporcionais e defende que apenas quem efetivamente cometeu atos de violência seja punido."
+        "manchete": "Troca de relator no caso Master no STF expõe fragilidades na condução anterior da investigação",
+        "resumo": "Mendonça corrigiu decisões de Toffoli, como a retirada de provas da custódia da PF, num episódio que reforça críticas sobre transparência e controle interno na Corte."
+      },
+      "id": 9,
+      "imagem_url": "https://images.jota.info/wp-content/uploads/2026/09/cartao-bolsa-familia-foto-jefferson-rudy-agencia-senado.jpg"
+    },
+    {
+      "categoria": "Economia",
+      "fonte_nome": "Brasil 247",
+      "fonte_url": "https://www.brasil247.com/brasil/lula-leva-economia-popular-ao-centro-da-campanha-e-busca-reduzir-peso-da-crise-no-stf/",
+      "esquerda": {
+        "manchete": "Campanha de Lula foca em preços e renda para valorizar avanços sociais do governo",
+        "resumo": "Nova estratégia de comunicação prioriza custo de vida e alimentos, aproximando o discurso eleitoral das necessidades reais da população mais vulnerável."
+      },
+      "centro": {
+        "manchete": "Lula reforça discurso sobre economia popular na propaganda eleitoral e busca ofuscar crise no STF",
+        "resumo": "Segundo a CNN, a nova ofensiva de comunicação do governo prioriza temas como preços de alimentos e renda familiar no horário eleitoral desta semana."
+      },
+      "direita": {
+        "manchete": "Governo muda discurso de campanha para desviar atenção da crise envolvendo o STF",
+        "resumo": "Estratégia eleitoral de Lula passa a enfatizar economia popular numa tentativa de reduzir o desgaste político gerado pelo escândalo do caso Master no Judiciário."
       },
       "id": 10,
-      "imagem_url": "https://static.poder360.com.br/uploads/2026/08/Romeu-Zema-no-Jornal-Nacional-24-ago-2026-1200x675.png"
+      "imagem_url": "https://www.brasil247.com/wp-content/uploads/2026/09/lula-outra.jpg?w=1200&#038;quality=88&#038;strip=all"
     }
   ],
-  "gerado_em": "2026-09-18T08:12:45.052918+00:00"
+  "gerado_em": "2026-09-19T08:12:18.459269+00:00"
 }
