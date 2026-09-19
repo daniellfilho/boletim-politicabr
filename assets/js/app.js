@@ -43,98 +43,50 @@ function initDateHeader() {
 }
 
 /* ==========================================================================
-   2. QUIZ DATASET (16 BALANCED & NEUTRAL QUESTIONS + 3 TRANSITIONS)
+   2. DIAGNÓSTICO RÁPIDO (PERGUNTA ÚNICA DE AUTO-IDENTIFICAÇÃO)
    ========================================================================== */
-/* ==========================================================================
-   ÍCONES TEMÁTICOS DO QUIZ (SVG originais, estilo line-icon, um por pergunta)
-   ========================================================================== */
-const QUESTION_ICONS = {
-  1: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 40h36"/><rect x="11" y="24" width="6" height="12"/><rect x="21" y="16" width="6" height="20"/><rect x="31" y="9" width="6" height="27"/></svg>`,
-  2: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5l15 5v10c0 12-8 19-15 23-7-4-15-11-15-23V10z"/><path d="M18 24l4.5 4.5L31 19"/></svg>`,
-  3: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="9"/><circle cx="24" cy="24" r="2"/><path d="M24 2v6M24 40v6M2 24h6M40 24h6"/></svg>`,
-  4: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 40s-14-8.5-14-18.5C10 16 13.5 12 18 12c3 0 5 1.5 6 3.5C25 13.5 27 12 30 12c4.5 0 8 4 8 9.5C38 31.5 24 40 24 40z"/><path d="M18 22l3.5 3.5L27 20"/></svg>`,
-  5: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 6v6M24 12l-10 8M24 12l10 8M6 20h16M26 20h16"/><path d="M6 20c0 4 3.5 7 7 7s7-3 7-7M26 20c0 4 3.5 7 7 7s7-3 7-7"/><path d="M24 36h-1M24 36V20M17 42h14"/></svg>`,
-  6: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18h32M24 6L8 18h32z"/><path d="M12 18v16M20 18v16M28 18v16M36 18v16"/><path d="M8 40h32"/></svg>`,
-  7: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20l24-12v32L6 28z"/><path d="M6 20v8h5l3 10h4l-2-10"/><path d="M35 16c2.5 2 4 5 4 8s-1.5 6-4 8"/></svg>`,
-  8: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 16h30l-3 22H12z"/><path d="M9 16l3-8h24l3 8"/><circle cx="24" cy="27" r="4.5"/></svg>`
+/* O quiz de múltiplas perguntas foi substituído por uma única pergunta
+   direta: "Com qual lado você mais se identifica?" (Esquerda/Centro/Direita).
+   Cada opção já mapeia direto para um "score" representativo, reaproveitado
+   pelas mesmas funções de personalização (showResults, feed diário etc.)
+   que já existiam para o quiz de várias perguntas. */
+const SCORE_POR_LADO = {
+  esquerda: -60,
+  centro: 0,
+  direita: 60
 };
-
-const QUIZ_QUESTIONS = [
-  {
-    id: 1,
-    category: "Economia e Estado",
-    question: "Estado gigante cuidando de tudo, ou Estado fora do seu bolso: qual Brasil você quer viver?",
-    options: [
-      { text: "O Estado deve planejar, investir estrategicamente em setores-chave e controlar empresas estatais essenciais.", score: -2.0 },
-      { text: "O Estado deve regular ativamente os mercados e intervir para corrigir desigualdades sociais e regionais.", score: -0.7 },
-      { text: "O Estado deve focar em desburocratização, segurança jurídica e atração de investimentos privados.", score: 0.7 },
-      { text: "O Estado deve ter presença mínima na economia, priorizando privatizações amplas e livre mercado irrestrito.", score: 2.0 }
-    ]
-  },
-  {
-    id: 2,
-    category: "Armas de Fogo",
-    question: "Diante da violência, o que te deixa mais seguro: se defender por conta própria ou confiar 100% no Estado?",
-    options: [
-      { text: "Desarmamento rigoroso; a circulação de armas aumenta a violência urbana e deve ser fortemente restringida.", score: -2.0 },
-      { text: "Controle estatal rígido com exigência de critérios psicológicos e técnicos sérios para casos excepcionais justificados.", score: -0.7 },
-      { text: "Facilitação da posse responsável em residências e propriedades rurais para proteção da família e do patrimônio.", score: 0.7 },
-      { text: "O porte de armas é um direito natural de autodefesa que deve ser garantido a qualquer cidadão idôneo sem burocracia.", score: 2.0 }
-    ]
-  },
-  {
-    id: 3,
-    category: "Valores e Legislação",
-    question: "Suas escolhas pessoais são só sua conta, ou a sociedade tem o direito de dizer o que é certo?",
-    options: [
-      { text: "As leis devem garantir a plena autonomia individual, diversidade e descriminalização de pautas comportamentais.", score: -2.0 },
-      { text: "O Estado deve ser estritamente laico, protegendo minorias sem desconsiderar consensos democráticos vigentes.", score: -0.7 },
-      { text: "A legislação deve preservar a instituição familiar tradicional e os valores culturais majoritários da sociedade.", score: 0.7 },
-      { text: "Defesa intransigente dos valores cristãos e morais tradicionais como pilares invioláveis da ordem jurídica.", score: 2.0 }
-    ]
-  }
-];
-
-/* Sem telas de transição no meio - quiz curto de propósito (3 perguntas) */
-const TRANSITIONS = {};
 
 /* ==========================================================================
    3. QUIZ ENGINE CONTROLLER
    ========================================================================== */
-let currentQuestionIndex = 0;
-let userAnswers = []; // array of score numbers
+let currentScore = 0; // score representativo do lado escolhido (ver SCORE_POR_LADO)
 
 function initQuizApp() {
   // Screen elements
   const introView = document.getElementById('view-intro');
   const quizView = document.getElementById('view-quiz');
-  const transitionView = document.getElementById('view-transition');
-  const resultView = document.getElementById('view-result');
-  const progressContainer = document.getElementById('quiz-progress-container');
   const startBtn = document.getElementById('btn-start-quiz');
 
-  // Start Quiz Button
+  // Start Quiz Button -> mostra a pergunta única
   if (startBtn) {
     startBtn.addEventListener('click', () => {
       introView.classList.remove('active');
       quizView.classList.add('active');
-      progressContainer.classList.add('active');
-      currentQuestionIndex = 0;
-      userAnswers = [];
-      renderQuestion();
     });
   }
 
-  // Setup transition continue button
-  const continueTransitionBtn = document.getElementById('btn-continue-transition');
-  if (continueTransitionBtn) {
-    continueTransitionBtn.addEventListener('click', () => {
-      transitionView.classList.remove('active');
-      quizView.classList.add('active');
-      progressContainer.classList.add('active');
-      renderQuestion();
+  // Botões de auto-identificação (Esquerda / Centro / Direita)
+  document.querySelectorAll('.lado-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.lado-btn').forEach((b) => (b.style.pointerEvents = 'none'));
+      btn.classList.add('selected');
+      const lado = btn.dataset.lado;
+      currentScore = SCORE_POR_LADO[lado] ?? 0;
+      setTimeout(() => {
+        showPreResultado(lado);
+      }, 250);
     });
-  }
+  });
 
   // Setup App Preview Button
   const previewAppBtn = document.getElementById('btn-see-app-preview');
@@ -160,102 +112,21 @@ function initQuizApp() {
   initLeadForm();
 }
 
-function renderQuestion() {
-  const q = QUIZ_QUESTIONS[currentQuestionIndex];
-  if (!q) return;
-
-  // Update progress bar
-  const totalQuestions = QUIZ_QUESTIONS.length;
-  const currentStep = currentQuestionIndex + 1;
-  const pct = Math.round((currentStep / totalQuestions) * 100);
-
-  document.getElementById('progress-text').textContent = `Pergunta ${currentStep} de ${totalQuestions}`;
-  document.getElementById('progress-pct').textContent = `${pct}%`;
-  document.getElementById('progress-fill-bar').style.width = `${pct}%`;
-
-  // Render text
-  document.getElementById('question-category').textContent = q.category;
-  document.getElementById('question-title').textContent = q.question;
-
-  // Render themed icon for this question's subject
-  const iconWrap = document.getElementById('question-icon-wrap');
-  if (iconWrap) {
-    iconWrap.innerHTML = QUESTION_ICONS[q.id] || '';
-  }
-
-  // Render options
-  const optionsList = document.getElementById('options-container');
-  optionsList.innerHTML = '';
-
-  const letters = ['A', 'B', 'C', 'D'];
-
-  q.options.forEach((opt, idx) => {
-    const btn = document.createElement('button');
-    btn.className = 'option-btn';
-    btn.innerHTML = `
-      <span class="option-letter">${letters[idx]}</span>
-      <span class="option-text">${opt.text}</span>
-    `;
-
-    btn.addEventListener('click', () => {
-      // Highlight selection briefly
-      btn.classList.add('selected');
-      userAnswers.push(opt.score);
-
-      // Disable all other buttons in this step
-      const allBtns = optionsList.querySelectorAll('.option-btn');
-      allBtns.forEach(b => b.style.pointerEvents = 'none');
-
-      setTimeout(() => {
-        handleNextStep();
-      }, 250);
-    });
-
-    optionsList.appendChild(btn);
-  });
-}
-
-function handleNextStep() {
-  currentQuestionIndex++;
-
-  // Check if we hit a transition checkpoint (after Q4, Q8, Q12)
-  if (TRANSITIONS[currentQuestionIndex]) {
-    showTransitionScreen(TRANSITIONS[currentQuestionIndex]);
-    return;
-  }
-
-  // Check if finished
-  if (currentQuestionIndex >= QUIZ_QUESTIONS.length) {
-    showPreResultado();
-  } else {
-    renderQuestion();
-  }
-}
-
 /* ==========================================================================
    2.7 PRÉ-RESULTADO — frase provocativa antes da Urna
    ========================================================================== */
-function calcularScoreAtual() {
-  const totalWeight = userAnswers.reduce((acc, curr) => acc + curr, 0);
-  const maxPossible = QUIZ_QUESTIONS.length * 2.0;
-  return Math.round((totalWeight / maxPossible) * 100);
-}
-
-function showPreResultado() {
+function showPreResultado(lado) {
   const quizView = document.getElementById('view-quiz');
   const preView = document.getElementById('view-preresultado');
-  const progressContainer = document.getElementById('quiz-progress-container');
 
   quizView.classList.remove('active');
-  progressContainer.classList.remove('active');
   preView.classList.add('active');
 
-  const score = calcularScoreAtual();
   const fraseEl = document.getElementById('preresultado-frase');
 
-  if (score >= 15) {
+  if (lado === 'direita') {
     fraseEl.textContent = 'Então você é um patriota!?';
-  } else if (score <= -15) {
+  } else if (lado === 'esquerda') {
     fraseEl.textContent = 'Então você é companheiro(a)!?';
   } else {
     fraseEl.textContent = 'Então você é do time do bom senso!?';
@@ -277,36 +148,18 @@ function showPreResultado() {
   };
 }
 
-function showTransitionScreen(transitionData) {
-  const quizView = document.getElementById('view-quiz');
-  const transitionView = document.getElementById('view-transition');
-  const progressContainer = document.getElementById('quiz-progress-container');
-
-  quizView.classList.remove('active');
-  progressContainer.classList.remove('active');
-  transitionView.classList.add('active');
-
-  document.getElementById('transition-tag').textContent = transitionData.tag;
-  document.getElementById('transition-title').textContent = transitionData.title;
-  document.getElementById('transition-body').textContent = transitionData.body;
-}
-
 /* ==========================================================================
    4. SCORE CALCULATION & RESULT MAPPING (-100 TO +100)
    ========================================================================== */
 function showResults() {
   const quizView = document.getElementById('view-quiz');
   const resultView = document.getElementById('view-result');
-  const progressContainer = document.getElementById('quiz-progress-container');
 
   quizView.classList.remove('active');
-  progressContainer.classList.remove('active');
   resultView.classList.add('active');
 
-  // Calculate score
-  const totalWeight = userAnswers.reduce((acc, curr) => acc + curr, 0);
-  const maxPossible = QUIZ_QUESTIONS.length * 2.0; // 16 * 2 = 32
-  const normalizedScore = Math.round((totalWeight / maxPossible) * 100);
+  // Score já definido diretamente pela escolha na pergunta única
+  const normalizedScore = currentScore;
 
   // Map to political profile with luminous dark-theme tags
   let profile = {
