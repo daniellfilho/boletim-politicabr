@@ -115,7 +115,7 @@
           Descubra que tipo de leitor político você é — e receba notícias <span class="highlight-gold">feitas pra você</span>.
         </h1>
         <p class="intro-lead">
-          O <strong>Boletim PoliticaBR</strong> é o jornal digital de inteligência política do Brasil moderno. Antes de ter acesso à nossa urna de votação e pesquisa, responda esse quiz de três perguntas!
+          O <strong>Boletim PoliticaBR</strong> é o jornal digital de inteligência política do Brasil moderno. Antes de ter acesso à nossa urna de votação e pesquisa, diga de que lado você é!
         </p>
 
         <!-- Featured Hero Artwork -->
@@ -165,7 +165,7 @@
 
         <!-- CTA Button -->
         <button class="btn-primary" id="btn-start-quiz">
-          Começar o quiz agora
+          Descobrir meu lado agora
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>
@@ -177,7 +177,7 @@
             <circle cx="12" cy="12" r="10"></circle>
             <polyline points="12 6 12 12 16 14"></polyline>
           </svg>
-          Leva menos de 1 minuto • Respostas 100% confidenciais
+          Leva 5 segundos • Respostas 100% confidenciais
         </div>
       </div>
     </section>
@@ -188,34 +188,26 @@
     <section class="view-section" id="view-quiz">
       <div class="quiz-container">
         <div class="question-card">
-          <div class="question-icon-wrap" id="question-icon-wrap"></div>
-          <span class="question-category" id="question-category">Economia e Estado</span>
-          <h2 class="question-text" id="question-title">Carregando pergunta...</h2>
+          <div class="question-icon-wrap">🇧🇷</div>
+          <span class="question-category">DIAGNÓSTICO RÁPIDO</span>
+          <h2 class="question-text">Com qual desses três lados você mais se identifica?</h2>
 
-          <!-- Options Container -->
-          <div class="options-list" id="options-container">
-            <!-- Injected dynamically via JS -->
+          <!-- Botões de auto-identificação -->
+          <div class="options-list" id="lado-options-container">
+            <button class="option-btn lado-btn" data-lado="esquerda">
+              <span class="option-letter" style="background: #dc2626;">E</span>
+              <span class="option-text">Esquerda</span>
+            </button>
+            <button class="option-btn lado-btn" data-lado="centro">
+              <span class="option-letter" style="background: linear-gradient(135deg, #dc2626, #ffbf00, #1d4ed8);">C</span>
+              <span class="option-text">Centro</span>
+            </button>
+            <button class="option-btn lado-btn" data-lado="direita">
+              <span class="option-letter" style="background: #1d4ed8;">D</span>
+              <span class="option-text">Direita</span>
+            </button>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- --------------------------------------------------------------------
-         2.5 TRANSITION SCREEN (CURIOSITIES & DATA)
-         -------------------------------------------------------------------- -->
-    <section class="view-section" id="view-transition">
-      <div class="transition-card">
-        <span class="transition-tag" id="transition-tag">DADO NEUTRO SOBRE O BRASIL</span>
-        <h3 class="transition-title" id="transition-title">Título da Curiosidade</h3>
-        <p class="transition-body" id="transition-body">Texto da curiosidade institucional...</p>
-
-        <button class="btn-continue" id="btn-continue-transition">
-          Continuar o quiz
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </button>
       </div>
     </section>
 
@@ -227,7 +219,7 @@
         <span class="personalized-tag" id="preresultado-tag" style="margin-bottom: 18px;">PRÉ-DIAGNÓSTICO CONCLUÍDO</span>
         <h2 class="preresultado-frase" id="preresultado-frase">Então você é um...?</h2>
         <p class="transition-body" id="preresultado-sub">
-          Isso é só o começo. Agora confirme seu lado de verdade na nossa urna.
+          Confirme se é isso mesmo — vote agora na nossa urna oficial.
         </p>
 
         <button class="btn-continue" id="btn-continuar-preresultado">
