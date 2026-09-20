@@ -117,6 +117,7 @@
 <script>
 async function carregarResultado() {
   const totalEl = document.getElementById('resultado-total');
+  totalEl.style.display = 'none';
   const barsEl = document.getElementById('resultado-bars');
   try {
     const resp = await fetch('/api/resultado-urna', { cache: 'no-store' });
@@ -125,12 +126,12 @@ async function carregarResultado() {
     const total = Object.values(tally).reduce((a, b) => a + b, 0);
 
     if (total === 0) {
-      totalEl.textContent = 'Nenhum voto registrado ainda';
+      totalEl.style.display = 'none';
       barsEl.innerHTML = '<p style="color:var(--text-muted);font-size:0.85rem;text-align:center;">Seja o primeiro a votar!</p>';
       return;
     }
 
-    totalEl.textContent = total.toLocaleString('pt-BR') + ' votos computados';
+    totalEl.style.display = 'none';
 
     const NOMES = {
       '13': { nome: 'Lula', partido: 'PT', cor: '#ef4444' },
