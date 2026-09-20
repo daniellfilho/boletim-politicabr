@@ -2234,3 +2234,44 @@ button {
   border: 1px dashed var(--border-medium);
   border-radius: var(--radius-md);
 }
+
+.aviso-resultado-final {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, rgba(220, 38, 38, 0.18), rgba(255, 191, 0, 0.18));
+  border: 1.5px solid var(--gold-primary);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  margin: 14px 0 22px;
+  box-shadow: 0 0 20px rgba(255, 191, 0, 0.15);
+}
+
+.aviso-resultado-texto {
+  color: var(--text-pure);
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+.aviso-resultado-texto strong {
+  color: var(--gold-primary);
+}
+
+.aviso-resultado-icone {
+  font-size: 1.3rem;
+  animation: avisoResultadoBounce 1.3s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes avisoResultadoBounce {
+  0%, 100% { transform: translateY(0); opacity: 0.7; }
+  50% { transform: translateY(5px); opacity: 1; }
+}
+
+@media (max-width: 480px) {
+  .aviso-resultado-final { flex-wrap: wrap; padding: 14px; }
+  .aviso-resultado-texto { font-size: 0.86rem; order: 3; }
+}
