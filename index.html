@@ -112,7 +112,7 @@
       <div class="intro-card">
         <span class="intro-kicker">DIAGNÓSTICO ELEITORAL 2026</span>
         <h1 class="intro-title">
-          Diga que tipo de leitor político você é — e receba notícias <span class="highlight-gold">feitas pra você</span>.
+          Descubra que tipo de leitor político você é — e receba notícias <span class="highlight-gold">feitas pra você</span>.
         </h1>
         <p class="intro-lead">
           O <strong>Boletim PoliticaBR</strong> é o jornal digital de inteligência política do Brasil moderno. Antes de ter acesso à nossa urna de votação e pesquisa, diga de que lado você é!
@@ -165,7 +165,7 @@
 
         <!-- CTA Button -->
         <button class="btn-primary" id="btn-start-quiz">
-          Escolha seu lado agora
+          Descobrir meu lado agora
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>
@@ -449,17 +449,14 @@
 
         </div>
 
-        <!-- Live Results of Reader Votes (Appears after voting) -->
+        <!-- Confirmação de voto (o resultado em % só aparece no final da página) -->
         <div class="urna-live-results" id="urna-live-results" style="display: none;">
           <div class="results-header">
-            <h3>📊 Resultado em Tempo Real das Urnas do Boletim</h3>
-            <p>Votos consolidados entre os leitores que concluíram o diagnóstico:</p>
+            <h3>✅ Voto computado com sucesso!</h3>
+            <p>O resultado consolidado da votação de todos os leitores está liberado lá no final da página, logo depois da sua prévia personalizada.</p>
           </div>
-          <div class="results-bars-list" id="urna-results-bars">
-            <!-- Dynamically populated via JS -->
-          </div>
-          <button class="btn-vote-again" id="btn-revote">
-            Simular outro voto
+          <button class="btn-vote-again" id="btn-ver-preview-apos-voto">
+            Ver minha prévia personalizada →
           </button>
         </div>
 
@@ -671,6 +668,22 @@
             Quero meu acesso antecipado
           </button>
         </form>
+      </section>
+
+      <!-- ------------------------------------------------------------------
+           6. RESULTADO FINAL DA URNA (a recompensa, só no fim da página)
+           ------------------------------------------------------------------ -->
+      <section class="resultado-final-section" id="resultado-final">
+        <div class="results-header">
+          <h3>📊 Resultado em Tempo Real das Urnas do Boletim</h3>
+          <p>Votos consolidados entre todos os leitores que concluíram o diagnóstico:</p>
+        </div>
+        <div class="results-bars-list" id="urna-results-bars">
+          <!-- Dynamically populated via JS -->
+        </div>
+        <p class="resultado-final-bloqueado" id="resultado-final-bloqueado" style="display:none;">
+          🔒 Vote na nossa urna, lá em cima, para desbloquear o resultado da votação.
+        </p>
       </section>
 
     </section>
