@@ -531,7 +531,6 @@ function initUrnaSimulator() {
   const fimView = document.getElementById('urna-fim-view');
   const resultsContainer = document.getElementById('urna-live-results');
   const resultsBars = document.getElementById('urna-results-bars');
-  const revoteBtn = document.getElementById('btn-revote');
 
   if (!digit1 || !digit2) return;
 
@@ -687,11 +686,12 @@ function initUrnaSimulator() {
       votingView.style.display = 'none';
       fimView.style.display = 'flex';
 
-      // Render and display Live Results after 1.2s
+      // Mostra só a confirmação (sem números) - o resultado de verdade
+      // fica reservado pro final da página, depois da prévia e do cadastro
       setTimeout(() => {
-        renderLiveResults();
         resultsContainer.style.display = 'block';
         resultsContainer.scrollIntoView({ behavior: 'smooth' });
+        renderResultadoFinal();
       }, 1200);
     }
   }
@@ -713,9 +713,20 @@ function initUrnaSimulator() {
     }
   }
 
-  // Render Reader Poll Results - busca a contagem real (de todos os
-  // visitantes) no backend. Se não conseguir buscar, mostra aviso simples.
-  async function renderLiveResults() {
+  // Resultado final da urna (seção lá embaixo, depois da prévia e do cadastro)
+  // - Só mostra o resultado de verdade pra quem já votou (mesmo em outra sessão)
+  // - Quem ainda não votou vê uma mensagem pedindo pra votar primeiro
+  async function renderResultadoFinal() {
+    const bloqueadoMsg = document.getElementById('resultado-final-bloqueado');
+    const jaVotou = localStorage.getItem('boletim_ja_votou_urna');
+
+    if (!jaVotou) {
+      if (bloqueadoMsg) bloqueadoMsg.style.display = 'block';
+      resultsBars.innerHTML = '';
+      return;
+    }
+    if (bloqueadoMsg) bloqueadoMsg.style.display = 'none';
+
     let tally = {};
     try {
       const resp = await fetch('/api/resultado-urna', { cache: 'no-store' });
@@ -774,20 +785,15 @@ function initUrnaSimulator() {
   document.getElementById('btn-urna-corrige')?.addEventListener('click', handleCorrige);
   document.getElementById('btn-urna-confirma')?.addEventListener('click', handleConfirma);
 
-  // Re-vote Button Handler
-  if (revoteBtn) {
-    revoteBtn.addEventListener('click', () => {
-      isVotingFinished = false;
-      currentDigits = '';
-      isBranco = false;
-      fimView.style.display = 'none';
-      votingView.style.display = 'flex';
-      resultsContainer.style.display = 'none';
-      updateUrnaScreen();
-      document.getElementById('urna-showcase').scrollIntoView({ behavior: 'smooth' });
-    });
-  }
+  // Botão pós-voto: leva pra prévia do app (o resultado em % fica só no final da página)
+  document.getElementById('btn-ver-preview-apos-voto')?.addEventListener('click', () => {
+    document.getElementById('mockup-showcase').scrollIntoView({ behavior: 'smooth' });
+  });
 
   // Initial screen setup
   updateUrnaScreen();
+
+  // Checa de cara se a pessoa já votou em uma visita anterior, pra já
+  // deixar o resultado final (lá embaixo) correto desde o carregamento
+  renderResultadoFinal();
 }
