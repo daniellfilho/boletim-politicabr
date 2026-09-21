@@ -2,194 +2,194 @@
   "noticias": [
     {
       "categoria": "Pesquisas Eleitorais",
-      "fonte_nome": "Gazeta do Povo / O Globo (Quaest)",
+      "fonte_nome": "Gazeta do Povo",
       "fonte_url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-presidente-setembro-2026/",
       "esquerda": {
-        "manchete": "Quaest confirma Lula na liderança com 37% e folga sobre Flávio Bolsonaro",
-        "resumo": "Nova pesquisa Quaest mostra Lula à frente com 37% das intenções de voto contra 30% de Flávio Bolsonaro, sinal de resiliência do projeto popular mesmo com ataques da direita."
+        "manchete": "Lula amplia vantagem para 37% a 30% sobre Flávio Bolsonaro, mostra Quaest",
+        "resumo": "Nova pesquisa Quaest confirma Lula na liderança da corrida presidencial, com queda dos indecisos à medida que a campanha avança e o petista consolida sua frente."
       },
       "centro": {
-        "manchete": "Quaest: Lula tem 37%, Flávio Bolsonaro 30% e Cury sobe a 10% na disputa presidencial",
-        "resumo": "Primeira pesquisa Quaest do período oficial de campanha aponta Lula na frente, com queda de indecisos e crescimento de nomes do chamado terceiro pelotão."
+        "manchete": "Quaest: Lula tem 37% e Flávio Bolsonaro 30% na disputa presidencial",
+        "resumo": "Levantamento da Quaest, feito no início da campanha oficial, aponta Lula na frente com 37% e Flávio Bolsonaro em segundo com 30%, dentro de cenário ainda em movimento."
       },
       "direita": {
-        "manchete": "Flávio Bolsonaro avança e Cury dispara para 10% em nova Quaest, apertando a disputa",
-        "resumo": "Pesquisa mostra Flávio Bolsonaro consolidado em segundo lugar com 30% e crescimento acelerado de Cury, evidenciando fôlego da oposição a poucas semanas da eleição."
+        "manchete": "Flávio Bolsonaro chega a 30% e reduz distância para Lula, apontam pesquisas",
+        "resumo": "Com queda dos indecisos de 51% para 42%, Flávio Bolsonaro consolida a segunda posição e mantém a corrida presidencial competitiva contra o petista, segundo a Quaest."
       },
       "id": 1,
       "imagem_url": "https://media.gazetadopovo.com.br/2026/09/01084314/pesquisa-eleitoral-presidente.png"
     },
     {
-      "categoria": "STF",
-      "fonte_nome": "Congresso em Foco / Wikipédia",
-      "fonte_url": "https://pt.wikipedia.org/wiki/Caso_Master_no_Supremo_Tribunal_Federal",
+      "categoria": "Relações Exteriores",
+      "fonte_nome": "Revista Fórum",
+      "fonte_url": "https://revistaforum.com.br/global/tarifaco-trump-brasil",
       "esquerda": {
-        "manchete": "STF avança na apuração do Master e reforça compromisso com a transparência institucional",
-        "resumo": "Ministro André Mendonça ampliou a autonomia da Polícia Federal no caso do Banco Master, mostrando que a Corte não blinda ninguém, nem mesmo autoridades com foro privilegiado."
+        "manchete": "Governo Lula intensifica defesa de exportadores contra tarifaço injusto de Trump",
+        "resumo": "Itamaraty e Ministério do Comércio se preparam para reunião com os EUA em Milwaukee, reafirmando que consideram as tarifas discriminatórias e mantendo a diplomacia soberana como estratégia."
       },
       "centro": {
-        "manchete": "Sessão sobre atuação de Mendonça no caso Master é adiada pelo STF",
-        "resumo": "Fachin adiou o julgamento que discutiria a condução do inquérito do Banco Master, incluindo um relatório da PF que menciona o ministro Alexandre de Moraes, gerando nova tensão na Corte."
+        "manchete": "Brasil e EUA marcam nova reunião sobre tarifas para fim de setembro",
+        "resumo": "Ministros brasileiros devem se encontrar com o representante comercial dos EUA em Milwaukee para negociar exceções às tarifas de 25% e 12,5% sobre produtos brasileiros."
       },
       "direita": {
-        "manchete": "Crise no STF expõe divisão da Corte às vésperas das eleições, no caso do Banco Master",
-        "resumo": "Adiamento de sessão sobre o caso Master e relatório da PF citando Moraes alimentam críticas de que há tentativa de blindagem de autoridades investigadas."
+        "manchete": "Brasil busca ampliar isenções e reduzir impacto do tarifaço americano sobre exportadores",
+        "resumo": "Diplomacia brasileira negocia com Washington para incluir mais produtos na lista de exceções, buscando aliviar o peso das tarifas sobre o setor produtivo nacional."
       },
       "id": 2,
-      "imagem_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Despacho_na_Reclama%C3%A7%C3%A3o_88.121_-_rel._Dias_Toffoli_-_3_de_dezembro_de_2025.pdf/page1-960px-Despacho_na_Reclama%C3%A7%C3%A3o_88.121_-_rel._Dias_Toffoli_-_3_de_dezembro_de_2025.pdf.jpg?utm_source=pt.wikipedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail"
+      "imagem_url": "https://revistaforum.com.br/wp-content/uploads/2026/07/Lula3.webp"
     },
     {
       "categoria": "Congresso",
-      "fonte_nome": "Direto do Planalto / Brasil em Folhas",
-      "fonte_url": "https://www.diretodoplanalto.com.br/2026/09/congresso-vai-retomar-votacoes-somente.html",
+      "fonte_nome": "Agência Brasil",
+      "fonte_url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-09/senado-oposicao-obstrui-e-fim-da-escala-6x1-nao-vai-plenario",
       "esquerda": {
-        "manchete": "Alcolumbre trava PEC do fim da escala 6x1 e da Segurança até depois das eleições",
-        "resumo": "Presidente do Senado adiou a votação de pautas que beneficiam trabalhadores e fortalecem a segurança pública, frustrando expectativa do governo Lula de aprová-las antes do pleito."
+        "manchete": "Oposição obstrui e impede votação do fim da escala 6x1 no Senado",
+        "resumo": "Governo acusa articulação de senadores ligados a Flávio Bolsonaro de esvaziar o plenário para travar a PEC que reduziria a jornada semanal sem corte de salário."
       },
       "centro": {
-        "manchete": "Congresso só retoma PECs da escala 6x1 e da Segurança após o 1º turno das eleições",
-        "resumo": "Davi Alcolumbre afirmou que o esforço concentrado do Senado só ocorrerá a partir de 5 de outubro, adiando pautas caras ao governo por causa do calendário eleitoral."
+        "manchete": "Sem quórum garantido, Senado adia votação da PEC do fim da escala 6x1",
+        "resumo": "Proposta que reduz a jornada de 44 para 40 horas semanais foi aprovada na CCJ, mas a votação em plenário ficou para depois do primeiro turno das eleições de outubro."
       },
       "direita": {
-        "manchete": "Senado evita 'carimbar' PECs às pressas e posterga votação para depois da eleição",
-        "resumo": "Alcolumbre resistiu à pressão do Planalto e classificou como eleitoreira a tentativa de acelerar a aprovação da PEC da Segurança antes do segundo turno."
+        "manchete": "Senadores da oposição questionam pressa eleitoreira na PEC da jornada 6x1",
+        "resumo": "Parlamentares contrários à proposta defendem flexibilização negociada entre patrão e empregado e criticam o que classificam de viés eleitoral na tramitação acelerada."
       },
       "id": 3,
-      "imagem_url": null
-    },
-    {
-      "categoria": "Política Externa",
-      "fonte_nome": "Mixvale",
-      "fonte_url": "https://www.mixvale.com.br/2026/09/18/tarifaco-trump-fez-21-exigencias-ao-brasil-para-reduzir-tarifas/",
-      "esquerda": {
-        "manchete": "Governo rejeita as 21 exigências de Trump e defende soberania nacional diante do tarifaço",
-        "resumo": "O Planalto recusou por completo condições impostas pelos EUA para reduzir tarifas, alegando que elas violam a soberania e desmontam políticas industriais brasileiras."
-      },
-      "centro": {
-        "manchete": "Brasil rejeita 21 exigências dos EUA e negociação sobre tarifas permanece travada",
-        "resumo": "Governo brasileiro recusou lista de condições enviada por Washington para reduzir a tarifa de 50%, incluindo pontos sobre tributação digital e legislação de internet."
-      },
-      "direita": {
-        "manchete": "Impasse com os EUA se aprofunda após governo recusar todas as exigências de Trump",
-        "resumo": "Negociação sobre o tarifaço trava depois que o Brasil rejeitou integralmente as condições americanas, ampliando a incerteza para exportadores e o agronegócio."
-      },
-      "id": 4,
-      "imagem_url": null
-    },
-    {
-      "categoria": "Eleições 2026",
-      "fonte_nome": "O Tempo",
-      "fonte_url": "https://www.otempo.com.br/eleicoes/2026/presidentes/2026/9/12/tse-nega-por-unanimidade-registro-de-candidatura-de-pablo-marcal-a-presidencia",
-      "esquerda": {
-        "manchete": "TSE nega candidatura de Marçal e reforça respeito às regras eleitorais",
-        "resumo": "Por unanimidade, o TSE rejeitou o registro de Pablo Marçal à Presidência, decisão que reafirma a aplicação da lei de inelegibilidade sem exceções."
-      },
-      "centro": {
-        "manchete": "TSE rejeita, por unanimidade, registro de candidatura de Pablo Marçal à Presidência",
-        "resumo": "Tribunal Superior Eleitoral negou o pedido de Marçal com base em condenação por uso indevido de mídias sociais nas eleições municipais de 2024, que o deixa inelegível até 2032."
-      },
-      "direita": {
-        "manchete": "TSE barra Marçal da corrida presidencial mesmo com forte apelo popular do candidato",
-        "resumo": "Decisão unânime do TSE tira Pablo Marçal da disputa presidencial, reacendendo debate sobre os limites da Justiça Eleitoral para vetar candidaturas competitivas."
-      },
-      "id": 5,
-      "imagem_url": "https://www.otempo.com.br/content/dam/otempo/editorias/política judiciário/2026/8/20/política judiciário-tse-pablo_marcal-propaganda_eleitoral-1787240453.jpg"
-    },
-    {
-      "categoria": "Segurança Pública",
-      "fonte_nome": "CNN Brasil / Congresso em Foco",
-      "fonte_url": "https://www.cnnbrasil.com.br/nacional/sudeste/rj/analise-acao-no-rj-joga-seguranca-no-centro-da-disputa-de-2026/",
-      "esquerda": {
-        "manchete": "Megaoperação no Rio reacende debate sobre letalidade policial e direitos humanos",
-        "resumo": "Ação nos complexos do Alemão e da Penha, com dezenas de mortes, gerou cobranças do Ministério Público e da Defensoria sobre o cumprimento de regras do STF para proteger civis."
-      },
-      "centro": {
-        "manchete": "Operação contra o Comando Vermelho no Rio se torna a mais letal da história do estado",
-        "resumo": "A megaoperação policial na Penha e no Alemão deixou dezenas de mortos, apreendeu fuzis e colocou a segurança pública no centro do debate eleitoral de 2026."
-      },
-      "direita": {
-        "manchete": "Operação recorde contra o Comando Vermelho no Rio tem aprovação popular de mais de 62%",
-        "resumo": "Ação policial que mobilizou milhares de agentes contra o crime organizado teve forte respaldo da população, segundo pesquisa Atlas Intel, reforçando a agenda de mão dura na segurança."
-      },
-      "id": 6,
-      "imagem_url": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/10/TN220251028013-e1761919043287.jpg?w=1200&amp;h=630&amp;crop=1"
+      "imagem_url": "https://imagens.ebc.com.br/eU5H70x69gPSUWhZHAtka1_cm6A=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/07/13/_raf1125.jpg?itok=MUDE7lES"
     },
     {
       "categoria": "Economia",
-      "fonte_nome": "O Tempo / Metrópoles",
-      "fonte_url": "https://www.otempo.com.br/economia/2026/9/16/copom-corta-taxa-de-juros-em-0-25-p-p-pela-quinta-vez-consecutiva",
+      "fonte_nome": "CNN Brasil",
+      "fonte_url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/pacote-de-bondades-de-lula-injeta-r-270-bi-na-economia-em-ano-eleitoral/",
       "esquerda": {
-        "manchete": "Copom corta juros pela quinta vez seguida e barateia crédito para trabalhadores",
-        "resumo": "A Selic caiu para 13,75% ao ano, dando continuidade a um ciclo de reduções que tende a facilitar o acesso a crédito para famílias e pequenos negócios."
+        "manchete": "Governo injeta R$ 271 bi em crédito e subsídios para aquecer economia e proteger o povo",
+        "resumo": "Pacote reúne reajuste do Bolsa Família, subsídios ao diesel e à gasolina e novas linhas de crédito, fortalecendo renda e consumo das famílias brasileiras em 2026."
       },
       "centro": {
-        "manchete": "Copom reduz Selic para 13,75% ao ano pela quinta vez consecutiva",
-        "resumo": "Banco Central cortou a taxa básica de juros em 0,25 ponto percentual, decisão já esperada pelo mercado, mas mantém cautela diante da inflação ainda acima da meta."
+        "manchete": "Governo federal prevê injetar R$ 271 bilhões na economia em ano eleitoral",
+        "resumo": "Levantamento mostra que o pacote combina subsídios a combustíveis, crédito imobiliário e reajuste do Bolsa Família, com parte das medidas classificadas pelo governo como fiscalmente neutras."
       },
       "direita": {
-        "manchete": "Mesmo com corte, Selic segue em patamar elevado e juro real do Brasil é um dos maiores do mundo",
-        "resumo": "Apesar da quinta redução seguida, a taxa básica permanece em dois dígitos, reflexo da pressão inflacionária e do desafio fiscal que ainda preocupa investidores."
+        "manchete": "Pacote eleitoral de Lula soma R$ 271 bi em subsídios e gastos em ano de disputa presidencial",
+        "resumo": "Especialistas questionam o momento e o volume de subsídios a combustíveis e linhas de crédito lançados pelo governo justamente na reta final da campanha pela reeleição."
       },
-      "id": 7,
-      "imagem_url": "https://www.otempo.com.br/content/dam/otempo/editorias/economia/2026/1/2/economia-mei-contribuição mensal-salario_minimo-1767386953.jpg"
+      "id": 4,
+      "imagem_url": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/09/Lula_4ca470.jpg?w=1200&amp;h=630&amp;crop=1"
     },
     {
-      "categoria": "Relações Exteriores",
-      "fonte_nome": "Jornal GGN / Tribuna do Sertão",
-      "fonte_url": "https://www.tribunadosertao.com.br/geral/2026/09/19/981920-lula-deve-falar-sobre-defesa-da-soberania-brasileira-na-onu-em-meio-a-tensoes-com-os-eua",
+      "categoria": "STF",
+      "fonte_nome": "Gazeta do Povo",
+      "fonte_url": "https://www.gazetadopovo.com.br/vida-e-cidadania/supremo-decide-hoje-se-abre-investigacao-inedita-contra-alexandre-de-moraes/",
       "esquerda": {
-        "manchete": "Lula abre a Assembleia da ONU defendendo soberania e democracia diante de pressão dos EUA",
-        "resumo": "Presidente será o primeiro a discursar na abertura da Assembleia Geral e deve reforçar a defesa das instituições democráticas em meio à crise com Washington."
+        "manchete": "STF analisa caso inédito e mostra que ninguém está acima do escrutínio institucional",
+        "resumo": "Corte avalia pedido para investigar o ministro Alexandre de Moraes sobre supostas conversas com ex-controlador do Banco Master, em rito histórico e sem precedentes."
       },
       "centro": {
-        "manchete": "Lula discursa na ONU e deve abordar tensões comerciais e políticas com os Estados Unidos",
-        "resumo": "Em Nova York entre 20 e 22 de setembro, o presidente brasileiro vai defender multilateralismo e não intervenção, em meio a atritos com o governo Trump."
+        "manchete": "STF julga se autoriza investigação inédita contra o ministro Alexandre de Moraes",
+        "resumo": "Plenário discute se abre inquérito sobre mensagens atribuídas a Daniel Vorcaro que citam um número associado ao ministro, decisão que pode incluir quebra de sigilos."
       },
       "direita": {
-        "manchete": "Lula vai à ONU discursar sobre soberania em meio a impasse comercial que pesa no agronegócio",
-        "resumo": "Viagem do presidente a Nova York ocorre em meio a tensões comerciais crescentes com os EUA, que mantêm tarifas pesadas sobre produtos brasileiros."
+        "manchete": "Supremo decide se investiga Alexandre de Moraes por suposta ligação com caso Banco Master",
+        "resumo": "Julgamento histórico discute se a Corte autoriza apurar indícios envolvendo o ministro, em meio a pedidos de impeachment já protocolados no Senado contra ele."
       },
-      "id": 8,
-      "imagem_url": "https://img.dhost.cloud/J9JMhcJdL0IthC5IYl_OW7RSFSM=/1280x720/smart/https://tdan.nyc3.digitaloceanspaces.com/images/e036f/aa032eacb29053a3a33c18f1822cb8133b2.jpg"
-    },
-    {
-      "categoria": "Judiciário",
-      "fonte_nome": "Agência Brasil",
-      "fonte_url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-03/por-unanimidade-stf-nega-prisao-domiciliar-bolsonaro",
-      "esquerda": {
-        "manchete": "STF mantém rigor no cumprimento da pena de Bolsonaro pela trama golpista",
-        "resumo": "Por unanimidade, a Primeira Turma do STF voltou a negar prisão domiciliar ao ex-presidente, reafirmando a validade da condenação por tentativa de golpe de Estado."
-      },
-      "centro": {
-        "manchete": "STF nega novo pedido de prisão domiciliar de Bolsonaro por unanimidade",
-        "resumo": "Colegiado manteve decisão do relator Alexandre de Moraes, apesar de a defesa alegar problemas de saúde do ex-presidente para justificar o pedido."
-      },
-      "direita": {
-        "manchete": "STF nega domiciliar a Bolsonaro mesmo diante de comorbidades apontadas pela defesa",
-        "resumo": "Defesa do ex-presidente argumentou que a unidade prisional não oferece tratamento médico adequado às sequelas da facada de 2018, mas a Corte manteve a decisão anterior."
-      },
-      "id": 9,
-      "imagem_url": "https://imagens.ebc.com.br/iYwEbQKD35MrETTEApBUDjjwJHw=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2025/09/14/14092025-pzzb3322.jpg?itok=-VCYWelj"
+      "id": 5,
+      "imagem_url": "https://media.gazetadopovo.com.br/2026/09/14212640/8023687998001w-1-1.jpg"
     },
     {
       "categoria": "Eleições 2026",
-      "fonte_nome": "TSE / Congresso em Foco",
-      "fonte_url": "https://www.tse.jus.br/comunicacao/noticias/2026/Setembro/faltam-21-dias-conheca-os-cargos-em-disputa-nas-eleicoes-2026",
+      "fonte_nome": "Plox",
+      "fonte_url": "https://plox.com.br/noticia/20/09/2026/lula-eleicao-2026-bolsonaro-preso",
       "esquerda": {
-        "manchete": "Reta final da campanha: renovação de mais da metade do Senado pode ampliar diversidade no Congresso",
-        "resumo": "Com 54 das 81 cadeiras do Senado e todas as 513 da Câmara em disputa, eleição de outubro é vista como oportunidade de renovação da representação popular."
+        "manchete": "Lula diz que vencer eleição é garantir que condenado pelo golpe continue preso",
+        "resumo": "Em ato de campanha em Florianópolis, presidente reafirmou compromisso com a democracia e rebateu proposta de anistia defendida pelo adversário Flávio Bolsonaro."
       },
       "centro": {
-        "manchete": "Faltam poucas semanas: eleições vão renovar 54 cadeiras do Senado e toda a Câmara",
-        "resumo": "TSE detalha os cargos em disputa em outubro, com 319 candidatos ao Senado e 513 vagas na Câmara dos Deputados a serem preenchidas em todo o país."
+        "manchete": "Lula e Flávio Bolsonaro divergem sobre futuro da prisão do ex-presidente na campanha",
+        "resumo": "Em evento de campanha, Lula disse que quer vencer a eleição para manter Bolsonaro preso, contrapondo a proposta de anistia defendida pelo filho do ex-presidente."
       },
       "direita": {
-        "manchete": "Eleitor vai renovar dois terços do Senado e toda a Câmara em outubro, aponta TSE",
-        "resumo": "Pleito de outubro definirá metade das cadeiras do Senado e todos os 513 deputados federais, com centenas de candidatos disputando espaço no Congresso."
+        "manchete": "Flávio Bolsonaro defende anistia enquanto Lula promete manter pai dele na prisão",
+        "resumo": "Candidato do PL propõe perdão a condenados pela trama golpista, tema que se tornou central na disputa presidencial após declaração de Lula em Santa Catarina."
+      },
+      "id": 6,
+      "imagem_url": "https://static.plox.com.br/uploads/og/2026-09/img_6aafdd405f2db-q90_og.jpg"
+    },
+    {
+      "categoria": "Segurança Pública",
+      "fonte_nome": "Observador",
+      "fonte_url": "https://observador.pt/2026/08/24/camioes-incendiados-para-travar-operacao-policial-no-brasil-contra-rival-do-comando-vermelho/",
+      "esquerda": {
+        "manchete": "Operação no Rio expõe urgência de política de segurança com inteligência e direitos humanos",
+        "resumo": "Ação no Complexo de Israel mobilizou centenas de policiais e blindados contra o Terceiro Comando Puro, reforçando debate sobre necessidade de coordenação federativa na segurança pública."
+      },
+      "centro": {
+        "manchete": "Megaoperação no Rio mobiliza mais de 200 agentes contra facção na zona norte",
+        "resumo": "Criminosos incendiaram caminhões para tentar impedir ação policial contra o Terceiro Comando Puro, que resultou em detidos e armas apreendidas, com escolas fechadas na região."
+      },
+      "direita": {
+        "manchete": "Ação dura da polícia no Rio prende suspeitos e apreende fuzis de facção criminosa",
+        "resumo": "Operação com blindados e drones contra o Terceiro Comando Puro reforça a necessidade de resposta firme do Estado ao crime organizado que domina áreas urbanas."
+      },
+      "id": 7,
+      "imagem_url": "https://wm.observador.pt/wm/l/https%3A%2F%2Fbordalo.observador.pt%2Fv2%2Frs%3Afill%3A770%3A403%2Fc%3A2000%3A1122%3Anowe%3A0%3A151%2Fq%3A70%2Ff%3Awebp%2Fplain%2Fhttps%3A%2F%2Fs3.observador.pt%2Fwp-content%2Fuploads%2F2026%2F08%2F24194634%2F46187678.jpg?layer=obstop:T"
+    },
+    {
+      "categoria": "Orçamento",
+      "fonte_nome": "Direto do Planalto",
+      "fonte_url": "https://www.diretodoplanalto.com.br/2026/09/orcamento-de-2027-sera-votado-so-depois.html",
+      "esquerda": {
+        "manchete": "Orçamento de 2027 prevê salário mínimo de R$ 1.741 e crescimento da economia",
+        "resumo": "Proposta enviada pelo governo estima alta de 2,46% do PIB e reajuste de 7,4% no mínimo, mas só será votada pelo Congresso após as eleições de outubro."
+      },
+      "centro": {
+        "manchete": "Congresso só vota Orçamento de 2027 depois das eleições de outubro",
+        "resumo": "Proposta prevê crescimento de 2,46%, inflação de 3,6%, Selic de 12,53% e superávit de 0,1% do PIB, com despesas totais superiores a R$ 5 trilhões."
+      },
+      "direita": {
+        "manchete": "Governo projeta Selic ainda em dois dígitos e superávit mínimo no Orçamento de 2027",
+        "resumo": "Peça orçamentária enviada pela equipe econômica mantém juros elevados e margem fiscal apertada, com votação adiada estrategicamente para depois da eleição presidencial."
+      },
+      "id": 8,
+      "imagem_url": null
+    },
+    {
+      "categoria": "Segurança Pública",
+      "fonte_nome": "Portal da Câmara dos Deputados",
+      "fonte_url": "https://www.camara.leg.br/noticias/1250434-camara-aprova-pec-da-seguranca-publica-em-2-turno",
+      "esquerda": {
+        "manchete": "PEC da Segurança destina recursos das bets a fundos de combate ao crime organizado",
+        "resumo": "Texto aprovado na Câmara cria o Sistema Único de Segurança Pública e retirou trecho que reduzia maioridade penal, preservando garantias e ampliando cooperação federativa."
+      },
+      "centro": {
+        "manchete": "Câmara aprova PEC da Segurança Pública e texto vai ao Senado",
+        "resumo": "Proposta aprovada por 461 votos a 14 cria o Sistema Único de Segurança Pública e destina parte da arrecadação das bets a fundos de segurança e ao sistema penitenciário."
+      },
+      "direita": {
+        "manchete": "Câmara aprova por ampla maioria PEC que reestrutura segurança pública no país",
+        "resumo": "Texto aprovado com quase unanimidade fortalece integração entre União e estados no combate ao crime organizado e garante mais recursos permanentes para o setor."
+      },
+      "id": 9,
+      "imagem_url": "https://www.camara.leg.br/tema/assets/images/imagens-compartilhamento/imagem-padrao.jpg"
+    },
+    {
+      "categoria": "Eleições 2026",
+      "fonte_nome": "Republicanos",
+      "fonte_url": "https://republicanos10.org.br/eleicoes-2026/republicanos-confirma-tarcisio-de-freitas-como-pre-candidato-a-reeleicao/",
+      "esquerda": {
+        "manchete": "Tarcísio confirma reeleição em SP com aliança de 12 partidos e apoio de Flávio Bolsonaro",
+        "resumo": "Convenção estadual do Republicanos consolidou a aliança bolsonarista em São Paulo, unindo o governador a lideranças de direita em torno do projeto de poder para 2026."
+      },
+      "centro": {
+        "manchete": "Tarcísio de Freitas é confirmado pré-candidato à reeleição em São Paulo",
+        "resumo": "Convenção reuniu 12 partidos e teve a presença de Flávio Bolsonaro, que recebeu apoio formal da legenda paulista para a disputa presidencial."
+      },
+      "direita": {
+        "manchete": "Tarcísio amplia base de apoio e é confirmado à reeleição em SP com força de 12 partidos",
+        "resumo": "Governador conta com ampla coalizão e vice de peso na chapa, consolidando gestão avaliada como referência em segurança e eficiência administrativa para 2026."
       },
       "id": 10,
-      "imagem_url": null
+      "imagem_url": "https://republicanos10.org.br/wp-content/uploads/2026/08/foto-divulgacao-ascom-SP-01-08-26.jpg"
     }
   ],
-  "gerado_em": "2026-09-20T08:12:02.623430+00:00"
+  "gerado_em": "2026-09-21T08:13:09.428429+00:00"
 }
