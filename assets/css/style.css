@@ -470,6 +470,19 @@ button {
   display: block;
 }
 
+/* Carrossel de fotos por lado (esquerda/direita) — crossfade entre várias
+   figuras públicas do mesmo espectro político, trocando automaticamente. */
+.spectrum-photo {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.9s ease;
+}
+
+.spectrum-photo.is-active {
+  opacity: 1;
+}
+
 .hero-spectrum-left::before {
   content: '';
   position: absolute;
