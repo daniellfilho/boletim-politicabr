@@ -3,193 +3,193 @@
     {
       "categoria": "Pesquisas Eleitorais",
       "fonte_nome": "Gazeta do Povo",
-      "fonte_url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-presidente-setembro-2026/",
+      "fonte_url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-presidente-setembro-2026-4/",
       "esquerda": {
-        "manchete": "Lula amplia vantagem para 37% a 30% sobre Flávio Bolsonaro, mostra Quaest",
-        "resumo": "Nova pesquisa Quaest confirma Lula na liderança da corrida presidencial, com queda dos indecisos à medida que a campanha avança e o petista consolida sua frente."
+        "manchete": "Mesmo sob ataque, Lula segue na frente e mantém liderança na pesquisa Quaest",
+        "resumo": "Nova Quaest mostra Lula com 37% no primeiro turno contra 33% de Flávio Bolsonaro, resultado dentro da margem de erro que confirma a resiliência do presidente."
       },
       "centro": {
-        "manchete": "Quaest: Lula tem 37% e Flávio Bolsonaro 30% na disputa presidencial",
-        "resumo": "Levantamento da Quaest, feito no início da campanha oficial, aponta Lula na frente com 37% e Flávio Bolsonaro em segundo com 30%, dentro de cenário ainda em movimento."
+        "manchete": "Quaest mostra empate técnico entre Lula e Flávio Bolsonaro a semanas da eleição",
+        "resumo": "Pesquisa com 2.004 entrevistados aponta Lula com 37% e Flávio com 33% no primeiro turno; no segundo turno Flávio aparece à frente por 42% a 41%, dentro da margem de erro."
       },
       "direita": {
-        "manchete": "Flávio Bolsonaro chega a 30% e reduz distância para Lula, apontam pesquisas",
-        "resumo": "Com queda dos indecisos de 51% para 42%, Flávio Bolsonaro consolida a segunda posição e mantém a corrida presidencial competitiva contra o petista, segundo a Quaest."
+        "manchete": "Flávio Bolsonaro vira o jogo e supera Lula em simulação de segundo turno, diz Quaest",
+        "resumo": "Levantamento revela Flávio Bolsonaro numericamente à frente de Lula por 42% a 41% num eventual segundo turno, sinal de fôlego crescente da candidatura do PL."
       },
       "id": 1,
-      "imagem_url": "https://media.gazetadopovo.com.br/2026/09/01084314/pesquisa-eleitoral-presidente.png"
-    },
-    {
-      "categoria": "Relações Exteriores",
-      "fonte_nome": "Revista Fórum",
-      "fonte_url": "https://revistaforum.com.br/global/tarifaco-trump-brasil",
-      "esquerda": {
-        "manchete": "Governo Lula intensifica defesa de exportadores contra tarifaço injusto de Trump",
-        "resumo": "Itamaraty e Ministério do Comércio se preparam para reunião com os EUA em Milwaukee, reafirmando que consideram as tarifas discriminatórias e mantendo a diplomacia soberana como estratégia."
-      },
-      "centro": {
-        "manchete": "Brasil e EUA marcam nova reunião sobre tarifas para fim de setembro",
-        "resumo": "Ministros brasileiros devem se encontrar com o representante comercial dos EUA em Milwaukee para negociar exceções às tarifas de 25% e 12,5% sobre produtos brasileiros."
-      },
-      "direita": {
-        "manchete": "Brasil busca ampliar isenções e reduzir impacto do tarifaço americano sobre exportadores",
-        "resumo": "Diplomacia brasileira negocia com Washington para incluir mais produtos na lista de exceções, buscando aliviar o peso das tarifas sobre o setor produtivo nacional."
-      },
-      "id": 2,
-      "imagem_url": "https://revistaforum.com.br/wp-content/uploads/2026/07/Lula3.webp"
-    },
-    {
-      "categoria": "Congresso",
-      "fonte_nome": "Agência Brasil",
-      "fonte_url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-09/senado-oposicao-obstrui-e-fim-da-escala-6x1-nao-vai-plenario",
-      "esquerda": {
-        "manchete": "Oposição obstrui e impede votação do fim da escala 6x1 no Senado",
-        "resumo": "Governo acusa articulação de senadores ligados a Flávio Bolsonaro de esvaziar o plenário para travar a PEC que reduziria a jornada semanal sem corte de salário."
-      },
-      "centro": {
-        "manchete": "Sem quórum garantido, Senado adia votação da PEC do fim da escala 6x1",
-        "resumo": "Proposta que reduz a jornada de 44 para 40 horas semanais foi aprovada na CCJ, mas a votação em plenário ficou para depois do primeiro turno das eleições de outubro."
-      },
-      "direita": {
-        "manchete": "Senadores da oposição questionam pressa eleitoreira na PEC da jornada 6x1",
-        "resumo": "Parlamentares contrários à proposta defendem flexibilização negociada entre patrão e empregado e criticam o que classificam de viés eleitoral na tramitação acelerada."
-      },
-      "id": 3,
-      "imagem_url": "https://imagens.ebc.com.br/eU5H70x69gPSUWhZHAtka1_cm6A=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/07/13/_raf1125.jpg?itok=MUDE7lES"
-    },
-    {
-      "categoria": "Economia",
-      "fonte_nome": "CNN Brasil",
-      "fonte_url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/pacote-de-bondades-de-lula-injeta-r-270-bi-na-economia-em-ano-eleitoral/",
-      "esquerda": {
-        "manchete": "Governo injeta R$ 271 bi em crédito e subsídios para aquecer economia e proteger o povo",
-        "resumo": "Pacote reúne reajuste do Bolsa Família, subsídios ao diesel e à gasolina e novas linhas de crédito, fortalecendo renda e consumo das famílias brasileiras em 2026."
-      },
-      "centro": {
-        "manchete": "Governo federal prevê injetar R$ 271 bilhões na economia em ano eleitoral",
-        "resumo": "Levantamento mostra que o pacote combina subsídios a combustíveis, crédito imobiliário e reajuste do Bolsa Família, com parte das medidas classificadas pelo governo como fiscalmente neutras."
-      },
-      "direita": {
-        "manchete": "Pacote eleitoral de Lula soma R$ 271 bi em subsídios e gastos em ano de disputa presidencial",
-        "resumo": "Especialistas questionam o momento e o volume de subsídios a combustíveis e linhas de crédito lançados pelo governo justamente na reta final da campanha pela reeleição."
-      },
-      "id": 4,
-      "imagem_url": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/09/Lula_4ca470.jpg?w=1200&amp;h=630&amp;crop=1"
+      "imagem_url": "https://media.gazetadopovo.com.br/2026/09/17182853/pesquisa-eleitoral-presidente-960x540-1-3.png"
     },
     {
       "categoria": "STF",
-      "fonte_nome": "Gazeta do Povo",
-      "fonte_url": "https://www.gazetadopovo.com.br/vida-e-cidadania/supremo-decide-hoje-se-abre-investigacao-inedita-contra-alexandre-de-moraes/",
+      "fonte_nome": "Diário Carioca",
+      "fonte_url": "https://www.diariocarioca.com/2026/09/20/politica/judiciario/video-mostra-alexandre-de-moraes-saindo-de-jatinho-ligado-a-daniel-vorcaro",
       "esquerda": {
-        "manchete": "STF analisa caso inédito e mostra que ninguém está acima do escrutínio institucional",
-        "resumo": "Corte avalia pedido para investigar o ministro Alexandre de Moraes sobre supostas conversas com ex-controlador do Banco Master, em rito histórico e sem precedentes."
+        "manchete": "Defesa de Moraes reafirma versão e nega qualquer irregularidade em voos questionados",
+        "resumo": "Após divulgação de vídeo antigo, escritório de Moraes mantém que o ministro nunca usou aeronaves de Vorcaro, atribuindo os voos a contratos técnicos de táxi aéreo."
       },
       "centro": {
-        "manchete": "STF julga se autoriza investigação inédita contra o ministro Alexandre de Moraes",
-        "resumo": "Plenário discute se abre inquérito sobre mensagens atribuídas a Daniel Vorcaro que citam um número associado ao ministro, decisão que pode incluir quebra de sigilos."
+        "manchete": "Vídeo reacende debate sobre voos de Moraes em aeronaves ligadas ao Banco Master",
+        "resumo": "Imagens de 2025 mostram o ministro do STF e a esposa desembarcando de jato ligado a Daniel Vorcaro, o que a defesa nega ter significado uso de avião do empresário."
       },
       "direita": {
-        "manchete": "Supremo decide se investiga Alexandre de Moraes por suposta ligação com caso Banco Master",
-        "resumo": "Julgamento histórico discute se a Corte autoriza apurar indícios envolvendo o ministro, em meio a pedidos de impeachment já protocolados no Senado contra ele."
+        "manchete": "Novas imagens de Moraes com jato ligado a Vorcaro aumentam pressão por explicações",
+        "resumo": "Vídeo mostra o ministro e a esposa desembarcando de aeronave vinculada ao dono do Banco Master, contradizendo nota anterior que negava qualquer voo com o empresário."
       },
-      "id": 5,
-      "imagem_url": "https://media.gazetadopovo.com.br/2026/09/14212640/8023687998001w-1-1.jpg"
+      "id": 2,
+      "imagem_url": "https://www.diariocarioca.com/wp-content/uploads/2026/09/moraes-no-aviao.webp"
+    },
+    {
+      "categoria": "Economia",
+      "fonte_nome": "InfoMoney",
+      "fonte_url": "https://www.infomoney.com.br/brasil/reajuste-do-bolsa-familia/",
+      "esquerda": {
+        "manchete": "Governo reajusta Bolsa Família e piso do benefício sobe para R$ 691",
+        "resumo": "Lula anuncia aumento de 15% no Bolsa Família, elevando o piso para R$ 691 e o valor médio para R$ 777, medida que recompõe a inflação e beneficia famílias mais pobres."
+      },
+      "centro": {
+        "manchete": "Reajuste do Bolsa Família custará R$ 22,7 bi ao ano e gera debate fiscal",
+        "resumo": "Novo piso de R$ 691 passa a valer em outubro; medida tem impacto de R$ 5,8 bilhões em 2026 e já provocou questionamentos sobre o momento eleitoral do anúncio."
+      },
+      "direita": {
+        "manchete": "Reajuste do Bolsa Família às vésperas da eleição gera questionamento no TCU",
+        "resumo": "Procurador do TCU pede anulação do aumento por falta de dotação orçamentária prévia, enquanto mercado reage com queda do Ibovespa após o anúncio do governo."
+      },
+      "id": 3,
+      "imagem_url": "https://www.infomoney.com.br/wp-content/uploads/2025/11/bolsa-familia-13-salario.jpg"
+    },
+    {
+      "categoria": "Política Externa",
+      "fonte_nome": "Agência Brasil",
+      "fonte_url": "https://agenciabrasil.ebc.com.br/radioagencia-nacional/economia/audio/2026-09/brasil-e-eua-voltam-negociar-tarifas-durante-evento-ligado-ao-g20",
+      "esquerda": {
+        "manchete": "Governo brasileiro resiste a exigências dos EUA e defende soberania nas negociações tarifárias",
+        "resumo": "Brasil rejeitou lista de 21 exigências de Trump para reduzir tarifas, alegando que as condições feririam a soberania nacional; negociação segue em evento do G20."
+      },
+      "centro": {
+        "manchete": "Brasil e EUA retomam negociação sobre tarifaço em reunião do G20 em Wisconsin",
+        "resumo": "Delegação brasileira se reúne com representante comercial dos EUA para discutir a sobretaxa de 50% imposta a produtos brasileiros, após impasse sobre exigências americanas."
+      },
+      "direita": {
+        "manchete": "Impasse tarifário com EUA expõe custo econômico da política externa do governo",
+        "resumo": "Negociações sobre a tarifa de 50% seguem travadas após Brasília rejeitar integralmente as exigências de Washington, prolongando incerteza para exportadores brasileiros."
+      },
+      "id": 4,
+      "imagem_url": "https://imagens.ebc.com.br/QaIwF0LC9wzQCAJsbSIz1F9oVv4=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2025/07/30/52135407906_56bdd43e2d_o.jpg?itok=B3rOceP5"
     },
     {
       "categoria": "Eleições 2026",
-      "fonte_nome": "Plox",
-      "fonte_url": "https://plox.com.br/noticia/20/09/2026/lula-eleicao-2026-bolsonaro-preso",
+      "fonte_nome": "O Tempo",
+      "fonte_url": "https://www.otempo.com.br/eleicoes/2026/presidentes/2026/9/12/tse-nega-por-unanimidade-registro-de-candidatura-de-pablo-marcal-a-presidencia",
       "esquerda": {
-        "manchete": "Lula diz que vencer eleição é garantir que condenado pelo golpe continue preso",
-        "resumo": "Em ato de campanha em Florianópolis, presidente reafirmou compromisso com a democracia e rebateu proposta de anistia defendida pelo adversário Flávio Bolsonaro."
+        "manchete": "TSE barra por unanimidade candidatura de Marçal, reafirmando regras eleitorais",
+        "resumo": "Corte eleitoral negou de forma unânime o registro de Pablo Marçal à Presidência, mantendo sua inelegibilidade até 2032 por condenação nas eleições municipais de 2024."
       },
       "centro": {
-        "manchete": "Lula e Flávio Bolsonaro divergem sobre futuro da prisão do ex-presidente na campanha",
-        "resumo": "Em evento de campanha, Lula disse que quer vencer a eleição para manter Bolsonaro preso, contrapondo a proposta de anistia defendida pelo filho do ex-presidente."
+        "manchete": "TSE rejeita candidatura de Marçal à Presidência por inelegibilidade até 2032",
+        "resumo": "Tribunal Superior Eleitoral negou por unanimidade o registro de Pablo Marçal, mantendo condenação por uso indevido de mídia social nas eleições municipais de 2024."
       },
       "direita": {
-        "manchete": "Flávio Bolsonaro defende anistia enquanto Lula promete manter pai dele na prisão",
-        "resumo": "Candidato do PL propõe perdão a condenados pela trama golpista, tema que se tornou central na disputa presidencial após declaração de Lula em Santa Catarina."
+        "manchete": "Defesa de Marçal classifica decisão do TSE como injustiça e prepara recursos",
+        "resumo": "TSE rejeitou o registro de Marçal à Presidência; defesa do candidato afirma que quem enfrenta o sistema encontra obstáculos e deve recorrer da decisão."
       },
-      "id": 6,
-      "imagem_url": "https://static.plox.com.br/uploads/og/2026-09/img_6aafdd405f2db-q90_og.jpg"
+      "id": 5,
+      "imagem_url": "https://www.otempo.com.br/content/dam/otempo/editorias/política judiciário/2026/8/20/política judiciário-tse-pablo_marcal-propaganda_eleitoral-1787240453.jpg"
     },
     {
-      "categoria": "Segurança Pública",
-      "fonte_nome": "Observador",
-      "fonte_url": "https://observador.pt/2026/08/24/camioes-incendiados-para-travar-operacao-policial-no-brasil-contra-rival-do-comando-vermelho/",
-      "esquerda": {
-        "manchete": "Operação no Rio expõe urgência de política de segurança com inteligência e direitos humanos",
-        "resumo": "Ação no Complexo de Israel mobilizou centenas de policiais e blindados contra o Terceiro Comando Puro, reforçando debate sobre necessidade de coordenação federativa na segurança pública."
-      },
-      "centro": {
-        "manchete": "Megaoperação no Rio mobiliza mais de 200 agentes contra facção na zona norte",
-        "resumo": "Criminosos incendiaram caminhões para tentar impedir ação policial contra o Terceiro Comando Puro, que resultou em detidos e armas apreendidas, com escolas fechadas na região."
-      },
-      "direita": {
-        "manchete": "Ação dura da polícia no Rio prende suspeitos e apreende fuzis de facção criminosa",
-        "resumo": "Operação com blindados e drones contra o Terceiro Comando Puro reforça a necessidade de resposta firme do Estado ao crime organizado que domina áreas urbanas."
-      },
-      "id": 7,
-      "imagem_url": "https://wm.observador.pt/wm/l/https%3A%2F%2Fbordalo.observador.pt%2Fv2%2Frs%3Afill%3A770%3A403%2Fc%3A2000%3A1122%3Anowe%3A0%3A151%2Fq%3A70%2Ff%3Awebp%2Fplain%2Fhttps%3A%2F%2Fs3.observador.pt%2Fwp-content%2Fuploads%2F2026%2F08%2F24194634%2F46187678.jpg?layer=obstop:T"
-    },
-    {
-      "categoria": "Orçamento",
-      "fonte_nome": "Direto do Planalto",
-      "fonte_url": "https://www.diretodoplanalto.com.br/2026/09/orcamento-de-2027-sera-votado-so-depois.html",
-      "esquerda": {
-        "manchete": "Orçamento de 2027 prevê salário mínimo de R$ 1.741 e crescimento da economia",
-        "resumo": "Proposta enviada pelo governo estima alta de 2,46% do PIB e reajuste de 7,4% no mínimo, mas só será votada pelo Congresso após as eleições de outubro."
-      },
-      "centro": {
-        "manchete": "Congresso só vota Orçamento de 2027 depois das eleições de outubro",
-        "resumo": "Proposta prevê crescimento de 2,46%, inflação de 3,6%, Selic de 12,53% e superávit de 0,1% do PIB, com despesas totais superiores a R$ 5 trilhões."
-      },
-      "direita": {
-        "manchete": "Governo projeta Selic ainda em dois dígitos e superávit mínimo no Orçamento de 2027",
-        "resumo": "Peça orçamentária enviada pela equipe econômica mantém juros elevados e margem fiscal apertada, com votação adiada estrategicamente para depois da eleição presidencial."
-      },
-      "id": 8,
-      "imagem_url": null
-    },
-    {
-      "categoria": "Segurança Pública",
-      "fonte_nome": "Portal da Câmara dos Deputados",
+      "categoria": "Congresso",
+      "fonte_nome": "Câmara dos Deputados",
       "fonte_url": "https://www.camara.leg.br/noticias/1250434-camara-aprova-pec-da-seguranca-publica-em-2-turno",
       "esquerda": {
-        "manchete": "PEC da Segurança destina recursos das bets a fundos de combate ao crime organizado",
-        "resumo": "Texto aprovado na Câmara cria o Sistema Único de Segurança Pública e retirou trecho que reduzia maioridade penal, preservando garantias e ampliando cooperação federativa."
+        "manchete": "Câmara aprova PEC da Segurança Pública com financiamento via taxação das bets",
+        "resumo": "Texto aprovado cria o Sistema Único de Segurança Pública e destina parte da arrecadação das apostas esportivas a fundos de segurança e ao sistema penitenciário."
       },
       "centro": {
-        "manchete": "Câmara aprova PEC da Segurança Pública e texto vai ao Senado",
-        "resumo": "Proposta aprovada por 461 votos a 14 cria o Sistema Único de Segurança Pública e destina parte da arrecadação das bets a fundos de segurança e ao sistema penitenciário."
+        "manchete": "Câmara aprova em segundo turno PEC que integra polícias e cria Susp",
+        "resumo": "Proposta, aprovada após diálogo entre governo e oposição, cria o Sistema Único de Segurança Pública e destina recursos das bets a fundos de segurança e penitenciário."
       },
       "direita": {
-        "manchete": "Câmara aprova por ampla maioria PEC que reestrutura segurança pública no país",
-        "resumo": "Texto aprovado com quase unanimidade fortalece integração entre União e estados no combate ao crime organizado e garante mais recursos permanentes para o setor."
+        "manchete": "Câmara aprova PEC da Segurança Pública com integração das forças policiais",
+        "resumo": "Deputados aprovaram texto que cria o Susp para unificar ações contra o crime organizado, com repasse gradual de recursos das apostas para reforçar segurança e presídios."
       },
-      "id": 9,
+      "id": 6,
       "imagem_url": "https://www.camara.leg.br/tema/assets/images/imagens-compartilhamento/imagem-padrao.jpg"
     },
     {
-      "categoria": "Eleições 2026",
-      "fonte_nome": "Republicanos",
-      "fonte_url": "https://republicanos10.org.br/eleicoes-2026/republicanos-confirma-tarcisio-de-freitas-como-pre-candidato-a-reeleicao/",
+      "categoria": "Economia",
+      "fonte_nome": "Senado Notícias / Exame",
+      "fonte_url": "https://exame.com/economia/reforma-tributaria-entenda-regulamentacao-aprovada-pelo-senado/",
       "esquerda": {
-        "manchete": "Tarcísio confirma reeleição em SP com aliança de 12 partidos e apoio de Flávio Bolsonaro",
-        "resumo": "Convenção estadual do Republicanos consolidou a aliança bolsonarista em São Paulo, unindo o governador a lideranças de direita em torno do projeto de poder para 2026."
+        "manchete": "Reforma tributária avança com cashback para famílias de baixa renda",
+        "resumo": "Nova legislação mantém isenção da cesta básica e cria mecanismo de devolução de tributos para famílias pobres, buscando reduzir desigualdade na cobrança de impostos."
       },
       "centro": {
-        "manchete": "Tarcísio de Freitas é confirmado pré-candidato à reeleição em São Paulo",
-        "resumo": "Convenção reuniu 12 partidos e teve a presença de Flávio Bolsonaro, que recebeu apoio formal da legenda paulista para a disputa presidencial."
+        "manchete": "Regulamentação da reforma tributária entra em fase de testes em 2026",
+        "resumo": "Novo sistema unifica tributos em um IVA dual, com alíquota padrão estimada em até 28,6%, e será implementado gradualmente entre 2027 e 2033, segundo o Ministério da Fazenda."
       },
       "direita": {
-        "manchete": "Tarcísio amplia base de apoio e é confirmado à reeleição em SP com força de 12 partidos",
-        "resumo": "Governador conta com ampla coalizão e vice de peso na chapa, consolidando gestão avaliada como referência em segurança e eficiência administrativa para 2026."
+        "manchete": "Empresários alertam para risco de aumento da carga tributária na nova reforma",
+        "resumo": "Cálculos indicam que a alíquota padrão do novo imposto pode chegar a 28,6%, gerando preocupação do setor produtivo mesmo com limitador previsto para conter excessos."
+      },
+      "id": 7,
+      "imagem_url": null
+    },
+    {
+      "categoria": "Relações Exteriores",
+      "fonte_nome": "Agência Brasil",
+      "fonte_url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-09/lula-defende-soberania-do-brasil-em-pronunciamento-pelo-7-de-setembro",
+      "esquerda": {
+        "manchete": "Lula defende soberania nacional e rejeita interferência estrangeira em pronunciamento",
+        "resumo": "Em discurso pelo 7 de Setembro, Lula afirmou que o Brasil não aceitará interferências externas em decisões políticas e econômicas, defendendo autonomia nas relações internacionais."
+      },
+      "centro": {
+        "manchete": "Lula usa pronunciamento de 7 de Setembro para reforçar discurso de soberania",
+        "resumo": "Em rede nacional, o presidente destacou a autonomia do país na gestão de recursos naturais e nas relações comerciais, em meio à disputa eleitoral e à crise tarifária com os EUA."
+      },
+      "direita": {
+        "manchete": "Discurso de soberania de Lula no 7 de Setembro é visto como aceno eleitoral",
+        "resumo": "Pronunciamento presidencial pela Independência ocorreu em meio à campanha eleitoral, com críticos apontando uso da data para reforçar narrativa de governo contra pressões externas."
+      },
+      "id": 8,
+      "imagem_url": "https://imagens.ebc.com.br/C6UWITksOr5SivmtyEsMDGy1oIo=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/09/06/pronunciamnto_do_presidente_luiz_inacio_lula_da_silva_para_o_7_de_setembro.jpg?itok=Kqi3zydP"
+    },
+    {
+      "categoria": "Judiciário",
+      "fonte_nome": "Imirante",
+      "fonte_url": "https://m.imirante.com/noticias/brasil/2026/08/31/ipolitica-stf-marca-para-setembro-julgamento-de-recurso-de-eduardo-bolsonaro",
+      "esquerda": {
+        "manchete": "STF mantém rigor e julga recurso de Eduardo Bolsonaro por coação à Corte",
+        "resumo": "Primeira Turma analisa embargos de Eduardo Bolsonaro, condenado por unanimidade a quatro anos e dois meses por tentar coagir o STF durante julgamento de seu pai."
+      },
+      "centro": {
+        "manchete": "STF julga em plenário virtual recurso de Eduardo Bolsonaro contra condenação",
+        "resumo": "Primeira Turma analisa entre 11 e 18 de setembro embargos de declaração contra a pena de quatro anos e dois meses imposta ao ex-deputado por coação no curso do processo."
+      },
+      "direita": {
+        "manchete": "Defesa de Eduardo Bolsonaro busca reverter condenação por imunidade parlamentar",
+        "resumo": "Defensoria argumenta que o ex-deputado não tinha poder de coação e que suas manifestações estavam protegidas por imunidade parlamentar, mas argumentos foram rejeitados na Turma."
+      },
+      "id": 9,
+      "imagem_url": "https://imagens.imirante.com.br/imagens/noticias/2025/08/20/eEVm6Rnc1csQCkzdde5DKwupKCWQG4IL4xyG5X59.jpg?w=896&amp;h=448&amp;crop=1895.0079155673%2C&#43;947.50395778364%2C&#43;0%2C&#43;29.125329815303&amp;fit=crop&amp;s=1692c83ccb3b52d050ce5135faec28d8"
+    },
+    {
+      "categoria": "Segurança Pública",
+      "fonte_nome": "Polícia Federal / Agência Gov",
+      "fonte_url": "https://www.gov.br/pf/pt-br/assuntos/noticias",
+      "esquerda": {
+        "manchete": "PF intensifica operações contra crime organizado e tráfico em várias regiões do país",
+        "resumo": "Polícia Federal deflagrou ações contra organizações criminosas em estados como Mato Grosso do Sul e Amapá, incluindo apreensões e cooperação internacional para prender foragidos."
+      },
+      "centro": {
+        "manchete": "Polícia Federal realiza série de operações contra tráfico e crimes organizados",
+        "resumo": "Ações recentes da PF incluem apreensão de drogas, cumprimento de mandados e prisão de foragido internacional, parte da rotina de combate ao crime organizado no país."
+      },
+      "direita": {
+        "manchete": "PF reforça combate ao crime organizado com operações em múltiplos estados",
+        "resumo": "Forças de segurança realizaram ações contra tráfico de drogas e organizações criminosas, incluindo cooperação internacional para captura de foragido, mostrando efetividade no enfrentamento ao crime."
       },
       "id": 10,
-      "imagem_url": "https://republicanos10.org.br/wp-content/uploads/2026/08/foto-divulgacao-ascom-SP-01-08-26.jpg"
+      "imagem_url": null
     }
   ],
-  "gerado_em": "2026-09-21T08:13:09.428429+00:00"
+  "gerado_em": "2026-09-22T13:08:53.558798+00:00"
 }
