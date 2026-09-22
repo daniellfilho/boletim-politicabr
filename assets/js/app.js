@@ -512,69 +512,48 @@ function initLeadForm() {
       fbq('track', 'Lead');
     }
 
-    // Mostra estado de carregamento no botão enquanto o e-mail é enviado de verdade
-    const submitBtn = form.querySelector('button[type="submit"]');
-    const submitBtnOriginalText = submitBtn ? submitBtn.textContent : '';
-    if (submitBtn) {
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Enviando...';
-    }
-
+    // Envia o cadastro para o backend em segundo plano (keepalive garante que
+    // a requisição é concluída mesmo que a página já esteja saindo para o
+    // checkout). Não bloqueia o redirecionamento por causa disso.
     fetch('/api/lead', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(leadData)
-    })
-      .then((res) => {
-        if (!res.ok) throw new Error('Falha no envio do e-mail');
-        renderLeadSuccess(captureSection, name, email, profile, true);
-      })
-      .catch((err) => {
-        console.error('[lead-form] Não foi possível enviar o e-mail:', err);
-        // Mesmo se o envio falhar, o cadastro já foi salvo localmente;
-        // avisamos o leitor com uma mensagem levemente diferente.
-        renderLeadSuccess(captureSection, name, email, profile, false);
-      })
-      .finally(() => {
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.textContent = submitBtnOriginalText;
-        }
-      });
+      body: JSON.stringify(leadData),
+      keepalive: true
+    }).catch((err) => {
+      console.error('[lead-form] Não foi possível enviar o e-mail (cadastro já foi salvo localmente):', err);
+    });
+
+    if (typeof fbq === 'function') {
+      fbq('track', 'InitiateCheckout');
+    }
+
+    renderRedirecionandoParaCheckout(captureSection, name);
+
+    // Pequeno atraso só para o visitante ver a confirmação antes de sair
+    // da página rumo ao checkout de assinatura da Kiwify.
+    setTimeout(() => {
+      window.location.href = KIWIFY_CHECKOUT_URL;
+    }, 900);
   });
 }
 
-function renderLeadSuccess(captureSection, name, email, profile, emailEnviado) {
-    // Render Success Confirmation Screen
-    captureSection.innerHTML = `
-      <div class="success-card">
-        <div class="success-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="20 6 9 17 4 12"></polyline>
-          </svg>
-        </div>
-        <h3 class="success-title">Acesso Pré-Reservado com Sucesso!</h3>
-        <p class="success-desc">
-          Olá, <strong>${name}</strong>. Seu perfil <strong>${profile}</strong> foi registrado com prioridade.
-          ${emailEnviado
-            ? `Enviamos para <strong>${email}</strong> o link de acesso exclusivo à edição de lançamento do <strong>Boletim PoliticaBR</strong>.`
-            : `Seu cadastro foi salvo com <strong>${email}</strong>, mas tivemos uma instabilidade ao enviar o e-mail agora — nossa equipe vai reenviar em breve.`
-          }
-        </p>
-        <div style="background: var(--bg-subtle); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); font-size: 0.85rem; color: var(--text-muted); margin-bottom: 24px;">
-          🔒 Seus dados estão seguros e protegidos pela LGPD. Não enviamos spam nem compartilhamos suas respostas.
-        </div>
-        <a href="${KIWIFY_CHECKOUT_URL}" class="btn-primary" onclick="if (typeof fbq === 'function') { fbq('track', 'InitiateCheckout'); }" style="display:inline-block;text-decoration:none;font-size: 1rem; padding: 14px 28px; margin-bottom: 12px;">
-          Quero a assinatura completa
-        </a>
-        <br>
-        <button class="btn-primary" onclick="window.location.reload();" style="font-size: 0.85rem; padding: 10px 20px; background: transparent; border: 1px solid var(--border-medium); color: var(--text-muted); box-shadow: none;">
-          Fazer o Quiz Novamente
-        </button>
+function renderRedirecionandoParaCheckout(captureSection, name) {
+  captureSection.innerHTML = `
+    <div class="success-card">
+      <div class="success-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
       </div>
-    `;
+      <h3 class="success-title">Cadastro confirmado, ${name}!</h3>
+      <p class="success-desc">
+        Estamos te levando agora para finalizar sua assinatura do <strong>Boletim PoliticaBR</strong>...
+      </p>
+    </div>
+  `;
 
-    captureSection.scrollIntoView({ behavior: 'smooth' });
+  captureSection.scrollIntoView({ behavior: 'smooth' });
 }
 
 /* ==========================================================================
@@ -774,18 +753,21 @@ function initUrnaSimulator() {
 
   // Record vote - envia para o backend (contagem real, de todos os visitantes)
   // e usa uma marca local só para impedir múltiplos votos do MESMO navegador.
+  // A marca local é gravada ANTES do fetch: assim, se a API ainda não estiver
+  // no ar (ex.: variáveis do Supabase não configuradas na Vercel), o resultado
+  // não fica bloqueado para sempre no navegador de quem já votou.
   async function recordVote(key) {
     const jaVotou = localStorage.getItem('boletim_ja_votou_urna');
     if (jaVotou) return; // já contabilizado antes neste navegador
+    localStorage.setItem('boletim_ja_votou_urna', key);
     try {
       await fetch('/api/registrar-voto', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ numero: key }),
       });
-      localStorage.setItem('boletim_ja_votou_urna', key);
     } catch (err) {
-      console.error('[urna] Não foi possível registrar o voto:', err);
+      console.error('[urna] Não foi possível registrar o voto no servidor (contabilizado só localmente):', err);
     }
   }
 
