@@ -158,10 +158,46 @@
           </div>
         </div>
 
+        <!-- PRÉVIA BLOQUEADA: uma manchete de cada lado do espectro, gerada
+             pelo robô diário (noticias-diarias.json). Fica com o texto
+             borrado + cadeado, e só desbloqueia após o cadastro (quiz). -->
+        <div class="preview-noticias-wrap">
+          <p class="preview-noticias-titulo">📰 A notícia de hoje, <span class="highlight-gold">nos dois lados</span></p>
+          <p class="preview-noticias-subtitulo">Veja como o mesmo fato é contado para cada perfil — desbloqueie a versão completa em segundos</p>
+
+          <div class="preview-noticias-grid">
+            <div class="preview-noticia-card preview-noticia-esquerda">
+              <span class="hero-spectrum-tag tag-left preview-noticia-tag">ESQUERDA</span>
+              <div class="preview-noticia-conteudo-blur">
+                <h4 class="preview-noticia-titulo-noticia" id="preview-esquerda-titulo">Proposta de revisão de isenções fiscais pode destravar recursos para saúde e educação</h4>
+                <p class="preview-noticia-resumo" id="preview-esquerda-resumo">Relatores defendem que o fim de benefícios a grandes grupos econômicos pode reforçar o financiamento de políticas sociais.</p>
+              </div>
+              <div class="preview-noticia-lock-overlay">
+                <span class="preview-noticia-lock-icone">🔒</span>
+                <p class="preview-noticia-lock-texto">Para ter acesso à íntegra e desbloquear a notícia completa, realize o cadastro</p>
+                <button class="btn-desbloquear" data-scroll-to-quiz="true">Desbloquear notícia</button>
+              </div>
+            </div>
+
+            <div class="preview-noticia-card preview-noticia-direita">
+              <span class="hero-spectrum-tag tag-right preview-noticia-tag">DIREITA</span>
+              <div class="preview-noticia-conteudo-blur">
+                <h4 class="preview-noticia-titulo-noticia" id="preview-direita-titulo">Setor produtivo alerta para impacto de nova regra fiscal sobre investimentos</h4>
+                <p class="preview-noticia-resumo" id="preview-direita-resumo">Entidades empresariais defendem cautela e pedem que o ajuste priorize corte de gastos públicos antes de rever incentivos.</p>
+              </div>
+              <div class="preview-noticia-lock-overlay">
+                <span class="preview-noticia-lock-icone">🔒</span>
+                <p class="preview-noticia-lock-texto">Para ter acesso à íntegra e desbloquear a notícia completa, realize o cadastro</p>
+                <button class="btn-desbloquear" data-scroll-to-quiz="true">Desbloquear notícia</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- DEPOIMENTOS DE ASSINANTES - carrossel automático, sem identificação -->
         <div class="depoimentos-wrap">
           <p class="depoimentos-titulo">⭐ O que nossos <span class="highlight-gold">assinantes dizem</span></p>
-          <p class="depoimentos-subtitulo"></p>
+          <p class="depoimentos-subtitulo">Depoimentos reais, sem edição</p>
           <div class="depoimentos-track" id="depoimentos-track">
             <div class="depoimento-card"><span class="depoimento-nome">👤 Marcos S.</span><span class="depoimento-tempo">Assinante há 1 semana</span><p class="depoimento-texto">"Eu vivia vendo um monte de notícia sobre as eleições e não sabia mais no que acreditar. Hoje consigo acompanhar tudo com muito mais tranquilidade."</p></div>
             <div class="depoimento-card"><span class="depoimento-nome">👤 Fernanda A.</span><span class="depoimento-tempo">Assinante há 3 dias</span><p class="depoimento-texto">"Assino há um tempo e virou parte da minha rotina. É muito mais fácil entender o que está acontecendo sem precisar ficar horas acompanhando as notícias."</p></div>
