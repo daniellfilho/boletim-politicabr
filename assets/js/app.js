@@ -5,10 +5,11 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initDateHeader();
-  loadDailyNewsFeed();
+  loadDailyNewsFeed().then(renderPreviewNoticiasBloqueadas);
   initQuizApp();
   initUrnaSimulator();
   initSpectrumCarousel();
+  initPreviewNoticiasBloqueadas();
 });
 
 /* ==========================================================================
@@ -49,6 +50,47 @@ function initSpectrumCarousel() {
 
   rodarCarrossel('spectrum-esquerda');
   setTimeout(() => rodarCarrossel('spectrum-direita'), ATRASO_ENTRE_LADOS_MS);
+}
+
+/* ==========================================================================
+   PRÉVIA DE NOTÍCIA BLOQUEADA (ESQUERDA / DIREITA) NA TELA INICIAL
+   Usa a primeira notícia do robô diário (noticias-diarias.json) para
+   preencher a manchete e o resumo borrados. Se o arquivo não carregar,
+   mantém o texto fixo que já está no HTML.
+   ========================================================================== */
+function renderPreviewNoticiasBloqueadas() {
+  if (!DAILY_NEWS_FEED || !Array.isArray(DAILY_NEWS_FEED.noticias) || DAILY_NEWS_FEED.noticias.length === 0) {
+    return;
+  }
+
+  const primeiraNoticia = DAILY_NEWS_FEED.noticias[0];
+
+  const tituloEsquerda = document.getElementById('preview-esquerda-titulo');
+  const resumoEsquerda = document.getElementById('preview-esquerda-resumo');
+  if (tituloEsquerda && resumoEsquerda && primeiraNoticia.esquerda) {
+    tituloEsquerda.textContent = primeiraNoticia.esquerda.manchete;
+    resumoEsquerda.textContent = primeiraNoticia.esquerda.resumo;
+  }
+
+  const tituloDireita = document.getElementById('preview-direita-titulo');
+  const resumoDireita = document.getElementById('preview-direita-resumo');
+  if (tituloDireita && resumoDireita && primeiraNoticia.direita) {
+    tituloDireita.textContent = primeiraNoticia.direita.manchete;
+    resumoDireita.textContent = primeiraNoticia.direita.resumo;
+  }
+}
+
+function initPreviewNoticiasBloqueadas() {
+  const botoesDesbloquear = document.querySelectorAll('[data-scroll-to-quiz="true"]');
+  const botaoIniciarQuiz = document.getElementById('btn-start-quiz');
+  if (!botaoIniciarQuiz) return;
+
+  botoesDesbloquear.forEach((botao) => {
+    botao.addEventListener('click', () => {
+      botaoIniciarQuiz.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      setTimeout(() => botaoIniciarQuiz.click(), 400);
+    });
+  });
 }
 
 /* ==========================================================================
