@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadDailyNewsFeed();
   initQuizApp();
   initUrnaSimulator();
+  initSpectrumCarousel();
 });
 
 /* ==========================================================================
@@ -15,7 +16,40 @@ document.addEventListener('DOMContentLoaded', () => {
    Troque pela URL real assim que o produto for criado na Kiwify
    (Painel Kiwify -> seu produto -> "Link de vendas" ou "Compartilhar").
    ========================================================================== */
-const KIWIFY_CHECKOUT_URL = 'https://pay.kiwify.com.br/8IfBNlU';
+const KIWIFY_CHECKOUT_URL = 'https://pay.kiwify.com.br/1FQ2xY0';
+
+/* ==========================================================================
+   0. CARROSSEL DE FOTOS — FIGURAS DA ESQUERDA E DA DIREITA
+   Alterna automaticamente entre as fotos de cada lado do espectro,
+   com crossfade suave. Cada lado (#spectrum-esquerda / #spectrum-direita)
+   roda de forma independente, com um pequeno atraso entre eles para não
+   trocarem os dois ao mesmo tempo.
+   ========================================================================== */
+function initSpectrumCarousel() {
+  const INTERVALO_MS = 3200;
+  const ATRASO_ENTRE_LADOS_MS = 900;
+
+  function rodarCarrossel(containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    const fotos = container.querySelectorAll('.spectrum-photo');
+    if (fotos.length <= 1) return;
+
+    let indiceAtual = Array.from(fotos).findIndex((img) => img.classList.contains('is-active'));
+    if (indiceAtual === -1) indiceAtual = 0;
+
+    setInterval(() => {
+      const proximoIndice = (indiceAtual + 1) % fotos.length;
+      fotos[indiceAtual].classList.remove('is-active');
+      fotos[proximoIndice].classList.add('is-active');
+      indiceAtual = proximoIndice;
+    }, INTERVALO_MS);
+  }
+
+  rodarCarrossel('spectrum-esquerda');
+  setTimeout(() => rodarCarrossel('spectrum-direita'), ATRASO_ENTRE_LADOS_MS);
+}
 
 /* ==========================================================================
    1. DYNAMIC HEADER DATE
