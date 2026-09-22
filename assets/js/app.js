@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
    Troque pela URL real assim que o produto for criado na Kiwify
    (Painel Kiwify -> seu produto -> "Link de vendas" ou "Compartilhar").
    ========================================================================== */
-const KIWIFY_CHECKOUT_URL = 'https://pay.kiwify.com.br/1FQ2xY0';
+const KIWIFY_CHECKOUT_URL = 'https://pay.kiwify.com.br/8IfBNlU';
 
 /* ==========================================================================
    0. CARROSSEL DE FOTOS — FIGURAS DA ESQUERDA E DA DIREITA
