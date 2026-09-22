@@ -576,10 +576,12 @@ button {
 
 .preview-noticia-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   background: var(--bg-card);
   border: 1.5px solid var(--border-medium);
   border-radius: var(--radius-md);
-  padding: 34px 16px 20px;
+  padding: 34px 16px 18px;
   overflow: hidden;
   min-height: 190px;
 }
@@ -594,18 +596,28 @@ button {
   bottom: auto;
 }
 
-.preview-noticia-conteudo-blur {
-  filter: blur(5px);
-  user-select: none;
-  pointer-events: none;
-}
-
 .preview-noticia-titulo-noticia {
   font-size: 0.94rem;
   font-weight: 800;
   color: var(--text-pure);
   line-height: 1.35;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+/* Só o corpo/resumo da notícia fica borrado e coberto pelo cadeado —
+   o título continua sempre legível para gerar curiosidade. O cadeado fica
+   em um elemento IRMÃO do texto borrado (não filho), para não ficar
+   borrado junto. */
+.preview-noticia-corpo {
+  position: relative;
+  flex: 1;
+  min-height: 88px;
+}
+
+.preview-noticia-conteudo-blur {
+  filter: blur(5px);
+  user-select: none;
+  pointer-events: none;
 }
 
 .preview-noticia-resumo {
@@ -622,10 +634,11 @@ button {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 18px;
+  padding: 10px;
   text-align: center;
   background: linear-gradient(180deg, rgba(6, 19, 32, 0.45), rgba(6, 19, 32, 0.88));
   backdrop-filter: blur(1px);
+  border-radius: var(--radius-md);
 }
 
 .preview-noticia-lock-icone {
