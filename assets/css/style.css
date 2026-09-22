@@ -526,23 +526,41 @@ button {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
-  padding: 26px 0 30px;
-  background: linear-gradient(180deg, rgba(255, 191, 0, 0.07), transparent);
-  border-top: 1px solid var(--border-subtle);
-  border-bottom: 1px solid var(--border-subtle);
+  padding: 34px 0 34px;
+  background: linear-gradient(180deg, rgba(255, 191, 0, 0.1), transparent);
+  border-top: 1.5px solid var(--border-gold);
+  border-bottom: 1.5px solid var(--border-gold);
   overflow: hidden;
   margin-bottom: 30px;
 }
 
 .depoimentos-titulo {
   text-align: center;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+  color: var(--text-pure);
+  margin-bottom: 6px;
+  text-shadow: 0 0 20px rgba(255, 191, 0, 0.25);
+}
+
+.depoimentos-titulo .highlight-gold {
+  color: var(--gold-primary);
+}
+
+.depoimentos-subtitulo {
+  text-align: center;
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: var(--gold-primary);
-  margin-bottom: 18px;
+  color: var(--text-dim);
+  margin-bottom: 22px;
+}
+
+@media (max-width: 640px) {
+  .depoimentos-titulo { font-size: 1.2rem; padding: 0 20px; }
 }
 
 .depoimentos-track {
@@ -584,6 +602,25 @@ button {
   border: 1px solid var(--border-gold);
   padding: 3px 10px;
   border-radius: var(--radius-full);
+  margin-bottom: 10px;
+}
+
+.depoimento-nome {
+  display: block;
+  font-weight: 800;
+  font-size: 0.9rem;
+  color: var(--text-pure);
+  margin-bottom: 2px;
+}
+
+.depoimento-tempo {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
   margin-bottom: 10px;
 }
 
