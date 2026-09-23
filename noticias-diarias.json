@@ -5,191 +5,191 @@
       "fonte_nome": "Gazeta do Povo",
       "fonte_url": "https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/quaest-presidente-setembro-2026-4/",
       "esquerda": {
-        "manchete": "Mesmo sob ataque, Lula segue na frente e mantém liderança na pesquisa Quaest",
-        "resumo": "Nova Quaest mostra Lula com 37% no primeiro turno contra 33% de Flávio Bolsonaro, resultado dentro da margem de erro que confirma a resiliência do presidente."
+        "manchete": "Mesmo sob ataque, Lula segue na frente e resiste no primeiro turno, aponta Quaest",
+        "resumo": "Nova pesquisa Quaest mostra Lula com 37% no primeiro turno contra 33% de Flávio Bolsonaro, resultado que mostra a força do projeto popular mesmo com pressão da oposição e da mídia."
       },
       "centro": {
-        "manchete": "Quaest mostra empate técnico entre Lula e Flávio Bolsonaro a semanas da eleição",
-        "resumo": "Pesquisa com 2.004 entrevistados aponta Lula com 37% e Flávio com 33% no primeiro turno; no segundo turno Flávio aparece à frente por 42% a 41%, dentro da margem de erro."
+        "manchete": "Quaest mostra Lula e Flávio Bolsonaro tecnicamente empatados na disputa presidencial",
+        "resumo": "Pesquisa Quaest com 2.004 entrevistados aponta Lula com 37% e Flávio Bolsonaro com 33% no primeiro turno; no segundo turno os papéis se invertem, dentro da margem de erro."
       },
       "direita": {
-        "manchete": "Flávio Bolsonaro vira o jogo e supera Lula em simulação de segundo turno, diz Quaest",
-        "resumo": "Levantamento revela Flávio Bolsonaro numericamente à frente de Lula por 42% a 41% num eventual segundo turno, sinal de fôlego crescente da candidatura do PL."
+        "manchete": "Flávio Bolsonaro vira o jogo e ultrapassa Lula em cenário de segundo turno, mostra Quaest",
+        "resumo": "Levantamento da Quaest revela que Flávio Bolsonaro aparece numericamente à frente de Lula por 42% a 41% num eventual segundo turno, sinal de fôlego crescente da oposição."
       },
       "id": 1,
       "imagem_url": "https://media.gazetadopovo.com.br/2026/09/17182853/pesquisa-eleitoral-presidente-960x540-1-3.png"
     },
     {
       "categoria": "STF",
-      "fonte_nome": "Diário Carioca",
-      "fonte_url": "https://www.diariocarioca.com/2026/09/20/politica/judiciario/video-mostra-alexandre-de-moraes-saindo-de-jatinho-ligado-a-daniel-vorcaro",
+      "fonte_nome": "Wikipédia / Agência Brasil",
+      "fonte_url": "https://pt.wikipedia.org/wiki/Caso_Master_no_Supremo_Tribunal_Federal",
       "esquerda": {
-        "manchete": "Defesa de Moraes reafirma versão e nega qualquer irregularidade em voos questionados",
-        "resumo": "Após divulgação de vídeo antigo, escritório de Moraes mantém que o ministro nunca usou aeronaves de Vorcaro, atribuindo os voos a contratos técnicos de táxi aéreo."
+        "manchete": "Moraes rebate acusações no caso Master e denuncia tentativa de vingança política",
+        "resumo": "Ministro nega irregularidades no caso Banco Master e afirma ser alvo de investigação ilegal motivada por vingança de aliados de Bolsonaro, a quem condenou por tentativa de golpe."
       },
       "centro": {
-        "manchete": "Vídeo reacende debate sobre voos de Moraes em aeronaves ligadas ao Banco Master",
-        "resumo": "Imagens de 2025 mostram o ministro do STF e a esposa desembarcando de jato ligado a Daniel Vorcaro, o que a defesa nega ter significado uso de avião do empresário."
+        "manchete": "Crise entre Moraes e Mendonça no STF expõe troca de acusações no caso Master",
+        "resumo": "Alexandre de Moraes nega irregularidades no caso Banco Master e acusa o relator André Mendonça de conduzir investigação ilegal, enquanto Fachin cobra explicações de ambos os ministros."
       },
       "direita": {
-        "manchete": "Novas imagens de Moraes com jato ligado a Vorcaro aumentam pressão por explicações",
-        "resumo": "Vídeo mostra o ministro e a esposa desembarcando de aeronave vinculada ao dono do Banco Master, contradizendo nota anterior que negava qualquer voo com o empresário."
+        "manchete": "Moraes é confrontado por vínculos com banqueiro do Master e enfrenta pressão por explicações",
+        "resumo": "Relatórios da PF revelam proximidade entre Alexandre de Moraes e o banqueiro Daniel Vorcaro, dono do Banco Master, levando o STF a exigir esclarecimentos do ministro sobre o caso."
       },
       "id": 2,
-      "imagem_url": "https://www.diariocarioca.com/wp-content/uploads/2026/09/moraes-no-aviao.webp"
+      "imagem_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Despacho_na_Reclama%C3%A7%C3%A3o_88.121_-_rel._Dias_Toffoli_-_3_de_dezembro_de_2025.pdf/page1-960px-Despacho_na_Reclama%C3%A7%C3%A3o_88.121_-_rel._Dias_Toffoli_-_3_de_dezembro_de_2025.pdf.jpg?utm_source=pt.wikipedia.org&amp;utm_campaign=index&amp;utm_content=thumbnail"
     },
     {
       "categoria": "Economia",
-      "fonte_nome": "InfoMoney",
-      "fonte_url": "https://www.infomoney.com.br/brasil/reajuste-do-bolsa-familia/",
+      "fonte_nome": "CNN Brasil",
+      "fonte_url": "https://www.cnnbrasil.com.br/economia/money/macroeconomia/pacote-de-bondades-de-lula-injeta-r-270-bi-na-economia-em-ano-eleitoral/",
       "esquerda": {
-        "manchete": "Governo reajusta Bolsa Família e piso do benefício sobe para R$ 691",
-        "resumo": "Lula anuncia aumento de 15% no Bolsa Família, elevando o piso para R$ 691 e o valor médio para R$ 777, medida que recompõe a inflação e beneficia famílias mais pobres."
+        "manchete": "Governo Lula investe R$ 271 bi para aquecer economia e ampliar renda em ano eleitoral",
+        "resumo": "Pacote reúne crédito, subsídios a combustíveis e reajuste do Bolsa Família, medidas que fortalecem consumo popular e emprego segundo o governo, que garante neutralidade fiscal em parte das ações."
       },
       "centro": {
-        "manchete": "Reajuste do Bolsa Família custará R$ 22,7 bi ao ano e gera debate fiscal",
-        "resumo": "Novo piso de R$ 691 passa a valer em outubro; medida tem impacto de R$ 5,8 bilhões em 2026 e já provocou questionamentos sobre o momento eleitoral do anúncio."
+        "manchete": "\"Pacote de bondades\" de Lula soma R$ 271 bilhões em ano de eleição presidencial",
+        "resumo": "Levantamento mostra que o governo federal ampliou crédito, subsídios a combustíveis e benefícios sociais, com parte das medidas classificadas pelo Executivo como fiscalmente neutras."
       },
       "direita": {
-        "manchete": "Reajuste do Bolsa Família às vésperas da eleição gera questionamento no TCU",
-        "resumo": "Procurador do TCU pede anulação do aumento por falta de dotação orçamentária prévia, enquanto mercado reage com queda do Ibovespa após o anúncio do governo."
+        "manchete": "Às vésperas da eleição, governo injeta R$ 271 bi na economia e acende alerta fiscal",
+        "resumo": "Pacote bilionário de crédito, subsídios e benefícios sociais lançado por Lula em ano eleitoral levanta preocupação de economistas sobre impacto nas contas públicas e na inflação."
       },
       "id": 3,
-      "imagem_url": "https://www.infomoney.com.br/wp-content/uploads/2025/11/bolsa-familia-13-salario.jpg"
+      "imagem_url": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/09/Lula_4ca470.jpg?w=1200&amp;h=630&amp;crop=1"
     },
     {
-      "categoria": "Política Externa",
-      "fonte_nome": "Agência Brasil",
-      "fonte_url": "https://agenciabrasil.ebc.com.br/radioagencia-nacional/economia/audio/2026-09/brasil-e-eua-voltam-negociar-tarifas-durante-evento-ligado-ao-g20",
+      "categoria": "Economia",
+      "fonte_nome": "Banco Central / Mixvale",
+      "fonte_url": "https://www.mixvale.com.br/2026/09/18/banco-central-reduz-taxa-selic-para-1375-em-votacao-unanime/",
       "esquerda": {
-        "manchete": "Governo brasileiro resiste a exigências dos EUA e defende soberania nas negociações tarifárias",
-        "resumo": "Brasil rejeitou lista de 21 exigências de Trump para reduzir tarifas, alegando que as condições feririam a soberania nacional; negociação segue em evento do G20."
+        "manchete": "Banco Central corta juros pela quinta vez seguida e alivia custo do crédito para trabalhadores",
+        "resumo": "Copom reduziu a Selic para 13,75% ao ano de forma unânime, medida que barateia financiamentos e estimula emprego, segundo justificativa oficial do próprio Banco Central."
       },
       "centro": {
-        "manchete": "Brasil e EUA retomam negociação sobre tarifaço em reunião do G20 em Wisconsin",
-        "resumo": "Delegação brasileira se reúne com representante comercial dos EUA para discutir a sobretaxa de 50% imposta a produtos brasileiros, após impasse sobre exigências americanas."
+        "manchete": "Copom reduz Selic para 13,75% ao ano em quinto corte consecutivo",
+        "resumo": "Decisão unânime do Banco Central reflete moderação da atividade econômica e inflação ainda acima do centro da meta, em meio a incertezas no cenário externo."
       },
       "direita": {
-        "manchete": "Impasse tarifário com EUA expõe custo econômico da política externa do governo",
-        "resumo": "Negociações sobre a tarifa de 50% seguem travadas após Brasília rejeitar integralmente as exigências de Washington, prolongando incerteza para exportadores brasileiros."
+        "manchete": "Juros ainda em 13,75% mostram que inflação segue acima da meta apesar de cortes",
+        "resumo": "Mesmo após o quinto corte seguido da Selic, o Banco Central reconhece que a inflação permanece acima do centro da meta, reforçando alertas sobre disciplina fiscal do governo."
       },
       "id": 4,
-      "imagem_url": "https://imagens.ebc.com.br/QaIwF0LC9wzQCAJsbSIz1F9oVv4=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2025/07/30/52135407906_56bdd43e2d_o.jpg?itok=B3rOceP5"
-    },
-    {
-      "categoria": "Eleições 2026",
-      "fonte_nome": "O Tempo",
-      "fonte_url": "https://www.otempo.com.br/eleicoes/2026/presidentes/2026/9/12/tse-nega-por-unanimidade-registro-de-candidatura-de-pablo-marcal-a-presidencia",
-      "esquerda": {
-        "manchete": "TSE barra por unanimidade candidatura de Marçal, reafirmando regras eleitorais",
-        "resumo": "Corte eleitoral negou de forma unânime o registro de Pablo Marçal à Presidência, mantendo sua inelegibilidade até 2032 por condenação nas eleições municipais de 2024."
-      },
-      "centro": {
-        "manchete": "TSE rejeita candidatura de Marçal à Presidência por inelegibilidade até 2032",
-        "resumo": "Tribunal Superior Eleitoral negou por unanimidade o registro de Pablo Marçal, mantendo condenação por uso indevido de mídia social nas eleições municipais de 2024."
-      },
-      "direita": {
-        "manchete": "Defesa de Marçal classifica decisão do TSE como injustiça e prepara recursos",
-        "resumo": "TSE rejeitou o registro de Marçal à Presidência; defesa do candidato afirma que quem enfrenta o sistema encontra obstáculos e deve recorrer da decisão."
-      },
-      "id": 5,
-      "imagem_url": "https://www.otempo.com.br/content/dam/otempo/editorias/política judiciário/2026/8/20/política judiciário-tse-pablo_marcal-propaganda_eleitoral-1787240453.jpg"
+      "imagem_url": "https://www.mixvale.com.br/wp-content/uploads/2026/09/taxa-selic-rmcarvalho-istockphoto-com.jpg"
     },
     {
       "categoria": "Congresso",
-      "fonte_nome": "Câmara dos Deputados",
-      "fonte_url": "https://www.camara.leg.br/noticias/1250434-camara-aprova-pec-da-seguranca-publica-em-2-turno",
+      "fonte_nome": "Terra",
+      "fonte_url": "https://www.congressoemfoco.com.br/",
       "esquerda": {
-        "manchete": "Câmara aprova PEC da Segurança Pública com financiamento via taxação das bets",
-        "resumo": "Texto aprovado cria o Sistema Único de Segurança Pública e destina parte da arrecadação das apostas esportivas a fundos de segurança e ao sistema penitenciário."
+        "manchete": "Câmara mantém foco em pautas sociais como fim da escala 6x1 e segurança pública",
+        "resumo": "Líderes partidários reafirmam prioridade a projetos que ampliam direitos trabalhistas e segurança da população, mesmo em meio às disputas eleitorais que dominam o Congresso."
       },
       "centro": {
-        "manchete": "Câmara aprova em segundo turno PEC que integra polícias e cria Susp",
-        "resumo": "Proposta, aprovada após diálogo entre governo e oposição, cria o Sistema Único de Segurança Pública e destina recursos das bets a fundos de segurança e penitenciário."
+        "manchete": "Congresso equilibra agenda eleitoral com pautas de segurança pública e trabalho",
+        "resumo": "Parlamentares avançam discussões sobre fim da escala 6x1, inteligência artificial e segurança pública, enquanto acompanham de perto o desenrolar do caso Master no STF."
       },
       "direita": {
-        "manchete": "Câmara aprova PEC da Segurança Pública com integração das forças policiais",
-        "resumo": "Deputados aprovaram texto que cria o Susp para unificar ações contra o crime organizado, com repasse gradual de recursos das apostas para reforçar segurança e presídios."
+        "manchete": "Oposição mantém pressão sobre caso Master enquanto Congresso discute pauta econômica",
+        "resumo": "Parlamentares de oposição continuam cobrando explicações sobre o caso Banco Master, enquanto o Centrão negocia agenda de segurança pública e temas econômicos na Câmara."
       },
-      "id": 6,
-      "imagem_url": "https://www.camara.leg.br/tema/assets/images/imagens-compartilhamento/imagem-padrao.jpg"
-    },
-    {
-      "categoria": "Economia",
-      "fonte_nome": "Senado Notícias / Exame",
-      "fonte_url": "https://exame.com/economia/reforma-tributaria-entenda-regulamentacao-aprovada-pelo-senado/",
-      "esquerda": {
-        "manchete": "Reforma tributária avança com cashback para famílias de baixa renda",
-        "resumo": "Nova legislação mantém isenção da cesta básica e cria mecanismo de devolução de tributos para famílias pobres, buscando reduzir desigualdade na cobrança de impostos."
-      },
-      "centro": {
-        "manchete": "Regulamentação da reforma tributária entra em fase de testes em 2026",
-        "resumo": "Novo sistema unifica tributos em um IVA dual, com alíquota padrão estimada em até 28,6%, e será implementado gradualmente entre 2027 e 2033, segundo o Ministério da Fazenda."
-      },
-      "direita": {
-        "manchete": "Empresários alertam para risco de aumento da carga tributária na nova reforma",
-        "resumo": "Cálculos indicam que a alíquota padrão do novo imposto pode chegar a 28,6%, gerando preocupação do setor produtivo mesmo com limitador previsto para conter excessos."
-      },
-      "id": 7,
-      "imagem_url": null
-    },
-    {
-      "categoria": "Relações Exteriores",
-      "fonte_nome": "Agência Brasil",
-      "fonte_url": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-09/lula-defende-soberania-do-brasil-em-pronunciamento-pelo-7-de-setembro",
-      "esquerda": {
-        "manchete": "Lula defende soberania nacional e rejeita interferência estrangeira em pronunciamento",
-        "resumo": "Em discurso pelo 7 de Setembro, Lula afirmou que o Brasil não aceitará interferências externas em decisões políticas e econômicas, defendendo autonomia nas relações internacionais."
-      },
-      "centro": {
-        "manchete": "Lula usa pronunciamento de 7 de Setembro para reforçar discurso de soberania",
-        "resumo": "Em rede nacional, o presidente destacou a autonomia do país na gestão de recursos naturais e nas relações comerciais, em meio à disputa eleitoral e à crise tarifária com os EUA."
-      },
-      "direita": {
-        "manchete": "Discurso de soberania de Lula no 7 de Setembro é visto como aceno eleitoral",
-        "resumo": "Pronunciamento presidencial pela Independência ocorreu em meio à campanha eleitoral, com críticos apontando uso da data para reforçar narrativa de governo contra pressões externas."
-      },
-      "id": 8,
-      "imagem_url": "https://imagens.ebc.com.br/C6UWITksOr5SivmtyEsMDGy1oIo=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/09/06/pronunciamnto_do_presidente_luiz_inacio_lula_da_silva_para_o_7_de_setembro.jpg?itok=Kqi3zydP"
-    },
-    {
-      "categoria": "Judiciário",
-      "fonte_nome": "Imirante",
-      "fonte_url": "https://m.imirante.com/noticias/brasil/2026/08/31/ipolitica-stf-marca-para-setembro-julgamento-de-recurso-de-eduardo-bolsonaro",
-      "esquerda": {
-        "manchete": "STF mantém rigor e julga recurso de Eduardo Bolsonaro por coação à Corte",
-        "resumo": "Primeira Turma analisa embargos de Eduardo Bolsonaro, condenado por unanimidade a quatro anos e dois meses por tentar coagir o STF durante julgamento de seu pai."
-      },
-      "centro": {
-        "manchete": "STF julga em plenário virtual recurso de Eduardo Bolsonaro contra condenação",
-        "resumo": "Primeira Turma analisa entre 11 e 18 de setembro embargos de declaração contra a pena de quatro anos e dois meses imposta ao ex-deputado por coação no curso do processo."
-      },
-      "direita": {
-        "manchete": "Defesa de Eduardo Bolsonaro busca reverter condenação por imunidade parlamentar",
-        "resumo": "Defensoria argumenta que o ex-deputado não tinha poder de coação e que suas manifestações estavam protegidas por imunidade parlamentar, mas argumentos foram rejeitados na Turma."
-      },
-      "id": 9,
-      "imagem_url": "https://imagens.imirante.com.br/imagens/noticias/2025/08/20/eEVm6Rnc1csQCkzdde5DKwupKCWQG4IL4xyG5X59.jpg?w=896&amp;h=448&amp;crop=1895.0079155673%2C&#43;947.50395778364%2C&#43;0%2C&#43;29.125329815303&amp;fit=crop&amp;s=1692c83ccb3b52d050ce5135faec28d8"
+      "id": 5,
+      "imagem_url": "https://www.congressoemfoco.com.br/assets/images/perfil.jpg"
     },
     {
       "categoria": "Segurança Pública",
-      "fonte_nome": "Polícia Federal / Agência Gov",
-      "fonte_url": "https://www.gov.br/pf/pt-br/assuntos/noticias",
+      "fonte_nome": "Agência Brasil",
+      "fonte_url": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-09/megaoperacao-contra-o-crime-organizado-bloqueia-mais-de-r-508-milhoes",
       "esquerda": {
-        "manchete": "PF intensifica operações contra crime organizado e tráfico em várias regiões do país",
-        "resumo": "Polícia Federal deflagrou ações contra organizações criminosas em estados como Mato Grosso do Sul e Amapá, incluindo apreensões e cooperação internacional para prender foragidos."
+        "manchete": "Ação integrada do governo federal prende mais de 100 suspeitos e bloqueia R$ 508 milhões do crime organizado",
+        "resumo": "Operação da Polícia Federal com forças estaduais mobilizou 19 estados contra tráfico e lavagem de dinheiro, resultado da política de inteligência compartilhada entre governo e estados."
       },
       "centro": {
-        "manchete": "Polícia Federal realiza série de operações contra tráfico e crimes organizados",
-        "resumo": "Ações recentes da PF incluem apreensão de drogas, cumprimento de mandados e prisão de foragido internacional, parte da rotina de combate ao crime organizado no país."
+        "manchete": "Megaoperação da PF prende 101 pessoas e bloqueia R$ 508 milhões em 19 estados",
+        "resumo": "Ação coordenada por Ficcos mirou organizações ligadas a tráfico de drogas e armas, lavagem de dinheiro e homicídios, com participação de forças estaduais e federais."
       },
       "direita": {
-        "manchete": "PF reforça combate ao crime organizado com operações em múltiplos estados",
-        "resumo": "Forças de segurança realizaram ações contra tráfico de drogas e organizações criminosas, incluindo cooperação internacional para captura de foragido, mostrando efetividade no enfrentamento ao crime."
+        "manchete": "Operação nacional contra facções prende mais de 100 e mostra urgência de reforço na segurança",
+        "resumo": "Ação contra o crime organizado em 19 estados terminou com 101 presos e R$ 508 milhões bloqueados, reforçando o debate sobre necessidade de mais rigor no combate às facções."
+      },
+      "id": 6,
+      "imagem_url": "https://imagens.ebc.com.br/3_sp2pF1SQvHwvjJoWcb_NCsqdA=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/09/16/forcas_integradas_de_combate_ao_crime_organizado_ficcos.jpg?itok=89onB6yZ"
+    },
+    {
+      "categoria": "Segurança Pública",
+      "fonte_nome": "Diário Carioca",
+      "fonte_url": "https://www.diariocarioca.com/2026/09/21/politica/governo-lanca-ofensiva-nacional-contra-crime-em-prisoes",
+      "esquerda": {
+        "manchete": "Governo federal reforça tecnologia e treinamento para combater crime organizado nas prisões",
+        "resumo": "Ministério da Justiça inicia agenda nacional com entrega de scanners corporais e cursos de inteligência artificial para modernizar o sistema prisional em parceria com estados."
+      },
+      "centro": {
+        "manchete": "MJSP lança operação nacional contra crime organizado no sistema prisional",
+        "resumo": "Ação reúne revistas, entrega de equipamentos como body scanners e formação de policiais penais em vários estados, mas a não divulgação prévia dos alvos limita a fiscalização pública."
+      },
+      "direita": {
+        "manchete": "Governo reconhece avanço do crime organizado nas prisões e lança operação emergencial",
+        "resumo": "Ministério da Justiça mobiliza forças estaduais e federais após identificar domínio de facções dentro de presídios, com apreensão de milhares de celulares desde maio."
+      },
+      "id": 7,
+      "imagem_url": "https://www.diariocarioca.com/wp-content/uploads/2026/09/Governo-faz-operacao-nacional-contra-cri-1200x675.jpg"
+    },
+    {
+      "categoria": "Política Externa",
+      "fonte_nome": "Tribuna do Sertão",
+      "fonte_url": "https://www.tribunadosertao.com.br/financas/2026/09/14/978846-governos-lula-e-trump-negociam-tarifaco-ate-o-fim-de-setembro",
+      "esquerda": {
+        "manchete": "Governo Lula busca soberania nacional em nova rodada de negociação sobre tarifaço de Trump",
+        "resumo": "Ministros brasileiros se reunirão com representante comercial dos EUA no G20 em Milwaukee para tentar reverter tarifas impostas por Trump, defendendo os interesses da indústria nacional."
+      },
+      "centro": {
+        "manchete": "Brasil e EUA preparam nova rodada de negociação sobre tarifas até fim de setembro",
+        "resumo": "Ministros do Desenvolvimento e Relações Exteriores devem se reunir com o representante comercial americano em encontro do G20 em Milwaukee para discutir o tarifaço."
+      },
+      "direita": {
+        "manchete": "Governo corre para negociar fim do tarifaço de Trump que penaliza exportadores brasileiros",
+        "resumo": "Ministros brasileiros buscam encontro com autoridades comerciais dos EUA no G20 para resolver as tarifas que afetam setores produtivos, num esforço tardio de diplomacia econômica."
+      },
+      "id": 8,
+      "imagem_url": "https://img.dhost.cloud/qCFAnbiEKls6CL86Cty785trDJ4=/1280x720/smart/https://tdan.nyc3.digitaloceanspaces.com/images/8d23e/35e5f4dfe34ce059ffe0d5e08a7cffc06e6.jpg"
+    },
+    {
+      "categoria": "Eleições 2026",
+      "fonte_nome": "NSC Total / O Tempo",
+      "fonte_url": "https://spdiario.com.br/noticias/politica/tarcisio-exalta-jair-bolsonaro-ao-oficializar-candidatura-a-reeleicao-em-sao-paulo.html",
+      "esquerda": {
+        "manchete": "Tarcísio reforça aliança com bolsonarismo ao buscar reeleição em São Paulo",
+        "resumo": "Governador oficializou candidatura à reeleição declarando lealdade a Jair Bolsonaro, evidenciando a continuidade do projeto político de extrema-direita no estado mais rico do país."
+      },
+      "centro": {
+        "manchete": "Tarcísio de Freitas oficializa candidatura à reeleição em São Paulo com apoio de 12 partidos",
+        "resumo": "Em convenção no Ibirapuera, governador reforçou aliança com Flávio Bolsonaro e chega à disputa como favorito, com estrutura política em 95% dos municípios paulistas."
+      },
+      "direita": {
+        "manchete": "Tarcísio larga na frente para reeleição em São Paulo com ampla aliança de centro-direita",
+        "resumo": "Governador oficializou candidatura com apoio de 12 partidos e discurso de valorização da segurança pública e infraestrutura, consolidando-se como favorito segundo pesquisas."
+      },
+      "id": 9,
+      "imagem_url": "https://spdiario.com.br/media/_versions/tarcisio_42OjXS9_widelg.png"
+    },
+    {
+      "categoria": "Eleições 2026",
+      "fonte_nome": "CNN Brasil",
+      "fonte_url": "https://www.cnnbrasil.com.br/eleicoes/quem-e-michelle-bolsonaro-candidata-ao-senado-pelo-distrito-federal/",
+      "esquerda": {
+        "manchete": "Michelle Bolsonaro estreia na política institucional disputando vaga ao Senado pelo DF",
+        "resumo": "Ex-primeira-dama foi confirmada candidata ao Senado pelo Distrito Federal após rompimento público com o enteado Flávio Bolsonaro, expondo disputas internas no campo bolsonarista."
+      },
+      "centro": {
+        "manchete": "Michelle Bolsonaro é confirmada candidata ao Senado pelo Distrito Federal",
+        "resumo": "Ex-primeira-dama disputa pela primeira vez um cargo público, integrando coligação de partidos como Republicanos, MDB, Podemos e PL nas eleições de 2026."
+      },
+      "direita": {
+        "manchete": "Michelle Bolsonaro aceita desafio e amplia presença da direita no Senado pelo DF",
+        "resumo": "Confirmada pelo PL, ex-primeira-dama entra na disputa ao Senado após período de tensão com Flávio Bolsonaro, reforçando o protagonismo político da família na centro-direita."
       },
       "id": 10,
-      "imagem_url": null
+      "imagem_url": "https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2026/07/MICHELLE-BOLSONARO-MT-01-11-25-e1783188362566.jpg?w=1200&amp;h=630&amp;crop=1"
     }
   ],
-  "gerado_em": "2026-09-22T13:08:53.558798+00:00"
+  "gerado_em": "2026-09-23T13:23:52.442089+00:00"
 }
