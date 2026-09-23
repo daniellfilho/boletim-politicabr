@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initUrnaSimulator();
   initSpectrumCarousel();
   initPreviewNoticiasBloqueadas();
+  initRecadoVideos();
 });
 
 /* ==========================================================================
@@ -89,6 +90,43 @@ function initPreviewNoticiasBloqueadas() {
     botao.addEventListener('click', () => {
       botaoIniciarQuiz.scrollIntoView({ behavior: 'smooth', block: 'center' });
       setTimeout(() => botaoIniciarQuiz.click(), 400);
+    });
+  });
+}
+
+/* ==========================================================================
+   RECADO EM VÍDEO PERSONALIZADO (FLÁVIO / LULA), NO RESULTADO DO QUIZ
+   Cada card mostra o vídeo (até 60s) atrás de uma capa "toque para assistir".
+   Ao terminar, cobre o player com a chamada para assinar e ver o restante.
+   ========================================================================== */
+function initRecadoVideos() {
+  const cards = document.querySelectorAll('.recado-video-card');
+
+  cards.forEach((card) => {
+    const video = card.querySelector('.recado-video-player');
+    const capa = card.querySelector('.recado-video-cover');
+    const bloqueio = card.querySelector('.recado-video-bloqueio');
+    if (!video || !capa || !bloqueio) return;
+
+    capa.addEventListener('click', () => {
+      capa.style.display = 'none';
+      video.play().catch(() => {
+        // Autoplay com som pode ser bloqueado em alguns navegadores;
+        // nesse caso o visitante usa os controles nativos do vídeo.
+      });
+    });
+
+    video.addEventListener('ended', () => {
+      bloqueio.style.display = 'flex';
+    });
+  });
+
+  // Botão "Assinar e ver o recado completo" — rola até o formulário de
+  // cadastro, que já leva direto ao checkout da Kiwify.
+  document.querySelectorAll('[data-scroll-to-capture="true"]').forEach((botao) => {
+    botao.addEventListener('click', () => {
+      const captureSection = document.getElementById('capture-section');
+      if (captureSection) captureSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
     });
   });
 }
