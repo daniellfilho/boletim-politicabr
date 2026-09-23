@@ -371,6 +371,176 @@
     cursor: pointer;
     text-decoration: underline;
   }
+
+  /* ========================================================================
+     COMUNIDADE - abas (Jornal / Comunidade), comentários por notícia e
+     mural geral de posts dos assinantes
+     ======================================================================== */
+  .jornal-tabs {
+    display: flex;
+    gap: 8px;
+    max-width: 640px;
+    margin: 0 auto 22px;
+  }
+  .jornal-tab-btn {
+    flex: 1;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    background: var(--bg-card);
+    border: 1.5px solid var(--border-subtle);
+    border-radius: var(--radius-full);
+    padding: 11px 10px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .jornal-tab-btn.active {
+    color: var(--text-dark);
+    background: var(--gold-primary);
+    border-color: var(--gold-primary);
+  }
+
+  /* Comentários dentro de cada card de notícia */
+  .materia-comentarios {
+    border-top: 1px solid var(--border-subtle);
+    padding: 12px 20px 18px;
+  }
+  .btn-toggle-comentarios {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-dim);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px 0;
+  }
+  .btn-toggle-comentarios:hover { color: var(--gold-primary); }
+
+  .comentarios-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 12px 0;
+  }
+  .comentario-vazio,
+  .comentario-carregando {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    font-style: italic;
+  }
+  .comentario-item {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 10px 14px;
+  }
+  .comentario-item-topo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+    flex-wrap: wrap;
+  }
+  .comentario-nome {
+    font-size: 0.82rem;
+    font-weight: 800;
+    color: var(--text-pure);
+  }
+  .comentario-lado-tag {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+    color: #fff;
+  }
+  .comentario-lado-esquerda { background: #b91c1c; }
+  .comentario-lado-direita { background: #1d4ed8; }
+  .comentario-lado-centro { background: var(--gold-primary); color: var(--text-dark); }
+  .comentario-tempo {
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    margin-left: auto;
+  }
+  .comentario-texto {
+    font-size: 0.85rem;
+    color: var(--text-main);
+    line-height: 1.5;
+  }
+
+  .comentario-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .comentario-form textarea {
+    resize: vertical;
+    min-height: 60px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    color: var(--text-pure);
+    font-family: inherit;
+    font-size: 0.85rem;
+    padding: 10px 12px;
+  }
+  .comentario-form textarea:focus { outline: none; border-color: var(--gold-primary); }
+  .comentario-form button {
+    align-self: flex-end;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: var(--text-dark);
+    background: var(--gold-primary);
+    border: none;
+    border-radius: var(--radius-full);
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .comentario-erro {
+    font-size: 0.75rem;
+    color: #f87171;
+  }
+
+  /* Mural geral da Comunidade */
+  .mural-wrap {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .mural-post-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    margin-bottom: 22px;
+  }
+  .mural-post-box textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 70px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    color: var(--text-pure);
+    font-family: inherit;
+    font-size: 0.9rem;
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+  .mural-post-box textarea:focus { outline: none; border-color: var(--gold-primary); }
+  .mural-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
 </style>
 
 <!-- Meta Pixel Code -->
@@ -491,12 +661,30 @@ src="https://www.facebook.com/tr?id=1628738315272397&ev=PageView&noscript=1"
     <p class="jornal-validacao" id="jornal-validacao"></p>
   </div>
 
+  <div class="jornal-tabs">
+    <button class="jornal-tab-btn active" id="tab-jornal">📰 Meu Jornal</button>
+    <button class="jornal-tab-btn" id="tab-comunidade">💬 Comunidade</button>
+  </div>
+
   <div id="lista-materias"></div>
 
   <div id="sem-perfil" class="membros-sem-perfil" style="display:none;">
     <p>Ainda não identificamos seu perfil político. Faça o diagnóstico rápido
     para liberar sua edição personalizada:</p>
     <p><a href="/index.html">Fazer o diagnóstico agora →</a></p>
+  </div>
+
+  <!-- Aba COMUNIDADE - mural geral, com posts de qualquer assinante -->
+  <div class="mural-wrap" id="mural-wrap" style="display:none;">
+    <div class="mural-post-box">
+      <textarea id="mural-post-texto" maxlength="500" placeholder="O que você achou das notícias de hoje? Compartilhe com os outros assinantes..."></textarea>
+      <p class="comentario-erro" id="mural-post-erro"></p>
+      <button class="comentario-form-btn" id="mural-post-btn" style="font-family: var(--font-mono); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.4px; text-transform: uppercase; color: var(--text-dark); background: var(--gold-primary); border: none; border-radius: var(--radius-full); padding: 9px 20px; cursor: pointer; float: right;">Publicar</button>
+      <div style="clear:both;"></div>
+    </div>
+    <div class="mural-lista" id="mural-lista">
+      <p class="comentario-carregando">Carregando mural...</p>
+    </div>
   </div>
 </div>
 
@@ -567,6 +755,7 @@ src="https://www.facebook.com/tr?id=1628738315272397&ev=PageView&noscript=1"
       perfilTag.style.display = 'none';
       document.getElementById('jornal-validacao').textContent = '';
       semPerfil.style.display = 'block';
+      semPerfil.dataset.ativo = 'true';
       return;
     }
 
@@ -605,6 +794,11 @@ src="https://www.facebook.com/tr?id=1628738315272397&ev=PageView&noscript=1"
         ? `<span class="destaque-tag">⭐ Destaque para você</span><br>`
         : '';
 
+      // ID estável da notícia (data + posição), usado para amarrar os
+      // comentários a ELA especificamente, e não a outra edição qualquer.
+      const dataChave = feed.gerado_em ? feed.gerado_em.slice(0, 10) : 'sem-data';
+      const noticiaId = `${dataChave}-${noticia.id != null ? noticia.id : index}`;
+
       card.innerHTML = `
         <div class="materia-imagem">${imagemHtml}</div>
         <div class="materia-corpo">
@@ -614,12 +808,22 @@ src="https://www.facebook.com/tr?id=1628738315272397&ev=PageView&noscript=1"
           <p class="materia-resumo">${versao.resumo}</p>
           ${fonteHtml}
         </div>
+        <div class="materia-comentarios" data-noticia-id="${noticiaId}" data-carregado="false">
+          <button class="btn-toggle-comentarios">💬 Comentários</button>
+          <div class="comentarios-lista" style="display:none;"></div>
+          <form class="comentario-form" style="display:none;">
+            <textarea maxlength="500" placeholder="Escreva sua opinião sobre essa notícia..." required></textarea>
+            <p class="comentario-erro"></p>
+            <button type="submit">Comentar</button>
+          </form>
+        </div>
       `;
       listaEl.appendChild(card);
     });
 
     listaEl.style.display = 'block';
     semPerfil.style.display = 'none';
+    semPerfil.dataset.ativo = 'false';
   }
 
   async function carregarFeed(lado) {
@@ -632,6 +836,175 @@ src="https://www.facebook.com/tr?id=1628738315272397&ev=PageView&noscript=1"
         '<p style="color:var(--text-muted);text-align:center;">Não foi possível carregar a edição de hoje.</p>';
     }
   }
+
+  /* ========================================================================
+     COMUNIDADE - comentários por notícia + mural geral dos assinantes
+     ======================================================================== */
+  const LADO_LABEL_TAG = { esquerda: 'ESQUERDA', direita: 'DIREITA', centro: 'CENTRO' };
+
+  function formatarTempoRelativo(isoDate) {
+    const diffMs = Date.now() - new Date(isoDate).getTime();
+    const min = Math.floor(diffMs / 60000);
+    if (min < 1) return 'agora mesmo';
+    if (min < 60) return `há ${min} min`;
+    const horas = Math.floor(min / 60);
+    if (horas < 24) return `há ${horas}h`;
+    const dias = Math.floor(horas / 24);
+    return `há ${dias}d`;
+  }
+
+  function renderComentarioHtml(c) {
+    const ladoTag = c.lado && LADO_LABEL_TAG[c.lado]
+      ? `<span class="comentario-lado-tag comentario-lado-${c.lado}">${LADO_LABEL_TAG[c.lado]}</span>`
+      : '';
+    const nomeSeguro = (c.nome || 'Assinante').replace(/</g, '&lt;');
+    const textoSeguro = (c.texto || '').replace(/</g, '&lt;');
+    return `
+      <div class="comentario-item">
+        <div class="comentario-item-topo">
+          <span class="comentario-nome">${nomeSeguro}</span>
+          ${ladoTag}
+          <span class="comentario-tempo">${formatarTempoRelativo(c.created_at)}</span>
+        </div>
+        <p class="comentario-texto">${textoSeguro}</p>
+      </div>
+    `;
+  }
+
+  // Busca e renderiza os comentários de UMA notícia (noticiaId) ou, se
+  // noticiaId for null, os posts do mural geral.
+  async function carregarComentarios(noticiaId, containerEl, mensagemVazio) {
+    containerEl.innerHTML = '<p class="comentario-carregando">Carregando...</p>';
+    try {
+      const url = noticiaId
+        ? `/api/comentarios?noticia_id=${encodeURIComponent(noticiaId)}`
+        : '/api/comentarios';
+      const res = await fetch(url);
+      const data = await res.json();
+      const lista = Array.isArray(data.comentarios) ? data.comentarios : [];
+      containerEl.innerHTML = lista.length
+        ? lista.map(renderComentarioHtml).join('')
+        : `<p class="comentario-vazio">${mensagemVazio}</p>`;
+    } catch (err) {
+      containerEl.innerHTML = '<p class="comentario-vazio">Não foi possível carregar agora.</p>';
+    }
+  }
+
+  // Envia um comentário/post novo. Retorna true se deu certo.
+  async function publicarComentario(texto, noticiaId, erroEl) {
+    erroEl.textContent = '';
+    try {
+      const res = await fetch('/api/comentarios', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ texto, noticia_id: noticiaId || undefined }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        erroEl.textContent = data.error || 'Não foi possível publicar. Tente novamente.';
+        return false;
+      }
+      return true;
+    } catch (err) {
+      erroEl.textContent = 'Erro de conexão. Tente novamente.';
+      return false;
+    }
+  }
+
+  // Delegação de eventos: um único listener cobre todos os cards, mesmo
+  // os que ainda não existem no momento em que a página carrega.
+  const listaMateriasEl = document.getElementById('lista-materias');
+
+  listaMateriasEl.addEventListener('click', (e) => {
+    const botao = e.target.closest('.btn-toggle-comentarios');
+    if (!botao) return;
+
+    const bloco = botao.closest('.materia-comentarios');
+    const listaEl = bloco.querySelector('.comentarios-lista');
+    const formEl = bloco.querySelector('.comentario-form');
+    const abrindo = listaEl.style.display === 'none';
+
+    listaEl.style.display = abrindo ? 'flex' : 'none';
+    formEl.style.display = abrindo ? 'flex' : 'none';
+
+    if (abrindo && bloco.dataset.carregado !== 'true') {
+      bloco.dataset.carregado = 'true';
+      carregarComentarios(
+        bloco.dataset.noticiaId,
+        listaEl,
+        'Seja o primeiro a comentar essa notícia.'
+      );
+    }
+  });
+
+  listaMateriasEl.addEventListener('submit', async (e) => {
+    const form = e.target.closest('.comentario-form');
+    if (!form) return;
+    e.preventDefault();
+
+    const bloco = form.closest('.materia-comentarios');
+    const textarea = form.querySelector('textarea');
+    const erroEl = form.querySelector('.comentario-erro');
+    const texto = textarea.value.trim();
+    if (!texto) return;
+
+    const botaoSubmit = form.querySelector('button[type="submit"]');
+    botaoSubmit.disabled = true;
+
+    const ok = await publicarComentario(texto, bloco.dataset.noticiaId, erroEl);
+    if (ok) {
+      textarea.value = '';
+      const listaEl = bloco.querySelector('.comentarios-lista');
+      carregarComentarios(bloco.dataset.noticiaId, listaEl, 'Seja o primeiro a comentar essa notícia.');
+    }
+    botaoSubmit.disabled = false;
+  });
+
+  // Abas "Meu Jornal" / "Comunidade"
+  let muralCarregado = false;
+
+  function ativarAba(aba) {
+    const ehJornal = aba === 'jornal';
+    document.getElementById('tab-jornal').classList.toggle('active', ehJornal);
+    document.getElementById('tab-comunidade').classList.toggle('active', !ehJornal);
+    document.getElementById('mural-wrap').style.display = ehJornal ? 'none' : 'block';
+
+    if (ehJornal) {
+      // Restaura o estado que renderJornal() já definiu (jornal normal OU
+      // aviso de "ainda sem perfil") - não decide isso de novo aqui.
+      const semPerfilAtivo = document.getElementById('sem-perfil').dataset.ativo === 'true';
+      document.getElementById('lista-materias').style.display = semPerfilAtivo ? 'none' : 'block';
+      document.getElementById('sem-perfil').style.display = semPerfilAtivo ? 'block' : 'none';
+    } else {
+      document.getElementById('lista-materias').style.display = 'none';
+      document.getElementById('sem-perfil').style.display = 'none';
+    }
+
+    if (!ehJornal && !muralCarregado) {
+      muralCarregado = true;
+      carregarComentarios(null, document.getElementById('mural-lista'), 'Ainda não há posts no mural. Comece você!');
+    }
+  }
+
+  document.getElementById('tab-jornal').addEventListener('click', () => ativarAba('jornal'));
+  document.getElementById('tab-comunidade').addEventListener('click', () => ativarAba('comunidade'));
+
+  document.getElementById('mural-post-btn').addEventListener('click', async () => {
+    const textarea = document.getElementById('mural-post-texto');
+    const erroEl = document.getElementById('mural-post-erro');
+    const texto = textarea.value.trim();
+    if (!texto) return;
+
+    const botao = document.getElementById('mural-post-btn');
+    botao.disabled = true;
+
+    const ok = await publicarComentario(texto, null, erroEl);
+    if (ok) {
+      textarea.value = '';
+      carregarComentarios(null, document.getElementById('mural-lista'), 'Ainda não há posts no mural. Comece você!');
+    }
+    botao.disabled = false;
+  });
 
   function ativarMenuLogado(email) {
     userAvatarBtn.style.display = 'flex';
