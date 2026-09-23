@@ -673,6 +673,88 @@ button {
   box-shadow: 0 6px 16px rgba(255, 191, 0, 0.3);
 }
 
+/* ==========================================================================
+   RECADO EM VÍDEO PERSONALIZADO (pós-quiz, dentro do bloco de cobertura
+   calibrada). Mostra o vídeo vertical (até 60s) com capa de "toque para
+   assistir"; ao terminar, cobre o player com a chamada de assinatura.
+   ========================================================================== */
+.recado-video-card {
+  position: relative;
+  max-width: 260px;
+  aspect-ratio: 9 / 16;
+  margin: 22px auto 4px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #000;
+  border: 1.5px solid var(--border-medium);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+}
+
+.recado-video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #000;
+}
+
+.recado-video-cover,
+.recado-video-bloqueio {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(180deg, rgba(6, 19, 32, 0.55), rgba(6, 19, 32, 0.9));
+}
+
+.recado-video-bloqueio {
+  display: none; /* aparece via JS quando o vídeo termina */
+  cursor: default;
+}
+
+.recado-play-icone {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--gold-primary);
+  color: #06131f;
+  font-size: 1.2rem;
+  padding-left: 3px;
+}
+
+.recado-video-texto {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-pure);
+  line-height: 1.4;
+}
+
+.recado-video-cta-tap {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--gold-primary);
+}
+
+.recado-video-bloqueio .preview-noticia-lock-icone {
+  font-size: 1.4rem;
+}
+
+.recado-video-bloqueio .preview-noticia-lock-texto {
+  max-width: 200px;
+}
+
 /* Carrossel de depoimentos - rolagem automática e contínua, largura total */
 .depoimentos-wrap {
   width: 100vw;
