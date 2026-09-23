@@ -198,6 +198,39 @@
           </div>
         </div>
 
+        <!-- PRÉVIA DA COMUNIDADE: comentários de exemplo borrados + cadeado,
+             no mesmo estilo da prévia de notícia acima. -->
+        <div class="preview-comunidade-wrap">
+          <p class="preview-noticias-titulo">💬 A <span class="highlight-gold">Comunidade</span> já tá comentando</p>
+          <p class="preview-noticias-subtitulo">Veja o que outros leitores acham das notícias de hoje — e dê sua opinião também</p>
+
+          <div class="preview-comunidade-card">
+            <div class="preview-noticia-corpo">
+              <div class="preview-noticia-conteudo-blur">
+                <div class="preview-comunidade-item">
+                  <div class="preview-comunidade-item-topo">
+                    <span class="preview-comunidade-nome">Marcos S.</span>
+                    <span class="preview-comunidade-lado-tag lado-direita">DIREITA</span>
+                  </div>
+                  <p class="preview-comunidade-texto">Fico feliz que finalmente alguém colocou isso em pauta, já era hora de...</p>
+                </div>
+                <div class="preview-comunidade-item">
+                  <div class="preview-comunidade-item-topo">
+                    <span class="preview-comunidade-nome">Fernanda A.</span>
+                    <span class="preview-comunidade-lado-tag lado-esquerda">ESQUERDA</span>
+                  </div>
+                  <p class="preview-comunidade-texto">Concordo em parte, mas acho que falta contexto sobre o impacto real na...</p>
+                </div>
+              </div>
+              <div class="preview-noticia-lock-overlay">
+                <span class="preview-noticia-lock-icone">🔒</span>
+                <p class="preview-noticia-lock-texto">Assine para ler a discussão completa e comentar com os outros assinantes</p>
+                <button class="btn-desbloquear" data-scroll-to-quiz="true">Assinar e participar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- DEPOIMENTOS DE ASSINANTES - carrossel automático, sem identificação -->
         <div class="depoimentos-wrap">
           <p class="depoimentos-titulo">⭐ O que nossos <span class="highlight-gold">assinantes dizem</span></p>
@@ -722,6 +755,28 @@
                 <button class="app-search-btn" id="parlamentar-search-btn">Buscar</button>
               </div>
               <div class="app-search-result" id="parlamentar-search-result"></div>
+            </div>
+
+            <!-- Section: Comunidade dos assinantes (comentários + mural) -->
+            <div class="app-section-box">
+              <div class="section-box-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                COMUNIDADE DO BOLETIM
+              </div>
+
+              <div class="app-vote-item">
+                <span class="vote-badge lado-direita">DIREITA</span>
+                <div><strong>Marcos S.:</strong> Fico feliz que finalmente alguém colocou isso em pauta, já era hora de...</div>
+              </div>
+
+              <div class="app-vote-item">
+                <span class="vote-badge lado-esquerda">ESQUERDA</span>
+                <div><strong>Fernanda A.:</strong> Concordo em parte, mas acho que falta contexto sobre o impacto real na...</div>
+              </div>
+
+              <p style="font-size: 0.74rem; color: var(--gold-primary); font-weight: 700; margin-top: 8px;">
+                💬 Comente nas notícias e participe do mural com outros assinantes
+              </p>
             </div>
 
             <!-- Backstage Intelligence Brief -->
