@@ -673,6 +673,61 @@ button {
   box-shadow: 0 6px 16px rgba(255, 191, 0, 0.3);
 }
 
+/* Prévia da Comunidade (comentários de exemplo, mesmo tratamento de blur +
+   cadeado da prévia de notícia acima) */
+.preview-comunidade-wrap {
+  max-width: 480px;
+  margin: 0 auto 34px;
+}
+
+.preview-comunidade-card {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  padding: 6px 16px;
+  overflow: hidden;
+}
+
+.preview-comunidade-item {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.preview-comunidade-item:last-child { border-bottom: none; }
+
+.preview-comunidade-item-topo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.preview-comunidade-nome {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--text-pure);
+}
+
+.preview-comunidade-lado-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  color: #fff;
+}
+
+.preview-comunidade-lado-tag.lado-esquerda { background: #b91c1c; }
+.preview-comunidade-lado-tag.lado-direita { background: #1d4ed8; }
+
+.preview-comunidade-texto {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  line-height: 1.45;
+}
+
 /* ==========================================================================
    RECADO EM VÍDEO PERSONALIZADO (pós-quiz, dentro do bloco de cobertura
    calibrada). Mostra o vídeo vertical (até 60s) com capa de "toque para
@@ -1829,6 +1884,8 @@ button {
 
 .vote-badge.stf { background: rgba(56, 189, 248, 0.15); color: #7dd3fc; border: 1px solid #38bdf8; }
 .vote-badge.congresso { background: var(--gold-soft); color: #fde047; border: 1px solid var(--gold-primary); }
+.vote-badge.lado-direita { background: rgba(29, 78, 216, 0.15); color: #93c5fd; border: 1px solid #1d4ed8; }
+.vote-badge.lado-esquerda { background: rgba(220, 38, 38, 0.15); color: #fca5a5; border: 1px solid #dc2626; }
 
 /* Interactive "Onde Votou Meu Parlamentar" */
 .app-search-widget {
